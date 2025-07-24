@@ -1,0 +1,493 @@
+
+--- Log Session Started: 2025-07-25 01:07:55 ---
+[01:07:55] [SYSTEM] Log file cleared by user.
+[01:07:55] [INFO] Log file has been cleared.
+[01:08:01] [INFO] Opening log file...
+[01:08:11] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:09:53 ---
+[01:09:53] [INFO] Application starting up.
+[01:09:53] [INFO] Loading 25 profiles from data.json.
+[01:09:53] [INFO] Successfully loaded 25 profiles.
+[01:10:10] [SYSTEM] Theme changed to Light
+[01:10:15] [SYSTEM] Theme changed to Dark
+[01:10:17] [SYSTEM] Theme changed to System
+[01:10:18] [SYSTEM] Theme changed to Light
+[01:10:34] [SYSTEM] Theme changed to Dark
+[01:10:46] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:12:33 ---
+[01:12:33] [INFO] Application starting up.
+[01:12:33] [INFO] Loading 25 profiles from data.json.
+[01:12:33] [INFO] Successfully loaded 25 profiles.
+[01:13:07] [INFO] Range 0-4 selected.
+[01:13:12] [INFO] Automation started...
+[01:13:12] [INFO] Processing Batch 1/2...
+[01:13:12] [INFO] Starting PC searches for 4 profiles...
+[01:13:41] [INFO] PC search 1/3 complete.
+[01:14:04] [INFO] PC search 2/3 complete.
+[01:14:08] [WARN] Could not perform search. Window '' may have been closed.
+[01:14:08] [WARN] Could not perform search. Window '' may have been closed.
+[01:14:08] [WARN] Could not perform search. Window '' may have been closed.
+[01:14:08] [WARN] Could not perform search. Window '' may have been closed.
+[01:14:08] [INFO] PC search 3/3 complete.
+[01:14:10] [INFO] Processing Batch 2/2...
+[01:14:10] [INFO] Starting PC searches for 1 profiles...
+[01:14:17] [INFO] PC search 1/3 complete.
+[01:14:23] [INFO] PC search 2/3 complete.
+[01:14:28] [INFO] PC search 3/3 complete.
+[01:14:30] [INFO] Automation Complete!
+[01:14:51] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:29:45 ---
+[01:29:45] [INFO] Application starting up.
+[01:29:45] [INFO] Loading 25 profiles from data.json.
+[01:29:45] [INFO] Successfully loaded 25 profiles.
+
+--- Log Session Started: 2025-07-25 01:31:23 ---
+[01:31:23] [INFO] Application starting up.
+[01:31:23] [INFO] Loading 25 profiles from data.json.
+[01:31:23] [INFO] Successfully loaded 25 profiles.
+[01:32:14] [INFO] Opening rewards page for Personal 8...
+[01:32:24] [INFO] Opening rewards page for Personal 7...
+[01:33:32] [INFO] Daily Set Automation started...
+[01:33:33] [INFO] Starting Daily Activities...
+[01:33:33] [INFO] Processing activities for Personal 3...
+[01:33:38] [ERROR] Failed to set up Selenium driver for Personal 3: Could not reach host. Are you offline?
+[01:33:38] [INFO] Daily Set Automation Complete!
+[01:34:35] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:36:09 ---
+[01:36:09] [INFO] Application starting up.
+[01:36:09] [INFO] Loading 25 profiles from data.json.
+[01:36:10] [INFO] Successfully loaded 25 profiles.
+
+--- Log Session Started: 2025-07-25 01:38:00 ---
+[01:38:00] [INFO] Application starting up.
+[01:38:00] [INFO] Loading 25 profiles from data.json.
+[01:38:00] [INFO] Successfully loaded 25 profiles.
+
+--- Log Session Started: 2025-07-25 01:38:39 ---
+[01:38:39] [INFO] Application starting up.
+[01:38:39] [INFO] Loading 25 profiles from data.json.
+[01:38:39] [INFO] Successfully loaded 25 profiles.
+[01:38:52] [INFO] Daily Set Automation started...
+[01:38:52] [INFO] Starting Daily Activities...
+[01:38:52] [INFO] Processing activities for Personal 24...
+[01:38:54] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:38:54] [INFO] Daily Set Automation Complete!
+[01:39:10] [INFO] Daily Set Automation started...
+[01:39:11] [INFO] Starting Daily Activities...
+[01:39:11] [INFO] Processing activities for Personal 24...
+[01:39:12] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:39:12] [INFO] Daily Set Automation Complete!
+[01:39:21] [INFO] Search Automation started...
+[01:39:21] [INFO] Processing Search Batch 1/1...
+[01:39:21] [INFO] Processing searches for Personal 24...
+[01:39:23] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:39:23] [INFO] Search Automation Complete!
+[01:40:45] [INFO] Search Automation started...
+[01:40:45] [INFO] Processing Search Batch 1/1...
+[01:40:45] [INFO] Processing searches for Personal 24...
+[01:40:48] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:40:48] [INFO] Search Automation Complete!
+[01:41:00] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:43:25 ---
+[01:43:25] [INFO] Application starting up.
+[01:43:25] [INFO] Loading 25 profiles from data.json.
+[01:43:25] [INFO] Successfully loaded 25 profiles.
+[01:43:50] [INFO] Search Automation started...
+[01:43:50] [INFO] Processing Search Batch 1/1...
+[01:43:50] [INFO] Processing searches for Personal 24...
+[01:43:52] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:43:52] [INFO] Search Automation Complete!
+[01:45:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:47:45 ---
+[01:47:45] [INFO] Application starting up.
+[01:47:45] [INFO] Loading 25 profiles from data.json.
+[01:47:45] [INFO] Successfully loaded 25 profiles.
+[01:47:57] [INFO] Search Automation started...
+[01:47:57] [INFO] Processing Search Batch 1/1...
+[01:47:57] [INFO] Processing searches for Personal 24...
+[01:47:59] [ERROR] Failed to set up Selenium driver for Personal 24: Could not reach host. Are you offline?
+[01:47:59] [INFO] Search Automation Complete!
+[01:48:02] [INFO] Opening rewards page for Personal 24...
+[01:48:22] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 01:50:11 ---
+[01:50:11] [INFO] Application starting up.
+[01:50:11] [INFO] Loading 25 profiles from data.json.
+[01:50:11] [INFO] Successfully loaded 25 profiles.
+[01:50:23] [INFO] Search Automation started...
+[01:50:23] [INFO] Processing Search Batch 1/1...
+[01:50:23] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[01:50:33] [INFO] Search 'listening' (1/3) in window 'listening - Search - Personal 24 - Microsoft​ Edge'
+[01:50:37] [INFO] Search 'gainful' (1/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[01:50:40] [INFO] Search 'beck' (2/3) in window 'beck - Search - Personal 24 - Microsoft​ Edge'
+[01:50:46] [INFO] Search 'merchandise' (2/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[01:50:50] [INFO] Search 'helicopter' (3/3) in window 'helicopter - Search - Personal 24 - Microsoft​ Edge'
+[01:50:55] [INFO] Search 'quantity' (3/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[01:51:00] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:51:00] [INFO] Search Automation Complete!
+[01:51:04] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:00:00 ---
+[02:00:00] [INFO] Application starting up.
+[02:00:00] [INFO] Loading 25 profiles from data.json.
+[02:00:00] [INFO] Successfully loaded 25 profiles.
+
+--- Log Session Started: 2025-07-25 02:02:06 ---
+[02:02:06] [INFO] Application starting up.
+[02:02:06] [INFO] Loading 25 profiles from data.json.
+[02:02:06] [INFO] Successfully loaded 25 profiles.
+[02:02:33] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '08:00'}
+[02:02:33] [INFO] Scheduler enabled. Will run daily at 08:00.
+[02:02:33] [SYSTEM] Tasks scheduled to run daily at 08:00.
+[02:02:40] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '08:00'}
+[02:02:40] [INFO] Scheduler disabled. Will run daily at 08:00.
+[02:02:58] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '08:00'}
+[02:02:58] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:03:37 ---
+[02:03:37] [INFO] Application starting up.
+[02:03:37] [INFO] Loading 25 profiles from data.json.
+[02:03:37] [INFO] Successfully loaded 25 profiles.
+[02:04:06] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '08:00'}
+[02:04:06] [INFO] Scheduler enabled. Will run daily at 08:00.
+[02:04:06] [SYSTEM] Tasks scheduled to run daily at 08:00.
+[02:04:28] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:04:28] [INFO] Schedule time updated to 02:10.
+[02:04:28] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:05:41] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:05:41] [INFO] Schedule time updated to 02:10.
+[02:05:41] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:10:00] [INFO] Running scheduled tasks for 2025-07-25...
+[02:10:00] [INFO] Search Automation started...
+[02:10:00] [INFO] Processing Search Batch 1/7...
+[02:10:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:10:11] [INFO] Search 'governor' (1/11) in window 'governor - Search - Personal 10 - Microsoft​ Edge'
+[02:10:13] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:10:13] [INFO] Schedule time updated to 02:10.
+[02:10:13] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:10:15] [INFO] Invalid time format. Please use HH:MM.
+[02:10:16] [INFO] Search 'testimony' (1/11) in window 'New tab - Personal 7 - Microsoft​ Edge'
+[02:10:16] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:10:16] [INFO] Schedule time updated to 02:10.
+[02:10:16] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:10:21] [INFO] Search 'approach' (1/11) in window 'approach - Search - Personal 3 - Microsoft​ Edge'
+[02:10:26] [INFO] Search 'energetic' (1/11) in window 'energetic - Search - Personal 4 - Microsoft​ Edge'
+[02:10:27] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:10:27] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:22:10 ---
+[02:22:10] [INFO] Application starting up.
+[02:22:10] [INFO] Loading 25 profiles from data.json.
+[02:22:10] [INFO] Successfully loaded 25 profiles.
+[02:22:11] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:22:25] [INFO] Search Automation started...
+[02:22:25] [INFO] Processing Search Batch 1/1...
+[02:22:25] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:22:34] [INFO] Search 'pepperoni' (1/11) in window 'New tab - Personal 24 - Microsoft​ Edge'
+[02:22:38] [INFO] Search 'drake' (1/11) in window 'Google Gemini and 1 more page - Personal - Microsoft​ Edge'
+[02:22:43] [INFO] Search 'necessity' (2/11) in window 'necessity - Search - Personal 24 - Microsoft​ Edge'
+[02:22:45] [INFO] Stop signal sent. Finishing current action...
+[02:22:48] [INFO] Search 'interferometer' (2/11) in window 'Google Gemini and 1 more page - Personal - Microsoft​ Edge'
+[02:22:48] [SYSTEM] Stop event received. Halting search session.
+[02:22:50] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:22:50] [INFO] Search Automation Stopped by User.
+[02:23:26] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:23:26] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:27:14 ---
+[02:27:14] [INFO] Application starting up.
+[02:27:14] [INFO] Loading 25 profiles from data.json.
+[02:27:14] [INFO] Successfully loaded 25 profiles.
+[02:27:15] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:27:29] [INFO] Search Automation started...
+[02:27:29] [INFO] Processing Search Batch 1/1...
+[02:27:29] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:27:36] [INFO] Search 'fit' (1/5) in window 'fit - Search and 1 more page - Personal - Microsoft​ Edge'
+[02:27:41] [INFO] Stop signal sent. Finishing current action...
+[02:27:42] [INFO] Search 'convention' (1/5) in window 'convention - Search - Personal 5 - Microsoft​ Edge'
+[02:27:42] [SYSTEM] Stop event received. Halting search session.
+[02:27:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:27:43] [INFO] Search Automation Stopped by User.
+[02:27:55] [INFO] Search Automation started...
+[02:27:55] [INFO] Processing Search Batch 1/1...
+[02:27:55] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:28:03] [INFO] Search 'damp' (1/5) in window 'damp - Search - Personal 5 - Microsoft​ Edge'
+[02:28:08] [INFO] Search 'stability' (2/5) in window 'stability - Search - Personal 5 - Microsoft​ Edge'
+[02:28:11] [INFO] Search 'zone' (3/5) in window 'zone - Search - Personal 5 - Microsoft​ Edge'
+[02:28:17] [INFO] Search 'zoologist' (4/5) in window 'zoologist - Search - Personal 5 - Microsoft​ Edge'
+[02:28:21] [INFO] Search 'forest' (5/5) in window 'forest - Search - Personal 5 - Microsoft​ Edge'
+[02:28:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:28:23] [INFO] Search Automation Complete!
+[02:28:29] [INFO] Range 0-4 selected.
+[02:28:42] [INFO] Search Automation started...
+[02:28:42] [INFO] Processing Search Batch 1/2...
+[02:28:42] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:28:52] [INFO] Search 'sauce' (1/5) in window 'sauce - Search - Personal 4 - Microsoft​ Edge'
+[02:28:56] [INFO] Search 'ruler' (1/5) in window 'ruler - Search - Personal 3 - Microsoft​ Edge'
+[02:29:03] [INFO] Search 'confectionery' (1/5) in window 'confectionery - Search - Personal 2 - Microsoft​ Edge'
+[02:29:08] [INFO] Search 'mallet' (1/5) in window 'mallet - Search - Personal - Microsoft​ Edge'
+[02:29:13] [INFO] Search 'defeat' (2/5) in window 'defeated - Search - Personal 4 - Microsoft​ Edge'
+[02:29:16] [INFO] Search 'hotel' (2/5) in window 'hotel - Search - Personal 3 - Microsoft​ Edge'
+[02:29:21] [INFO] Search 'stimulate' (2/5) in window 'stimulate - Search - Personal 2 - Microsoft​ Edge'
+[02:29:27] [INFO] Search 'comfortable' (2/5) in window 'comfortable - Search - Personal - Microsoft​ Edge'
+[02:29:31] [INFO] Search 'cloakroom' (3/5) in window 'cloakroom - Search - Personal 4 - Microsoft​ Edge'
+[02:29:36] [INFO] Search 'brisket' (3/5) in window 'brisket - Search - Personal 3 - Microsoft​ Edge'
+[02:29:40] [INFO] Search 'puggle' (3/5) in window 'puggle - Search - Personal 2 - Microsoft​ Edge'
+[02:29:45] [INFO] Search 'allergist' (3/5) in window 'allergist - Search - Personal - Microsoft​ Edge'
+[02:29:49] [INFO] Search 'aardvark' (4/5) in window 'aardvark - Search - Personal 4 - Microsoft​ Edge'
+[02:29:54] [INFO] Search 'dysfunction' (4/5) in window 'dysfunction - Search - Personal 3 - Microsoft​ Edge'
+[02:29:59] [INFO] Search 'bratwurst' (4/5) in window 'bratwurst - Search - Personal 2 - Microsoft​ Edge'
+[02:30:05] [INFO] Search 'crystallography' (4/5) in window 'crystallography open database - Search - Personal - Microsoft​ Edge'
+[02:30:10] [INFO] Search 'obstacle' (5/5) in window 'obstacle - Search - Personal 4 - Microsoft​ Edge'
+[02:30:14] [INFO] Search 'savage' (5/5) in window 'savage - Search - Personal 3 - Microsoft​ Edge'
+[02:30:19] [INFO] Search 'baseboard' (5/5) in window 'baseboard - Search - Personal 2 - Microsoft​ Edge'
+[02:30:23] [INFO] Search 'old' (5/5) in window 'old - Search - Personal - Microsoft​ Edge'
+[02:30:25] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:30:25] [INFO] Processing Search Batch 2/2...
+[02:30:25] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:30:34] [INFO] Search 'impression' (1/5) in window 'impression - Search - Personal 5 - Microsoft​ Edge'
+[02:30:39] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:30:39] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:32:40 ---
+[02:32:40] [INFO] Application starting up.
+[02:32:40] [INFO] Loading 25 profiles from data.json.
+[02:32:40] [INFO] Successfully loaded 25 profiles.
+[02:32:41] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:32:46] [INFO] Search Automation started...
+[02:32:46] [INFO] Processing Search Batch 1/7...
+[02:32:46] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:32:56] [INFO] Search 'craft' (1/11) in window 'craft - Search - Personal 4 - Microsoft​ Edge'
+[02:33:01] [INFO] Search 'boon' (1/11) in window 'boon - Search - Personal 3 - Microsoft​ Edge'
+[02:33:06] [INFO] Search 'assorted' (1/11) in window 'assorted meaning - Search - Personal 2 - Microsoft​ Edge'
+[02:33:11] [INFO] Search 'beyond' (1/11) in window 'beyond - Search - Personal - Microsoft​ Edge'
+[02:33:17] [INFO] Search 'electrocardiogram' (1/11) in window 'electrocardiogram - Search - Personal - Microsoft​ Edge'
+[02:33:22] [INFO] Search 'shearling' (2/11) in window 'shearling - Search - Personal 4 - Microsoft​ Edge'
+[02:33:29] [INFO] Search 'industrialisation' (2/11) in window 'industrialisation - Search - Personal 3 - Microsoft​ Edge'
+[02:33:32] [INFO] Stop signal sent. Finishing current action...
+[02:33:33] [INFO] Search 'coverage' (2/11) in window 'assorted meaning - Search - Personal 2 - Microsoft​ Edge'
+[02:33:33] [SYSTEM] Stop event received. Halting search session.
+[02:33:36] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:33:36] [INFO] Search Automation Stopped by User.
+[02:33:38] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:33:39] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:35:54 ---
+[02:35:54] [INFO] Application starting up.
+[02:35:54] [INFO] Loading 25 profiles from data.json.
+[02:35:54] [INFO] Successfully loaded 25 profiles.
+[02:35:55] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:36:00] [INFO] Search Automation started...
+[02:36:00] [INFO] Processing Search Batch 1/7...
+[02:36:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:36:11] [INFO] Search 'chinchilla' (1/11) in window 'chinchilla - Search - Personal 3 - Microsoft​ Edge'
+[02:36:17] [INFO] Search 'attachment' (1/11) in window 'attachment - Search - Personal 4 - Microsoft​ Edge'
+[02:36:21] [INFO] Search 'idiom' (1/11) in window 'idiom - Search - Personal 2 - Microsoft​ Edge'
+[02:36:26] [INFO] Search 'mussel' (1/11) in window 'mussel - Search - Personal - Microsoft​ Edge'
+[02:36:29] [INFO] Search 'mere' (1/11) in window 'mere - Search - Personal - Microsoft​ Edge'
+[02:36:34] [INFO] Search 'connect' (2/11) in window 'connection - Search - Personal 3 - Microsoft​ Edge'
+[02:36:38] [INFO] Search 'snobbish' (2/11) in window 'snobbish - Search - Personal 4 - Microsoft​ Edge'
+[02:36:43] [INFO] Search 'honorable' (2/11) in window 'honorable - Search - Personal 2 - Microsoft​ Edge'
+[02:36:48] [INFO] Search 'coordinate' (2/11) in window 'coordinate - Search - Personal - Microsoft​ Edge'
+[02:36:52] [INFO] Search 'induce' (2/11) in window 'induce - Search - Personal - Microsoft​ Edge'
+[02:36:56] [INFO] Search 'brawny' (3/11) in window 'brawny - Search - Personal 3 - Microsoft​ Edge'
+[02:36:56] [INFO] Stop signal sent. Finishing current action...
+[02:37:00] [INFO] Search 'cough' (3/11) in window 'snobbish - Search - Personal 4 - Microsoft​ Edge'
+[02:37:00] [SYSTEM] Stop event received. Halting search session.
+[02:37:03] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:37:03] [INFO] Search Automation Stopped by User.
+[02:37:15] [INFO] Range 0-4 selected.
+[02:37:24] [INFO] Search Automation started...
+[02:37:24] [INFO] Processing Search Batch 1/2...
+[02:37:24] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:37:34] [INFO] Search 'musician' (1/4) in window 'musician - Search - Personal 4 - Microsoft​ Edge'
+[02:37:39] [INFO] Search 'zipper' (1/4) in window 'New tab - Personal 3 - Microsoft​ Edge'
+[02:37:43] [INFO] Search 'elf' (1/4) in window 'elf - Search - Personal - Microsoft​ Edge'
+[02:37:48] [INFO] Search 'aglet' (1/4) in window 'aglet - Search - Personal 2 - Microsoft​ Edge'
+[02:37:54] [INFO] Search 'eurocentrism' (2/4) in window 'eurocentrism - Search - Personal 4 - Microsoft​ Edge'
+[02:37:58] [INFO] Search 'outset' (2/4) in window 'outset - Search - Personal 3 - Microsoft​ Edge'
+[02:38:03] [INFO] Search 'suffocation' (2/4) in window 'suffocation - Search - Personal - Microsoft​ Edge'
+[02:38:08] [INFO] Search 'step-father' (2/4) in window 'step-father - Search - Personal 2 - Microsoft​ Edge'
+[02:38:14] [INFO] Search 'conservation' (3/4) in window 'conservation - Search - Personal 4 - Microsoft​ Edge'
+[02:38:18] [INFO] Search 'texture' (3/4) in window 'texture - Search - Personal 3 - Microsoft​ Edge'
+[02:38:23] [INFO] Search 'presume' (3/4) in window 'presume - Search - Personal - Microsoft​ Edge'
+[02:38:28] [INFO] Search 'spooky' (3/4) in window 'spooky - Search - Personal 2 - Microsoft​ Edge'
+[02:38:32] [INFO] Search 'contour' (4/4) in window 'contour - Search - Personal 4 - Microsoft​ Edge'
+[02:38:37] [INFO] Search 'trading' (4/4) in window 'trading - Search - Personal 3 - Microsoft​ Edge'
+[02:38:42] [INFO] Search 'cirrhosis' (4/4) in window 'cirrhosis - Search - Personal - Microsoft​ Edge'
+[02:38:47] [INFO] Search 'participant' (4/4) in window 'participant - Search - Personal 2 - Microsoft​ Edge'
+[02:38:49] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:38:49] [INFO] Processing Search Batch 2/2...
+[02:38:49] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:38:58] [INFO] Search 'assess' (1/4) in window 'assess - Search - Personal 5 - Microsoft​ Edge'
+[02:39:03] [INFO] Search 'smash' (2/4) in window 'smash - Search - Personal 5 - Microsoft​ Edge'
+[02:39:08] [INFO] Search 'meatloaf' (3/4) in window 'meatloaf - Search - Personal 5 - Microsoft​ Edge'
+[02:39:12] [INFO] Search 'beauty' (4/4) in window 'beauty - Search - Personal 5 - Microsoft​ Edge'
+[02:39:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:39:14] [INFO] Search Automation Complete!
+[02:39:49] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:39:49] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:44:48 ---
+[02:44:48] [INFO] Application starting up.
+[02:44:48] [INFO] Loading 25 profiles from data.json.
+[02:44:48] [INFO] Successfully loaded 25 profiles.
+[02:44:49] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:44:55] [INFO] Range 0-4 selected.
+[02:45:06] [INFO] Search Automation started...
+[02:45:06] [INFO] Processing Search Batch 1...
+[02:45:06] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:45:17] [INFO] Search 'overconfident' (1/3) in window 'overconfident - Search - Personal 3 - Microsoft​ Edge'
+[02:45:23] [INFO] Search 'hurricane' (1/3) in window 'hurricane - Search - Personal 4 - Microsoft​ Edge'
+[02:45:27] [INFO] Search 'ton' (1/3) in window 'ton - Search - Personal 2 - Microsoft​ Edge'
+[02:45:31] [INFO] Search 'flax' (1/3) in window 'flax - Search - Personal - Microsoft​ Edge'
+[02:45:35] [INFO] Search 'cleat' (1/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:45:39] [INFO] Search 'grate' (2/3) in window 'grate - Search - Personal 3 - Microsoft​ Edge'
+[02:45:44] [INFO] Search 'appetite' (2/3) in window 'appetite - Search - Personal 4 - Microsoft​ Edge'
+[02:45:48] [INFO] Search 'egghead' (2/3) in window 'egghead - Search - Personal 2 - Microsoft​ Edge'
+[02:45:53] [INFO] Search 'mantle' (2/3) in window 'mantle - Search - Personal - Microsoft​ Edge'
+[02:45:57] [INFO] Search 'buy' (2/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:46:01] [INFO] Stop signal sent. Finishing current action...
+[02:46:01] [INFO] Search 'croissant' (3/3) in window 'croissant - Search - Personal 3 - Microsoft​ Edge'
+[02:46:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:46:04] [INFO] Search Automation Stopped by User.
+[02:46:08] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:46:08] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:49:48 ---
+[02:49:48] [INFO] Application starting up.
+[02:49:48] [INFO] Loading 25 profiles from data.json.
+[02:49:48] [INFO] Successfully loaded 25 profiles.
+[02:49:48] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:49:53] [INFO] Range 0-4 selected.
+[02:50:00] [INFO] Search Automation started...
+[02:50:00] [INFO] Processing Search Batch 1...
+[02:50:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:50:10] [INFO] Search 'cereal' (1/3) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[02:50:14] [INFO] Search 'crew' (1/3) in window 'crew - Search - Personal 3 - Microsoft​ Edge'
+[02:50:18] [INFO] Search 'loaf' (1/3) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[02:50:22] [INFO] Search 'lunch' (1/3) in window 'lunch - Search - Personal - Microsoft​ Edge'
+[02:50:27] [INFO] Search 'pregnancy' (1/3) in window 'Google Gemini and 1 more page - Personal - Microsoft​ Edge'
+[02:50:31] [INFO] Search 'humor' (2/3) in window 'humor - Search - Personal 4 - Microsoft​ Edge'
+[02:50:33] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:50:34] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:53:16 ---
+[02:53:16] [INFO] Application starting up.
+[02:53:16] [INFO] Loading 25 profiles from data.json.
+[02:53:16] [INFO] Successfully loaded 25 profiles.
+[02:53:17] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:53:21] [INFO] Range 0-4 selected.
+[02:53:28] [INFO] Search Automation started...
+[02:53:28] [INFO] Processing Search Batch 1...
+[02:53:28] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:53:38] [INFO] Search 'shoemaker' (1/3) in window 'shoemaker - Search - Personal 4 - Microsoft​ Edge'
+[02:53:43] [INFO] Search 'cloves' (1/3) in window 'cloves - Search - Personal 3 - Microsoft​ Edge'
+[02:53:48] [INFO] Search 'licence' (1/3) in window 'licence - Search - Personal 2 - Microsoft​ Edge'
+[02:53:53] [INFO] Search 'unaccountable' (1/3) in window 'unaccountable - Search - Personal - Microsoft​ Edge'
+[02:53:59] [INFO] Search 'restriction' (1/3) in window 'restriction - Search - Personal - Microsoft​ Edge'
+[02:54:03] [INFO] Search 'patrimony' (2/3) in window 'patrimony - Search - Personal 4 - Microsoft​ Edge'
+[02:54:08] [INFO] Search 'barracks' (2/3) in window 'barracks - Search - Personal 3 - Microsoft​ Edge'
+[02:54:14] [INFO] Search 'breastplate' (2/3) in window 'breastplate - Search - Personal 2 - Microsoft​ Edge'
+[02:54:19] [INFO] Search 'principle' (2/3) in window 'principle - Search - Personal - Microsoft​ Edge'
+[02:54:23] [INFO] Search 'recess' (2/3) in window 'recess - Search - Personal - Microsoft​ Edge'
+[02:54:28] [INFO] Search 'cursor' (3/3) in window 'cursor - Search - Personal 4 - Microsoft​ Edge'
+[02:54:32] [INFO] Search 'mansion' (3/3) in window 'mansion - Search - Personal 3 - Microsoft​ Edge'
+[02:54:36] [INFO] Search 'timber' (3/3) in window 'timber - Search - Personal 2 - Microsoft​ Edge'
+[02:54:41] [INFO] Search 'lymphocyte' (3/3) in window 'lymphocytes - Search - Personal - Microsoft​ Edge'
+[02:54:46] [INFO] Search 'pomegranate' (3/3) in window 'pomegranate - Search - Personal - Microsoft​ Edge'
+[02:54:48] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:54:49] [INFO] Processing Search Batch 2...
+[02:54:49] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:54:58] [INFO] Search 'remark' (1/3) in window 'remark - Search - Personal 5 - Microsoft​ Edge'
+[02:55:03] [INFO] Search 'polyester' (2/3) in window 'polyester - Search - Personal 5 - Microsoft​ Edge'
+[02:55:08] [INFO] Search 'multiply' (3/3) in window 'multiply - Search - Personal 5 - Microsoft​ Edge'
+[02:55:10] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:55:10] [INFO] Search Automation Complete!
+[02:55:11] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:55:12] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 02:59:02 ---
+[02:59:02] [INFO] Application starting up.
+[02:59:02] [INFO] Loading 25 profiles from data.json.
+[02:59:02] [INFO] Successfully loaded 25 profiles.
+[02:59:03] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[02:59:08] [INFO] Range 0-4 selected.
+[02:59:18] [INFO] Search Automation started...
+[02:59:18] [INFO] Processing Search Batch 1...
+[02:59:18] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[02:59:29] [INFO] Search 'pence' (1/3) in window 'pence - Search - Personal 4 - Microsoft​ Edge'
+[02:59:35] [INFO] Search 'watchful' (1/3) in window 'tchful - Search - Personal 3 - Microsoft​ Edge'
+[02:59:40] [INFO] Search 'place' (1/3) in window 'place - Search - Personal 2 - Microsoft​ Edge'
+[02:59:45] [INFO] Search 'raccoon' (1/3) in window 'raccoon - Search - Personal - Microsoft​ Edge'
+[02:59:45] [WARN] Could not perform search. Window '' may have been closed.
+[02:59:50] [INFO] Search 'infarction' (2/3) in window 'infarction - Search - Personal 4 - Microsoft​ Edge'
+[02:59:55] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:59:56] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[02:59:56] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 03:05:04 ---
+[03:05:04] [INFO] Application starting up.
+[03:05:04] [INFO] Loading 25 profiles from data.json.
+[03:05:04] [INFO] Successfully loaded 25 profiles.
+[03:05:05] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[03:05:09] [INFO] Range 0-4 selected.
+[03:05:21] [INFO] Search Automation started...
+[03:05:21] [INFO] Processing Search Batch 1...
+[03:05:21] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[03:05:30] [INFO] Search 'sherbet' (1/3) in window 'sherbet - Search - Personal 4 - Microsoft​ Edge'
+[03:05:36] [INFO] Search 'probation' (1/3) in window 'probation - Search - Personal 3 - Microsoft​ Edge'
+[03:05:41] [INFO] Search 'logistics' (1/3) in window 'logistics - Search - Personal 2 - Microsoft​ Edge'
+[03:05:46] [INFO] Search 'pathology' (1/3) in window 'pathology - Search - Personal - Microsoft​ Edge'
+[03:05:50] [INFO] Search 'sari' (1/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:05:54] [INFO] Search 'wing' (2/3) in window 'wing - Search - Personal 4 - Microsoft​ Edge'
+[03:05:58] [INFO] Search 'statistic' (2/3) in window 'statistics - Search - Personal 3 - Microsoft​ Edge'
+[03:06:02] [INFO] Search 'refusal' (2/3) in window 'refusal - Search - Personal 2 - Microsoft​ Edge'
+[03:06:08] [INFO] Search 'afternoon' (2/3) in window 'afternoon - Search - Personal - Microsoft​ Edge'
+[03:06:13] [INFO] Search 'distinct' (2/3) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:06:14] [INFO] Stop signal sent. Finishing current action...
+[03:06:16] [INFO] Search 'gray' (3/3) in window 'wing - Search - Personal 4 - Microsoft​ Edge'
+[03:06:19] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:06:19] [INFO] Search Automation Stopped by User.
+[03:06:21] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[03:06:21] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 03:09:50 ---
+
+--- Log Session Started: 2025-07-25 03:10:03 ---
+[03:10:03] [INFO] Application starting up.
+[03:10:03] [INFO] Loading 25 profiles from data.json.
+[03:10:03] [INFO] Successfully loaded 25 profiles.
+[03:10:04] [SYSTEM] Tasks scheduled to run daily at 02:10.
+[03:10:08] [INFO] Range 0-4 selected.
+[03:10:16] [INFO] Search Automation started...
+[03:10:16] [INFO] Processing Search Batch 1...
+[03:10:16] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[03:10:26] [INFO] Search 'vengeance' (1/3) in window 'vengeance - Search - Personal 4 - Microsoft​ Edge'
+[03:10:31] [INFO] Search 'pigpen' (1/3) in window 'pigpen cipher - Search - Personal 3 - Microsoft​ Edge'
+[03:10:36] [INFO] Search 'mean' (1/3) in window 'meaning - Search - Personal 2 - Microsoft​ Edge'
+[03:10:42] [INFO] Search 'territory' (1/3) in window 'territory - Search - Personal - Microsoft​ Edge'
+[03:10:46] [INFO] Search 'flee' (2/3) in window 'flee - Search - Personal 4 - Microsoft​ Edge'
+[03:10:51] [INFO] Search 'sidestream' (2/3) in window 'sidestream - Search - Personal 3 - Microsoft​ Edge'
+[03:10:56] [INFO] Search 'decorous' (2/3) in window 'decorous - Search - Personal 2 - Microsoft​ Edge'
+[03:11:01] [INFO] Search 'pinecone' (2/3) in window 'pinecone - Search - Personal - Microsoft​ Edge'
+[03:11:05] [INFO] Search 'schema' (3/3) in window 'schema - Search - Personal 4 - Microsoft​ Edge'
+[03:11:09] [INFO] Search 'eyebrows' (3/3) in window 'eyebrows - Search - Personal 3 - Microsoft​ Edge'
+[03:11:13] [INFO] Search 'squeak' (3/3) in window 'squeak - Search - Personal 2 - Microsoft​ Edge'
+[03:11:17] [INFO] Search 'decrease' (3/3) in window 'decrease image size - Search - Personal - Microsoft​ Edge'
+[03:11:19] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:11:19] [INFO] Processing Search Batch 2...
+[03:11:19] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[03:11:28] [INFO] Search 'headline' (1/3) in window 'headline - Search - Personal 5 - Microsoft​ Edge'
+[03:11:33] [INFO] Search 'logistics' (2/3) in window 'logistics - Search - Personal 5 - Microsoft​ Edge'
+[03:11:37] [INFO] Search 'bombing' (3/3) in window 'bombing - Search - Personal 5 - Microsoft​ Edge'
+[03:11:39] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:11:39] [INFO] Search Automation Complete!
+[03:11:49] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '02:10'}
+[03:11:49] [INFO] Application has been closed.

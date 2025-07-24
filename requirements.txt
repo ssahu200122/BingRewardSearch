@@ -1,0 +1,8 @@
+customtkinter
+pyautogui
+pygetwindow
+wonderwords
+Pillow
+selenium
+webdriver-manager
+schedule
