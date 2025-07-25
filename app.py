@@ -205,6 +205,7 @@ class BingAutomatorApp(customtkinter.CTk):
     def _automation_worker(self, profiles_to_run: List[EdgeProfile], stop_event: threading.Event):
         try:
             self.selenium_lock.acquire()
+            todays_progress_history = self.automation_service.load_todays_progress_from_history()
             batch_size = self.batch_slider.get()
             pc_searches_target = self.pc_slider.get() // 3
             num_profiles = len(profiles_to_run)
@@ -229,7 +230,6 @@ class BingAutomatorApp(customtkinter.CTk):
 
                 def create_progress_updater(searches_done_before_this_run, total_searches_in_run):
                     def update_progress_bars(searches_done_this_run, total_searches_this_run_param):
-                        # **FIX**: Use the correct variable name from the inner function's scope
                         self.batch_progress_bar.set(searches_done_this_run / total_searches_this_run_param)
                         self.batch_progress_label.configure(text=f"{searches_done_this_run * 3} / {total_searches_this_run_param * 3} Points")
                         
@@ -264,12 +264,27 @@ class BingAutomatorApp(customtkinter.CTk):
                     for profile in profiles_to_verify:
                         if stop_event.is_set(): break
                         widget = self.profile_widget_map.get(profile)
-                        if widget: self.after(0, widget.update_points, "Fetching...")
-                        
-                        progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
+                        progress_str = None
+
+                        # Check cache first to see if we can skip fetching
+                        cached_progress = todays_progress_history.get(profile.email)
+                        if cached_progress:
+                            try:
+                                earned, max_pts = map(int, re.findall(r'\d+', cached_progress))
+                                if earned >= max_pts:
+                                    self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
+                                    progress_str = cached_progress # Use the cached value
+                                    if widget: self.after(0, widget.update_points, progress_str)
+                            except (ValueError, IndexError):
+                                pass # Invalid format, proceed to fetch live
+
+                        # If progress wasn't completed in cache, fetch it now
+                        if progress_str is None:
+                            if widget: self.after(0, widget.update_points, "Fetching...")
+                            progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
+                            if widget: self.after(0, widget.update_points, progress_str)
+
                         batch_progress_data[profile] = progress_str
-                        
-                        if widget: self.after(0, widget.update_points, progress_str)
 
                         if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
                             try:
@@ -312,6 +327,8 @@ class BingAutomatorApp(customtkinter.CTk):
                     for profile, progress_str in batch_progress_data.items():
                         if progress_str and "Error" not in progress_str and "N/A" not in progress_str:
                             self.automation_service.save_progress_to_history(profile, progress_str)
+                            todays_progress_history[profile.email] = progress_str
+
 
             if stop_event.is_set():
                 self._update_status("Search Automation Stopped by User.")
