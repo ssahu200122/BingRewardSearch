@@ -1653,3 +1653,949 @@ Stacktrace:
 [23:15:24] [INFO] Progress fetching complete.
 [23:15:27] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
 [23:15:27] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:20:29 ---
+
+--- Log Session Started: 2025-07-25 23:20:41 ---
+[23:20:41] [INFO] Application starting up.
+[23:20:41] [INFO] Loading 26 profiles from data.json.
+[23:20:41] [INFO] Successfully loaded 26 profiles.
+[23:20:42] [INFO] Loaded 15 progress records from today's history.
+[23:20:42] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:20:57] [INFO] Fetching progress sequentially...
+[23:20:57] [DEBUG] Headless mode enabled for this Selenium session.
+[23:21:00] [ERROR] Failed to set up Selenium driver for Personal 18: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:21:00] [DEBUG] Headless mode enabled for this Selenium session.
+[23:21:03] [ERROR] Failed to set up Selenium driver for Personal 19: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:21:03] [INFO] Progress fetching complete.
+[23:21:27] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:21:27] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:25:32 ---
+[23:25:32] [INFO] Application starting up.
+[23:25:32] [INFO] Loading 26 profiles from data.json.
+[23:25:32] [INFO] Successfully loaded 26 profiles.
+[23:25:33] [INFO] Loaded 15 progress records from today's history.
+[23:25:33] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:25:43] [INFO] Fetching progress sequentially...
+[23:25:43] [DEBUG] Headless mode enabled for this Selenium session.
+[23:25:46] [ERROR] Failed to set up Selenium driver for Personal 18: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:25:46] [DEBUG] Headless mode enabled for this Selenium session.
+[23:25:49] [ERROR] Failed to set up Selenium driver for Personal 19: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:25:49] [INFO] Progress fetching complete.
+[23:25:51] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:25:51] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:26:03 ---
+[23:26:03] [INFO] Application starting up.
+[23:26:03] [INFO] Loading 26 profiles from data.json.
+[23:26:03] [INFO] Successfully loaded 26 profiles.
+[23:26:04] [INFO] Loaded 15 progress records from today's history.
+[23:26:04] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:26:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:26:14] [INFO] Fetching progress sequentially...
+[23:26:14] [DEBUG] Headless mode enabled for this Selenium session.
+[23:26:39] [WARN] Could not find daily search progress for Personal 18.
+[23:26:42] [DEBUG] Headless mode enabled for this Selenium session.
+[23:26:53] [INFO] Progress fetching complete.
+[23:26:58] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:26:58] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:31:10 ---
+[23:31:10] [INFO] Application starting up.
+[23:31:10] [INFO] Loading 26 profiles from data.json.
+[23:31:10] [INFO] Successfully loaded 26 profiles.
+[23:31:11] [INFO] Loaded 16 progress records from today's history.
+[23:31:11] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:31:19] [INFO] Fetching progress sequentially...
+[23:31:19] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:22] [ERROR] Failed to set up Selenium driver for Personal 5: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:31:22] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:24] [ERROR] Failed to set up Selenium driver for Personal 6: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:31:24] [INFO] Progress fetching complete.
+[23:31:32] [INFO] Fetching progress sequentially...
+[23:31:32] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:35] [ERROR] Failed to set up Selenium driver for Personal 5: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:31:35] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:39] [ERROR] Failed to set up Selenium driver for Personal 6: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:31:39] [INFO] Progress fetching complete.
+[23:31:41] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:31:41] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:33:02 ---
+[23:33:02] [INFO] Application starting up.
+[23:33:02] [INFO] Loading 26 profiles from data.json.
+[23:33:02] [INFO] Successfully loaded 26 profiles.
+[23:33:03] [INFO] Loaded 16 progress records from today's history.
+[23:33:03] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:33:09] [INFO] Fetching progress sequentially...
+[23:33:09] [DEBUG] Headless mode enabled for this Selenium session.
+[23:33:12] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:33:12] [DEBUG] Headless mode enabled for this Selenium session.
+[23:33:15] [ERROR] Failed to set up Selenium driver for Personal 4: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:33:15] [INFO] Progress fetching complete.
+[23:33:32] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:33:32] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:34:13 ---
+[23:34:13] [INFO] Application starting up.
+[23:34:13] [INFO] Loading 26 profiles from data.json.
+[23:34:13] [INFO] Successfully loaded 26 profiles.
+[23:34:15] [INFO] Loaded 16 progress records from today's history.
+[23:34:15] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:34:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:34:24] [INFO] Fetching progress sequentially...
+[23:34:24] [DEBUG] Headless mode enabled for this Selenium session.
+[23:34:34] [DEBUG] Headless mode enabled for this Selenium session.
+[23:34:43] [INFO] Progress fetching complete.
+[23:34:47] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:34:47] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:36:17 ---
+[23:36:17] [INFO] Application starting up.
+[23:36:17] [INFO] Loading 26 profiles from data.json.
+[23:36:17] [INFO] Successfully loaded 26 profiles.
+[23:36:18] [INFO] Loaded 16 progress records from today's history.
+[23:36:18] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:36:23] [INFO] Fetching progress sequentially...
+[23:36:23] [DEBUG] Headless mode enabled for this Selenium session.
+[23:36:26] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:36:26] [INFO] Progress fetching complete.
+[23:36:30] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:36:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:38:10 ---
+[23:38:10] [INFO] Application starting up.
+[23:38:10] [INFO] Loading 26 profiles from data.json.
+[23:38:10] [INFO] Successfully loaded 26 profiles.
+[23:38:11] [INFO] Loaded 16 progress records from today's history.
+[23:38:11] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:38:17] [INFO] Fetching progress sequentially...
+[23:38:17] [DEBUG] Headless mode enabled for this Selenium session.
+[23:38:20] [ERROR] Failed to set up Selenium driver for Personal 2: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:38:20] [DEBUG] Headless mode enabled for this Selenium session.
+[23:38:23] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:38:23] [INFO] Progress fetching complete.
+[23:38:23] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:38:24] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:39:43 ---
+[23:39:43] [INFO] Application starting up.
+[23:39:43] [INFO] Loading 26 profiles from data.json.
+[23:39:43] [INFO] Successfully loaded 26 profiles.
+[23:39:44] [INFO] Loaded 16 progress records from today's history.
+[23:39:44] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:39:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:39:53] [INFO] Fetching progress sequentially...
+[23:39:53] [DEBUG] Headless mode enabled for this Selenium session.
+[23:40:03] [DEBUG] Headless mode enabled for this Selenium session.
+[23:40:11] [INFO] Progress fetching complete.
+[23:40:13] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:40:13] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:43:15 ---
+[23:43:15] [INFO] Application starting up.
+[23:43:15] [INFO] Loading 26 profiles from data.json.
+[23:43:15] [INFO] Successfully loaded 26 profiles.
+[23:43:16] [INFO] Loaded 16 progress records from today's history.
+[23:43:16] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:43:21] [INFO] Fetching progress sequentially...
+[23:43:21] [DEBUG] Headless mode enabled for this Selenium session.
+[23:43:24] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:43:24] [INFO] Progress fetching complete.
+[23:43:26] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:43:26] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:46:39 ---
+[23:46:39] [INFO] Application starting up.
+[23:46:39] [INFO] Loading 26 profiles from data.json.
+[23:46:39] [INFO] Successfully loaded 26 profiles.
+[23:46:40] [INFO] Loaded 16 progress records from today's history.
+[23:46:40] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:46:53] [INFO] Fetching progress sequentially...
+[23:46:53] [DEBUG] Headless mode enabled for this Selenium session.
+[23:46:55] [ERROR] Failed to set up Selenium driver for Personal 2: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:46:55] [DEBUG] Headless mode enabled for this Selenium session.
+[23:46:59] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:46:59] [INFO] Progress fetching complete.
+[23:47:03] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:47:04] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:49:33 ---
+[23:49:33] [INFO] Application starting up.
+[23:49:33] [INFO] Loading 26 profiles from data.json.
+[23:49:33] [INFO] Successfully loaded 26 profiles.
+[23:49:34] [INFO] Loaded 16 progress records from today's history.
+[23:49:34] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:49:41] [INFO] Fetching progress sequentially...
+[23:49:41] [DEBUG] Headless mode enabled for this Selenium session.
+[23:49:44] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:49:44] [DEBUG] Headless mode enabled for this Selenium session.
+[23:49:47] [ERROR] Failed to set up Selenium driver for Personal 4: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:49:47] [INFO] Progress fetching complete.
+[23:49:57] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:49:57] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:51:48 ---
+[23:51:48] [INFO] Application starting up.
+[23:51:48] [INFO] Loading 26 profiles from data.json.
+[23:51:48] [INFO] Successfully loaded 26 profiles.
+[23:51:49] [INFO] Loaded 16 progress records from today's history.
+[23:51:49] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:51:55] [INFO] Fetching progress sequentially...
+[23:51:55] [DEBUG] Headless mode enabled for this Selenium session.
+[23:51:57] [ERROR] Failed to set up Selenium driver for Personal 4: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:51:57] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:00] [ERROR] Failed to set up Selenium driver for Personal 5: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:52:00] [INFO] Progress fetching complete.
+[23:52:01] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:52:02] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:54:49 ---
+[23:54:49] [INFO] Application starting up.
+[23:54:49] [INFO] Loading 26 profiles from data.json.
+[23:54:49] [INFO] Successfully loaded 26 profiles.
+[23:54:51] [INFO] Loaded 16 progress records from today's history.
+[23:54:51] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:54:57] [INFO] Fetching progress sequentially...
+[23:54:57] [DEBUG] Headless mode enabled for this Selenium session.
+[23:55:00] [ERROR] Failed to set up Selenium driver for Personal 3: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:55:00] [DEBUG] Headless mode enabled for this Selenium session.
+[23:55:02] [ERROR] Failed to set up Selenium driver for Personal 4: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e2c38c85+23461]
+	(No symbol) [0x0x7ff7e2b8cd70]
+	GetHandleVerifier [0x0x7ff7e2eb0bb8+2611928]
+	(No symbol) [0x0x7ff7e2994f83]
+	(No symbol) [0x0x7ff7e2991045]
+	(No symbol) [0x0x7ff7e29d5a92]
+	(No symbol) [0x0x7ff7e29ca423]
+	(No symbol) [0x0x7ff7e299ea86]
+	(No symbol) [0x0x7ff7e299dd11]
+	(No symbol) [0x0x7ff7e299e8b3]
+	(No symbol) [0x0x7ff7e2a9e6fd]
+	(No symbol) [0x0x7ff7e2aaba88]
+	GetHandleVerifier [0x0x7ff7e2d18acb+940523]
+	GetHandleVerifier [0x0x7ff7e2d21821+976705]
+	(No symbol) [0x0x7ff7e2b9a961]
+	(No symbol) [0x0x7ff7e2b93344]
+	(No symbol) [0x0x7ff7e2b93493]
+	(No symbol) [0x0x7ff7e2b84f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[23:55:02] [INFO] Progress fetching complete.
+[23:55:04] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[23:55:04] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-25 23:57:20 ---
+[23:57:20] [INFO] Application starting up.
+[23:57:20] [INFO] Loading 26 profiles from data.json.
+[23:57:20] [INFO] Successfully loaded 26 profiles.
+[23:57:21] [INFO] Loaded 16 progress records from today's history.
+[23:57:21] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[23:57:25] [INFO] Fetching progress sequentially...
+[23:57:25] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:57:26] [DEBUG] Headless mode enabled for this Selenium session.
+[23:57:36] [INFO] Progress fetching complete.
+[23:57:46] [INFO] Fetching progress sequentially...
+[23:57:47] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:57:48] [DEBUG] Headless mode enabled for this Selenium session.
+[23:58:10] [WARN] Could not find daily search progress for Personal 12.
+[23:58:13] [INFO] Progress fetching complete.
+[23:59:11] [INFO] Fetching progress sequentially...
+[23:59:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:59:12] [DEBUG] Headless mode enabled for this Selenium session.
+[23:59:24] [INFO] Stop signal sent. Finishing current action...
+[23:59:38] [WARN] Could not find daily search progress for Personal 8.
+[23:59:40] [INFO] Progress fetching stopped by user.
+[23:59:43] [INFO] Smart Search Automation started...
+[23:59:43] [INFO] Processing Batch 1...
+[00:00:15] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[00:00:16] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 00:02:30 ---
+[00:02:30] [INFO] Application starting up.
+[00:02:30] [INFO] Loading 26 profiles from data.json.
+[00:02:30] [INFO] Successfully loaded 26 profiles.
+[00:02:31] [INFO] Loaded 0 progress records from today's history.
+[00:02:31] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[00:02:43] [INFO] Range 0-4 selected.
+[00:02:45] [INFO] Fetching progress sequentially...
+[00:02:45] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:02:46] [DEBUG] Headless mode enabled for this Selenium session.
+[00:02:56] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:04] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:14] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:21] [INFO] Progress fetching complete.
+[00:04:59] [INFO] Smart Search Automation started...
+[00:04:59] [INFO] Processing Batch 1...
+[00:06:24] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:06:24] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[00:06:24] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:38] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:47] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:55] [DEBUG] Headless mode enabled for this Selenium session.
+[00:07:08] [INFO] Batch 1: 4 profiles need more points. Retrying with 20 searches...
+[00:13:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:13:16] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[00:13:16] [DEBUG] Headless mode enabled for this Selenium session.
+[00:13:28] [DEBUG] Headless mode enabled for this Selenium session.
+[00:13:43] [DEBUG] Headless mode enabled for this Selenium session.
+[00:13:55] [DEBUG] Headless mode enabled for this Selenium session.
+[00:14:02] [INFO] Batch 1: 1 profiles need more points. Retrying with 2 searches...
+[00:14:12] [INFO] Stop signal sent. Finishing current action...
+[00:14:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:14:17] [INFO] Search Automation Stopped by User.
+
+--- Log Session Started: 2025-07-26 00:14:39 ---
+[00:14:39] [INFO] Application starting up.
+[00:14:39] [INFO] Loading 26 profiles from data.json.
+[00:14:39] [INFO] Successfully loaded 26 profiles.
+[00:14:40] [INFO] Loaded 4 progress records from today's history.
+[00:14:40] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[00:14:50] [INFO] Range 0-4 selected.
+[00:14:52] [INFO] Fetching progress sequentially...
+[00:14:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:14:53] [DEBUG] Headless mode enabled for this Selenium session.
+[00:15:01] [DEBUG] Headless mode enabled for this Selenium session.
+[00:15:09] [DEBUG] Headless mode enabled for this Selenium session.
+[00:15:18] [DEBUG] Headless mode enabled for this Selenium session.
+[00:15:32] [INFO] Progress fetching complete.
+[00:15:35] [INFO] Manually opening points breakdown for Personal 4
+[00:15:35] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:16:09] [INFO] Manually opening points breakdown for Personal 2
+[00:16:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:16:49] [INFO] Range 4-8 selected.
+[00:16:56] [INFO] Fetching progress sequentially...
+[00:16:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:16:59] [DEBUG] Headless mode enabled for this Selenium session.
+[00:17:08] [DEBUG] Headless mode enabled for this Selenium session.
+[00:17:17] [DEBUG] Headless mode enabled for this Selenium session.
+[00:17:25] [DEBUG] Headless mode enabled for this Selenium session.
+[00:17:50] [WARN] Could not find daily search progress for Personal 8.
+[00:17:52] [INFO] Progress fetching complete.
+[00:18:02] [INFO] Smart Search Automation started...
+[00:18:02] [INFO] Processing Batch 1...
+[00:21:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:21:14] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[00:21:14] [DEBUG] Headless mode enabled for this Selenium session.
+[00:21:23] [DEBUG] Headless mode enabled for this Selenium session.
+[00:21:33] [DEBUG] Headless mode enabled for this Selenium session.
+[00:21:41] [DEBUG] Headless mode enabled for this Selenium session.
+[00:22:06] [WARN] Could not find daily search progress for Personal 8.
+[00:22:08] [INFO] Batch 1: All points collected.
+[00:22:08] [INFO] Search Automation Complete!
+[00:22:43] [INFO] Manually opening points breakdown for Personal 8
+[00:22:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:22:51] [INFO] Manually opening points breakdown for Personal 7
+[00:22:53] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:23:27] [INFO] Range 8-12 selected.
+[00:23:44] [INFO] Smart Search Automation started...
+[00:23:44] [INFO] Processing Batch 1...
+[00:26:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:26:14] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[00:26:14] [DEBUG] Headless mode enabled for this Selenium session.
+[00:26:23] [DEBUG] Headless mode enabled for this Selenium session.
+[00:26:33] [DEBUG] Headless mode enabled for this Selenium session.
+[00:26:56] [WARN] Could not find daily search progress for Personal 11.
+[00:26:59] [DEBUG] Headless mode enabled for this Selenium session.
+[00:27:29] [WARN] Could not find daily search progress for Personal 12.
+[00:27:31] [INFO] Batch 1: All points collected.
+[00:27:31] [INFO] Processing Batch 2...
+[00:29:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:29:52] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[00:29:52] [DEBUG] Headless mode enabled for this Selenium session.
+[00:30:01] [DEBUG] Headless mode enabled for this Selenium session.
+[00:30:15] [DEBUG] Headless mode enabled for this Selenium session.
+[00:30:25] [INFO] Batch 2: 3 profiles need more points. Retrying with 12 searches...
+[00:33:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:33:18] [INFO] Batch 2: Verifying progress (Attempt 2)...
+[00:33:18] [DEBUG] Headless mode enabled for this Selenium session.
+[00:33:32] [DEBUG] Headless mode enabled for this Selenium session.
+[00:33:41] [DEBUG] Headless mode enabled for this Selenium session.
+[00:33:52] [INFO] Batch 2: All points collected.
+[00:33:52] [INFO] Search Automation Complete!
+[00:33:57] [INFO] Manually opening points breakdown for Personal 15
+[00:33:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:34:33] [INFO] Manually opening points breakdown for Personal 13
+[00:34:36] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:35:43] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[00:35:43] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 00:36:34 ---
+[00:36:34] [INFO] Application starting up.
+[00:36:34] [INFO] Loading 26 profiles from data.json.
+[00:36:34] [INFO] Successfully loaded 26 profiles.
+[00:36:35] [INFO] Loaded 7 progress records from today's history.
+[00:36:35] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[00:36:54] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[00:36:54] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 00:40:24 ---
+[00:40:24] [INFO] Application starting up.
+[00:40:24] [INFO] Loading 26 profiles from data.json.
+[00:40:24] [INFO] Successfully loaded 26 profiles.
+[00:40:26] [INFO] Loaded 7 progress records from today's history.
+[00:40:26] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[00:41:02] [INFO] Smart Search Automation started...
+[00:41:02] [INFO] Processing Batch 1...
+[00:42:07] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:42:07] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[00:42:08] [DEBUG] Headless mode enabled for this Selenium session.
+[00:42:28] [DEBUG] Headless mode enabled for this Selenium session.
+[00:42:40] [DEBUG] Headless mode enabled for this Selenium session.
+[00:42:51] [INFO] Batch 1: All points collected.
+[00:42:51] [INFO] Batch 1: Saving final progress to history...
+[00:42:51] [DEBUG] Headless mode enabled for this Selenium session.
+[00:43:01] [DEBUG] Headless mode enabled for this Selenium session.
+[00:43:10] [DEBUG] Headless mode enabled for this Selenium session.
+[00:43:23] [INFO] Search Automation Complete!
+[00:43:30] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[00:43:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 00:43:35 ---
+[00:43:35] [INFO] Application starting up.
+[00:43:35] [INFO] Loading 26 profiles from data.json.
+[00:43:35] [INFO] Successfully loaded 26 profiles.
+[00:43:36] [INFO] Loaded 7 progress records from today's history.
+[00:43:36] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[00:43:44] [INFO] Manually opening points breakdown for Personal 4
+[00:43:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:44:16] [INFO] Fetching progress sequentially...
+[00:44:19] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:44:20] [DEBUG] Headless mode enabled for this Selenium session.
+[00:44:35] [DEBUG] Headless mode enabled for this Selenium session.
+[00:44:44] [DEBUG] Headless mode enabled for this Selenium session.
+[00:44:55] [DEBUG] Headless mode enabled for this Selenium session.
+[00:45:04] [DEBUG] Headless mode enabled for this Selenium session.
+[00:45:13] [DEBUG] Headless mode enabled for this Selenium session.
+[00:45:22] [DEBUG] Headless mode enabled for this Selenium session.
+[00:45:30] [DEBUG] Headless mode enabled for this Selenium session.
+[00:45:55] [WARN] Could not find daily search progress for Personal 8.
+[00:45:58] [DEBUG] Headless mode enabled for this Selenium session.
+[00:46:17] [DEBUG] Headless mode enabled for this Selenium session.
+[00:46:26] [DEBUG] Headless mode enabled for this Selenium session.
+[00:46:51] [WARN] Could not find daily search progress for Personal 11.
+[00:46:54] [DEBUG] Headless mode enabled for this Selenium session.
+[00:47:17] [WARN] Could not find daily search progress for Personal 12.
+[00:47:20] [DEBUG] Headless mode enabled for this Selenium session.
+[00:47:37] [DEBUG] Headless mode enabled for this Selenium session.
+[00:47:46] [DEBUG] Headless mode enabled for this Selenium session.
+[00:48:19] [DEBUG] Headless mode enabled for this Selenium session.
+[00:48:28] [DEBUG] Headless mode enabled for this Selenium session.
+[00:48:38] [DEBUG] Headless mode enabled for this Selenium session.
+[00:49:01] [WARN] Could not find daily search progress for Personal 18.
+[00:49:04] [DEBUG] Headless mode enabled for this Selenium session.
+[00:49:18] [DEBUG] Headless mode enabled for this Selenium session.
+[00:49:59] [DEBUG] Headless mode enabled for this Selenium session.
+[00:50:15] [DEBUG] Headless mode enabled for this Selenium session.
+[00:50:48] [WARN] Could not find daily search progress for Personal 22.
+[00:50:50] [DEBUG] Headless mode enabled for this Selenium session.
+[00:51:01] [DEBUG] Headless mode enabled for this Selenium session.
+[00:51:16] [DEBUG] Headless mode enabled for this Selenium session.
+[00:51:42] [WARN] Could not find daily search progress for Personal 25.
+[00:51:45] [DEBUG] Headless mode enabled for this Selenium session.
+[00:52:22] [INFO] Progress fetching complete.
+[00:52:29] [INFO] Manually opening points breakdown for Personal 8
+[00:52:30] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:52:50] [INFO] Manually opening points breakdown for Personal 8
+[00:52:55] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:53:18] [INFO] Manually opening points breakdown for Personal 11
+[00:53:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:53:40] [INFO] Manually opening points breakdown for Personal 12
+[00:53:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:54:09] [INFO] Manually opening points breakdown for Personal 18
+[00:54:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:54:25] [INFO] Manually opening points breakdown for Personal 22
+[00:54:29] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:54:45] [INFO] Manually opening points breakdown for Personal 25
+[00:54:48] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:55:16] [INFO] Manually opening points breakdown for Personal 24
+[00:55:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:08:26] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[01:08:27] [INFO] Application has been closed.

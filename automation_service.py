@@ -171,7 +171,8 @@ class AutomationService:
                  logger.log(f"Could not find the 'Daily set' container for {profile.name}. Page may have changed.", "ERROR")
             finally:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
-                if driver: driver.quit()
+                if driver: 
+                    driver.quit()
 
     def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Optional[str]:
         if stop_event.is_set(): return None
