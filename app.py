@@ -36,6 +36,8 @@ class BingAutomatorApp(customtkinter.CTk):
         self._create_widgets()
         self._update_all_checkbox_text()
         
+        self._load_and_display_initial_progress()
+        
         self._start_scheduler_thread()
 
     def _load_settings(self) -> dict:
@@ -172,6 +174,16 @@ class BingAutomatorApp(customtkinter.CTk):
         self.status_label = customtkinter.CTkLabel(self, text="Ready", anchor="w")
         self.status_label.grid(row=3, column=0, columnspan=2, padx=10, pady=(0, 5), sticky="ew")
 
+    def _load_and_display_initial_progress(self):
+        todays_progress = self.automation_service.load_todays_progress_from_history()
+        profile_email_map = {p.email: p for p in self.profiles}
+        for email, progress_str in todays_progress.items():
+            profile = profile_email_map.get(email)
+            if profile:
+                widget = self.profile_widget_map.get(profile)
+                if widget:
+                    widget.update_points(progress_str)
+
     def _stop_automation(self):
         if self.stop_event:
             self._update_status("Stop signal sent. Finishing current action...")
@@ -260,7 +272,8 @@ class BingAutomatorApp(customtkinter.CTk):
                 self.overall_progress_label.configure(text=f"{profiles_done} / {total_profiles_to_do} Profiles")
                 self.batch_progress_bar.set(profiles_done / total_profiles_to_do)
 
-            self.automation_service.run_daily_activities(profiles=profiles_to_run, stop_event=stop_event, progress_callback=self._update_status, on_activity_progress=update_daily_set_progress)
+            # Daily sets run visibly for reliability
+            self.automation_service.run_daily_activities(profiles=profiles_to_run, stop_event=stop_event, headless=False, progress_callback=self._update_status, on_activity_progress=update_daily_set_progress)
             
             if stop_event.is_set():
                 self._update_status("Daily Set Automation Stopped by User.")
@@ -300,11 +313,11 @@ class BingAutomatorApp(customtkinter.CTk):
                 if widget:
                     widget.update_points("Fetching...")
 
-                progress = self.automation_service.fetch_daily_search_progress(profile, stop_event)
+                # Fetch progress runs headlessly for speed and convenience
+                progress = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
                 
                 if progress is not None and widget:
                     widget.update_points(progress)
-                    # Save to history only if fetch was successful
                     if "Error" not in progress and "N/A" not in progress:
                         self.automation_service.save_progress_to_history(profile, progress)
                 

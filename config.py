@@ -11,13 +11,13 @@ HISTORY_CSV_PATH = "progress_history.csv" # Path for the new history file
 # The original script used a batch file for restarting. We'll define its expected path.
 # It will check OneDrive desktop first, then local desktop.
 HOME_DIR = os.path.expanduser('~')
-RESTART_BATCH_FILE_ONEDRIVE = os.path.join(HOME_DIR, 'OneDrive', 'Desktop', 'newBing.bat')
-RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'newBing.bat')
+RESTART_BATCH_FILE_ONEDRIVE = os.path.join(HOME_DIR, 'OneDrive', 'Desktop', 'bing.bat')
+RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'bing.bat')
 
 
 # --- Application Settings ---
 APP_TITLE = "Bing Auto Search"
-APP_GEOMETRY = "800x500"
+APP_GEOMETRY = "800x450" # Re-adjusted height after removing headless switch
 
 # --- Automation Settings ---
 # Delays are now ranges (min_seconds, max_seconds) for more human-like behavior.

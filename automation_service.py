@@ -2,7 +2,7 @@
 
 import subprocess
 import time
-from typing import List, Callable, Optional
+from typing import List, Callable, Optional, Dict
 import json
 import os
 import re
@@ -49,17 +49,22 @@ class AutomationService:
         try:
             edge_options = EdgeOptions()
             
-            user_data_dir = r"C:\Users\ssahu\AppData\Local\Microsoft\Edge\User Data"
+            user_data_dir = os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data")
             edge_options.add_argument(f"user-data-dir={user_data_dir}")
             edge_options.add_argument(f"profile-directory={profile.cmd_arg.split('=')[1]}")
             
+            user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0"
+            edge_options.add_argument(f'user-agent={user_agent}')
+            edge_options.add_argument("--disable-blink-features=AutomationControlled")
             edge_options.add_experimental_option("excludeSwitches", ["enable-automation"])
             edge_options.add_experimental_option('useAutomationExtension', False)
+            
             edge_options.add_argument("--no-sandbox")
             edge_options.add_argument("--disable-dev-shm-usage")
             edge_options.add_argument("--disable-gpu")
 
             if headless:
+                logger.log("Headless mode enabled for this Selenium session.", "DEBUG")
                 edge_options.add_argument("--headless")
                 edge_options.add_argument("--window-size=1920,1080")
 
@@ -108,24 +113,22 @@ class AutomationService:
             time.sleep(random.uniform(*config.BATCH_DELAY))
             self.close_all_edge_windows()
 
-    def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None):
+    def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, headless: bool, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None):
         if progress_callback: progress_callback("Starting Daily Activities...")
         total_profiles = len(profiles)
         for i, profile in enumerate(profiles):
             if stop_event.is_set(): return
             if progress_callback: progress_callback(f"Processing activities for {profile.name}...")
             
-            os.system("taskkill /F /IM msedge.exe > nul 2>&1")
-            time.sleep(2)
-
-            driver = self._setup_driver(profile, headless=False)
+            driver = self._setup_driver(profile, headless=headless)
             if not driver:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
                 continue
             try:
                 if stop_event.is_set(): return
                 driver.get("https://rewards.bing.com/")
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "daily-sets")))
+                wait = WebDriverWait(driver, 15)
+                wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Daily set')]")))
                 activity_elements = driver.find_elements(By.XPATH, "//*[@data-task-id and .//*[contains(@class, 'points-text')]]")
                 if not activity_elements:
                     if progress_callback: progress_callback(f"No activities found for {profile.name}. Might be complete.")
@@ -164,17 +167,16 @@ class AutomationService:
                         logger.log(f"Error with activity {index} for {profile.name}: {e}", "WARN")
                         if len(driver.window_handles) > 1:
                             driver.switch_to.window(main_window_handle)
+            except TimeoutException:
+                 logger.log(f"Could not find the 'Daily set' container for {profile.name}. Page may have changed.", "ERROR")
             finally:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
                 if driver: driver.quit()
 
-    def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event) -> Optional[str]:
+    def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Optional[str]:
         if stop_event.is_set(): return None
         
-        os.system("taskkill /F /IM msedge.exe > nul 2>&1")
-        time.sleep(2)
-
-        driver = self._setup_driver(profile, headless=True)
+        driver = self._setup_driver(profile, headless=headless)
         if not driver:
             return "Error"
 
@@ -221,22 +223,17 @@ class AutomationService:
 
     # --- History Methods ---
     def save_progress_to_history(self, profile: EdgeProfile, progress_str: str):
-        """Appends a new record to the progress_history.csv file."""
         file_exists = os.path.isfile(config.HISTORY_CSV_PATH)
         try:
             with open(config.HISTORY_CSV_PATH, 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
-                # Write header if the file is new
                 if not file_exists:
                     writer.writerow(["Date", "ProfileName", "Email", "Progress"])
-                
-                # Write the data row
                 writer.writerow([date.today().isoformat(), profile.name, profile.email, progress_str])
         except Exception as e:
             logger.log(f"Failed to write to history file: {e}", "ERROR")
 
     def open_history_file(self) -> bool:
-        """Opens the history CSV file with the default system program."""
         if os.path.exists(config.HISTORY_CSV_PATH):
             try:
                 os.startfile(config.HISTORY_CSV_PATH)
@@ -247,6 +244,25 @@ class AutomationService:
         else:
             logger.log(f"History file not found at {config.HISTORY_CSV_PATH}", "WARN")
             return False
+
+    def load_todays_progress_from_history(self) -> Dict[str, str]:
+        todays_progress = {}
+        today_str = date.today().isoformat()
+        if not os.path.exists(config.HISTORY_CSV_PATH):
+            return todays_progress
+        try:
+            with open(config.HISTORY_CSV_PATH, 'r', newline='', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    if row.get("Date") == today_str:
+                        email = row.get("Email")
+                        progress = row.get("Progress")
+                        if email and progress:
+                            todays_progress[email] = progress
+            logger.log(f"Loaded {len(todays_progress)} progress records from today's history.", "INFO")
+        except Exception as e:
+            logger.log(f"Failed to read history file: {e}", "ERROR")
+        return todays_progress
 
     # --- PyAutoGUI Helper Methods ---
     def _pyautogui_open_profiles(self, profiles: List[EdgeProfile]):
