@@ -9,7 +9,7 @@ import json
 import time
 import schedule
 import re
-from typing import List, Set
+from typing import List, Set, Dict
 
 from edge_profile import EdgeProfile
 from automation_service import AutomationService
@@ -28,10 +28,9 @@ class BingAutomatorApp(customtkinter.CTk):
         self.profiles = profiles
         self.automation_service = automation_service
         self.selected_profiles: Set[EdgeProfile] = set(self.profiles)
-        self.profile_widgets: List[ProfileRow] = []
-        self.check_flag = len(self.selected_profiles)
+        self.profile_widget_map: Dict[EdgeProfile, ProfileRow] = {}
         self.settings = self._load_settings()
-        self.stop_event = None # This will hold the threading.Event object
+        self.stop_event = None
 
         self._configure_window()
         self._create_widgets()
@@ -94,20 +93,23 @@ class BingAutomatorApp(customtkinter.CTk):
         for profile in self.profiles:
             profile_widget = ProfileRow(self.scrollable_frame, profile, self._on_profile_select, self._on_profile_label_click)
             profile_widget.pack(fill="x", expand=True, padx=5, pady=2)
-            self.profile_widgets.append(profile_widget)
+            self.profile_widget_map[profile] = profile_widget
 
         # --- Right Frame ---
-        controls_frame = customtkinter.CTkFrame(self)
+        controls_frame = customtkinter.CTkScrollableFrame(self)
         controls_frame.grid(row=0, column=1, padx=(0, 10), pady=10, sticky="nsew")
         controls_frame.grid_columnconfigure(0, weight=1)
 
         self.batch_slider = LabeledSlider(controls_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu)
-        self.pc_slider = LabeledSlider(controls_frame, "PC Searches (x3 points):", 0, 34, 1, 34)
+        self.pc_slider = LabeledSlider(controls_frame, "PC Searches (x3 points):", 0, 75, 3, 39)
         self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
         self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
 
         self.daily_sets_button = customtkinter.CTkButton(controls_frame, text="Run Daily Sets", command=self._start_daily_sets_thread, fg_color="#FF8C00", hover_color="#FFA500")
         self.daily_sets_button.pack(fill="x", padx=10, pady=(10, 10))
+        
+        self.fetch_progress_button = customtkinter.CTkButton(controls_frame, text="Fetch Progress", command=self._start_fetch_progress_thread, fg_color="teal")
+        self.fetch_progress_button.pack(fill="x", padx=10, pady=(0, 10))
 
         scheduler_frame = customtkinter.CTkFrame(controls_frame)
         scheduler_frame.pack(fill="x", padx=10, pady=10)
@@ -141,15 +143,10 @@ class BingAutomatorApp(customtkinter.CTk):
         self.optionmenu = customtkinter.CTkOptionMenu(action_frame, variable=self.optionmenu_var, command=self._optionmenu_callback)
         self.optionmenu.grid(row=0, column=1, padx=5, pady=5)
         self._update_option_menu()
-        self.check_check_var = customtkinter.StringVar(value="off")
-        checkcheckbox = customtkinter.CTkCheckBox(action_frame, text="", variable=self.check_check_var, onvalue="on", offvalue="off", command=self._chech_checkbox_event, width=10)
-        checkcheckbox.grid(row=0, column=2, padx=5, pady=5)
-        self.check_button = customtkinter.CTkButton(action_frame, text="Check", fg_color="grey", command=self._check_button_callback)
-        self.check_button.grid(row=0, column=3, padx=5, pady=5)
         self.close_button = customtkinter.CTkButton(action_frame, text="Close Edge", command=self.automation_service.close_all_edge_windows, fg_color="green")
-        self.close_button.grid(row=0, column=4, padx=5, pady=5)
+        self.close_button.grid(row=0, column=2, padx=5, pady=5)
         self.start_button = customtkinter.CTkButton(action_frame, text="Start Searches", command=self._start_automation_thread)
-        self.start_button.grid(row=0, column=5, padx=5, pady=5)
+        self.start_button.grid(row=0, column=3, padx=5, pady=5)
         
         # --- Progress and Status Frame ---
         progress_frame = customtkinter.CTkFrame(self, fg_color="transparent")
@@ -181,11 +178,13 @@ class BingAutomatorApp(customtkinter.CTk):
             self.stop_event.set()
             self.start_button.configure(state="disabled")
             self.daily_sets_button.configure(state="disabled")
+            self.fetch_progress_button.configure(state="disabled")
 
     def _start_automation_thread(self):
         self.stop_event = threading.Event()
         self.start_button.configure(text="Stop", command=self._stop_automation, fg_color="red", hover_color="#C40000")
         self.daily_sets_button.configure(state="disabled")
+        self.fetch_progress_button.configure(state="disabled")
         profiles_to_run = [p for p in self.profiles if p in self.selected_profiles]
         thread = threading.Thread(target=self._automation_worker, args=(profiles_to_run, self.stop_event), daemon=True)
         thread.start()
@@ -195,7 +194,6 @@ class BingAutomatorApp(customtkinter.CTk):
             batch_size = self.batch_slider.get()
             pc_searches = self.pc_slider.get() // 3
             num_profiles = len(profiles_to_run)
-            
             total_possible_searches = num_profiles * pc_searches
             if total_possible_searches == 0:
                  self._update_status("No searches to perform.")
@@ -206,7 +204,6 @@ class BingAutomatorApp(customtkinter.CTk):
             self._update_status("Search Automation started...")
             
             searches_completed_in_previous_batches = 0
-
             for i in range(0, num_profiles, batch_size):
                 if stop_event.is_set(): break
                 
@@ -219,22 +216,13 @@ class BingAutomatorApp(customtkinter.CTk):
                 self._update_status(f"Processing Search Batch {batch_num}...")
 
                 def update_progress_bars(batch_searches_done, total_batch_searches_param):
-                    # Update batch progress (specific to this batch)
                     self.batch_progress_bar.set(batch_searches_done / total_batch_searches_param)
                     self.batch_progress_label.configure(text=f"{batch_searches_done * 3} / {total_batch_searches_param * 3} Points")
-                    
-                    # Update overall progress (cumulative)
                     current_overall_searches = searches_completed_in_previous_batches + batch_searches_done
                     self.overall_progress_bar.set(current_overall_searches / total_possible_searches)
                     self.overall_progress_label.configure(text=f"{current_overall_searches * 3} / {total_possible_searches * 3} Points")
 
-                self.automation_service.run_search_session(
-                    profiles=batch, 
-                    pc_searches=pc_searches, 
-                    stop_event=stop_event, 
-                    progress_callback=self._update_status, 
-                    on_search_progress=update_progress_bars
-                )
+                self.automation_service.run_search_session(profiles=batch, pc_searches=pc_searches, stop_event=stop_event, progress_callback=self._update_status, on_search_progress=update_progress_bars)
                 
                 if not stop_event.is_set():
                     searches_completed_in_previous_batches += total_batch_searches
@@ -242,16 +230,18 @@ class BingAutomatorApp(customtkinter.CTk):
             if stop_event.is_set():
                 self._update_status("Search Automation Stopped by User.")
             else:
-                self._update_status(f"{colors.BG_BRIGHT_YELLOW}{colors.BLACK}{colors.BOLD} Search Automation Complete! {colors.RESET}")
+                self._update_status(f"Search Automation Complete!")
         finally:
             self.start_button.configure(text="Start Searches", command=self._start_automation_thread, state="normal", fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], hover_color=customtkinter.ThemeManager.theme["CTkButton"]["hover_color"])
             self.daily_sets_button.configure(state="normal")
+            self.fetch_progress_button.configure(state="normal")
             self.stop_event = None
 
     def _start_daily_sets_thread(self):
         self.stop_event = threading.Event()
         self.start_button.configure(state="disabled")
         self.daily_sets_button.configure(text="Stop", command=self._stop_automation, fg_color="red", hover_color="#C40000")
+        self.fetch_progress_button.configure(state="disabled")
         profiles_to_run = [p for p in self.profiles if p in self.selected_profiles]
         thread = threading.Thread(target=self._daily_sets_worker, args=(profiles_to_run, self.stop_event), daemon=True)
         thread.start()
@@ -260,7 +250,6 @@ class BingAutomatorApp(customtkinter.CTk):
         try:
             self._update_status("Daily Set Automation started...")
             total_profiles = len(profiles_to_run)
-            
             self.overall_progress_label.configure(text=f"0 / {total_profiles} Profiles")
             self.overall_progress_bar.set(0)
             self.batch_progress_label.configure(text="N/A")
@@ -271,12 +260,7 @@ class BingAutomatorApp(customtkinter.CTk):
                 self.overall_progress_label.configure(text=f"{profiles_done} / {total_profiles_to_do} Profiles")
                 self.batch_progress_bar.set(profiles_done / total_profiles_to_do)
 
-            self.automation_service.run_daily_activities(
-                profiles=profiles_to_run, 
-                stop_event=stop_event, 
-                progress_callback=self._update_status, 
-                on_activity_progress=update_daily_set_progress
-            )
+            self.automation_service.run_daily_activities(profiles=profiles_to_run, stop_event=stop_event, progress_callback=self._update_status, on_activity_progress=update_daily_set_progress)
             
             if stop_event.is_set():
                 self._update_status("Daily Set Automation Stopped by User.")
@@ -285,6 +269,53 @@ class BingAutomatorApp(customtkinter.CTk):
         finally:
             self.start_button.configure(state="normal")
             self.daily_sets_button.configure(text="Run Daily Sets", command=self._start_daily_sets_thread, state="normal", fg_color="#FF8C00", hover_color="#FFA500")
+            self.fetch_progress_button.configure(state="normal")
+            self.stop_event = None
+
+    def _start_fetch_progress_thread(self):
+        self.stop_event = threading.Event()
+        self.start_button.configure(state="disabled")
+        self.daily_sets_button.configure(state="disabled")
+        self.fetch_progress_button.configure(text="Stop", command=self._stop_automation, fg_color="red", hover_color="#C40000")
+        profiles_to_run = [p for p in self.profiles if p in self.selected_profiles]
+        thread = threading.Thread(target=self._fetch_progress_worker, args=(profiles_to_run, self.stop_event), daemon=True)
+        thread.start()
+
+    def _fetch_progress_worker(self, profiles_to_run: List[EdgeProfile], stop_event: threading.Event):
+        try:
+            self.automation_service.close_all_edge_windows()
+            time.sleep(1)
+
+            total_profiles = len(profiles_to_run)
+            self._update_status("Fetching progress sequentially...")
+            self.overall_progress_label.configure(text=f"0 / {total_profiles} Profiles")
+            self.overall_progress_bar.set(0)
+            self.batch_progress_label.configure(text="N/A")
+            self.batch_progress_bar.set(0)
+
+            for i, profile in enumerate(profiles_to_run):
+                if stop_event.is_set(): break
+                
+                widget = self.profile_widget_map.get(profile)
+                if widget:
+                    widget.update_points("Fetching...")
+
+                progress = self.automation_service.fetch_daily_search_progress(profile, stop_event)
+                
+                if progress is not None and widget:
+                    widget.update_points(progress)
+                
+                self.overall_progress_bar.set((i + 1) / total_profiles)
+                self.overall_progress_label.configure(text=f"{i + 1} / {total_profiles} Profiles")
+
+            if stop_event.is_set():
+                self._update_status("Progress fetching stopped by user.")
+            else:
+                self._update_status("Progress fetching complete.")
+        finally:
+            self.start_button.configure(state="normal")
+            self.daily_sets_button.configure(state="normal")
+            self.fetch_progress_button.configure(text="Fetch Progress", command=self._start_fetch_progress_thread, state="normal", fg_color="teal")
             self.stop_event = None
 
     # --- Other Methods ---
@@ -332,18 +363,16 @@ class BingAutomatorApp(customtkinter.CTk):
     def _run_scheduled_tasks(self):
         self._update_status(f"Running scheduled tasks for {time.strftime('%Y-%m-%d')}...")
         stop_event = threading.Event()
-        
         def task_runner():
             self._automation_worker(list(self.selected_profiles), stop_event)
             if not stop_event.is_set():
                 self._daily_sets_worker(list(self.selected_profiles), stop_event)
-
         runner_thread = threading.Thread(target=task_runner, daemon=True)
         runner_thread.start()
 
     def _filter_profiles(self, *args):
         search_term = self.search_var.get().lower()
-        for widget in self.profile_widgets:
+        for widget in self.profile_widget_map.values():
             profile_name = widget.profile.full_name.lower()
             if search_term in profile_name:
                 if not widget.winfo_ismapped():
@@ -360,8 +389,9 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_all_checkbox_state()
 
     def _on_profile_label_click(self, profile: EdgeProfile):
-        self._update_status(f"Opening rewards page for {profile.name}...")
-        pass
+        # Create a new thread to avoid freezing the GUI
+        thread = threading.Thread(target=self.automation_service.open_single_profile_to_breakdown, args=(profile,), daemon=True)
+        thread.start()
 
     def _toggle_all_profiles(self):
         is_all_selected = self.all_check_var.get() == "on"
@@ -369,7 +399,7 @@ class BingAutomatorApp(customtkinter.CTk):
             self.selected_profiles = set(self.profiles)
         else:
             self.selected_profiles.clear()
-        for widget in self.profile_widgets:
+        for widget in self.profile_widget_map.values():
             widget.set_checked(is_all_selected)
         self._update_all_checkbox_text()
 
@@ -384,7 +414,7 @@ class BingAutomatorApp(customtkinter.CTk):
         self.all_checkbox.configure(text=f"All ({len(self.selected_profiles)}/{len(self.profiles)})")
 
     def _update_selection_ui(self):
-        for widget in self.profile_widgets:
+        for widget in self.profile_widget_map.values():
             widget.set_checked(widget.profile in self.selected_profiles)
         self._update_all_checkbox_state()
 
@@ -450,7 +480,7 @@ class BingAutomatorApp(customtkinter.CTk):
         pass
 
     def _check_button_callback(self):
-        self._update_status("This feature is disabled in Selenium mode.")
+        self._update_status("This feature is disabled.")
 
     def _update_status(self, message: str):
         self.status_label.configure(text=message)

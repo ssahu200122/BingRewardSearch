@@ -8,22 +8,22 @@ import os
 import re
 import random
 import threading
+import concurrent.futures
 
 # PyAutoGUI Imports for reverted search logic
 import pyautogui
 import pygetwindow as gw
 
-# Selenium Imports (now used only for Daily Activities)
+# Selenium Imports
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
+from selenium.common.exceptions import TimeoutException, WebDriverException
 
-# Webdriver Manager to automatically handle browser drivers
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
+# webdriver-manager is no longer used.
 from wonderwords import RandomWord
 
 from edge_profile import EdgeProfile
@@ -33,53 +33,45 @@ import config
 class AutomationService:
     """
     Handles all browser automation tasks.
-    Uses PyAutoGUI for searches and Selenium for daily activities.
+    Uses PyAutoGUI for searches and Selenium for daily activities and point scraping.
     """
 
     def __init__(self):
         self.random_word_generator = RandomWord()
+        self.active_drivers = [] # List to keep track of manually opened drivers
 
-    # --- PyAutoGUI based methods (Reverted for Search Reliability) ---
-
-    def _pyautogui_open_profiles(self, profiles: List[EdgeProfile]):
-        """Opens profiles using subprocess for PyAutoGUI control."""
-        base_command = ["start", "msedge"]
-        for profile in profiles:
-            subprocess.Popen(base_command + [profile.cmd_arg], shell=True)
-            time.sleep(random.uniform(0.1, 0.4))
-
-    def _pyautogui_get_edge_windows(self) -> List[gw.Win32Window]:
-        """Waits for a random duration before getting Edge windows."""
-        time.sleep(random.uniform(*config.WAIT_FOR_EDGE_LAUNCH))
-        return [win for win in gw.getAllWindows() if "Edge" in win.title]
-
-    def _pyautogui_perform_single_search(self, window: gw.Win32Window):
+    def _setup_driver(self, profile: EdgeProfile, headless: bool = False) -> Optional[webdriver.Edge]:
         """
-        Activates a single Edge window and performs one search by reusing the current tab.
+        Sets up and returns a Selenium WebDriver instance using the manual driver path.
+        Can be configured to run in headless mode.
         """
         try:
-            if not window.isActive:
-                window.activate()
-            time.sleep(random.uniform(*config.ACTION_DELAY))
-            pyautogui.hotkey('ctrl', 'l')
-            time.sleep(random.uniform(0.3, 0.6))
+            edge_options = EdgeOptions()
             
-            search_term = self.random_word_generator.word()
-            for char in search_term:
-                pyautogui.write(char)
-                time.sleep(random.uniform(*config.KEY_PRESS_DELAY))
+            user_data_dir = r"C:\Users\ssahu\AppData\Local\Microsoft\Edge\User Data"
+            edge_options.add_argument(f"user-data-dir={user_data_dir}")
+            edge_options.add_argument(f"profile-directory={profile.cmd_arg.split('=')[1]}")
+            
+            edge_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+            edge_options.add_experimental_option('useAutomationExtension', False)
+            edge_options.add_argument("--no-sandbox")
+            edge_options.add_argument("--disable-dev-shm-usage")
+            edge_options.add_argument("--disable-gpu")
 
-            pyautogui.press('enter')
-            time.sleep(random.uniform(*config.ACTION_DELAY))
-            return search_term
-        except gw.PyGetWindowException:
-            logger.log(f"Could not perform search. Window '{window.title}' may have been closed.", "WARN")
+            if headless:
+                edge_options.add_argument("--headless")
+                edge_options.add_argument("--window-size=1920,1080")
+
+            service = EdgeService(executable_path="msedgedriver.exe")
+            
+            driver = webdriver.Edge(service=service, options=edge_options)
+            return driver
+        except Exception as e:
+            logger.log(f"Failed to set up Selenium driver for {profile.name}: {e}", "ERROR")
             return None
 
+    # --- Search and Daily Set Methods ---
     def run_search_session(self, profiles: List[EdgeProfile], pc_searches: int, stop_event: threading.Event, progress_callback: Optional[Callable[[str], None]] = None, on_search_progress: Optional[Callable[[int, int], None]] = None):
-        """
-        Runs a search session using the reliable PyAutoGUI method.
-        """
         if pc_searches <= 0:
             if progress_callback: progress_callback("PC searches set to 0. Skipping.")
             return
@@ -115,74 +107,44 @@ class AutomationService:
             time.sleep(random.uniform(*config.BATCH_DELAY))
             self.close_all_edge_windows()
 
-
-    # --- Selenium based methods (For Daily Activities) ---
-
-    def _setup_driver(self, profile: EdgeProfile) -> Optional[webdriver.Edge]:
-        """
-        Sets up and returns a Selenium WebDriver instance configured for a specific Edge profile.
-        """
-        try:
-            edge_options = EdgeOptions()
-            edge_options.add_argument(f"user-data-dir={os.path.expandvars(r'%LOCALAPPDATA%\Microsoft\Edge\User Data')}")
-            edge_options.add_argument(f"profile-directory={profile.cmd_arg.split('=')[1]}")
-            edge_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-
-            service = EdgeService(EdgeChromiumDriverManager().install())
-            driver = webdriver.Edge(service=service, options=edge_options)
-            return driver
-        except Exception as e:
-            logger.log(f"Failed to set up Selenium driver for {profile.name}: {e}", "ERROR")
-            return None
-
     def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None):
-        """
-        Attempts to complete the daily set and other activities on the rewards page.
-        """
         if progress_callback: progress_callback("Starting Daily Activities...")
-        
         total_profiles = len(profiles)
         for i, profile in enumerate(profiles):
             if stop_event.is_set(): return
             if progress_callback: progress_callback(f"Processing activities for {profile.name}...")
             
-            driver = self._setup_driver(profile)
+            os.system("taskkill /F /IM msedge.exe > nul 2>&1")
+            time.sleep(2)
+
+            driver = self._setup_driver(profile, headless=False)
             if not driver:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
                 continue
-
             try:
                 if stop_event.is_set(): return
                 driver.get("https://rewards.bing.com/")
                 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "daily-sets")))
-                
                 activity_elements = driver.find_elements(By.XPATH, "//*[@data-task-id and .//*[contains(@class, 'points-text')]]")
-                
                 if not activity_elements:
                     if progress_callback: progress_callback(f"No activities found for {profile.name}. Might be complete.")
                     continue
-
                 if progress_callback: progress_callback(f"Found {len(activity_elements)} activities for {profile.name}.")
-                
                 main_window_handle = driver.current_window_handle
-
                 for index in range(len(activity_elements)):
-                    if stop_event.is_set(): return
+                    if stop_event.is_set(): break
                     try:
                         activities = driver.find_elements(By.XPATH, "//*[@data-task-id and .//*[contains(@class, 'points-text')]]")
                         activity = activities[index]
                         activity.click()
                         time.sleep(random.uniform(2, 4))
-
                         WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))
                         new_window_handle = [handle for handle in driver.window_handles if handle != main_window_handle][0]
                         driver.switch_to.window(new_window_handle)
-
                         try:
                             WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.ID, "quiz-start-btn"))).click()
                         except TimeoutException:
                             pass
-
                         for _ in range(10):
                             if stop_event.is_set(): break
                             try:
@@ -194,7 +156,6 @@ class AutomationService:
                                     break
                             except Exception:
                                 break
-                        
                         driver.close()
                         driver.switch_to.window(main_window_handle)
                         time.sleep(random.uniform(1, 2))
@@ -206,9 +167,109 @@ class AutomationService:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
                 if driver: driver.quit()
 
-    # --- Shared and Utility Methods ---
+    def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event) -> Optional[str]:
+        if stop_event.is_set(): return None
+        
+        os.system("taskkill /F /IM msedge.exe > nul 2>&1")
+        time.sleep(2)
 
+        driver = self._setup_driver(profile, headless=True)
+        if not driver:
+            return "Error"
+
+        try:
+            driver.get("https://rewards.bing.com/pointsbreakdown")
+            wait = WebDriverWait(driver, 20)
+            
+            progress_element = wait.until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "div#bingSearchDailyPoints p.c-caption-1"))
+            )
+            
+            wait.until(lambda d: re.search(r'\d+/\d+', progress_element.text))
+
+            progress_text = progress_element.text.strip()
+            
+            match = re.search(r'(\d+/\d+\s*pts)', progress_text)
+            if match:
+                return match.group(1)
+            else:
+                return "N/A"
+
+        except TimeoutException:
+            logger.log(f"Could not find daily search progress for {profile.name}.", "WARN")
+            return "N/A"
+        except (WebDriverException, ValueError) as e:
+            logger.log(f"An error occurred while fetching progress for {profile.name}: {e}", "ERROR")
+            return "Error"
+        finally:
+            if driver:
+                driver.quit()
+
+    def open_single_profile_to_breakdown(self, profile: EdgeProfile):
+        """
+        Launches a single profile to the points breakdown page and leaves it open.
+        """
+        logger.log(f"Manually opening points breakdown for {profile.name}", "INFO")
+        
+        # **FIX**: Ensure a clean start by closing other Edge windows first.
+        self.close_all_edge_windows()
+        time.sleep(1)
+
+        driver = self._setup_driver(profile, headless=False)
+        if not driver:
+            return
+
+        try:
+            driver.get("https://rewards.bing.com/pointsbreakdown")
+            # Add the new driver to the active list to prevent it from closing.
+            self.active_drivers.append(driver)
+        except WebDriverException as e:
+            logger.log(f"Failed to open browser for {profile.name}: {e}", "ERROR")
+
+
+    # --- PyAutoGUI Helper Methods ---
+    def _pyautogui_open_profiles(self, profiles: List[EdgeProfile]):
+        base_command = ["start", "msedge"]
+        for profile in profiles:
+            subprocess.Popen(base_command + [profile.cmd_arg], shell=True)
+            time.sleep(random.uniform(0.1, 0.4))
+
+    def _pyautogui_get_edge_windows(self) -> List[gw.Win32Window]:
+        time.sleep(random.uniform(*config.WAIT_FOR_EDGE_LAUNCH))
+        return [win for win in gw.getAllWindows() if "Edge" in win.title]
+
+    def _pyautogui_perform_single_search(self, window: gw.Win32Window):
+        try:
+            if not window.isActive:
+                window.activate()
+            time.sleep(random.uniform(*config.ACTION_DELAY))
+            pyautogui.hotkey('ctrl', 'l')
+            time.sleep(random.uniform(0.3, 0.6))
+            search_term = self.random_word_generator.word()
+            for char in search_term:
+                pyautogui.write(char)
+                time.sleep(random.uniform(*config.KEY_PRESS_DELAY))
+            pyautogui.press('enter')
+            time.sleep(random.uniform(*config.ACTION_DELAY))
+            return search_term
+        except gw.PyGetWindowException:
+            logger.log(f"Could not perform search. Window '{window.title}' may have been closed.", "WARN")
+            return None
+
+    # --- Shared and Utility Methods ---
     def close_all_edge_windows(self):
+        """
+        Closes all Selenium-controlled and other Edge windows.
+        """
+        # First, cleanly close any manually opened Selenium drivers
+        for driver in self.active_drivers:
+            try:
+                driver.quit()
+            except Exception:
+                pass # Ignore errors if the browser is already closed
+        self.active_drivers.clear()
+        
+        # Then, forcefully close any remaining Edge processes
         subprocess.run(['taskkill', '/F', '/IM', 'msedge.exe'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         logger.log("Forcefully closed all Edge processes via UI button.", "SYSTEM")
 

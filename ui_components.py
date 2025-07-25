@@ -5,6 +5,7 @@ import customtkinter
 class ProfileRow(customtkinter.CTkFrame):
     """
     A custom widget representing a single profile row in the UI.
+    Includes a checkbox, clickable profile name, and a label to display points.
     """
     def __init__(self, master, profile, checkbox_callback, label_click_callback, **kwargs):
         super().__init__(master, **kwargs)
@@ -12,6 +13,10 @@ class ProfileRow(customtkinter.CTkFrame):
         self.checkbox_callback = checkbox_callback
         self.label_click_callback = label_click_callback
 
+        # --- Grid Configuration ---
+        self.grid_columnconfigure(1, weight=1) # Allow profile name to expand
+
+        # --- Widgets ---
         self.check_var = customtkinter.StringVar(value="on")
         self.checkbox = customtkinter.CTkCheckBox(
             self,
@@ -33,12 +38,20 @@ class ProfileRow(customtkinter.CTkFrame):
             cursor="hand2"
         )
         self.label.grid(row=0, column=1, sticky="ew", padx=5, pady=5)
-        self.columnconfigure(1, weight=1)
-
+        
         # Bind events for hover and click
         self.label.bind("<Enter>", self._on_enter)
         self.label.bind("<Leave>", self._on_leave)
         self.label.bind("<Button-1>", self._on_click)
+
+        self.points_label = customtkinter.CTkLabel(
+            self,
+            text="---",
+            font=customtkinter.CTkFont(size=14, weight="bold"),
+            width=80, # Increased width for "XX/XX pts"
+            anchor="e"
+        )
+        self.points_label.grid(row=0, column=2, sticky="e", padx=(5, 10), pady=5)
 
     def _on_enter(self, event):
         self.label.configure(text_color="yellow")
@@ -50,14 +63,20 @@ class ProfileRow(customtkinter.CTkFrame):
         self.label_click_callback(self.profile)
 
     def _on_checkbox_toggle(self):
+        """Internal callback to pass the event up to the main app."""
         is_selected = self.check_var.get() == "on"
         self.checkbox_callback(self.profile, is_selected)
 
     def set_checked(self, is_checked: bool):
+        """Programmatically sets the state of the checkbox."""
         if is_checked:
             self.check_var.set("on")
         else:
             self.check_var.set("off")
+
+    def update_points(self, points_text: str):
+        """Updates the points label with new text."""
+        self.points_label.configure(text=points_text)
 
 
 class LabeledSlider(customtkinter.CTkFrame):
@@ -88,9 +107,11 @@ class LabeledSlider(customtkinter.CTkFrame):
         self.columnconfigure(0, weight=1)
 
     def _slider_event(self, value):
+        """Updates the label and calls the external command if it exists."""
         self.value_label.configure(text=str(int(value)))
         if self.command:
             self.command(int(value))
 
     def get(self) -> int:
+        """Returns the current value of the slider."""
         return self.variable.get()

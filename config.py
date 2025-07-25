@@ -10,8 +10,8 @@ SETTINGS_JSON_PATH = "settings.json" # Path for schedule settings
 # The original script used a batch file for restarting. We'll define its expected path.
 # It will check OneDrive desktop first, then local desktop.
 HOME_DIR = os.path.expanduser('~')
-RESTART_BATCH_FILE_ONEDRIVE = os.path.join(HOME_DIR, 'OneDrive', 'Desktop', 'newBing.bat')
-RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'newBing.bat')
+RESTART_BATCH_FILE_ONEDRIVE = os.path.join(HOME_DIR, 'OneDrive', 'Desktop', 'bing.bat')
+RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'bing.bat')
 
 
 # --- Application Settings ---

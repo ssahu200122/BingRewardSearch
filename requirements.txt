@@ -4,5 +4,4 @@ pygetwindow
 wonderwords
 Pillow
 selenium
-webdriver-manager
 schedule
