@@ -2599,3 +2599,341 @@ Stacktrace:
 [00:55:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
 [01:08:26] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
 [01:08:27] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 01:27:59 ---
+[01:27:59] [INFO] Application starting up.
+[01:27:59] [INFO] Loading 26 profiles from data.json.
+[01:27:59] [INFO] Successfully loaded 26 profiles.
+[01:28:00] [INFO] Loaded 20 progress records from today's history.
+[01:28:00] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[01:45:25] [INFO] Smart Search Automation started...
+[01:45:25] [INFO] Processing Batch 1...
+[01:46:06] [INFO] Stop signal sent. Finishing current action...
+[01:46:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:46:11] [INFO] Search Automation Stopped by User.
+[01:46:22] [INFO] Smart Search Automation started...
+[01:46:22] [INFO] Processing Batch 1...
+[01:46:25] [INFO] Stop signal sent. Finishing current action...
+[01:46:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:46:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:46:28] [INFO] Search Automation Stopped by User.
+[01:48:36] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[01:48:36] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 01:48:39 ---
+[01:48:39] [INFO] Application starting up.
+[01:48:39] [INFO] Loading 26 profiles from data.json.
+[01:48:39] [INFO] Successfully loaded 26 profiles.
+[01:48:41] [INFO] Loaded 20 progress records from today's history.
+[01:48:41] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[01:48:47] [INFO] Range 24-28 selected.
+[01:48:55] [INFO] Smart Search Automation started...
+[01:48:55] [INFO] Processing Batch 1...
+[01:49:17] [INFO] Stop signal sent. Finishing current action...
+[01:49:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:49:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:49:22] [INFO] Search Automation Stopped by User.
+[01:49:26] [INFO] Smart Search Automation started...
+[01:49:26] [INFO] Processing Batch 1...
+[01:50:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:50:44] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[01:50:44] [DEBUG] Headless mode enabled for this Selenium session.
+[01:51:05] [DEBUG] Headless mode enabled for this Selenium session.
+[01:51:16] [DEBUG] Headless mode enabled for this Selenium session.
+[01:51:42] [WARN] Could not find daily search progress for Personal 25.
+[01:51:44] [DEBUG] Headless mode enabled for this Selenium session.
+[01:51:57] [INFO] Batch 1: 2 profiles need more points. Retrying with 5 searches...
+[01:52:50] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[01:52:50] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[01:52:50] [DEBUG] Headless mode enabled for this Selenium session.
+[01:53:02] [DEBUG] Headless mode enabled for this Selenium session.
+[01:53:12] [DEBUG] Headless mode enabled for this Selenium session.
+[01:53:38] [WARN] Could not find daily search progress for Personal 25.
+[01:53:40] [DEBUG] Headless mode enabled for this Selenium session.
+[01:53:50] [INFO] Batch 1: All points collected.
+[01:53:50] [INFO] Batch 1: Saving final progress to history...
+[01:53:50] [DEBUG] Headless mode enabled for this Selenium session.
+[01:54:00] [DEBUG] Headless mode enabled for this Selenium session.
+[01:54:09] [DEBUG] Headless mode enabled for this Selenium session.
+[01:54:40] [WARN] Could not find daily search progress for Personal 25.
+[01:54:42] [DEBUG] Headless mode enabled for this Selenium session.
+[01:54:54] [INFO] Search Automation Complete!
+[01:55:04] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[01:55:04] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:00:27 ---
+[02:00:27] [INFO] Application starting up.
+[02:00:27] [INFO] Loading 26 profiles from data.json.
+[02:00:27] [INFO] Successfully loaded 26 profiles.
+[02:00:29] [INFO] Loaded 20 progress records from today's history.
+[02:00:29] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:01:02] [INFO] Smart Search Automation started...
+[02:01:02] [INFO] Processing Batch 1...
+[02:02:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:02:27] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[02:02:27] [DEBUG] Headless mode enabled for this Selenium session.
+[02:02:38] [DEBUG] Headless mode enabled for this Selenium session.
+[02:03:07] [WARN] Could not find daily search progress for Personal 22.
+[02:03:10] [DEBUG] Headless mode enabled for this Selenium session.
+[02:03:22] [INFO] Batch 1: 1 profiles need more points. Retrying with 6 searches...
+[02:03:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:03:58] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[02:03:58] [DEBUG] Headless mode enabled for this Selenium session.
+[02:04:07] [DEBUG] Headless mode enabled for this Selenium session.
+[02:04:35] [WARN] Could not find daily search progress for Personal 22.
+[02:04:37] [DEBUG] Headless mode enabled for this Selenium session.
+[02:04:47] [INFO] Batch 1: 1 profiles need more points. Retrying with 4 searches...
+[02:05:12] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:05:12] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[02:05:12] [DEBUG] Headless mode enabled for this Selenium session.
+[02:05:23] [DEBUG] Headless mode enabled for this Selenium session.
+[02:05:47] [WARN] Could not find daily search progress for Personal 22.
+[02:05:50] [DEBUG] Headless mode enabled for this Selenium session.
+[02:06:00] [INFO] Batch 1: 1 profiles need more points. Retrying with 3 searches...
+[02:06:20] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:06:20] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[02:06:20] [DEBUG] Headless mode enabled for this Selenium session.
+[02:06:29] [DEBUG] Headless mode enabled for this Selenium session.
+[02:06:55] [WARN] Could not find daily search progress for Personal 22.
+[02:06:57] [DEBUG] Headless mode enabled for this Selenium session.
+[02:07:12] [INFO] Batch 1: 1 profiles need more points. Retrying with 2 searches...
+[02:07:29] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:07:29] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[02:07:29] [DEBUG] Headless mode enabled for this Selenium session.
+[02:07:45] [DEBUG] Headless mode enabled for this Selenium session.
+[02:08:10] [WARN] Could not find daily search progress for Personal 22.
+[02:08:12] [DEBUG] Headless mode enabled for this Selenium session.
+[02:08:23] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[02:08:34] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:08:34] [INFO] Batch 1: Max retries reached.
+[02:08:34] [INFO] Batch 1: Saving final progress to history...
+[02:08:34] [INFO] Search Automation Complete!
+[02:08:55] [INFO] Manually opening points breakdown for Personal 21
+[02:08:55] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:09:21] [INFO] Fetching progress sequentially...
+[02:09:24] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:09:25] [DEBUG] Headless mode enabled for this Selenium session.
+[02:09:34] [INFO] Progress fetching complete.
+[02:10:56] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[02:10:57] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:11:00 ---
+[02:11:00] [INFO] Application starting up.
+[02:11:00] [INFO] Loading 26 profiles from data.json.
+[02:11:00] [INFO] Successfully loaded 26 profiles.
+[02:11:01] [INFO] Loaded 20 progress records from today's history.
+[02:11:01] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:11:12] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[02:11:12] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:11:17 ---
+[02:11:17] [INFO] Application starting up.
+[02:11:17] [INFO] Loading 26 profiles from data.json.
+[02:11:17] [INFO] Successfully loaded 26 profiles.
+[02:11:18] [INFO] Loaded 20 progress records from today's history.
+[02:11:18] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:11:46] [INFO] Smart Search Automation started...
+[02:11:46] [INFO] Processing Batch 1...
+[02:12:46] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:12:46] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[02:12:46] [DEBUG] Headless mode enabled for this Selenium session.
+[02:12:55] [DEBUG] Headless mode enabled for this Selenium session.
+[02:13:04] [DEBUG] Headless mode enabled for this Selenium session.
+[02:13:33] [WARN] Could not find daily search progress for Personal 18.
+[02:13:35] [INFO] Batch 1: 1 profiles need more points. Retrying with 6 searches...
+[02:14:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:14:11] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[02:14:12] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:20] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:28] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:51] [WARN] Could not find daily search progress for Personal 18.
+[02:14:53] [INFO] Batch 1: 1 profiles need more points. Retrying with 5 searches...
+[02:15:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:15:22] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[02:15:22] [DEBUG] Headless mode enabled for this Selenium session.
+[02:15:31] [DEBUG] Headless mode enabled for this Selenium session.
+[02:15:40] [DEBUG] Headless mode enabled for this Selenium session.
+[02:16:04] [WARN] Could not find daily search progress for Personal 18.
+[02:16:07] [INFO] Batch 1: 1 profiles need more points. Retrying with 4 searches...
+[02:16:32] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:16:32] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[02:16:33] [DEBUG] Headless mode enabled for this Selenium session.
+[02:16:42] [DEBUG] Headless mode enabled for this Selenium session.
+[02:16:50] [DEBUG] Headless mode enabled for this Selenium session.
+[02:17:18] [WARN] Could not find daily search progress for Personal 18.
+[02:17:21] [INFO] Batch 1: 1 profiles need more points. Retrying with 3 searches...
+[02:17:40] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:17:40] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[02:17:40] [DEBUG] Headless mode enabled for this Selenium session.
+[02:17:49] [DEBUG] Headless mode enabled for this Selenium session.
+[02:17:58] [DEBUG] Headless mode enabled for this Selenium session.
+[02:18:23] [WARN] Could not find daily search progress for Personal 18.
+[02:18:25] [INFO] Batch 1: 1 profiles need more points. Retrying with 2 searches...
+[02:18:38] [INFO] Stop signal sent. Finishing current action...
+[02:18:41] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:18:41] [INFO] Batch 1: Max retries reached.
+[02:18:41] [INFO] Search Automation Stopped by User.
+[02:18:42] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[02:18:43] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:27:29 ---
+[02:27:29] [INFO] Application starting up.
+[02:27:29] [INFO] Loading 26 profiles from data.json.
+[02:27:29] [INFO] Successfully loaded 26 profiles.
+[02:27:30] [INFO] Loaded 20 progress records from today's history.
+[02:27:30] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:28:08] [INFO] Smart Search Automation started...
+[02:28:08] [INFO] Processing Batch 1...
+[02:29:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:29:27] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[02:29:27] [DEBUG] Headless mode enabled for this Selenium session.
+[02:29:44] [DEBUG] Headless mode enabled for this Selenium session.
+[02:29:55] [DEBUG] Headless mode enabled for this Selenium session.
+[02:30:23] [WARN] Could not find daily search progress for Personal 18.
+[02:30:25] [INFO] Batch 1: All points collected.
+[02:30:25] [INFO] Batch 1: Saving final progress to history...
+[02:30:25] [DEBUG] Headless mode enabled for this Selenium session.
+[02:30:39] [DEBUG] Headless mode enabled for this Selenium session.
+[02:30:51] [DEBUG] Headless mode enabled for this Selenium session.
+[02:31:33] [WARN] Could not find daily search progress for Personal 18.
+[02:31:35] [INFO] Search Automation Complete!
+[02:31:46] [INFO] Manually opening points breakdown for Personal 16
+[02:31:46] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:39:42] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[02:39:42] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:39:43 ---
+[02:39:43] [INFO] Application starting up.
+[02:39:43] [INFO] Loading 26 profiles from data.json.
+[02:39:43] [INFO] Successfully loaded 26 profiles.
+[02:39:44] [INFO] Loaded 20 progress records from today's history.
+[02:39:44] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:40:12] [INFO] Smart Search Automation started...
+[02:40:12] [INFO] Processing Batch 1...
+[02:41:34] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:41:35] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[02:41:35] [DEBUG] Headless mode enabled for this Selenium session.
+[02:41:46] [DEBUG] Headless mode enabled for this Selenium session.
+[02:42:01] [DEBUG] Headless mode enabled for this Selenium session.
+[02:42:26] [WARN] Could not find daily search progress for Personal 18.
+[02:42:28] [INFO] Batch 1: 1 profiles need more points. Retrying with 6 searches...
+[02:43:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:43:13] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[02:43:13] [DEBUG] Headless mode enabled for this Selenium session.
+[02:43:25] [INFO] Batch 1: All points collected.
+[02:43:25] [INFO] Batch 1: Saving final progress to history...
+[02:43:25] [INFO] Search Automation Complete!
+[02:52:32] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[02:52:32] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 02:52:33 ---
+[02:52:33] [INFO] Application starting up.
+[02:52:33] [INFO] Loading 26 profiles from data.json.
+[02:52:33] [INFO] Successfully loaded 26 profiles.
+[02:52:34] [INFO] Loaded 20 progress records from today's history.
+[02:52:34] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[02:52:53] [INFO] Smart Search Automation started...
+[02:52:53] [INFO] Processing Batch 1...
+[02:52:53] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[02:53:06] [INFO] Search 'grease' (1/4) in window 'grease - Search - Personal 19 - Microsoft​ Edge'
+[02:53:12] [INFO] Search 'pocket' (1/4) in window 'pocket - Search - Personal 18 - Microsoft​ Edge'
+[02:53:16] [INFO] Search 'path' (1/4) in window 'path - Search - Personal 17 - Microsoft​ Edge'
+[02:53:20] [INFO] Search 'toreador' (1/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:53:25] [INFO] Search 'mastication' (2/4) in window 'mastication - Search - Personal 19 - Microsoft​ Edge'
+[02:53:30] [INFO] Search 'zippy' (2/4) in window 'zippy - Search - Personal 18 - Microsoft​ Edge'
+[02:53:34] [INFO] Search 'redesign' (2/4) in window 'redesign - Search - Personal 17 - Microsoft​ Edge'
+[02:53:41] [INFO] Search 'transportation' (2/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:53:46] [INFO] Search 'compromise' (3/4) in window 'compromise - Search - Personal 19 - Microsoft​ Edge'
+[02:53:52] [INFO] Search 'pseudoscience' (3/4) in window 'pseudoscience - Search - Personal 18 - Microsoft​ Edge'
+[02:53:56] [INFO] Search 'transport' (3/4) in window 'transport - Search - Personal 17 - Microsoft​ Edge'
+[02:54:01] [INFO] Search 'commander' (3/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:54:07] [INFO] Search 'septicaemia' (4/4) in window 'septicaemia - Search - Personal 19 - Microsoft​ Edge'
+[02:54:12] [INFO] Search 'recreation' (4/4) in window 'recreation - Search - Personal 18 - Microsoft​ Edge'
+[02:54:17] [INFO] Search 'balalaika' (4/4) in window 'balalaika - Search - Personal 17 - Microsoft​ Edge'
+[02:54:21] [INFO] Search 'standard' (4/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[02:54:24] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:54:24] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[02:54:24] [DEBUG] Headless mode enabled for this Selenium session.
+[02:54:34] [DEBUG] Headless mode enabled for this Selenium session.
+[02:54:59] [WARN] Could not find daily search progress for Personal 18.
+[02:55:01] [DEBUG] Headless mode enabled for this Selenium session.
+[02:55:12] [INFO] Batch 1: 1 profiles need more points. Retrying with 6 searches...
+[02:55:12] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[02:55:25] [INFO] Search 'instance' (1/6) in window 'instance - Search - Personal 19 - Microsoft​ Edge'
+[02:55:32] [INFO] Search 'crazy' (2/6) in window 'crazy - Search - Personal 19 - Microsoft​ Edge'
+[02:55:39] [INFO] Search 'resolute' (3/6) in window 'resolute - Search - Personal 19 - Microsoft​ Edge'
+[02:55:48] [INFO] Search 'configuration' (4/6) in window 'configuration - Search - Personal 19 - Microsoft​ Edge'
+[02:55:55] [INFO] Search 'payment' (5/6) in window 'payment - Search - Personal 19 - Microsoft​ Edge'
+[02:56:03] [INFO] Search 'batter' (6/6) in window 'batter - Search - Personal 19 - Microsoft​ Edge'
+[02:56:05] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:56:05] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[02:56:05] [DEBUG] Headless mode enabled for this Selenium session.
+[02:56:14] [INFO] Batch 1: All points collected.
+[02:56:14] [INFO] Batch 1: Saving final progress to history...
+[02:56:14] [INFO] Search Automation Complete!
+[03:11:03] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[03:11:03] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 03:11:04 ---
+[03:11:04] [INFO] Application starting up.
+[03:11:04] [INFO] Loading 26 profiles from data.json.
+[03:11:04] [INFO] Successfully loaded 26 profiles.
+[03:11:05] [INFO] Loaded 20 progress records from today's history.
+[03:11:05] [SYSTEM] Tasks scheduled to run daily at 22:11.
+[03:11:36] [INFO] Smart Search Automation started...
+[03:11:36] [INFO] Processing Batch 1...
+[03:11:36] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[03:11:50] [INFO] Search 'maintain' (1/4) in window 'maintainance or maintenance - Search - Personal 19 - Microsoft​ Edge'
+[03:11:55] [INFO] Search 'trout' (1/4) in window 'trout - Search - Personal 18 - Microsoft​ Edge'
+[03:12:01] [INFO] Search 'circumference' (1/4) in window 'circumference - Search - Personal 17 - Microsoft​ Edge'
+[03:12:06] [INFO] Search 'precedent' (1/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:12:10] [INFO] Search 'spite' (2/4) in window 'spite - Search - Personal 19 - Microsoft​ Edge'
+[03:12:15] [INFO] Search 'variant' (2/4) in window 'variant - Search - Personal 18 - Microsoft​ Edge'
+[03:12:20] [INFO] Search 'aluminium' (2/4) in window 'aluminium - Search - Personal 17 - Microsoft​ Edge'
+[03:12:25] [INFO] Search 'astonishing' (2/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:12:29] [INFO] Search 'husky' (3/4) in window 'husky - Search - Personal 19 - Microsoft​ Edge'
+[03:12:35] [INFO] Search 'suppression' (3/4) in window 'suppression - Search - Personal 18 - Microsoft​ Edge'
+[03:12:38] [INFO] Search 'cheek' (3/4) in window 'cheek - Search - Personal 17 - Microsoft​ Edge'
+[03:12:42] [INFO] Search 'kiwi' (3/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:12:47] [INFO] Search 'innervation' (4/4) in window 'innervation - Search - Personal 19 - Microsoft​ Edge'
+[03:12:51] [INFO] Search 'bizarre' (4/4) in window 'bizarre - Search - Personal 18 - Microsoft​ Edge'
+[03:12:56] [INFO] Search 'centurion' (4/4) in window 'centurion - Search - Personal 17 - Microsoft​ Edge'
+[03:13:02] [INFO] Search 'polarisation' (4/4) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[03:13:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:13:04] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[03:13:04] [DEBUG] Headless mode enabled for this Selenium session.
+[03:13:14] [DEBUG] Headless mode enabled for this Selenium session.
+[03:13:39] [WARN] Could not find daily search progress for Personal 18.
+[03:13:42] [DEBUG] Headless mode enabled for this Selenium session.
+[03:13:53] [INFO] Batch 1: All points collected.
+[03:13:53] [INFO] Batch 1: Saving final progress to history...
+[03:13:53] [INFO] Processing Batch 2...
+[03:13:53] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[03:14:02] [INFO] Search 'coal' (1/4) in window 'coal - Search - Personal 20 - Microsoft​ Edge'
+[03:14:08] [INFO] Search 'substitution' (1/4) in window 'substitution - Search - Personal 21 - Microsoft​ Edge'
+[03:14:13] [INFO] Search 'melodic' (2/4) in window 'melodic - Search - Personal 20 - Microsoft​ Edge'
+[03:14:17] [INFO] Search 'precious' (2/4) in window 'precious - Search - Personal 21 - Microsoft​ Edge'
+[03:14:22] [INFO] Search 'waterfall' (3/4) in window 'waterfall - Search - Personal 20 - Microsoft​ Edge'
+[03:14:27] [INFO] Search 'existence' (3/4) in window 'existence - Search - Personal 21 - Microsoft​ Edge'
+[03:14:31] [INFO] Search 'candle' (4/4) in window 'candle - Search - Personal 20 - Microsoft​ Edge'
+[03:14:36] [INFO] Search 'patriot' (4/4) in window 'patriot - Search - Personal 21 - Microsoft​ Edge'
+[03:14:38] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:14:38] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[03:14:38] [DEBUG] Headless mode enabled for this Selenium session.
+[03:14:48] [DEBUG] Headless mode enabled for this Selenium session.
+[03:15:01] [INFO] Batch 2: 1 profiles need more points. Retrying with 6 searches...
+[03:15:01] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[03:15:12] [INFO] Search 'roast' (1/6) in window 'roast - Search - Personal 20 - Microsoft​ Edge'
+[03:15:20] [INFO] Search 'promenade' (2/6) in window 'promenade - Search - Personal 20 - Microsoft​ Edge'
+[03:15:26] [INFO] Search 'farmer' (3/6) in window 'farmer - Search - Personal 20 - Microsoft​ Edge'
+[03:15:34] [INFO] Search 'follow' (4/6) in window 'follow - Search - Personal 20 - Microsoft​ Edge'
+[03:15:43] [INFO] Search 'neurobiologist' (5/6) in window 'neurobiologist - Search - Personal 20 - Microsoft​ Edge'
+[03:15:51] [INFO] Search 'energetic' (6/6) in window 'energetic - Search - Personal 20 - Microsoft​ Edge'
+[03:15:53] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[03:15:53] [INFO] Batch 2: Verifying progress (Attempt 2)...
+[03:15:53] [DEBUG] Headless mode enabled for this Selenium session.
+[03:16:03] [INFO] Batch 2: All points collected.
+[03:16:03] [INFO] Batch 2: Saving final progress to history...
+[03:16:03] [INFO] Search Automation Complete!
+[03:16:31] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '22:11'}
+[03:16:31] [INFO] Application has been closed.

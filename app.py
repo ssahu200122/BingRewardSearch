@@ -204,13 +204,22 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _automation_worker(self, profiles_to_run: List[EdgeProfile], stop_event: threading.Event):
         try:
-            self.selenium_lock.acquire() # Lock Selenium for the entire operation
+            self.selenium_lock.acquire()
             batch_size = self.batch_slider.get()
             pc_searches_target = self.pc_slider.get() // 3
             num_profiles = len(profiles_to_run)
             
+            total_possible_searches = num_profiles * pc_searches_target
+            if total_possible_searches == 0:
+                 self._update_status("No searches to perform.")
+                 return
+
+            self.overall_progress_label.configure(text=f"0 / {total_possible_searches * 3} Points")
+            self.overall_progress_bar.set(0)
             self._update_status("Smart Search Automation started...")
             
+            searches_completed_so_far = 0
+
             for i in range(0, num_profiles, batch_size):
                 if stop_event.is_set(): break
                 
@@ -218,9 +227,31 @@ class BingAutomatorApp(customtkinter.CTk):
                 batch_num = (i // batch_size) + 1
                 self._update_status(f"Processing Batch {batch_num}...")
 
-                self.automation_service.run_search_session(profiles=batch, pc_searches=pc_searches_target, stop_event=stop_event)
+                def create_progress_updater(searches_done_before_this_run, total_searches_in_run):
+                    def update_progress_bars(searches_done_this_run, total_searches_this_run_param):
+                        # **FIX**: Use the correct variable name from the inner function's scope
+                        self.batch_progress_bar.set(searches_done_this_run / total_searches_this_run_param)
+                        self.batch_progress_label.configure(text=f"{searches_done_this_run * 3} / {total_searches_this_run_param * 3} Points")
+                        
+                        current_overall_searches = searches_done_before_this_run + searches_done_this_run
+                        self.overall_progress_bar.set(current_overall_searches / total_possible_searches)
+                        self.overall_progress_label.configure(text=f"{current_overall_searches * 3} / {total_possible_searches * 3} Points")
+                    return update_progress_bars
 
+                # --- Initial Search ---
+                initial_searches_in_batch = pc_searches_target * len(batch)
+                self.automation_service.run_search_session(
+                    profiles=batch, 
+                    pc_searches=pc_searches_target, 
+                    stop_event=stop_event,
+                    progress_callback=self._update_status,
+                    on_search_progress=create_progress_updater(searches_completed_so_far, initial_searches_in_batch)
+                )
+                searches_completed_so_far += initial_searches_in_batch
+
+                # --- Verify and Retry Loop ---
                 MAX_RETRIES = 5
+                profiles_to_verify = batch[:]
                 for retry_count in range(MAX_RETRIES):
                     if stop_event.is_set(): break
                     
@@ -228,11 +259,16 @@ class BingAutomatorApp(customtkinter.CTk):
                     
                     profiles_to_retry = []
                     points_needed = []
+                    batch_progress_data = {}
 
-                    for profile in batch:
+                    for profile in profiles_to_verify:
                         if stop_event.is_set(): break
-                        progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
                         widget = self.profile_widget_map.get(profile)
+                        if widget: self.after(0, widget.update_points, "Fetching...")
+                        
+                        progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
+                        batch_progress_data[profile] = progress_str
+                        
                         if widget: self.after(0, widget.update_points, progress_str)
 
                         if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
@@ -248,20 +284,32 @@ class BingAutomatorApp(customtkinter.CTk):
                         self._update_status(f"Batch {batch_num}: All points collected.")
                         break
                     
-                    max_points_needed = max(points_needed)
+                    profiles_to_verify = profiles_to_retry[:]
+
+                    max_points_needed = max(points_needed) if points_needed else 0
                     searches_for_next_cycle = math.ceil(max_points_needed / 3)
+                    
+                    use_slower_delay = len(profiles_to_retry) <= 2
                     
                     self._update_status(f"Batch {batch_num}: {len(profiles_to_retry)} profiles need more points. Retrying with {searches_for_next_cycle} searches...")
                     
-                    self.automation_service.run_search_session(profiles=profiles_to_retry, pc_searches=searches_for_next_cycle, stop_event=stop_event)
+                    total_retry_searches = searches_for_next_cycle * len(profiles_to_retry)
+                    self.automation_service.run_search_session(
+                        profiles=profiles_to_retry, 
+                        pc_searches=searches_for_next_cycle, 
+                        stop_event=stop_event, 
+                        use_retry_delay=use_slower_delay,
+                        progress_callback=self._update_status,
+                        on_search_progress=create_progress_updater(searches_completed_so_far, total_retry_searches)
+                    )
+                    searches_completed_so_far += total_retry_searches
+
                 else:
                     self._update_status(f"Batch {batch_num}: Max retries reached.")
 
-                # **FIX**: Save the final progress for the batch to history
                 if not stop_event.is_set():
                     self._update_status(f"Batch {batch_num}: Saving final progress to history...")
-                    for profile in batch:
-                        progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
+                    for profile, progress_str in batch_progress_data.items():
                         if progress_str and "Error" not in progress_str and "N/A" not in progress_str:
                             self.automation_service.save_progress_to_history(profile, progress_str)
 

@@ -17,12 +17,14 @@ RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'bing.bat')
 
 # --- Application Settings ---
 APP_TITLE = "Bing Auto Search"
-APP_GEOMETRY = "800x450" # Re-adjusted height after removing headless switch
+APP_GEOMETRY = "800x500"
 
 # --- Automation Settings ---
 # Delays are now ranges (min_seconds, max_seconds) for more human-like behavior.
 WAIT_FOR_EDGE_LAUNCH = (3.5, 5.0)
 ACTION_DELAY = (0.8, 1.5)
+# **NEW**: A longer delay for small, targeted retry searches to ensure they register.
+RETRY_ACTION_DELAY = (2.0, 3.0) 
 BATCH_DELAY = (1.5, 2.5)
 # Add a delay between individual key presses to simulate typing
 KEY_PRESS_DELAY = (0.05, 0.15)

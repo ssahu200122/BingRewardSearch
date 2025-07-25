@@ -77,7 +77,10 @@ class AutomationService:
             return None
 
     # --- Search and Daily Set Methods ---
-    def run_search_session(self, profiles: List[EdgeProfile], pc_searches: int, stop_event: threading.Event, progress_callback: Optional[Callable[[str], None]] = None, on_search_progress: Optional[Callable[[int, int], None]] = None):
+    def run_search_session(self, profiles: List[EdgeProfile], pc_searches: int, stop_event: threading.Event, use_retry_delay: bool = False, progress_callback: Optional[Callable[[str], None]] = None, on_search_progress: Optional[Callable[[int, int], None]] = None):
+        """
+        Runs a search session using the reliable PyAutoGUI method (visible browser).
+        """
         if pc_searches <= 0:
             if progress_callback: progress_callback("PC searches set to 0. Skipping.")
             return
@@ -102,7 +105,7 @@ class AutomationService:
                 for window in edge_windows:
                     if stop_event.is_set(): return
                     
-                    search_term = self._pyautogui_perform_single_search(window)
+                    search_term = self._pyautogui_perform_single_search(window, use_retry_delay)
                     if search_term and progress_callback:
                         progress_callback(f"Search '{search_term}' ({i+1}/{pc_searches}) in window '{window.title}'")
                     
@@ -173,6 +176,7 @@ class AutomationService:
                 if on_activity_progress: on_activity_progress(i + 1, total_profiles)
                 if driver: 
                     driver.quit()
+                os.system("taskkill /F /IM msedge.exe > nul 2>&1")
 
     def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Optional[str]:
         if stop_event.is_set(): return None
@@ -276,11 +280,12 @@ class AutomationService:
         time.sleep(random.uniform(*config.WAIT_FOR_EDGE_LAUNCH))
         return [win for win in gw.getAllWindows() if "Edge" in win.title]
 
-    def _pyautogui_perform_single_search(self, window: gw.Win32Window):
+    def _pyautogui_perform_single_search(self, window: gw.Win32Window, use_retry_delay: bool = False):
+        delay_range = config.RETRY_ACTION_DELAY if use_retry_delay else config.ACTION_DELAY
         try:
             if not window.isActive:
                 window.activate()
-            time.sleep(random.uniform(*config.ACTION_DELAY))
+            time.sleep(random.uniform(*delay_range))
             pyautogui.hotkey('ctrl', 'l')
             time.sleep(random.uniform(0.3, 0.6))
             search_term = self.random_word_generator.word()
@@ -288,7 +293,7 @@ class AutomationService:
                 pyautogui.write(char)
                 time.sleep(random.uniform(*config.KEY_PRESS_DELAY))
             pyautogui.press('enter')
-            time.sleep(random.uniform(*config.ACTION_DELAY))
+            time.sleep(random.uniform(*delay_range))
             return search_term
         except gw.PyGetWindowException:
             logger.log(f"Could not perform search. Window '{window.title}' may have been closed.", "WARN")
