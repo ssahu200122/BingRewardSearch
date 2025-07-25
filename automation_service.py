@@ -8,7 +8,8 @@ import os
 import re
 import random
 import threading
-import concurrent.futures
+import csv
+from datetime import date
 
 # PyAutoGUI Imports for reverted search logic
 import pyautogui
@@ -206,26 +207,46 @@ class AutomationService:
                 driver.quit()
 
     def open_single_profile_to_breakdown(self, profile: EdgeProfile):
-        """
-        Launches a single profile to the points breakdown page and leaves it open.
-        """
         logger.log(f"Manually opening points breakdown for {profile.name}", "INFO")
-        
-        # **FIX**: Ensure a clean start by closing other Edge windows first.
         self.close_all_edge_windows()
         time.sleep(1)
-
         driver = self._setup_driver(profile, headless=False)
         if not driver:
             return
-
         try:
             driver.get("https://rewards.bing.com/pointsbreakdown")
-            # Add the new driver to the active list to prevent it from closing.
             self.active_drivers.append(driver)
         except WebDriverException as e:
             logger.log(f"Failed to open browser for {profile.name}: {e}", "ERROR")
 
+    # --- History Methods ---
+    def save_progress_to_history(self, profile: EdgeProfile, progress_str: str):
+        """Appends a new record to the progress_history.csv file."""
+        file_exists = os.path.isfile(config.HISTORY_CSV_PATH)
+        try:
+            with open(config.HISTORY_CSV_PATH, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+                # Write header if the file is new
+                if not file_exists:
+                    writer.writerow(["Date", "ProfileName", "Email", "Progress"])
+                
+                # Write the data row
+                writer.writerow([date.today().isoformat(), profile.name, profile.email, progress_str])
+        except Exception as e:
+            logger.log(f"Failed to write to history file: {e}", "ERROR")
+
+    def open_history_file(self) -> bool:
+        """Opens the history CSV file with the default system program."""
+        if os.path.exists(config.HISTORY_CSV_PATH):
+            try:
+                os.startfile(config.HISTORY_CSV_PATH)
+                return True
+            except Exception as e:
+                logger.log(f"Failed to open history file: {e}", "ERROR")
+                return False
+        else:
+            logger.log(f"History file not found at {config.HISTORY_CSV_PATH}", "WARN")
+            return False
 
     # --- PyAutoGUI Helper Methods ---
     def _pyautogui_open_profiles(self, profiles: List[EdgeProfile]):
@@ -258,18 +279,12 @@ class AutomationService:
 
     # --- Shared and Utility Methods ---
     def close_all_edge_windows(self):
-        """
-        Closes all Selenium-controlled and other Edge windows.
-        """
-        # First, cleanly close any manually opened Selenium drivers
         for driver in self.active_drivers:
             try:
                 driver.quit()
             except Exception:
-                pass # Ignore errors if the browser is already closed
+                pass
         self.active_drivers.clear()
-        
-        # Then, forcefully close any remaining Edge processes
         subprocess.run(['taskkill', '/F', '/IM', 'msedge.exe'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         logger.log("Forcefully closed all Edge processes via UI button.", "SYSTEM")
 

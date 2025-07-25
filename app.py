@@ -101,7 +101,7 @@ class BingAutomatorApp(customtkinter.CTk):
         controls_frame.grid_columnconfigure(0, weight=1)
 
         self.batch_slider = LabeledSlider(controls_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu)
-        self.pc_slider = LabeledSlider(controls_frame, "PC Searches (x3 points):", 0, 75, 3, 39)
+        self.pc_slider = LabeledSlider(controls_frame, "PC Searches (x3 points):", 0, 34, 1, 34)
         self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
         self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
 
@@ -230,7 +230,7 @@ class BingAutomatorApp(customtkinter.CTk):
             if stop_event.is_set():
                 self._update_status("Search Automation Stopped by User.")
             else:
-                self._update_status(f"Search Automation Complete!")
+                self._update_status(f"{colors.BG_BRIGHT_YELLOW}{colors.BLACK}{colors.BOLD} Search Automation Complete! {colors.RESET}")
         finally:
             self.start_button.configure(text="Start Searches", command=self._start_automation_thread, state="normal", fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], hover_color=customtkinter.ThemeManager.theme["CTkButton"]["hover_color"])
             self.daily_sets_button.configure(state="normal")
@@ -304,6 +304,9 @@ class BingAutomatorApp(customtkinter.CTk):
                 
                 if progress is not None and widget:
                     widget.update_points(progress)
+                    # Save to history only if fetch was successful
+                    if "Error" not in progress and "N/A" not in progress:
+                        self.automation_service.save_progress_to_history(profile, progress)
                 
                 self.overall_progress_bar.set((i + 1) / total_profiles)
                 self.overall_progress_label.configure(text=f"{i + 1} / {total_profiles} Profiles")
@@ -389,7 +392,6 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_all_checkbox_state()
 
     def _on_profile_label_click(self, profile: EdgeProfile):
-        # Create a new thread to avoid freezing the GUI
         thread = threading.Thread(target=self.automation_service.open_single_profile_to_breakdown, args=(profile,), daemon=True)
         thread.start()
 
@@ -422,7 +424,7 @@ class BingAutomatorApp(customtkinter.CTk):
         batch_size = self.batch_slider.get()
         num_profiles = len(self.profiles)
         options = [f"{i}-{i + batch_size}" for i in range(0, num_profiles, batch_size)]
-        full_options = ["Options", "Inverse Selection", "Selected Info", "Custom Range...", "Auto-detect Profiles", "Open Log File", "Clear Log File"] + options
+        full_options = ["Options", "Inverse Selection", "Selected Info", "Custom Range...", "Auto-detect Profiles", "Open Log File", "Clear Log File", "View History"] + options
         self.optionmenu.configure(values=full_options)
 
     def _optionmenu_callback(self, choice: str):
@@ -465,6 +467,11 @@ class BingAutomatorApp(customtkinter.CTk):
         elif choice == "Clear Log File":
             logger.clear_log()
             self._update_status("Log file has been cleared.")
+        elif choice == "View History":
+            if self.automation_service.open_history_file():
+                self._update_status("Opening history file...")
+            else:
+                self._update_status("Could not open history file. Fetch some progress first.")
         elif '-' in choice:
             try:
                 start, end = map(int, choice.split('-'))

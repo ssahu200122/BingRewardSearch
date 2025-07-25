@@ -1,50 +1,86 @@
 
---- Log Session Started: 2025-07-25 06:21:43 ---
-[06:21:43] [SYSTEM] Log file cleared by user.
-[06:21:43] [INFO] Log file has been cleared.
-[06:22:25] [INFO] Range 0-4 selected.
-[06:22:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:22:28] [INFO] Fetching progress sequentially...
-[06:23:19] [INFO] Progress fetching complete.
-[06:23:29] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '02:10'}
-[06:23:29] [INFO] Scheduler disabled. Will run daily at 02:10.
-[06:24:18] [INFO] Manually opening points breakdown for Personal
-[06:24:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:24:45] [INFO] Manually opening points breakdown for Personal 2
-[06:24:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:25:10] [INFO] Daily Set Automation started...
-[06:25:10] [INFO] Starting Daily Activities...
-[06:25:10] [INFO] Processing activities for Personal...
-[06:25:48] [INFO] Manually opening points breakdown for Personal
-[06:25:50] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:26:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:26:42] [INFO] No searches to perform.
-[06:26:50] [INFO] Search Automation started...
-[06:26:50] [INFO] Processing Search Batch 1...
-[06:26:50] [INFO] Starting PyAutoGUI searches for 4 profiles...
-[06:27:01] [INFO] Search 'inhabitant' (1/2) in window 'New tab - Personal 4 - Microsoft​ Edge'
-[06:27:08] [INFO] Search 'seminar' (1/2) in window 'New tab - Personal 3 - Microsoft​ Edge'
-[06:27:12] [INFO] Search 'mode' (1/2) in window 'mode - Search - Personal 2 - Microsoft​ Edge'
-[06:27:17] [INFO] Search 'tangy' (1/2) in window 'New tab - Personal - Microsoft​ Edge'
-[06:27:22] [INFO] Search 'exile' (2/2) in window 'exile - Search - Personal 4 - Microsoft​ Edge'
-[06:27:26] [INFO] Search 'mixer' (2/2) in window 'mixer - Search - Personal 3 - Microsoft​ Edge'
-[06:27:31] [INFO] Search 'deceive' (2/2) in window 'deceive - Search - Personal 2 - Microsoft​ Edge'
-[06:27:35] [INFO] Search 'spoil' (2/2) in window 'spoil - Search - Personal - Microsoft​ Edge'
-[06:27:37] [SYSTEM] Forcefully closed all Edge processes via UI button.
-[06:27:37] [INFO] Search Automation Complete!
-[06:28:16] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '02:10'}
-[06:28:16] [INFO] Application has been closed.
+--- Log Session Started: 2025-07-25 11:34:01 ---
+[11:34:01] [SYSTEM] Log file cleared by user.
+[11:34:01] [INFO] Log file has been cleared.
+[11:34:06] [INFO] Opening log file...
+[11:34:07] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '11:24'}
+[11:34:07] [INFO] Schedule time updated to 11:24.
+[11:34:07] [SYSTEM] Tasks scheduled to run daily at 11:24.
+[11:34:19] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '11:24'}
+[11:34:19] [INFO] Schedule time updated to 11:24.
+[11:34:19] [SYSTEM] Tasks scheduled to run daily at 11:24.
+[11:35:36] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '11:24'}
+[11:35:36] [INFO] Schedule time updated to 11:24.
+[11:35:36] [SYSTEM] Tasks scheduled to run daily at 11:24.
 
---- Log Session Started: 2025-07-25 06:30:55 ---
-[06:30:55] [INFO] Application starting up.
-[06:30:55] [INFO] Loading 25 profiles from data.json.
-[06:30:55] [INFO] Successfully loaded 25 profiles.
-[06:31:01] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '02:10'}
-[06:31:01] [INFO] Application has been closed.
+--- Log Session Started: 2025-07-25 18:40:23 ---
+[18:40:23] [INFO] Application starting up.
+[18:40:23] [INFO] Loading 25 profiles from data.json.
+[18:40:23] [INFO] Successfully loaded 25 profiles.
+[18:40:32] [SYSTEM] Tasks scheduled to run daily at 11:24.
+[18:43:04] [SYSTEM] Theme changed to Light
+[18:43:05] [SYSTEM] Theme changed to Dark
+[18:43:07] [SYSTEM] Theme changed to System
+[18:43:08] [SYSTEM] Theme changed to Dark
+[18:43:16] [SYSTEM] Theme changed to System
+[18:45:07] [INFO] Manually opening points breakdown for Personal 5
+[18:45:09] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:45:35] [INFO] Range 0-4 selected.
+[18:45:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:45:59] [INFO] Fetching progress sequentially...
+[18:46:49] [INFO] Progress fetching complete.
+[18:47:50] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '11:24'}
+[18:47:50] [INFO] Scheduler disabled. Will run daily at 11:24.
+[18:47:52] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '11:24'}
+[18:47:52] [INFO] Scheduler enabled. Will run daily at 11:24.
+[18:47:52] [SYSTEM] Tasks scheduled to run daily at 11:24.
+[18:47:53] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '11:24'}
+[18:47:53] [INFO] Scheduler disabled. Will run daily at 11:24.
+[18:47:54] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '11:24'}
+[18:47:54] [INFO] Scheduler enabled. Will run daily at 11:24.
+[18:47:54] [SYSTEM] Tasks scheduled to run daily at 11:24.
+[18:48:57] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '18:50'}
+[18:48:57] [INFO] Schedule time updated to 18:50.
+[18:48:57] [SYSTEM] Tasks scheduled to run daily at 18:50.
+[18:50:00] [INFO] Running scheduled tasks for 2025-07-25...
+[18:50:00] [INFO] Search Automation started...
+[18:50:00] [INFO] Processing Search Batch 1...
+[18:50:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:50:17] [INFO] Search 'rehabilitate' (1/3) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[18:50:23] [INFO] Search 'transcript' (1/3) in window 'transcription - Search - Personal 3 - Microsoft​ Edge'
+[18:50:28] [INFO] Search 'fur' (1/3) in window 'bing.com/search?pglt=299&q=fur&cvid=1f57f70844b54e62a52b6d86ab5dd4f9&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQLhhAMgYICBAAGEDSAQgxMjI5ajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 2 - Microsoft​ Edge'
+[18:50:33] [INFO] Search 'woolens' (1/3) in window 'woolens - Search - Personal - Microsoft​ Edge'
+[18:50:37] [INFO] Search 'pole' (2/3) in window 'polenta - Search - Personal 4 - Microsoft​ Edge'
+[18:50:41] [INFO] Search 'issue' (2/3) in window 'issue - Search - Personal 3 - Microsoft​ Edge'
+[18:50:46] [INFO] Search 'simplify' (2/3) in window 'simplify - Search - Personal 2 - Microsoft​ Edge'
+[18:50:51] [INFO] Search 'medication' (2/3) in window 'medication - Search - Personal - Microsoft​ Edge'
+[18:50:55] [INFO] Search 'gown' (3/3) in window 'gown - Search - Personal 4 - Microsoft​ Edge'
+[18:51:00] [INFO] Search 'globe' (3/3) in window 'globe - Search - Personal 3 - Microsoft​ Edge'
+[18:51:04] [INFO] Search 'office' (3/3) in window 'officer - Search - Personal 2 - Microsoft​ Edge'
+[18:51:10] [INFO] Search 'capricious' (3/3) in window 'capricious - Search - Personal - Microsoft​ Edge'
+[18:51:12] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:51:12] [INFO] Search Automation Complete!
+[18:51:13] [INFO] Daily Set Automation started...
+[18:51:13] [INFO] Starting Daily Activities...
+[18:51:13] [INFO] Processing activities for Personal...
+[18:51:40] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '18:50'}
+[18:51:40] [INFO] Schedule time updated to 18:50.
+[18:51:40] [SYSTEM] Tasks scheduled to run daily at 18:50.
+[18:53:37] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '18:50'}
+[18:53:37] [INFO] Application has been closed.
 
---- Log Session Started: 2025-07-25 06:31:48 ---
-[06:31:48] [INFO] Application starting up.
-[06:31:48] [INFO] Loading 25 profiles from data.json.
-[06:31:48] [INFO] Successfully loaded 25 profiles.
-[06:32:34] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '02:10'}
-[06:32:34] [INFO] Application has been closed.
+--- Log Session Started: 2025-07-25 19:01:07 ---
+[19:01:07] [INFO] Application starting up.
+[19:01:07] [INFO] Loading 25 profiles from data.json.
+[19:01:07] [INFO] Successfully loaded 25 profiles.
+[19:01:09] [SYSTEM] Tasks scheduled to run daily at 18:50.
+[19:01:20] [WARN] History file not found at progress_history.csv
+[19:01:20] [INFO] Could not open history file. Fetch some progress first.
+[19:01:32] [INFO] Range 0-4 selected.
+[19:01:37] [INFO] Range 12-16 selected.
+[19:01:39] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[19:01:40] [INFO] Fetching progress sequentially...
+[19:02:38] [INFO] Progress fetching complete.
+[19:02:43] [INFO] Opening history file...
+[19:04:07] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '18:50'}
+[19:04:07] [INFO] Application has been closed.
