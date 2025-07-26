@@ -1,118 +1,153 @@
 # BingRewardSearch/ui_components.py
 
 import customtkinter
+from typing import Callable
 from edge_profile import EdgeProfile
+
+class LabeledSlider(customtkinter.CTkFrame):
+    """
+    A custom widget combining a CTkLabel and a CTkSlider.
+    """
+    def __init__(self, master, text, from_, to, step, initial_value, command=None):
+        super().__init__(master)
+        self.grid_columnconfigure(0, weight=1)
+        self.label = customtkinter.CTkLabel(self, text=f"{text} {initial_value}", anchor="w")
+        self.label.grid(row=0, column=0, sticky="ew", padx=5)
+        self.slider = customtkinter.CTkSlider(self, from_=from_, to=to, number_of_steps=(to - from_) // step, command=self._update_label)
+        self.slider.set(initial_value)
+        self.slider.grid(row=1, column=0, sticky="ew", padx=5)
+        self.text = text
+        self.command = command
+
+    def _update_label(self, value):
+        self.label.configure(text=f"{self.text} {int(value)}")
+        if self.command:
+            self.command(value)
+
+    def get(self):
+        return int(self.slider.get())
 
 class ProfileRow(customtkinter.CTkFrame):
     """
-    A custom widget representing a single profile row in the UI.
-    Includes a status button, checkbox, a label for the profile name, and a points display.
+    A custom widget representing a single profile in the list with a two-row design.
     """
-    def __init__(self, master, profile: EdgeProfile, on_select_callback, on_label_click_callback, on_status_toggle_callback):
-        super().__init__(master, fg_color="transparent")
+    def __init__(self, master, profile: EdgeProfile, on_select_callback: Callable, on_label_click_callback: Callable, on_status_toggle_callback: Callable):
+        # Made the background color slightly darker for dark mode
+        super().__init__(master, fg_color=("gray90", "gray25"), corner_radius=8)
         self.profile = profile
         self.on_select_callback = on_select_callback
         self.on_label_click_callback = on_label_click_callback
         self.on_status_toggle_callback = on_status_toggle_callback
 
-        self.grid_columnconfigure(2, weight=1)
+        # --- Grid Layout Configuration ---
+        self.grid_columnconfigure(1, weight=1) # Make the label column expandable
 
-        # --- Status Toggle Button with Serial Number ---
+        # --- Row 1 Widgets: Status Button and Profile Label ---
         self.status_button = customtkinter.CTkButton(
             self,
-            text=str(profile.index), # Display serial number
-            width=28,
+            text=str(profile.index), # Display index number
+            width=40,
+            corner_radius=8, # Rounded corners for a square-like shape
             command=self._toggle_status
         )
-        self.status_button.grid(row=0, column=0, padx=(0, 5))
+        self.status_button.grid(row=0, column=0, padx=(5, 10), pady=(5, 2))
+        self._update_status_button_color()
 
-        self.check_var = customtkinter.StringVar(value="on")
-        self.checkbox = customtkinter.CTkCheckBox(self, text="", variable=self.check_var, onvalue="on", offvalue="off", command=self._on_check, width=20)
-        self.checkbox.grid(row=0, column=1, padx=5)
+        self.profile_font = customtkinter.CTkFont(size=14, weight="bold", slant="italic", underline=True)
+        self.label_color_active = "#3b82f6" # Light blue for active profiles
+        self.label_color_suspended = "gray60" # Gray for suspended profiles
+        self.label_hover_color = "#FFD700" # Yellow/Gold color for hover
 
-        # --- Define Fonts and Colors for styling ---
-        self.label_font = customtkinter.CTkFont(weight="bold", slant="italic", underline=True, size=14)
-        self.points_font = customtkinter.CTkFont(weight="bold", size=14)
+        self.label = customtkinter.CTkLabel(
+            self,
+            # --- MODIFICATION START ---
+            # Add a non-breaking space to prevent the last character from being cut off
+            text=profile.full_name + "\u00A0", 
+            # --- MODIFICATION END ---
+            font=self.profile_font,
+            anchor="w"
+        )
+        # Removed the incorrect padding fix from the previous version
+        self.label.grid(row=0, column=1, pady=(5, 2), sticky="ew")
         
-        self.default_color = "#3498db"
-        self.hover_color = "#f1c40f"
-        self.suspended_color = "gray60"
-        
-        self.active_bg_color = "#2ECC71"  # Green
-        self.suspended_bg_color = "#E74C3C" # Light Red
-
-        self.label = customtkinter.CTkLabel(self, text=profile.full_name, anchor="w", cursor="hand2", font=self.label_font, text_color=self.default_color)
-        self.label.grid(row=0, column=2, sticky="ew", padx=5)
-        
-        self.points_label = customtkinter.CTkLabel(self, text="0/0 pts", anchor="e", width=80, font=self.points_font)
-        self.points_label.grid(row=0, column=3, sticky="e", padx=5)
-
-        # Bind events for hover effect and click
-        self.label.bind("<Button-1>", lambda e: self.on_label_click_callback(self.profile))
+        # Bind events for hover effect and clicking
+        self.label.bind("<Button-1>", self._on_label_click)
         self.label.bind("<Enter>", self._on_enter)
         self.label.bind("<Leave>", self._on_leave)
         
-        self.update_status_visual()
+        # --- Row 2 Widgets: Points Label and Checkbox ---
+        self.points_label = customtkinter.CTkLabel(
+            self,
+            text="",
+            anchor="w",
+            font=customtkinter.CTkFont(size=12, weight="bold"),
+            text_color=("gray98", "#A7D3A4") # Light green text color
+        )
+        self.points_label.grid(row=1, column=1, padx=0, pady=(0, 5), sticky="w")
+
+        self.check_var = customtkinter.StringVar(value="on")
+        self.checkbox = customtkinter.CTkCheckBox(
+            self,
+            text="",
+            variable=self.check_var,
+            onvalue="on",
+            offvalue="off",
+            command=self._on_select,
+            width=25
+        )
+        self.checkbox.grid(row=1, column=0, padx=(5, 10), pady=(0, 5))
+        
+        # Set initial label color based on status
+        self._update_label_color()
 
     def _on_enter(self, event):
-        self.label.configure(text_color=self.hover_color)
+        """Handler for mouse entering the label area."""
+        self.label.configure(text_color=self.label_hover_color, cursor="hand2")
 
     def _on_leave(self, event):
-        if self.profile.status == 'active':
-            self.label.configure(text_color=self.default_color)
-        else:
-            self.label.configure(text_color=self.suspended_color)
-
-    def _on_check(self):
-        is_selected = self.check_var.get() == "on"
-        self.on_select_callback(self.profile, is_selected)
-
-    def set_checked(self, is_checked: bool):
-        self.check_var.set("on" if is_checked else "off")
-
-    def update_points(self, points_text: str):
-        self.points_label.configure(text=points_text)
+        """Handler for mouse leaving the label area."""
+        # Restore the correct color based on status, not a fixed color
+        self._update_label_color()
+        self.label.configure(cursor="")
 
     def _toggle_status(self):
+        """Toggles the profile status between 'active' and 'suspended'."""
         self.profile.status = "suspended" if self.profile.status == "active" else "active"
-        self.update_status_visual()
+        self._update_status_button_color()
+        # Update the label color when status changes
+        self._update_label_color()
         if self.on_status_toggle_callback:
             self.on_status_toggle_callback(self.profile)
 
-    def update_status_visual(self):
+    def _update_label_color(self):
+        """Sets the profile label color based on its current status."""
         if self.profile.status == "active":
-            self.status_button.configure(fg_color=self.active_bg_color)
-            self.label.configure(text_color=self.default_color, font=self.label_font)
-            self.points_label.configure(text_color=customtkinter.ThemeManager.theme["CTkLabel"]["text_color"])
-            self.checkbox.configure(state="normal")
+            self.label.configure(text_color=self.label_color_active)
         else:
-            self.status_button.configure(fg_color=self.suspended_bg_color)
-            self.label.configure(text_color=self.suspended_color, font=customtkinter.CTkFont(slant="roman", underline=False, size=14))
-            self.points_label.configure(text_color=self.suspended_color)
-            self.checkbox.configure(state="normal") # <-- THIS IS THE CHANGE
+            self.label.configure(text_color=self.label_color_suspended)
 
-class LabeledSlider(customtkinter.CTkFrame):
-    def __init__(self, master, text: str, from_: int, to: int, step: int, initial_value: int, command=None):
-        super().__init__(master)
-        self.configure(fg_color="transparent")
-        self.grid_columnconfigure(0, weight=1)
-        self.grid_columnconfigure(1, weight=1)
+    def _update_status_button_color(self):
+        """Changes the button color based on the profile's status."""
+        if self.profile.status == "active":
+            self.status_button.configure(fg_color="green", hover_color="#006400")
+        else:
+            self.status_button.configure(fg_color="#E53935", hover_color="#C62828") # Light red and darker red
 
-        self.label = customtkinter.CTkLabel(self, text=f"{text} {initial_value}")
-        self.label.grid(row=0, column=0, sticky="w", padx=5)
+    def update_points(self, points_text: str):
+        """Updates the text of the points label."""
+        self.points_label.configure(text=points_text)
 
-        self.slider = customtkinter.CTkSlider(self, from_=from_, to=to, number_of_steps=(to - from_) // step, command=self._slider_event_wrapper)
-        self.slider.set(initial_value)
-        self.slider.grid(row=1, column=0, columnspan=2, sticky="ew", padx=5)
-        
-        self.text = text
-        self.command = command
+    def _on_select(self):
+        """Callback for when the checkbox is clicked."""
+        is_selected = self.check_var.get() == "on"
+        if self.on_select_callback:
+            self.on_select_callback(self.profile, is_selected)
 
-    def _slider_event_wrapper(self, value):
-        int_value = int(value)
-        self.label.configure(text=f"{self.text} {int_value}")
-        if self.command:
-            self.command(int_value)
-            
-    def get(self) -> int:
-        return int(self.slider.get())
+    def set_checked(self, is_checked: bool):
+        """Programmatically sets the checkbox state."""
+        self.check_var.set("on" if is_checked else "off")
+
+    def _on_label_click(self, event):
+        """Callback for when the main profile label is clicked."""
+        if self.on_label_click_callback:
+            self.on_label_click_callback(self.profile)

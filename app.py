@@ -33,9 +33,17 @@ class BingAutomatorApp(customtkinter.CTk):
         self.stop_event = None
         self.selenium_lock = threading.Lock()
 
+        self.left_frame_visible = True
+        self.right_frame_visible = True
+        self.top_frame_visible = True
+        
+        self.original_geometry = config.APP_GEOMETRY
+
         self._configure_window()
         self._create_widgets()
         self._update_all_checkbox_text()
+        
+        self._update_status_counts()
         
         self._load_and_display_initial_progress()
         
@@ -59,107 +67,81 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _configure_window(self):
         self.title(config.APP_TITLE)
-        self.geometry(config.APP_GEOMETRY)
+        
+        # --- MODIFICATION START ---
+        # Calculate position for bottom right of the screen
+        self.update_idletasks() # Ensure window info is up-to-date before calculations
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+        print(f"screen_width: {screen_width}, screen_height: {screen_height}")
+
+        app_width_str, app_height_str = self.original_geometry.split('x')
+        app_width = int(app_width_str)
+        app_height = int(app_height_str)
+
+        print(f"app_width: {app_width}, app_height: {app_height}")
+
+        # Position app at bottom right, accounting for taskbar (approx. 40px)
+        x_coordinate = screen_width - app_width-210
+        y_coordinate = screen_height - app_height -200
+
+        print(f"x_coordinate: {x_coordinate}, y_coordinate: {y_coordinate}")
+        
+        self.geometry(f"{app_width}x{app_height}+{x_coordinate}+{y_coordinate}")
+        # --- MODIFICATION END ---
+
         self.attributes("-topmost", True)
-        self.grid_columnconfigure(0, weight=3)
-        self.grid_columnconfigure(1, weight=2)
+        self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(0, weight=1)
+        self.grid_rowconfigure(1, weight=0)
         self.protocol("WM_DELETE_WINDOW", self._on_closing)
 
     def _create_widgets(self):
-        # --- Left Frame ---
-        profile_frame = customtkinter.CTkFrame(self)
-        profile_frame.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
-        profile_frame.grid_rowconfigure(1, weight=1)
-        profile_frame.grid_columnconfigure(0, weight=1)
+        # --- Top Frames Container ---
+        self.top_frame = customtkinter.CTkFrame(self, fg_color="transparent")
+        self.top_frame.grid(row=0, column=0, sticky="nsew")
+        self.top_frame.grid_columnconfigure(0, weight=7)
+        self.top_frame.grid_columnconfigure(1, weight=3)
+        self.top_frame.grid_rowconfigure(0, weight=1)
+
+        # --- Create Full and Collapsed versions of Left Frame ---
+        self._create_left_frame()
+        self._create_left_frame_collapsed()
+        self.left_frame_collapsed.grid_remove()
+
+        # --- Create Full and Collapsed versions of Right Frame ---
+        self._create_right_frame()
+        self._create_right_frame_collapsed()
+        self.right_frame_collapsed.grid_remove()
+
+        # --- New Consolidated Bottom Frame ---
+        self.bottom_frame = customtkinter.CTkFrame(self)
+        self.bottom_frame.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="ew")
+        self.bottom_frame.grid_columnconfigure(0, weight=1)
+
+        action_frame = customtkinter.CTkFrame(self.bottom_frame)
+        action_frame.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
         
-        search_frame = customtkinter.CTkFrame(profile_frame, corner_radius=8)
-        search_frame.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
-        search_frame.grid_columnconfigure(1, weight=1)
-
-        try:
-            search_icon_image = customtkinter.CTkImage(Image.open("search_icon.png"), size=(20, 20))
-            search_icon_label = customtkinter.CTkLabel(search_frame, image=search_icon_image, text="")
-        except FileNotFoundError:
-            logger.log("search_icon.png not found. Using emoji fallback.", level="WARN")
-            search_icon_label = customtkinter.CTkLabel(search_frame, text="🔍", width=20, font=("Segoe UI Emoji", 16))
-        search_icon_label.grid(row=0, column=0, padx=(10, 5), pady=5)
-
-        self.search_var = customtkinter.StringVar()
-        self.search_entry = customtkinter.CTkEntry(search_frame, placeholder_text="Search profiles...", textvariable=self.search_var, border_width=0, fg_color="transparent")
-        self.search_entry.grid(row=0, column=1, sticky="ew", pady=5, padx=(0, 5))
-        self.search_var.trace_add("write", self._filter_profiles)
-
-        self.scrollable_frame = customtkinter.CTkScrollableFrame(profile_frame)
-        self.scrollable_frame.grid(row=1, column=0, sticky="nsew", padx=5, pady=5)
-        
-        for profile in self.profiles:
-            profile_widget = ProfileRow(
-                self.scrollable_frame, 
-                profile, 
-                self._on_profile_select, 
-                self._on_profile_label_click,
-                self._on_status_toggle  # Pass the new callback here
-            )
-            profile_widget.pack(fill="x", expand=True, padx=5, pady=2)
-            self.profile_widget_map[profile] = profile_widget
-
-        # --- Right Frame ---
-        controls_frame = customtkinter.CTkScrollableFrame(self)
-        controls_frame.grid(row=0, column=1, padx=(0, 10), pady=10, sticky="nsew")
-        controls_frame.grid_columnconfigure(0, weight=1)
-
-        self.batch_slider = LabeledSlider(controls_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu)
-        self.pc_slider = LabeledSlider(controls_frame, "PC Searches (x3 points):", 0, 34, 1, 34)
-        self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
-        self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
-
-        self.daily_sets_button = customtkinter.CTkButton(controls_frame, text="Run Daily Sets", command=self._start_daily_sets_thread, fg_color="#FF8C00", hover_color="#FFA500")
-        self.daily_sets_button.pack(fill="x", padx=10, pady=(10, 10))
-        
-        self.fetch_progress_button = customtkinter.CTkButton(controls_frame, text="Fetch Progress", command=self._start_fetch_progress_thread, fg_color="teal")
-        self.fetch_progress_button.pack(fill="x", padx=10, pady=(0, 10))
-
-        scheduler_frame = customtkinter.CTkFrame(controls_frame)
-        scheduler_frame.pack(fill="x", padx=10, pady=10)
-        scheduler_frame.grid_columnconfigure(1, weight=1)
-        scheduler_title = customtkinter.CTkLabel(scheduler_frame, text="Daily Scheduler", font=customtkinter.CTkFont(weight="bold"))
-        scheduler_title.grid(row=0, column=0, columnspan=2, padx=10, pady=(5, 10), sticky="w")
-        self.schedule_switch_var = customtkinter.StringVar(value="on" if self.settings["schedule_enabled"] else "off")
-        schedule_switch = customtkinter.CTkSwitch(scheduler_frame, text="Enable Schedule", variable=self.schedule_switch_var, onvalue="on", offvalue="off", command=self._toggle_schedule)
-        schedule_switch.grid(row=1, column=0, columnspan=2, padx=10, pady=5, sticky="w")
-        schedule_time_label = customtkinter.CTkLabel(scheduler_frame, text="Run at (24h format):")
-        schedule_time_label.grid(row=2, column=0, padx=10, pady=(0, 10))
-        self.schedule_time_entry = customtkinter.CTkEntry(scheduler_frame, width=60)
-        self.schedule_time_entry.insert(0, self.settings["schedule_time"])
-        self.schedule_time_entry.grid(row=2, column=1, padx=10, pady=(0, 10), sticky="w")
-        self.schedule_time_entry.bind("<FocusOut>", self._save_schedule_time)
-        self.schedule_time_entry.bind("<Return>", self._save_schedule_time)
-
-        theme_label = customtkinter.CTkLabel(controls_frame, text="Theme:")
-        theme_label.pack(padx=10, pady=(10, 0), anchor="w")
-        self.theme_switcher = customtkinter.CTkSegmentedButton(controls_frame, values=["Light", "Dark", "System"], command=self._theme_switch_callback)
-        self.theme_switcher.set("System")
-        self.theme_switcher.pack(fill="x", padx=10, pady=(5, 10))
-
-        # --- Bottom Frame ---
-        action_frame = customtkinter.CTkFrame(self)
-        action_frame.grid(row=1, column=0, columnspan=2, padx=10, pady=(0, 5), sticky="ew")
         self.all_check_var = customtkinter.StringVar(value="on")
         self.all_checkbox = customtkinter.CTkCheckBox(action_frame, text="", variable=self.all_check_var, onvalue="on", offvalue="off", command=self._toggle_all_profiles)
         self.all_checkbox.grid(row=0, column=0, padx=5, pady=5)
+        
         self.optionmenu_var = customtkinter.StringVar(value="Options")
         self.optionmenu = customtkinter.CTkOptionMenu(action_frame, variable=self.optionmenu_var, command=self._optionmenu_callback)
         self.optionmenu.grid(row=0, column=1, padx=5, pady=5)
         self._update_option_menu()
+        
         self.close_button = customtkinter.CTkButton(action_frame, text="Close Edge", command=self.automation_service.close_all_edge_windows, fg_color="green")
         self.close_button.grid(row=0, column=2, padx=5, pady=5)
+        
         self.start_button = customtkinter.CTkButton(action_frame, text="Start Searches", command=self._start_automation_thread)
         self.start_button.grid(row=0, column=3, padx=5, pady=5)
+
+        self.collapse_top_button = customtkinter.CTkButton(action_frame, text="▲", width=25, command=self._toggle_top_frame)
+        self.collapse_top_button.grid(row=0, column=4, padx=5, pady=5)
         
-        # --- Progress and Status Frame ---
-        progress_frame = customtkinter.CTkFrame(self, fg_color="transparent")
-        progress_frame.grid(row=2, column=0, columnspan=2, padx=10, pady=(0, 10), sticky="ew")
+        progress_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent")
+        progress_frame.grid(row=1, column=0, padx=5, pady=0, sticky="ew")
         progress_frame.grid_columnconfigure(1, weight=1)
         
         batch_label = customtkinter.CTkLabel(progress_frame, text="Batch:", width=50)
@@ -178,13 +160,211 @@ class BingAutomatorApp(customtkinter.CTk):
         self.overall_progress_label = customtkinter.CTkLabel(progress_frame, text="0 / 0 Points", width=100, anchor="w")
         self.overall_progress_label.grid(row=1, column=2, padx=5, pady=2)
 
-        self.status_label = customtkinter.CTkLabel(self, text="Ready", anchor="w")
-        self.status_label.grid(row=3, column=0, columnspan=2, padx=10, pady=(0, 5), sticky="ew")
+        bottom_info_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent")
+        bottom_info_frame.grid(row=2, column=0, padx=5, pady=5, sticky="ew")
+        bottom_info_frame.grid_columnconfigure(0, weight=1)
+
+        self.status_label = customtkinter.CTkLabel(bottom_info_frame, text="Ready", anchor="w")
+        self.status_label.grid(row=0, column=0, sticky="ew")
+
+        status_count_frame = customtkinter.CTkFrame(bottom_info_frame, fg_color="transparent")
+        status_count_frame.grid(row=0, column=1, sticky="e")
+
+        self.active_count_label = customtkinter.CTkLabel(status_count_frame, text="Active: 0", font=customtkinter.CTkFont(weight="bold"))
+        self.active_count_label.pack(side="left", padx=(0, 10))
+        
+        self.suspended_count_label = customtkinter.CTkLabel(status_count_frame, text="Suspended: 0", font=customtkinter.CTkFont(weight="bold"))
+        self.suspended_count_label.pack(side="left")
+
+    def _create_left_frame(self):
+        self.profile_frame = customtkinter.CTkFrame(self.top_frame)
+        self.profile_frame.grid(row=0, column=0, padx=(10, 5), pady=10, sticky="nsew")
+        self.profile_frame.grid_rowconfigure(1, weight=1)
+        self.profile_frame.grid_columnconfigure(0, weight=1)
+
+        left_header = customtkinter.CTkFrame(self.profile_frame)
+        left_header.grid(row=0, column=0, sticky="ew")
+        left_header.grid_columnconfigure(0, weight=1)
+        
+        left_title = customtkinter.CTkLabel(left_header, text="Profiles", font=customtkinter.CTkFont(weight="bold"))
+        left_title.grid(row=0, column=0, padx=10, pady=5, sticky="w")
+        
+        collapse_left_button = customtkinter.CTkButton(left_header, text="◄", width=25, command=self._toggle_left_frame)
+        collapse_left_button.grid(row=0, column=1, padx=5, pady=5, sticky="e")
+
+        profile_content_frame = customtkinter.CTkFrame(self.profile_frame, fg_color="transparent")
+        profile_content_frame.grid(row=1, column=0, sticky="nsew")
+        profile_content_frame.grid_rowconfigure(1, weight=1)
+        profile_content_frame.grid_columnconfigure(0, weight=1)
+
+        search_frame = customtkinter.CTkFrame(profile_content_frame, corner_radius=8, border_width=1)
+        search_frame.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
+        search_frame.grid_columnconfigure(1, weight=1)
+
+        try:
+            search_icon_image = customtkinter.CTkImage(Image.open("search_icon.png"), size=(20, 20))
+            search_icon_label = customtkinter.CTkLabel(search_frame, image=search_icon_image, text="")
+        except FileNotFoundError:
+            search_icon_label = customtkinter.CTkLabel(search_frame, text="🔍", width=20, font=("Segoe UI Emoji", 16))
+        search_icon_label.grid(row=0, column=0, padx=(10, 5), pady=5)
+
+        self.search_var = customtkinter.StringVar()
+        self.search_entry = customtkinter.CTkEntry(search_frame, placeholder_text="Search profiles...", textvariable=self.search_var, border_width=0, fg_color="transparent")
+        self.search_entry.grid(row=0, column=1, sticky="ew", pady=5, padx=(0, 5))
+        self.search_var.trace_add("write", self._filter_profiles)
+
+        self.scrollable_frame = customtkinter.CTkScrollableFrame(profile_content_frame)
+        self.scrollable_frame.grid(row=1, column=0, sticky="nsew", padx=5, pady=5)
+        
+        for profile in self.profiles:
+            profile_widget = ProfileRow(self.scrollable_frame, profile, self._on_profile_select, self._on_profile_label_click, self._on_status_toggle)
+            profile_widget.pack(fill="x", expand=True, padx=5, pady=2)
+            self.profile_widget_map[profile] = profile_widget
+
+    def _create_left_frame_collapsed(self):
+        self.left_frame_collapsed = customtkinter.CTkFrame(self.top_frame)
+        self.left_frame_collapsed.grid_columnconfigure(0, weight=1)
+        
+        left_title = customtkinter.CTkLabel(self.left_frame_collapsed, text="Profiles", font=customtkinter.CTkFont(weight="bold"))
+        left_title.grid(row=0, column=0, padx=10, pady=5, sticky="w")
+        
+        expand_left_button = customtkinter.CTkButton(self.left_frame_collapsed, text="►", width=25, command=self._toggle_left_frame)
+        expand_left_button.grid(row=0, column=1, padx=5, pady=5, sticky="e")
+
+    def _create_right_frame(self):
+        self.controls_frame = customtkinter.CTkFrame(self.top_frame)
+        self.controls_frame.grid(row=0, column=1, padx=(5, 10), pady=10, sticky="nsew")
+        self.controls_frame.grid_rowconfigure(1, weight=1)
+        self.controls_frame.grid_columnconfigure(0, weight=1)
+
+        right_header = customtkinter.CTkFrame(self.controls_frame)
+        right_header.grid(row=0, column=0, sticky="ew")
+        right_header.grid_columnconfigure(0, weight=1)
+
+        right_title = customtkinter.CTkLabel(right_header, text="Controls", font=customtkinter.CTkFont(weight="bold"))
+        right_title.grid(row=0, column=0, padx=10, pady=5, sticky="w")
+
+        collapse_right_button = customtkinter.CTkButton(right_header, text="►", width=25, command=self._toggle_right_frame)
+        collapse_right_button.grid(row=0, column=1, padx=5, pady=5, sticky="e")
+        
+        self.controls_content_frame = customtkinter.CTkScrollableFrame(self.controls_frame)
+        self.controls_content_frame.grid(row=1, column=0, sticky="nsew")
+        self.controls_content_frame.grid_columnconfigure(0, weight=1)
+
+        self.batch_slider = LabeledSlider(self.controls_content_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu)
+        self.pc_slider = LabeledSlider(self.controls_content_frame, "PC Searches (x3 points):", 0, 34, 1, 34)
+        self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
+        self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
+
+        self.daily_sets_button = customtkinter.CTkButton(self.controls_content_frame, text="Run Daily Sets", command=self._start_daily_sets_thread, fg_color="#FF8C00", hover_color="#FFA500")
+        self.daily_sets_button.pack(fill="x", padx=10, pady=(10, 10))
+        
+        self.fetch_progress_button = customtkinter.CTkButton(self.controls_content_frame, text="Fetch Progress", command=self._start_fetch_progress_thread, fg_color="teal")
+        self.fetch_progress_button.pack(fill="x", padx=10, pady=(0, 10))
+
+        scheduler_frame = customtkinter.CTkFrame(self.controls_content_frame)
+        scheduler_frame.pack(fill="x", padx=10, pady=10)
+        scheduler_frame.grid_columnconfigure(1, weight=1)
+        scheduler_title = customtkinter.CTkLabel(scheduler_frame, text="Daily Scheduler", font=customtkinter.CTkFont(weight="bold"))
+        scheduler_title.grid(row=0, column=0, columnspan=2, padx=10, pady=(5, 10), sticky="w")
+        self.schedule_switch_var = customtkinter.StringVar(value="on" if self.settings["schedule_enabled"] else "off")
+        schedule_switch = customtkinter.CTkSwitch(scheduler_frame, text="Enable Schedule", variable=self.schedule_switch_var, onvalue="on", offvalue="off", command=self._toggle_schedule)
+        schedule_switch.grid(row=1, column=0, columnspan=2, padx=10, pady=5, sticky="w")
+        schedule_time_label = customtkinter.CTkLabel(scheduler_frame, text="Run at (24h format):")
+        schedule_time_label.grid(row=2, column=0, padx=10, pady=(0, 10))
+        self.schedule_time_entry = customtkinter.CTkEntry(scheduler_frame, width=60)
+        self.schedule_time_entry.insert(0, self.settings["schedule_time"])
+        self.schedule_time_entry.grid(row=2, column=1, padx=10, pady=(0, 10), sticky="w")
+        self.schedule_time_entry.bind("<FocusOut>", self._save_schedule_time)
+        self.schedule_time_entry.bind("<Return>", self._save_schedule_time)
+
+        theme_label = customtkinter.CTkLabel(self.controls_content_frame, text="Theme:")
+        theme_label.pack(padx=10, pady=(10, 0), anchor="w")
+        self.theme_switcher = customtkinter.CTkSegmentedButton(self.controls_content_frame, values=["Light", "Dark", "System"], command=self._theme_switch_callback)
+        self.theme_switcher.set("System")
+        self.theme_switcher.pack(fill="x", padx=10, pady=(5, 10))
+
+    def _create_right_frame_collapsed(self):
+        self.right_frame_collapsed = customtkinter.CTkFrame(self.top_frame)
+        self.right_frame_collapsed.grid_columnconfigure(0, weight=1)
+
+        right_title = customtkinter.CTkLabel(self.right_frame_collapsed, text="Controls", font=customtkinter.CTkFont(weight="bold"))
+        right_title.grid(row=0, column=0, padx=10, pady=5, sticky="w")
+
+        expand_right_button = customtkinter.CTkButton(self.right_frame_collapsed, text="◄", width=25, command=self._toggle_right_frame)
+        expand_right_button.grid(row=0, column=1, padx=5, pady=5, sticky="e")
+
+    def _toggle_left_frame(self):
+        self.left_frame_visible = not self.left_frame_visible
+        if self.left_frame_visible:
+            self.left_frame_collapsed.grid_remove()
+            self.profile_frame.grid()
+            self.top_frame.grid_columnconfigure(0, weight=7)
+        else:
+            self.profile_frame.grid_remove()
+            self.left_frame_collapsed.grid(row=0, column=0, padx=(10, 5), pady=10, sticky="nsew")
+            self.top_frame.grid_columnconfigure(0, weight=0)
+
+    def _toggle_right_frame(self):
+        self.right_frame_visible = not self.right_frame_visible
+        if self.right_frame_visible:
+            self.right_frame_collapsed.grid_remove()
+            self.controls_frame.grid()
+            self.top_frame.grid_columnconfigure(1, weight=3)
+        else:
+            self.controls_frame.grid_remove()
+            self.right_frame_collapsed.grid(row=0, column=1, padx=(5, 10), pady=10, sticky="nsew")
+            self.top_frame.grid_columnconfigure(1, weight=0)
+
+    def _toggle_top_frame(self):
+        self.top_frame_visible = not self.top_frame_visible
+        if self.top_frame_visible:
+            self.top_frame.grid()
+            self.collapse_top_button.configure(text="▲")
+            self.grid_rowconfigure(0, weight=1)
+            self.geometry(self.original_geometry)
+        else:
+            self.top_frame.grid_remove()
+            self.collapse_top_button.configure(text="▼")
+            self.grid_rowconfigure(0, weight=0)
+            self.update_idletasks()
+            new_height = self.bottom_frame.winfo_reqheight() + 20
+            self.geometry(f"{self.winfo_width()}x{new_height}")
+    
+    def _scroll_to_profile(self, profile: EdgeProfile):
+        """Scrolls the profile list to center the specified profile's widget."""
+        widget_to_scroll_to = self.profile_widget_map.get(profile)
+        if widget_to_scroll_to:
+            self.update_idletasks()
+            try:
+                canvas_height = self.scrollable_frame._parent_canvas.winfo_height()
+                widget_height = widget_to_scroll_to.winfo_height()
+                widget_y = widget_to_scroll_to.winfo_y()
+                
+                scroll_position = widget_y - (canvas_height / 2) + (widget_height / 2)
+                
+                scrollable_content_height = self.scrollable_frame._parent_canvas.bbox("all")[3]
+                
+                if scrollable_content_height > 0:
+                    final_position = scroll_position / scrollable_content_height
+                    clamped_position = max(0.0, min(1.0, final_position))
+                    self.scrollable_frame._parent_canvas.yview_moveto(clamped_position)
+            except Exception as e:
+                logger.log(f"Error scrolling to profile: {e}", "WARN")
+
+    def _update_status_counts(self):
+        """Calculates and displays the number of active and suspended profiles."""
+        active_count = sum(1 for p in self.profiles if p.status == 'active')
+        suspended_count = len(self.profiles) - active_count
+        
+        self.active_count_label.configure(text=f"Active: {active_count}", text_color="lightgreen")
+        self.suspended_count_label.configure(text=f"Suspended: {suspended_count}", text_color="orange")
 
     def _on_status_toggle(self, profile: EdgeProfile):
         """Called when a profile's status button is clicked. Only saves the state."""
         self._update_status(f"Profile {profile.name} set to '{profile.status}'.")
         self._save_all_profiles_to_json()
+        self._update_status_counts()
 
     def _save_all_profiles_to_json(self):
         """Saves the current state of all profiles back to data.json."""
@@ -220,8 +400,7 @@ class BingAutomatorApp(customtkinter.CTk):
     def _start_automation_thread(self):
         self.stop_event = threading.Event()
         
-        # Automation runs on ALL selected profiles, regardless of status
-        profiles_to_run = list(self.selected_profiles)
+        profiles_to_run = sorted(list(self.selected_profiles), key=lambda p: p.index)
         
         if not profiles_to_run:
             self._update_status("No profiles selected. Nothing to do.")
@@ -293,6 +472,13 @@ class BingAutomatorApp(customtkinter.CTk):
 
                     for profile in profiles_to_verify:
                         if stop_event.is_set(): break
+                        
+                        self.after(0, self._scroll_to_profile, profile)
+                        
+                        if profile.status == 'suspended':
+                            self._update_status(f"Skipping progress check for suspended profile: {profile.name}")
+                            continue
+
                         widget = self.profile_widget_map.get(profile)
                         progress_str = None
 
@@ -366,7 +552,7 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _start_daily_sets_thread(self):
         self.stop_event = threading.Event()
-        profiles_to_run = list(self.selected_profiles)
+        profiles_to_run = sorted(list(self.selected_profiles), key=lambda p: p.index)
         
         if not profiles_to_run:
             self._update_status("No profiles selected. Nothing to do.")
@@ -394,7 +580,14 @@ class BingAutomatorApp(customtkinter.CTk):
                 self.overall_progress_label.configure(text=f"{profiles_done} / {total_profiles_to_do} Profiles")
                 self.batch_progress_bar.set(profiles_done / total_profiles_to_do)
 
-            self.automation_service.run_daily_activities(profiles=profiles_to_run, stop_event=stop_event, headless=False, progress_callback=self._update_status, on_activity_progress=update_daily_set_progress)
+            self.automation_service.run_daily_activities(
+                profiles=profiles_to_run, 
+                stop_event=stop_event, 
+                headless=False, 
+                progress_callback=self._update_status, 
+                on_activity_progress=update_daily_set_progress,
+                on_profile_start=lambda profile: self.after(0, self._scroll_to_profile, profile)
+            )
             
             if stop_event.is_set():
                 self._update_status("Daily Set Automation Stopped by User.")
@@ -409,7 +602,7 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _start_fetch_progress_thread(self):
         self.stop_event = threading.Event()
-        profiles_to_run = list(self.selected_profiles)
+        profiles_to_run = sorted(list(self.selected_profiles), key=lambda p: p.index)
 
         if not profiles_to_run:
             self._update_status("No profiles selected. Nothing to do.")
@@ -424,8 +617,14 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _fetch_progress_worker(self, profiles_to_run: List[EdgeProfile], stop_event: threading.Event):
         try:
+            active_profiles_to_run = [p for p in profiles_to_run if p.status == 'active']
+            if not active_profiles_to_run:
+                self._update_status("No active profiles selected to fetch.")
+                return
+
+            total_profiles = len(active_profiles_to_run)
+            
             self.selenium_lock.acquire()
-            total_profiles = len(profiles_to_run)
             self._update_status("Fetching progress sequentially...")
             self.overall_progress_label.configure(text=f"0 / {total_profiles} Profiles")
             self.overall_progress_bar.set(0)
@@ -435,8 +634,10 @@ class BingAutomatorApp(customtkinter.CTk):
             self.automation_service.close_all_edge_windows()
             time.sleep(1)
 
-            for i, profile in enumerate(profiles_to_run):
+            for i, profile in enumerate(active_profiles_to_run):
                 if stop_event.is_set(): break
+                
+                self.after(0, self._scroll_to_profile, profile)
                 
                 widget = self.profile_widget_map.get(profile)
                 if widget:
@@ -508,7 +709,6 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_status(f"Running scheduled tasks for {time.strftime('%Y-%m-%d')}...")
         stop_event = threading.Event()
         
-        # Scheduled tasks run on all profiles marked as "active"
         profiles_to_run = [p for p in self.profiles if p.status == 'active']
 
         def task_runner():
@@ -569,8 +769,12 @@ class BingAutomatorApp(customtkinter.CTk):
     def _update_option_menu(self, value=None):
         batch_size = self.batch_slider.get()
         num_profiles = len(self.profiles)
-        options = [f"{i}-{min(i + batch_size, num_profiles)}" for i in range(0, num_profiles, batch_size)]
-        full_options = ["Options", "Inverse Selection", "Selected Info", "Custom Range...", "Auto-detect Profiles", "Open Log File", "Clear Log File", "View History"] + options
+        options = [f"{i + 1}-{min(i + batch_size, num_profiles)}" for i in range(0, num_profiles, batch_size)]
+        full_options = [
+            "Options", "Inverse Selection", "Selected Info", "Custom Range...", 
+            "Auto-detect Profiles", "Open Log File", "Clear Log File", 
+            "View History", "Clear History File"
+        ] + options
         self.optionmenu.configure(values=full_options)
 
     def _optionmenu_callback(self, choice: str):
@@ -586,12 +790,12 @@ class BingAutomatorApp(customtkinter.CTk):
                 print(p.full_name)
                 logger.log(p.full_name, level="DEBUG")
         elif choice == "Custom Range...":
-            dialog = customtkinter.CTkInputDialog(text="Enter range (e.g., 0-9):", title="Custom Range")
+            dialog = customtkinter.CTkInputDialog(text="Enter range (e.g., 1-10):", title="Custom Range")
             input_str = dialog.get_input()
             if input_str:
                 try:
                     start, end = map(int, input_str.split('-'))
-                    self.selected_profiles = set(self.profiles[start:end+1])
+                    self.selected_profiles = set(self.profiles[start - 1:end])
                     self._update_selection_ui()
                     logger.log(f"Custom range {input_str} selected.")
                 except (ValueError, IndexError):
@@ -618,10 +822,17 @@ class BingAutomatorApp(customtkinter.CTk):
                 self._update_status("Opening history file...")
             else:
                 self._update_status("Could not open history file. Fetch some progress first.")
+        elif choice == "Clear History File":
+            if self.automation_service.clear_history_file():
+                self._update_status("History file has been cleared.")
+                for widget in self.profile_widget_map.values():
+                    widget.update_points("")
+            else:
+                self._update_status("Could not clear history file. Check logs.")
         elif '-' in choice:
             try:
                 start, end = map(int, choice.split('-'))
-                self.selected_profiles = set(self.profiles[start:end])
+                self.selected_profiles = set(self.profiles[start - 1:end])
                 self._update_selection_ui()
                 logger.log(f"Range {choice} selected.")
             except (ValueError, IndexError):

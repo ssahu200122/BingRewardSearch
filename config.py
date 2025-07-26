@@ -1,5 +1,5 @@
 # BingRewardSearch/config.py
-
+import customtkinter
 import os
 
 # --- File Paths ---
@@ -14,7 +14,15 @@ HOME_DIR = os.path.expanduser('~')
 RESTART_BATCH_FILE_ONEDRIVE = os.path.join(HOME_DIR, 'OneDrive', 'Desktop', 'bing.bat')
 RESTART_BATCH_FILE_LOCAL = os.path.join(HOME_DIR, 'Desktop', 'bing.bat')
 
+# app_width = 800
+# app_height = 500
 
+# screen_width = customtkinter.CTk().winfo_screenwidth()
+# screen_height = customtkinter.CTk().winfo_screenheight()
+
+#         # Position app at bottom right, accounting for taskbar (approx. 40px)
+# x_coordinate = screen_width - app_width
+# y_coordinate = screen_height - app_height - 40 
 # --- Application Settings ---
 APP_TITLE = "Bing Auto Search"
 APP_GEOMETRY = "800x500"

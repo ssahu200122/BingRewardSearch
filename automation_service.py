@@ -116,11 +116,21 @@ class AutomationService:
             time.sleep(random.uniform(*config.BATCH_DELAY))
             self.close_all_edge_windows()
 
-    def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, headless: bool, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None):
+    # --- MODIFICATION START ---
+    # Added on_profile_start callback to allow UI to react (e.g., scroll)
+    def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, headless: bool, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None, on_profile_start: Optional[Callable[[EdgeProfile], None]] = None):
+    # --- MODIFICATION END ---
         if progress_callback: progress_callback("Starting Daily Activities...")
         total_profiles = len(profiles)
         for i, profile in enumerate(profiles):
             if stop_event.is_set(): return
+
+            # --- MODIFICATION START ---
+            # Trigger the callback at the start of processing each profile
+            if on_profile_start:
+                on_profile_start(profile)
+            # --- MODIFICATION END ---
+
             if progress_callback: progress_callback(f"Processing activities for {profile.name}...")
             
             driver = self._setup_driver(profile, headless=headless)
@@ -249,6 +259,21 @@ class AutomationService:
         else:
             logger.log(f"History file not found at {config.HISTORY_CSV_PATH}", "WARN")
             return False
+
+    def clear_history_file(self) -> bool:
+        """Deletes the progress history file if it exists."""
+        history_path = config.HISTORY_CSV_PATH
+        if os.path.exists(history_path):
+            try:
+                os.remove(history_path)
+                logger.log("History file cleared by user.", level="SYSTEM")
+                return True
+            except OSError as e:
+                logger.log(f"Failed to clear history file: {e}", level="ERROR")
+                return False
+        else:
+            logger.log("History file not found, nothing to clear.", level="INFO")
+            return True # Return true since the desired state (no file) is achieved
 
     def load_todays_progress_from_history(self) -> Dict[str, str]:
         todays_progress = {}
