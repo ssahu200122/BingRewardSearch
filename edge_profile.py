@@ -8,7 +8,7 @@ class EdgeProfile:
     making the data easier to manage than using raw dictionaries.
     """
 
-    def __init__(self, name: str, email: str, cmd_arg: str):
+    def __init__(self, name: str, email: str, cmd_arg: str, status: str = "active"):
         """
         Initializes an EdgeProfile object.
 
@@ -17,16 +17,18 @@ class EdgeProfile:
             email (str): The email associated with the profile.
             cmd_arg (str): The command-line argument to launch this specific profile
                          (e.g., "--profile-directory=Default").
+            status (str): The status of the profile ('active' or 'suspended').
         """
         self.name = name
         self.email = email
         self.cmd_arg = cmd_arg
+        self.status = status
 
     def __repr__(self) -> str:
         """
         Provides the "official" string representation of the object.
         """
-        return f"EdgeProfile(name='{self.name}', email='{self.email}')"
+        return f"EdgeProfile(name='{self.name}', email='{self.email}', status='{self.status}')"
 
     @property
     def full_name(self) -> str:
@@ -39,9 +41,7 @@ class EdgeProfile:
         """Converts the profile object to a dictionary for JSON serialization."""
         return {
             "cmd": self.cmd_arg,
-            # Add other fields here if you want to save them in the future
-            # "PcPoints": 0,
-            # "MobilePoints": 0
+            "status": self.status
         }
 
     def __eq__(self, other):

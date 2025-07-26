@@ -1,71 +1,63 @@
 # BingRewardSearch/main.py
 
+import customtkinter
 import json
-import os
 import re
-from typing import List, Dict
+from typing import List
 
-from app import BingAutomatorApp
-from automation_service import AutomationService
 from edge_profile import EdgeProfile
-from logger import logger # Import the logger instance
+from automation_service import AutomationService
+from app import BingAutomatorApp
+from logger import logger
 import config
 
-def load_profiles_from_json(filepath: str) -> List[EdgeProfile]:
-    """
-    Loads profile data from a JSON file and returns a list of EdgeProfile objects.
-    """
-    if not os.path.exists(filepath):
-        logger.log(f"The file '{filepath}' was not found.", level="ERROR")
-        return []
+def extract_email_from_name(full_name: str) -> str:
+    """Extracts the email from a string like 'email@example.com (Name)'."""
+    match = re.match(r"^\S+@\S+", full_name)
+    return match.group(0) if match else "unknown@example.com"
 
-    profiles_list = []
-    profile_pattern = re.compile(r"^(.*) \((.*)\)$")
-
+def load_profiles(file_path: str) -> List[EdgeProfile]:
+    """Loads Edge profiles from a JSON file."""
+    logger.log(f"Loading profiles from {file_path}.", "INFO")
+    profiles = []
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            data: Dict[str, Dict[str, str]] = json.load(f)
-
-        logger.log(f"Loading {len(data)} profiles from {filepath}.")
-        for key, details in data.items():
-            cmd_arg = details.get("cmd")
-            if not cmd_arg:
-                logger.log(f"Profile with key '{key}' is missing 'cmd' argument.", level="WARN")
-                continue
-
-            match = profile_pattern.match(key)
-            if match:
-                email, name = match.groups()
-                profiles_list.append(EdgeProfile(name=name.strip(), email=email.strip(), cmd_arg=cmd_arg))
-            else:
-                logger.log(f"Could not parse profile key '{key}'. Using full key as email.", level="WARN")
-                profiles_list.append(EdgeProfile(name="N/A", email=key, cmd_arg=cmd_arg))
-
-    except json.JSONDecodeError as e:
-        logger.log(f"Could not decode JSON from '{filepath}'. Error: {e}", level="ERROR")
-    except Exception as e:
-        logger.log(f"An unexpected error occurred while loading profiles: {e}", level="ERROR")
-
-    return profiles_list
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        for full_name, details in data.items():
+            email = extract_email_from_name(full_name)
+            name_part_match = re.search(r'\((.*?)\)', full_name)
+            name = name_part_match.group(1) if name_part_match else "Profile"
+            
+            # Updated to load the status, defaulting to 'active' if not present
+            status = details.get("status", "active")
+            
+            profiles.append(EdgeProfile(
+                name=name,
+                email=email,
+                cmd_arg=details["cmd"],
+                status=status
+            ))
+        logger.log(f"Successfully loaded {len(profiles)} profiles.", "INFO")
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        logger.log(f"Error loading profiles: {e}", "ERROR")
+    return profiles
 
 def main():
-    """
-    The main entry point of the application.
-    """
-    logger.log("Application starting up.")
+    """The main entry point of the application."""
+    logger.log("Application starting up.", "INFO")
     
+    # Set the appearance mode
+    customtkinter.set_appearance_mode("System")
+    customtkinter.set_default_color_theme("blue")
+
+    # Load profiles and initialize services
+    profiles = load_profiles(config.PROFILES_JSON_PATH)
     automation_service = AutomationService()
-    profiles = load_profiles_from_json(config.PROFILES_JSON_PATH)
-
-    if not profiles:
-        logger.log("No profiles loaded. Exiting application.", level="ERROR")
-        return
-
-    logger.log(f"Successfully loaded {len(profiles)} profiles.")
-    app = BingAutomatorApp(profiles=profiles, automation_service=automation_service)
-    app.run()
     
-    logger.log("Application has been closed.")
+    # Create and run the application
+    app = BingAutomatorApp(profiles, automation_service)
+    app.run()
+    logger.log("Application has been closed.", "INFO")
 
 if __name__ == "__main__":
     main()
