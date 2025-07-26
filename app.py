@@ -534,7 +534,7 @@ class BingAutomatorApp(customtkinter.CTk):
             if stop_event.is_set():
                 self._update_status("Search Automation Stopped by User.")
             else:
-                self._update_status(f"{colors.BG_BRIGHT_YELLOW}{colors.BLACK}{colors.BOLD} Search Automation Complete! {colors.RESET}")
+                self._update_status(f"Search Automation Complete!")
         finally:
             self.start_button.configure(text="Start Searches", command=self._start_automation_thread, state="normal", fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], hover_color=customtkinter.ThemeManager.theme["CTkButton"]["hover_color"])
             self.daily_sets_button.configure(state="normal")

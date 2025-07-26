@@ -3065,3 +3065,5 @@ Stacktrace:
 [00:19:31] [INFO] Batch 1: All points collected.
 [00:19:31] [INFO] Batch 1: Saving final progress to history...
 [00:19:31] [INFO] Search Automation Complete!
+[00:20:24] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[00:20:25] [INFO] Application has been closed.
