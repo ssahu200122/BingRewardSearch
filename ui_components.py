@@ -46,8 +46,8 @@ class ProfileRow(customtkinter.CTkFrame):
 
         # --- Status Button (Top-Left) ---
         self.status_button = customtkinter.CTkButton(
-            self, text=str(profile.index), width=25, height=25, 
-            command=self._toggle_status, corner_radius=10
+            self, text=str(profile.index), width=30, height=30, 
+            command=self._toggle_status, corner_radius=5
         )
         self.status_button.grid(row=0, column=0, padx=5, pady=(5, 0))
         self._update_status_color()

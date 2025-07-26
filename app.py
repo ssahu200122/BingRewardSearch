@@ -45,7 +45,6 @@ class BingAutomatorApp(customtkinter.CTk):
         
         self._update_status_counts()
         
-        # This function is now corrected to load data properly on startup
         self._load_and_display_initial_progress()
         
         self._start_scheduler_thread()
@@ -388,10 +387,10 @@ class BingAutomatorApp(customtkinter.CTk):
     def _start_automation_thread(self):
         self.stop_event = threading.Event()
         
-        profiles_to_run = sorted(list(self.selected_profiles), key=lambda p: p.index)
+        profiles_to_run = sorted([p for p in self.selected_profiles if p.status == 'active'], key=lambda p: p.index)
         
         if not profiles_to_run:
-            self._update_status("No profiles selected. Nothing to do.")
+            self._update_status("No active profiles selected. Nothing to do.")
             return
 
         self.start_button.configure(text="Stop", command=self._stop_automation, fg_color="red", hover_color="#C40000")
@@ -473,21 +472,25 @@ class BingAutomatorApp(customtkinter.CTk):
                         cached_data = todays_progress_history.get(profile.email)
                         if cached_data and cached_data.get("daily_progress"):
                             try:
-                                earned, max_pts = map(int, re.findall(r'\d+', cached_data["daily_progress"]))
-                                if earned >= max_pts:
-                                    self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
-                                    points_data = cached_data
-                                    if widget: self.after(0, widget.update_points_display, points_data)
+                                progress_str = cached_data["daily_progress"]
+                                if "N/A" not in progress_str and "Error" not in progress_str:
+                                    earned, max_pts = map(int, re.findall(r'\d+', progress_str))
+                                    if earned >= max_pts:
+                                        self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
+                                        points_data = cached_data
+                                        if widget: self.after(0, widget.update_points_display, points_data)
                             except (ValueError, IndexError):
                                 pass
 
                         if points_data is None:
                             if widget: self.after(0, widget.update_points_display, {"daily_progress": "Fetching..."})
                             points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
+                            if points_data:
+                                todays_progress_history[profile.email] = points_data
                             if widget: self.after(0, widget.update_points_display, points_data)
 
                         batch_progress_data[profile] = points_data
-                        progress_str = points_data.get("daily_progress")
+                        progress_str = points_data.get("daily_progress") if points_data else None
 
                         if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
                             try:
@@ -541,10 +544,10 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _start_daily_sets_thread(self):
         self.stop_event = threading.Event()
-        profiles_to_run = sorted(list(self.selected_profiles), key=lambda p: p.index)
+        profiles_to_run = sorted([p for p in self.selected_profiles if p.status == 'active'], key=lambda p: p.index)
         
         if not profiles_to_run:
-            self._update_status("No profiles selected. Nothing to do.")
+            self._update_status("No active profiles selected. Nothing to do.")
             return
 
         self.start_button.configure(state="disabled")
@@ -620,6 +623,7 @@ class BingAutomatorApp(customtkinter.CTk):
             self.batch_progress_label.configure(text="N/A")
             self.batch_progress_bar.set(0)
 
+            todays_progress_history = self.automation_service.load_todays_progress_from_history()
             self.automation_service.close_all_edge_windows()
             time.sleep(1)
 
@@ -627,17 +631,33 @@ class BingAutomatorApp(customtkinter.CTk):
                 if stop_event.is_set(): break
                 
                 self.after(0, self._scroll_to_profile, profile)
-                
                 widget = self.profile_widget_map.get(profile)
-                if widget:
-                    widget.update_points_display({"available_points": "Fetching...", "daily_progress": "Fetching..."})
 
-                points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
+                # --- Smart Fetch Logic ---
+                cached_data = todays_progress_history.get(profile.email)
+                is_complete = False
+                if cached_data and cached_data.get("daily_progress"):
+                    try:
+                        progress_str = cached_data["daily_progress"]
+                        if "N/A" not in progress_str and "Error" not in progress_str:
+                            earned, max_pts = map(int, re.findall(r'\d+', progress_str))
+                            if earned >= max_pts:
+                                is_complete = True
+                    except (ValueError, IndexError):
+                        pass
                 
-                if points_data and widget:
-                    widget.update_points_display(points_data)
-                    if "Error" not in points_data.get("daily_progress", ""):
-                        self.automation_service.save_progress_to_history(profile, points_data)
+                if is_complete:
+                    self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
+                    if widget:
+                        widget.update_points_display(cached_data)
+                else:
+                    if widget:
+                        widget.update_points_display({"available_points": "Fetching...", "daily_progress": "Fetching..."})
+                    points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
+                    if points_data and widget:
+                        widget.update_points_display(points_data)
+                        if "Error" not in points_data.get("daily_progress", ""):
+                            self.automation_service.save_progress_to_history(profile, points_data)
                 
                 self.overall_progress_bar.set((i + 1) / total_profiles)
                 self.overall_progress_label.configure(text=f"{i + 1} / {total_profiles} Profiles")

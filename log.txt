@@ -2925,3 +2925,143 @@ Stacktrace:
 [18:03:58] [SYSTEM] Tasks scheduled to run daily at 06:21.
 [18:05:12] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
 [18:05:12] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:46:42 ---
+[23:46:42] [INFO] Application starting up.
+[23:46:42] [INFO] Loading profiles from data.json.
+[23:46:42] [INFO] Successfully loaded 29 profiles.
+[23:46:46] [INFO] Loaded 23 progress records from today's history.
+[23:46:46] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:47:00] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[23:47:01] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:47:26 ---
+[23:47:26] [INFO] Application starting up.
+[23:47:26] [INFO] Loading profiles from data.json.
+[23:47:26] [INFO] Successfully loaded 29 profiles.
+[23:47:29] [INFO] Loaded 23 progress records from today's history.
+[23:47:29] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:47:59] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[23:48:00] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:48:36 ---
+[23:48:36] [INFO] Application starting up.
+[23:48:36] [INFO] Loading profiles from data.json.
+[23:48:36] [INFO] Successfully loaded 29 profiles.
+[23:48:39] [INFO] Loaded 23 progress records from today's history.
+[23:48:39] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:48:53] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[23:48:53] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:49:44 ---
+[23:49:44] [INFO] Application starting up.
+[23:49:44] [INFO] Loading profiles from data.json.
+[23:49:44] [INFO] Successfully loaded 29 profiles.
+[23:49:47] [INFO] Loaded 23 progress records from today's history.
+[23:49:47] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:50:30] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[23:50:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:50:51 ---
+[23:50:51] [INFO] Application starting up.
+[23:50:51] [INFO] Loading profiles from data.json.
+[23:50:51] [INFO] Successfully loaded 29 profiles.
+[23:50:54] [INFO] Loaded 23 progress records from today's history.
+[23:50:54] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:50:59] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[23:51:00] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:51:10 ---
+[23:51:10] [INFO] Application starting up.
+[23:51:10] [INFO] Loading profiles from data.json.
+[23:51:10] [INFO] Successfully loaded 29 profiles.
+[23:51:13] [INFO] Loaded 23 progress records from today's history.
+[23:51:13] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[23:51:36] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[23:51:36] [INFO] Scheduler disabled. Will run daily at 06:21.
+[23:51:40] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[23:51:40] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 23:51:42 ---
+[23:51:42] [INFO] Application starting up.
+[23:51:42] [INFO] Loading profiles from data.json.
+[23:51:42] [INFO] Successfully loaded 29 profiles.
+[23:51:45] [INFO] Loaded 23 progress records from today's history.
+[23:52:00] [INFO] Range 1-4 selected.
+[23:52:27] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[23:52:27] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-27 00:02:05 ---
+[00:02:05] [INFO] Application starting up.
+[00:02:05] [INFO] Loading profiles from data.json.
+[00:02:05] [INFO] Successfully loaded 29 profiles.
+[00:02:10] [INFO] Loaded 0 progress records from today's history.
+[00:02:27] [INFO] Fetching all points...
+[00:02:27] [INFO] Loaded 0 progress records from today's history.
+[00:02:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:02:30] [DEBUG] Headless mode enabled for this Selenium session.
+[00:02:56] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:11] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:30] [DEBUG] Headless mode enabled for this Selenium session.
+[00:03:43] [DEBUG] Headless mode enabled for this Selenium session.
+[00:04:08] [DEBUG] Headless mode enabled for this Selenium session.
+[00:04:24] [DEBUG] Headless mode enabled for this Selenium session.
+[00:04:39] [DEBUG] Headless mode enabled for this Selenium session.
+[00:05:03] [DEBUG] Headless mode enabled for this Selenium session.
+[00:05:17] [DEBUG] Headless mode enabled for this Selenium session.
+[00:05:31] [DEBUG] Headless mode enabled for this Selenium session.
+[00:05:43] [DEBUG] Headless mode enabled for this Selenium session.
+[00:05:59] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:12] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:35] [DEBUG] Headless mode enabled for this Selenium session.
+[00:06:56] [DEBUG] Headless mode enabled for this Selenium session.
+[00:07:15] [DEBUG] Headless mode enabled for this Selenium session.
+[00:07:30] [DEBUG] Headless mode enabled for this Selenium session.
+[00:07:48] [DEBUG] Headless mode enabled for this Selenium session.
+[00:08:02] [DEBUG] Headless mode enabled for this Selenium session.
+[00:08:21] [DEBUG] Headless mode enabled for this Selenium session.
+[00:08:38] [DEBUG] Headless mode enabled for this Selenium session.
+[00:08:50] [DEBUG] Headless mode enabled for this Selenium session.
+[00:09:03] [INFO] Points fetching complete.
+[00:13:35] [INFO] Range 25-28 selected.
+[00:14:24] [INFO] Loaded 23 progress records from today's history.
+[00:14:24] [INFO] Smart Search Automation started...
+[00:14:24] [INFO] Processing Batch 1...
+[00:14:24] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[00:14:41] [INFO] Search 'remember' (1/3) in window 'New tab - Personal 29 - Microsoft​ Edge'
+[00:14:45] [INFO] Search 'golf' (1/3) in window 'golf - Search - Personal 28 - Microsoft​ Edge'
+[00:14:50] [INFO] Search 'house' (1/3) in window 'New tab - Personal 26 - Microsoft​ Edge'
+[00:14:54] [INFO] Search 'juicy' (1/3) in window 'New tab - Personal 27 - Microsoft​ Edge'
+[00:14:58] [INFO] Search 'bend' (2/3) in window 'remember - Search - Personal 29 - Microsoft​ Edge'
+[00:15:02] [INFO] Search 'nature' (2/3) in window 'golf - Search - Personal 28 - Microsoft​ Edge'
+[00:15:07] [INFO] Search 'intervenor' (2/3) in window 'house - Search - Personal 26 - Microsoft​ Edge'
+[00:15:13] [INFO] Search 'favorite' (2/3) in window 'favorite - Search - Personal 27 - Microsoft​ Edge'
+[00:15:16] [INFO] Search 'mist' (3/3) in window 'mist - Search - Personal 29 - Microsoft​ Edge'
+[00:15:20] [INFO] Search 'swivel' (3/3) in window 'swivel - Search - Personal 28 - Microsoft​ Edge'
+[00:15:25] [INFO] Search 'theology' (3/3) in window 'theology - Search - Personal 26 - Microsoft​ Edge'
+[00:15:30] [INFO] Search 'thunderhead' (3/3) in window 'thunderhead - Search - Personal 27 - Microsoft​ Edge'
+[00:15:33] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:15:33] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[00:15:33] [DEBUG] Headless mode enabled for this Selenium session.
+[00:16:05] [DEBUG] Headless mode enabled for this Selenium session.
+[00:16:30] [DEBUG] Headless mode enabled for this Selenium session.
+[00:16:57] [DEBUG] Headless mode enabled for this Selenium session.
+[00:17:13] [INFO] Batch 1: 4 profiles need more points. Retrying with 2 searches...
+[00:17:13] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[00:17:27] [INFO] Search 'encouraging' (1/2) in window 'New tab - Personal 29 - Microsoft​ Edge'
+[00:17:32] [INFO] Search 'cheat' (1/2) in window 'cheat - Search - Personal 28 - Microsoft​ Edge'
+[00:17:37] [INFO] Search 'blessing' (1/2) in window 'blessing - Search - Personal 27 - Microsoft​ Edge'
+[00:17:43] [INFO] Search 'homeownership' (1/2) in window 'homeownership - Search - Personal 26 - Microsoft​ Edge'
+[00:17:48] [INFO] Search 'scope' (2/2) in window 'encouraging - Search - Personal 29 - Microsoft​ Edge'
+[00:17:54] [INFO] Search 'lipid' (2/2) in window 'lipid - Search - Personal 28 - Microsoft​ Edge'
+[00:17:58] [INFO] Search 'mouth' (2/2) in window 'mouth ulcer - Search - Personal 27 - Microsoft​ Edge'
+[00:18:02] [INFO] Search 'skull' (2/2) in window 'skull - Search - Personal 26 - Microsoft​ Edge'
+[00:18:05] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:18:05] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[00:18:05] [DEBUG] Headless mode enabled for this Selenium session.
+[00:18:27] [DEBUG] Headless mode enabled for this Selenium session.
+[00:18:43] [DEBUG] Headless mode enabled for this Selenium session.
+[00:19:09] [DEBUG] Headless mode enabled for this Selenium session.
+[00:19:31] [INFO] Batch 1: All points collected.
+[00:19:31] [INFO] Batch 1: Saving final progress to history...
+[00:19:31] [INFO] Search Automation Complete!
