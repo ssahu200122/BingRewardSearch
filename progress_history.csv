@@ -1,24 +1,30 @@
-Date,ProfileName,Email,Progress
-2025-07-26,Personal,ssahu200122@gmail.com,60/60 pts
-2025-07-26,Personal 2,ssahu200122@outlook.com,69/60 pts
-2025-07-26,Personal 3,sofaandchair1947@outlook.com,60/60 pts
-2025-07-26,Personal 4,sofaandchair1947@hotmail.com,60/60 pts
-2025-07-26,Personal 5,Phonecharger1947@outlook.com,30/30 pts
-2025-07-26,Personal 6,sachinaugust2007@gmail.com,30/30 pts
-2025-07-26,Personal 7,Phonecharger1947@hotmail.com,30/30 pts
-2025-07-26,Personal 9,guitartrimmer@hotmail.com,30/30 pts
-2025-07-26,Personal 10,GUITAR1947@hotmail.com,30/30 pts
-2025-07-26,Personal 13,oldhouse.1947@hotmail.com,69/60 pts
-2025-07-26,Personal 14,Newhouse.1947@hotmail.com,60/60 pts
-2025-07-26,Personal 15,myossujourney@hotmail.com,60/60 pts
-2025-07-26,Personal 16,myossujourney@outlook.com,30/30 pts
-2025-07-26,Personal 17,shivan123123123@hotmail.com,30/30 pts
-2025-07-26,Personal 19,Mathscience1947@hotmail.com,30/30 pts
-2025-07-26,Personal 20,Mathsscience1947@outlook.com,30/30 pts
-2025-07-26,Personal 21,isabella.smith.the.artist@gmail.com,30/30 pts
-2025-07-26,Personal 23,jhaduPochha@outlook.com,30/30 pts
-2025-07-26,Personal 24,jhadupochha@hotmail.com,30/30 pts
-2025-07-26,Personal 26,kapilsharmasahu@outlook.com,15/15 pts
-2025-07-26,Personal 27,kapilsharmasahu@hotmail.com,15/15 pts
-2025-07-26,Personal 28,kumarsanulata@outlook.com,15/15 pts
-2025-07-26,Personal 29,kumarsanulata@hotmail.com,15/15 pts
+Date,ProfileName,Email,AvailablePoints,DailyProgress
+2025-07-26,Personal,ssahu200122@gmail.com,"5,969",60/60 pts
+2025-07-26,Personal,ssahu200122@gmail.com,"6,311",60/60 pts
+2025-07-26,Personal 2,ssahu200122@outlook.com,"6,297",69/60 pts
+2025-07-26,Personal 3,sofaandchair1947@outlook.com,"2,844",60/60 pts
+2025-07-26,Personal 4,sofaandchair1947@hotmail.com,"2,856",60/60 pts
+2025-07-26,Personal 5,Phonecharger1947@outlook.com,"2,250",30/30 pts
+2025-07-26,Personal,ssahu200122@gmail.com,"6,311",60/60 pts
+2025-07-26,Personal 2,ssahu200122@outlook.com,"6,297",69/60 pts
+2025-07-26,Personal 3,sofaandchair1947@outlook.com,"2,844",60/60 pts
+2025-07-26,Personal 4,sofaandchair1947@hotmail.com,"2,856",60/60 pts
+2025-07-26,Personal 5,Phonecharger1947@outlook.com,"2,250",30/30 pts
+2025-07-26,Personal 6,sachinaugust2007@gmail.com,"4,315",30/30 pts
+2025-07-26,Personal 7,Phonecharger1947@hotmail.com,"1,947",30/30 pts
+2025-07-26,Personal 9,guitartrimmer@hotmail.com,"1,629",30/30 pts
+2025-07-26,Personal 10,GUITAR1947@hotmail.com,"1,423",30/30 pts
+2025-07-26,Personal 14,Newhouse.1947@hotmail.com,"8,531",60/60 pts
+2025-07-26,Personal 15,myossujourney@hotmail.com,"5,159",60/60 pts
+2025-07-26,Personal 17,shivan123123123@hotmail.com,"4,641",30/30 pts
+2025-07-26,Personal 19,Mathscience1947@hotmail.com,"10,810",30/30 pts
+2025-07-26,Personal 20,Mathsscience1947@outlook.com,"4,064",30/30 pts
+2025-07-26,Personal 21,isabella.smith.the.artist@gmail.com,997,30/30 pts
+2025-07-26,Personal 23,jhaduPochha@outlook.com,"7,098",30/30 pts
+2025-07-26,Personal 24,jhadupochha@hotmail.com,"1,050",30/30 pts
+2025-07-26,Personal 27,kapilsharmasahu@hotmail.com,39,15/15 pts
+2025-07-26,Personal 28,kumarsanulata@outlook.com,62,15/15 pts
+2025-07-26,Personal 29,kumarsanulata@hotmail.com,65,15/15 pts
+2025-07-26,Personal 13,oldhouse.1947@hotmail.com,"8,609",69/60 pts
+2025-07-26,Personal 16,myossujourney@outlook.com,"4,899",30/30 pts
+2025-07-26,Personal 26,kapilsharmasahu@outlook.com,140,15/15 pts

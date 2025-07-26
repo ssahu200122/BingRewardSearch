@@ -45,6 +45,7 @@ class BingAutomatorApp(customtkinter.CTk):
         
         self._update_status_counts()
         
+        # This function is now corrected to load data properly on startup
         self._load_and_display_initial_progress()
         
         self._start_scheduler_thread()
@@ -68,27 +69,18 @@ class BingAutomatorApp(customtkinter.CTk):
     def _configure_window(self):
         self.title(config.APP_TITLE)
         
-        # --- MODIFICATION START ---
-        # Calculate position for bottom right of the screen
-        self.update_idletasks() # Ensure window info is up-to-date before calculations
+        self.update_idletasks()
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
-        print(f"screen_width: {screen_width}, screen_height: {screen_height}")
-
+        
         app_width_str, app_height_str = self.original_geometry.split('x')
         app_width = int(app_width_str)
         app_height = int(app_height_str)
 
-        print(f"app_width: {app_width}, app_height: {app_height}")
+        x_coordinate = screen_width - app_width - 10
+        y_coordinate = screen_height - app_height - 80
 
-        # Position app at bottom right, accounting for taskbar (approx. 40px)
-        x_coordinate = screen_width - app_width-210
-        y_coordinate = screen_height - app_height -200
-
-        print(f"x_coordinate: {x_coordinate}, y_coordinate: {y_coordinate}")
-        
         self.geometry(f"{app_width}x{app_height}+{x_coordinate}+{y_coordinate}")
-        # --- MODIFICATION END ---
 
         self.attributes("-topmost", True)
         self.grid_columnconfigure(0, weight=1)
@@ -175,7 +167,7 @@ class BingAutomatorApp(customtkinter.CTk):
         
         self.suspended_count_label = customtkinter.CTkLabel(status_count_frame, text="Suspended: 0", font=customtkinter.CTkFont(weight="bold"))
         self.suspended_count_label.pack(side="left")
-
+    
     def _create_left_frame(self):
         self.profile_frame = customtkinter.CTkFrame(self.top_frame)
         self.profile_frame.grid(row=0, column=0, padx=(10, 5), pady=10, sticky="nsew")
@@ -201,11 +193,7 @@ class BingAutomatorApp(customtkinter.CTk):
         search_frame.grid(row=0, column=0, sticky="ew", padx=5, pady=5)
         search_frame.grid_columnconfigure(1, weight=1)
 
-        try:
-            search_icon_image = customtkinter.CTkImage(Image.open("search_icon.png"), size=(20, 20))
-            search_icon_label = customtkinter.CTkLabel(search_frame, image=search_icon_image, text="")
-        except FileNotFoundError:
-            search_icon_label = customtkinter.CTkLabel(search_frame, text="🔍", width=20, font=("Segoe UI Emoji", 16))
+        search_icon_label = customtkinter.CTkLabel(search_frame, text="🔍", width=20, font=("Segoe UI Emoji", 16))
         search_icon_label.grid(row=0, column=0, padx=(10, 5), pady=5)
 
         self.search_var = customtkinter.StringVar()
@@ -259,7 +247,7 @@ class BingAutomatorApp(customtkinter.CTk):
         self.daily_sets_button = customtkinter.CTkButton(self.controls_content_frame, text="Run Daily Sets", command=self._start_daily_sets_thread, fg_color="#FF8C00", hover_color="#FFA500")
         self.daily_sets_button.pack(fill="x", padx=10, pady=(10, 10))
         
-        self.fetch_progress_button = customtkinter.CTkButton(self.controls_content_frame, text="Fetch Progress", command=self._start_fetch_progress_thread, fg_color="teal")
+        self.fetch_progress_button = customtkinter.CTkButton(self.controls_content_frame, text="Fetch All Points", command=self._start_fetch_progress_thread, fg_color="teal")
         self.fetch_progress_button.pack(fill="x", padx=10, pady=(0, 10))
 
         scheduler_frame = customtkinter.CTkFrame(self.controls_content_frame)
@@ -332,7 +320,6 @@ class BingAutomatorApp(customtkinter.CTk):
             self.geometry(f"{self.winfo_width()}x{new_height}")
     
     def _scroll_to_profile(self, profile: EdgeProfile):
-        """Scrolls the profile list to center the specified profile's widget."""
         widget_to_scroll_to = self.profile_widget_map.get(profile)
         if widget_to_scroll_to:
             self.update_idletasks()
@@ -342,7 +329,6 @@ class BingAutomatorApp(customtkinter.CTk):
                 widget_y = widget_to_scroll_to.winfo_y()
                 
                 scroll_position = widget_y - (canvas_height / 2) + (widget_height / 2)
-                
                 scrollable_content_height = self.scrollable_frame._parent_canvas.bbox("all")[3]
                 
                 if scrollable_content_height > 0:
@@ -353,7 +339,6 @@ class BingAutomatorApp(customtkinter.CTk):
                 logger.log(f"Error scrolling to profile: {e}", "WARN")
 
     def _update_status_counts(self):
-        """Calculates and displays the number of active and suspended profiles."""
         active_count = sum(1 for p in self.profiles if p.status == 'active')
         suspended_count = len(self.profiles) - active_count
         
@@ -361,13 +346,11 @@ class BingAutomatorApp(customtkinter.CTk):
         self.suspended_count_label.configure(text=f"Suspended: {suspended_count}", text_color="orange")
 
     def _on_status_toggle(self, profile: EdgeProfile):
-        """Called when a profile's status button is clicked. Only saves the state."""
         self._update_status(f"Profile {profile.name} set to '{profile.status}'.")
         self._save_all_profiles_to_json()
         self._update_status_counts()
 
     def _save_all_profiles_to_json(self):
-        """Saves the current state of all profiles back to data.json."""
         all_profiles_data = {}
         for p in self.profiles:
             all_profiles_data[p.full_name] = p.to_dict()
@@ -380,14 +363,19 @@ class BingAutomatorApp(customtkinter.CTk):
             logger.log(f"Error saving profile statuses: {e}", "ERROR")
 
     def _load_and_display_initial_progress(self):
+        """
+        Loads today's progress from the history CSV and updates the UI.
+        This function now correctly handles the dictionary format.
+        """
         todays_progress = self.automation_service.load_todays_progress_from_history()
         profile_email_map = {p.email: p for p in self.profiles}
-        for email, progress_str in todays_progress.items():
+        for email, progress_data in todays_progress.items():
             profile = profile_email_map.get(email)
             if profile:
                 widget = self.profile_widget_map.get(profile)
                 if widget:
-                    widget.update_points(progress_str)
+                    # Pass the entire dictionary to the widget's update method
+                    widget.update_points_display(progress_data)
 
     def _stop_automation(self):
         if self.stop_event:
@@ -480,25 +468,26 @@ class BingAutomatorApp(customtkinter.CTk):
                             continue
 
                         widget = self.profile_widget_map.get(profile)
-                        progress_str = None
-
-                        cached_progress = todays_progress_history.get(profile.email)
-                        if cached_progress:
+                        points_data = None
+                        
+                        cached_data = todays_progress_history.get(profile.email)
+                        if cached_data and cached_data.get("daily_progress"):
                             try:
-                                earned, max_pts = map(int, re.findall(r'\d+', cached_progress))
+                                earned, max_pts = map(int, re.findall(r'\d+', cached_data["daily_progress"]))
                                 if earned >= max_pts:
                                     self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
-                                    progress_str = cached_progress
-                                    if widget: self.after(0, widget.update_points, progress_str)
+                                    points_data = cached_data
+                                    if widget: self.after(0, widget.update_points_display, points_data)
                             except (ValueError, IndexError):
                                 pass
 
-                        if progress_str is None:
-                            if widget: self.after(0, widget.update_points, "Fetching...")
-                            progress_str = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
-                            if widget: self.after(0, widget.update_points, progress_str)
+                        if points_data is None:
+                            if widget: self.after(0, widget.update_points_display, {"daily_progress": "Fetching..."})
+                            points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
+                            if widget: self.after(0, widget.update_points_display, points_data)
 
-                        batch_progress_data[profile] = progress_str
+                        batch_progress_data[profile] = points_data
+                        progress_str = points_data.get("daily_progress")
 
                         if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
                             try:
@@ -534,10 +523,10 @@ class BingAutomatorApp(customtkinter.CTk):
 
                 if not stop_event.is_set():
                     self._update_status(f"Batch {batch_num}: Saving final progress to history...")
-                    for profile, progress_str in batch_progress_data.items():
-                        if progress_str and "Error" not in progress_str and "N/A" not in progress_str:
-                            self.automation_service.save_progress_to_history(profile, progress_str)
-                            todays_progress_history[profile.email] = progress_str
+                    for profile, points_data in batch_progress_data.items():
+                        if points_data and "Error" not in points_data.get("daily_progress", ""):
+                            self.automation_service.save_progress_to_history(profile, points_data)
+                            todays_progress_history[profile.email] = points_data
 
             if stop_event.is_set():
                 self._update_status("Search Automation Stopped by User.")
@@ -625,7 +614,7 @@ class BingAutomatorApp(customtkinter.CTk):
             total_profiles = len(active_profiles_to_run)
             
             self.selenium_lock.acquire()
-            self._update_status("Fetching progress sequentially...")
+            self._update_status("Fetching all points...")
             self.overall_progress_label.configure(text=f"0 / {total_profiles} Profiles")
             self.overall_progress_bar.set(0)
             self.batch_progress_label.configure(text="N/A")
@@ -641,26 +630,26 @@ class BingAutomatorApp(customtkinter.CTk):
                 
                 widget = self.profile_widget_map.get(profile)
                 if widget:
-                    widget.update_points("Fetching...")
+                    widget.update_points_display({"available_points": "Fetching...", "daily_progress": "Fetching..."})
 
-                progress = self.automation_service.fetch_daily_search_progress(profile, stop_event, headless=True)
+                points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
                 
-                if progress is not None and widget:
-                    widget.update_points(progress)
-                    if "Error" not in progress and "N/A" not in progress:
-                        self.automation_service.save_progress_to_history(profile, progress)
+                if points_data and widget:
+                    widget.update_points_display(points_data)
+                    if "Error" not in points_data.get("daily_progress", ""):
+                        self.automation_service.save_progress_to_history(profile, points_data)
                 
                 self.overall_progress_bar.set((i + 1) / total_profiles)
                 self.overall_progress_label.configure(text=f"{i + 1} / {total_profiles} Profiles")
 
             if stop_event.is_set():
-                self._update_status("Progress fetching stopped by user.")
+                self._update_status("Points fetching stopped by user.")
             else:
-                self._update_status("Progress fetching complete.")
+                self._update_status("Points fetching complete.")
         finally:
             self.start_button.configure(state="normal")
             self.daily_sets_button.configure(state="normal")
-            self.fetch_progress_button.configure(text="Fetch Progress", command=self._start_fetch_progress_thread, state="normal", fg_color="teal")
+            self.fetch_progress_button.configure(text="Fetch All Points", command=self._start_fetch_progress_thread, state="normal", fg_color="teal")
             self.stop_event = None
             self.selenium_lock.release()
 
@@ -826,7 +815,7 @@ class BingAutomatorApp(customtkinter.CTk):
             if self.automation_service.clear_history_file():
                 self._update_status("History file has been cleared.")
                 for widget in self.profile_widget_map.values():
-                    widget.update_points("")
+                    widget.update_points_display({})
             else:
                 self._update_status("Could not clear history file. Check logs.")
         elif '-' in choice:

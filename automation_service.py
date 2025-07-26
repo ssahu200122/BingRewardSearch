@@ -24,7 +24,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException
 
-# webdriver-manager is no longer used.
 from wonderwords import RandomWord
 
 from edge_profile import EdgeProfile
@@ -68,6 +67,7 @@ class AutomationService:
                 edge_options.add_argument("--headless")
                 edge_options.add_argument("--window-size=1920,1080")
 
+            # Assumes msedgedriver.exe is in the same directory or in PATH
             service = EdgeService(executable_path="msedgedriver.exe")
             
             driver = webdriver.Edge(service=service, options=edge_options)
@@ -116,20 +116,14 @@ class AutomationService:
             time.sleep(random.uniform(*config.BATCH_DELAY))
             self.close_all_edge_windows()
 
-    # --- MODIFICATION START ---
-    # Added on_profile_start callback to allow UI to react (e.g., scroll)
     def run_daily_activities(self, profiles: List[EdgeProfile], stop_event: threading.Event, headless: bool, progress_callback: Optional[Callable[[str], None]] = None, on_activity_progress: Optional[Callable[[int, int], None]] = None, on_profile_start: Optional[Callable[[EdgeProfile], None]] = None):
-    # --- MODIFICATION END ---
         if progress_callback: progress_callback("Starting Daily Activities...")
         total_profiles = len(profiles)
         for i, profile in enumerate(profiles):
             if stop_event.is_set(): return
 
-            # --- MODIFICATION START ---
-            # Trigger the callback at the start of processing each profile
             if on_profile_start:
                 on_profile_start(profile)
-            # --- MODIFICATION END ---
 
             if progress_callback: progress_callback(f"Processing activities for {profile.name}...")
             
@@ -188,37 +182,52 @@ class AutomationService:
                     driver.quit()
                 os.system("taskkill /F /IM msedge.exe > nul 2>&1")
 
-    def fetch_daily_search_progress(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Optional[str]:
-        if stop_event.is_set(): return None
+    def fetch_points_details(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Dict[str, Optional[str]]:
+        """
+        Fetches both the total available points and the daily search progress 
+        in a single Selenium session for a given profile.
+        """
+        if stop_event.is_set(): 
+            return {"available_points": None, "daily_progress": None}
         
         driver = self._setup_driver(profile, headless=headless)
         if not driver:
-            return "Error"
+            return {"available_points": "Error", "daily_progress": "Error"}
+
+        points_data = {"available_points": "N/A", "daily_progress": "N/A"}
 
         try:
-            driver.get("https://rewards.bing.com/pointsbreakdown")
             wait = WebDriverWait(driver, 20)
             
+            # 1. Get Total Available Points from the main rewards page
+            driver.get("https://rewards.bing.com/")
+            
+            # Use the precise selector based on the provided HTML
+            available_points_element = wait.until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "mee-rewards-user-status-banner-balance p.pointsValue span"))
+            )
+            points_data["available_points"] = available_points_element.text.strip()
+
+            # 2. Get Daily Points Breakdown
+            driver.get("https://rewards.bing.com/pointsbreakdown")
             progress_element = wait.until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, "div#bingSearchDailyPoints p.c-caption-1"))
             )
-            
             wait.until(lambda d: re.search(r'\d+/\d+', progress_element.text))
-
-            progress_text = progress_element.text.strip()
             
-            match = re.search(r'(\d+/\d+\s*pts)', progress_text)
+            match = re.search(r'(\d+/\d+\s*pts)', progress_element.text.strip())
             if match:
-                return match.group(1)
-            else:
-                return "N/A"
+                points_data["daily_progress"] = match.group(1)
+                
+            return points_data
 
         except TimeoutException:
-            logger.log(f"Could not find daily search progress for {profile.name}.", "WARN")
-            return "N/A"
+            logger.log(f"A timeout occurred while fetching points for {profile.name}.", "WARN")
+            # Return whatever data might have been found before the timeout
+            return points_data 
         except (WebDriverException, ValueError) as e:
-            logger.log(f"An error occurred while fetching progress for {profile.name}: {e}", "ERROR")
-            return "Error"
+            logger.log(f"An error occurred while fetching points for {profile.name}: {e}", "ERROR")
+            return {"available_points": "Error", "daily_progress": "Error"}
         finally:
             if driver:
                 driver.quit()
@@ -237,14 +246,20 @@ class AutomationService:
             logger.log(f"Failed to open browser for {profile.name}: {e}", "ERROR")
 
     # --- History Methods ---
-    def save_progress_to_history(self, profile: EdgeProfile, progress_str: str):
+    def save_progress_to_history(self, profile: EdgeProfile, points_data: Dict[str, str]):
         file_exists = os.path.isfile(config.HISTORY_CSV_PATH)
         try:
             with open(config.HISTORY_CSV_PATH, 'a', newline='', encoding='utf-8') as f:
                 writer = csv.writer(f)
                 if not file_exists:
-                    writer.writerow(["Date", "ProfileName", "Email", "Progress"])
-                writer.writerow([date.today().isoformat(), profile.name, profile.email, progress_str])
+                    writer.writerow(["Date", "ProfileName", "Email", "AvailablePoints", "DailyProgress"])
+                writer.writerow([
+                    date.today().isoformat(), 
+                    profile.name, 
+                    profile.email, 
+                    points_data.get("available_points", "N/A"),
+                    points_data.get("daily_progress", "N/A")
+                ])
         except Exception as e:
             logger.log(f"Failed to write to history file: {e}", "ERROR")
 
@@ -261,7 +276,6 @@ class AutomationService:
             return False
 
     def clear_history_file(self) -> bool:
-        """Deletes the progress history file if it exists."""
         history_path = config.HISTORY_CSV_PATH
         if os.path.exists(history_path):
             try:
@@ -273,9 +287,9 @@ class AutomationService:
                 return False
         else:
             logger.log("History file not found, nothing to clear.", level="INFO")
-            return True # Return true since the desired state (no file) is achieved
+            return True
 
-    def load_todays_progress_from_history(self) -> Dict[str, str]:
+    def load_todays_progress_from_history(self) -> Dict[str, Dict[str, str]]:
         todays_progress = {}
         today_str = date.today().isoformat()
         if not os.path.exists(config.HISTORY_CSV_PATH):
@@ -286,9 +300,11 @@ class AutomationService:
                 for row in reader:
                     if row.get("Date") == today_str:
                         email = row.get("Email")
-                        progress = row.get("Progress")
-                        if email and progress:
-                            todays_progress[email] = progress
+                        if email:
+                            todays_progress[email] = {
+                                "available_points": row.get("AvailablePoints", "N/A"),
+                                "daily_progress": row.get("DailyProgress", "N/A")
+                            }
             logger.log(f"Loaded {len(todays_progress)} progress records from today's history.", "INFO")
         except Exception as e:
             logger.log(f"Failed to read history file: {e}", "ERROR")

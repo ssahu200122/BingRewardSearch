@@ -2358,3 +2358,570 @@ Stacktrace:
 [13:14:40] [SYSTEM] Tasks scheduled to run daily at 06:21.
 [13:14:43] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
 [13:14:43] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 15:54:04 ---
+[15:54:04] [INFO] Application starting up.
+[15:54:04] [INFO] Loading profiles from data.json.
+[15:54:04] [INFO] Successfully loaded 29 profiles.
+[15:54:07] [INFO] Loaded 23 progress records from today's history.
+[15:54:07] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[15:55:03] [INFO] Profile Personal 12 set to 'active'.
+[15:55:03] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[15:55:09] [INFO] Profile Personal 12 set to 'suspended'.
+[15:55:09] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[15:56:45] [INFO] Range 1-4 selected.
+[15:56:53] [INFO] Range 13-16 selected.
+[15:57:11] [INFO] Custom range 9-17 selected.
+[15:57:43] [INFO] Manually opening points breakdown for Personal 18
+[15:57:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[15:57:54] [ERROR] Failed to set up Selenium driver for Personal 18: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7e1868c85+23461]
+	(No symbol) [0x0x7ff7e17bcd70]
+	GetHandleVerifier [0x0x7ff7e1ae0bb8+2611928]
+	(No symbol) [0x0x7ff7e15c4c64]
+	(No symbol) [0x0x7ff7e15c1045]
+	(No symbol) [0x0x7ff7e1605a92]
+	(No symbol) [0x0x7ff7e15fa423]
+	(No symbol) [0x0x7ff7e15cea86]
+	(No symbol) [0x0x7ff7e15cdd11]
+	(No symbol) [0x0x7ff7e15ce8b3]
+	(No symbol) [0x0x7ff7e16ce6fd]
+	(No symbol) [0x0x7ff7e16dba88]
+	GetHandleVerifier [0x0x7ff7e1948acb+940523]
+	GetHandleVerifier [0x0x7ff7e1951821+976705]
+	(No symbol) [0x0x7ff7e17ca961]
+	(No symbol) [0x0x7ff7e17c3344]
+	(No symbol) [0x0x7ff7e17c3493]
+	(No symbol) [0x0x7ff7e17b4f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[15:59:24] [INFO] Opening history file...
+[16:00:03] [INFO] Opening log file...
+[16:01:26] [ERROR] Failed to clear history file: [WinError 32] The process cannot access the file because it is being used by another process: 'progress_history.csv'
+[16:01:26] [INFO] Could not clear history file. Check logs.
+[16:01:39] [INFO] Opening history file...
+[16:01:48] [SYSTEM] History file cleared by user.
+[16:01:48] [INFO] History file has been cleared.
+[16:01:55] [WARN] History file not found at progress_history.csv
+[16:01:55] [INFO] Could not open history file. Fetch some progress first.
+[16:02:43] [INFO] Smart Search Automation started...
+[16:02:43] [INFO] Processing Batch 1...
+[16:02:43] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[16:02:56] [INFO] Search 'iron' (1/1) in window 'bing.com/search?q=iron&cvid=542093f9e86c4cc882e88b5bf058e9c1&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAuGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEC4YQDIGCAcQLhhA0gEIMzM0OGowajGoAgiwAgE&FORM=ANAB01&PC=ASTS - Personal 3 - Microsoft​ Edge'
+[16:03:02] [INFO] Search 'tonality' (1/1) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[16:03:07] [INFO] Search 'site' (1/1) in window 'site - Search - Personal - Microsoft​ Edge'
+[16:03:12] [INFO] Search 'evaluate' (1/1) in window 'evaluate - Search - Personal 4 - Microsoft​ Edge'
+[16:03:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[16:03:14] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[16:03:14] [DEBUG] Headless mode enabled for this Selenium session.
+[16:03:26] [DEBUG] Headless mode enabled for this Selenium session.
+[16:03:36] [DEBUG] Headless mode enabled for this Selenium session.
+[16:03:48] [DEBUG] Headless mode enabled for this Selenium session.
+[16:03:57] [INFO] Batch 1: All points collected.
+[16:03:57] [INFO] Batch 1: Saving final progress to history...
+[16:03:57] [INFO] Processing Batch 2...
+[16:03:57] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[16:04:09] [INFO] Search 'remote' (1/1) in window 'New tab - Personal 7 - Microsoft​ Edge'
+[16:04:13] [INFO] Search 'skin' (1/1) in window 'New tab - Personal 8 - Microsoft​ Edge'
+[16:04:18] [INFO] Search 'sweet' (1/1) in window 'sweets - Search - Personal 6 - Microsoft​ Edge'
+[16:04:23] [INFO] Search 'pudding' (1/1) in window 'pudding - Search - Personal 5 - Microsoft​ Edge'
+[16:04:25] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[16:04:25] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[16:04:25] [DEBUG] Headless mode enabled for this Selenium session.
+[16:04:36] [DEBUG] Headless mode enabled for this Selenium session.
+[16:04:49] [DEBUG] Headless mode enabled for this Selenium session.
+[16:05:05] [INFO] Skipping progress check for suspended profile: Personal 8
+[16:05:05] [INFO] Batch 2: All points collected.
+[16:05:05] [INFO] Batch 2: Saving final progress to history...
+[16:05:05] [INFO] Processing Batch 3...
+[16:05:05] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[16:05:20] [INFO] Search 'minion' (1/1) in window 'New tab - Personal 10 - Microsoft​ Edge'
+[16:05:24] [INFO] Search 'well' (1/1) in window 'well-being - Search - Personal 9 - Microsoft​ Edge'
+[16:05:26] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[16:05:26] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[16:05:26] [DEBUG] Headless mode enabled for this Selenium session.
+[16:05:44] [DEBUG] Headless mode enabled for this Selenium session.
+[16:05:56] [INFO] Skipping progress check for suspended profile: Personal 11
+[16:05:56] [INFO] Skipping progress check for suspended profile: Personal 12
+[16:05:56] [INFO] Batch 3: All points collected.
+[16:05:56] [INFO] Batch 3: Saving final progress to history...
+[16:05:56] [INFO] Processing Batch 4...
+[16:05:56] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[16:06:09] [INFO] Search 'aboriginal' (1/1) in window 'aboriginal - Search - Personal 16 - Microsoft​ Edge'
+[16:06:14] [INFO] Search 'straw' (1/1) in window 'New tab - Personal 15 - Microsoft​ Edge'
+[16:06:19] [INFO] Search 'contract' (1/1) in window 'contract - Search - Personal 14 - Microsoft​ Edge'
+[16:06:25] [INFO] Search 'manufacturing' (1/1) in window 'manufacturing - Search - Personal 13 - Microsoft​ Edge'
+[16:06:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[16:06:27] [INFO] Batch 4: Verifying progress (Attempt 1)...
+[16:06:27] [DEBUG] Headless mode enabled for this Selenium session.
+[16:06:41] [DEBUG] Headless mode enabled for this Selenium session.
+[16:06:57] [DEBUG] Headless mode enabled for this Selenium session.
+[16:07:17] [DEBUG] Headless mode enabled for this Selenium session.
+[16:07:18] [INFO] Stop signal sent. Finishing current action...
+[16:07:32] [INFO] Batch 4: All points collected.
+[16:07:32] [INFO] Search Automation Stopped by User.
+[16:07:35] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-26 16:20:45 ---
+[16:20:45] [INFO] Application starting up.
+[16:20:45] [INFO] Loading profiles from data.json.
+[16:20:45] [INFO] Successfully loaded 29 profiles.
+[16:20:47] [INFO] Loaded 9 progress records from today's history.
+[16:20:47] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[16:20:55] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[16:20:55] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 16:21:18 ---
+[16:21:18] [INFO] Application starting up.
+[16:21:18] [INFO] Loading profiles from data.json.
+[16:21:18] [INFO] Successfully loaded 29 profiles.
+[16:21:20] [INFO] Loaded 9 progress records from today's history.
+[16:21:20] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[16:21:51] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[16:21:51] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 16:22:03 ---
+[16:22:03] [INFO] Application starting up.
+[16:22:03] [INFO] Loading profiles from data.json.
+[16:22:03] [INFO] Successfully loaded 29 profiles.
+[16:22:05] [INFO] Loaded 9 progress records from today's history.
+[16:22:05] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[16:22:23] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[16:22:23] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 16:37:42 ---
+[16:37:42] [INFO] Application starting up.
+[16:37:42] [INFO] Loading profiles from data.json.
+[16:37:42] [INFO] Successfully loaded 29 profiles.
+[16:37:44] [INFO] Loaded 9 progress records from today's history.
+[16:37:44] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[16:38:04] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[16:38:04] [INFO] Application has been closed.
+[16:43:46] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[16:43:47] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:03:37 ---
+[17:03:37] [INFO] Application starting up.
+[17:03:37] [INFO] Loading profiles from data.json.
+[17:03:37] [INFO] Successfully loaded 29 profiles.
+[17:03:41] [INFO] Loaded 9 progress records from today's history.
+[17:03:41] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:04:06] [INFO] Fetching all points...
+[17:04:07] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:04:08] [DEBUG] Headless mode enabled for this Selenium session.
+[17:04:36] [INFO] Points fetching complete.
+[17:04:43] [INFO] Fetching all points...
+[17:04:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:04:45] [DEBUG] Headless mode enabled for this Selenium session.
+[17:05:19] [INFO] Points fetching complete.
+[17:05:43] [INFO] Fetching all points...
+[17:05:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:05:44] [DEBUG] Headless mode enabled for this Selenium session.
+[17:06:10] [INFO] Points fetching complete.
+[17:06:31] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:06:31] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:12:11 ---
+[17:12:11] [INFO] Application starting up.
+[17:12:11] [INFO] Loading profiles from data.json.
+[17:12:11] [INFO] Successfully loaded 29 profiles.
+[17:12:14] [INFO] Loaded 9 progress records from today's history.
+[17:12:14] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:12:21] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:12:22] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:13:57 ---
+[17:13:57] [INFO] Application starting up.
+[17:13:57] [INFO] Loading profiles from data.json.
+[17:13:57] [INFO] Successfully loaded 29 profiles.
+[17:14:00] [INFO] Loaded 9 progress records from today's history.
+[17:14:00] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:14:13] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:14:14] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:21:26 ---
+[17:21:26] [INFO] Application starting up.
+[17:21:26] [INFO] Loading profiles from data.json.
+[17:21:26] [INFO] Successfully loaded 29 profiles.
+[17:21:29] [INFO] Loaded 9 progress records from today's history.
+[17:21:29] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:21:43] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:21:43] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:22:30 ---
+[17:22:30] [INFO] Application starting up.
+[17:22:30] [INFO] Loading profiles from data.json.
+[17:22:30] [INFO] Successfully loaded 29 profiles.
+[17:22:33] [INFO] Loaded 9 progress records from today's history.
+[17:22:33] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:23:14] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:23:14] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:23:25 ---
+[17:23:25] [INFO] Application starting up.
+[17:23:25] [INFO] Loading profiles from data.json.
+[17:23:25] [INFO] Successfully loaded 29 profiles.
+[17:23:27] [INFO] Loaded 9 progress records from today's history.
+[17:23:27] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:23:34] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:23:35] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:23:47 ---
+[17:23:47] [INFO] Application starting up.
+[17:23:47] [INFO] Loading profiles from data.json.
+[17:23:47] [INFO] Successfully loaded 29 profiles.
+[17:23:50] [INFO] Loaded 9 progress records from today's history.
+[17:23:50] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:23:58] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:23:59] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:25:03 ---
+[17:25:03] [INFO] Application starting up.
+[17:25:03] [INFO] Loading profiles from data.json.
+[17:25:03] [INFO] Successfully loaded 29 profiles.
+[17:25:06] [INFO] Loaded 9 progress records from today's history.
+[17:25:06] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:25:15] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:25:15] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:25:24 ---
+[17:25:24] [INFO] Application starting up.
+[17:25:24] [INFO] Loading profiles from data.json.
+[17:25:24] [INFO] Successfully loaded 29 profiles.
+[17:25:27] [INFO] Loaded 9 progress records from today's history.
+[17:25:27] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:25:42] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:25:42] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:28:53 ---
+[17:28:53] [INFO] Application starting up.
+[17:28:53] [INFO] Loading profiles from data.json.
+[17:28:53] [INFO] Successfully loaded 29 profiles.
+[17:28:56] [INFO] Loaded 9 progress records from today's history.
+[17:28:56] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:29:22] [INFO] Manually opening points breakdown for Personal
+[17:29:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:29:40] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:29:41] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:30:03 ---
+[17:30:03] [INFO] Application starting up.
+[17:30:03] [INFO] Loading profiles from data.json.
+[17:30:03] [INFO] Successfully loaded 29 profiles.
+[17:30:06] [INFO] Loaded 9 progress records from today's history.
+[17:30:06] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:30:14] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:30:15] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:30:32 ---
+[17:30:32] [INFO] Application starting up.
+[17:30:32] [INFO] Loading profiles from data.json.
+[17:30:32] [INFO] Successfully loaded 29 profiles.
+[17:30:34] [INFO] Loaded 9 progress records from today's history.
+[17:30:34] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:30:59] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:30:59] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:31:29 ---
+[17:31:29] [INFO] Application starting up.
+[17:31:29] [INFO] Loading profiles from data.json.
+[17:31:29] [INFO] Successfully loaded 29 profiles.
+[17:31:32] [INFO] Loaded 9 progress records from today's history.
+[17:31:32] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:31:50] [INFO] Fetching all points...
+[17:31:51] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:31:52] [DEBUG] Headless mode enabled for this Selenium session.
+[17:32:12] [DEBUG] Headless mode enabled for this Selenium session.
+[17:32:30] [INFO] Points fetching complete.
+[17:32:40] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:32:40] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:32:44 ---
+[17:32:44] [INFO] Application starting up.
+[17:32:44] [INFO] Loading profiles from data.json.
+[17:32:44] [INFO] Successfully loaded 29 profiles.
+[17:32:46] [INFO] Loaded 9 progress records from today's history.
+[17:32:46] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:33:02] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:33:02] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:38:06 ---
+[17:38:06] [INFO] Application starting up.
+[17:38:06] [INFO] Loading profiles from data.json.
+[17:38:06] [INFO] Successfully loaded 29 profiles.
+[17:38:08] [INFO] Loaded 9 progress records from today's history.
+[17:38:08] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:38:22] [INFO] Fetching all points...
+[17:38:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:38:23] [DEBUG] Headless mode enabled for this Selenium session.
+[17:38:40] [DEBUG] Headless mode enabled for this Selenium session.
+[17:38:59] [INFO] Points fetching complete.
+[17:39:01] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:39:02] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:39:04 ---
+[17:39:04] [INFO] Application starting up.
+[17:39:04] [INFO] Loading profiles from data.json.
+[17:39:04] [INFO] Successfully loaded 29 profiles.
+[17:39:06] [INFO] Loaded 9 progress records from today's history.
+[17:39:06] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:39:18] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:39:18] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:41:50 ---
+[17:41:50] [INFO] Application starting up.
+[17:41:50] [INFO] Loading profiles from data.json.
+[17:41:50] [INFO] Successfully loaded 29 profiles.
+[17:41:52] [INFO] Loaded 9 progress records from today's history.
+[17:41:52] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:41:59] [INFO] Opening history file...
+[17:43:25] [ERROR] Failed to clear history file: [WinError 32] The process cannot access the file because it is being used by another process: 'progress_history.csv'
+[17:43:25] [INFO] Could not clear history file. Check logs.
+[17:43:33] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:43:34] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:43:35 ---
+[17:43:35] [INFO] Application starting up.
+[17:43:35] [INFO] Loading profiles from data.json.
+[17:43:35] [INFO] Successfully loaded 29 profiles.
+[17:43:39] [INFO] Loaded 9 progress records from today's history.
+[17:43:39] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:43:47] [SYSTEM] History file cleared by user.
+[17:43:47] [INFO] History file has been cleared.
+[17:43:49] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:43:50] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:44:30 ---
+[17:44:30] [INFO] Application starting up.
+[17:44:30] [INFO] Loading profiles from data.json.
+[17:44:30] [INFO] Successfully loaded 29 profiles.
+[17:44:33] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:44:45] [INFO] Fetching all points...
+[17:44:45] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:44:46] [DEBUG] Headless mode enabled for this Selenium session.
+[17:45:02] [INFO] Points fetching complete.
+[17:45:06] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:45:06] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:45:08 ---
+[17:45:08] [INFO] Application starting up.
+[17:45:08] [INFO] Loading profiles from data.json.
+[17:45:08] [INFO] Successfully loaded 29 profiles.
+[17:45:10] [INFO] Loaded 1 progress records from today's history.
+[17:45:10] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:45:17] [INFO] Fetching all points...
+[17:45:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:45:18] [DEBUG] Headless mode enabled for this Selenium session.
+[17:45:35] [DEBUG] Headless mode enabled for this Selenium session.
+[17:45:57] [DEBUG] Headless mode enabled for this Selenium session.
+[17:46:14] [DEBUG] Headless mode enabled for this Selenium session.
+[17:46:29] [DEBUG] Headless mode enabled for this Selenium session.
+[17:46:44] [INFO] Stop signal sent. Finishing current action...
+[17:46:45] [INFO] Points fetching stopped by user.
+[17:46:51] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:46:51] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:46:53 ---
+[17:46:53] [INFO] Application starting up.
+[17:46:53] [INFO] Loading profiles from data.json.
+[17:46:53] [INFO] Successfully loaded 29 profiles.
+[17:46:55] [INFO] Loaded 5 progress records from today's history.
+[17:46:55] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:47:02] [INFO] Range 1-4 selected.
+[17:47:08] [INFO] Fetching all points...
+[17:47:08] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:47:09] [DEBUG] Headless mode enabled for this Selenium session.
+[17:47:16] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[17:47:16] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 17:53:22 ---
+[17:53:22] [INFO] Application starting up.
+[17:53:22] [INFO] Loading profiles from data.json.
+[17:53:22] [INFO] Successfully loaded 29 profiles.
+[17:53:28] [INFO] Loaded 5 progress records from today's history.
+[17:53:28] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[17:53:53] [INFO] Loaded 5 progress records from today's history.
+[17:53:53] [INFO] Smart Search Automation started...
+[17:53:53] [INFO] Processing Batch 1...
+[17:53:53] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[17:54:03] [INFO] Search 'cloister' (1/1) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[17:54:11] [INFO] Search 'eddy' (1/1) in window 'New tab - Personal 5 - Microsoft​ Edge'
+[17:54:18] [INFO] Search 'network' (1/1) in window 'network speed test - Search - Personal 3 - Microsoft​ Edge'
+[17:54:22] [INFO] Search 'yurt' (1/1) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[17:54:27] [INFO] Search 'wafer' (1/1) in window 'wafer - Search - Personal - Microsoft​ Edge'
+[17:54:33] [INFO] Search 'calculate' (1/1) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[17:54:35] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:54:35] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[17:54:35] [INFO] Skipping fetch for Personal: Already completed.
+[17:54:35] [INFO] Skipping fetch for Personal 2: Already completed.
+[17:54:35] [INFO] Skipping fetch for Personal 3: Already completed.
+[17:54:36] [INFO] Skipping fetch for Personal 4: Already completed.
+[17:54:36] [INFO] Skipping fetch for Personal 5: Already completed.
+[17:54:36] [INFO] Batch 1: All points collected.
+[17:54:36] [INFO] Batch 1: Saving final progress to history...
+[17:54:36] [INFO] Processing Batch 2...
+[17:54:36] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[17:54:41] [INFO] Error: No Edge windows found for PC search.
+[17:54:41] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:54:41] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[17:54:41] [DEBUG] Headless mode enabled for this Selenium session.
+[17:54:57] [DEBUG] Headless mode enabled for this Selenium session.
+[17:55:10] [INFO] Skipping progress check for suspended profile: Personal 8
+[17:55:11] [DEBUG] Headless mode enabled for this Selenium session.
+[17:55:23] [DEBUG] Headless mode enabled for this Selenium session.
+[17:55:37] [INFO] Batch 2: All points collected.
+[17:55:37] [INFO] Batch 2: Saving final progress to history...
+[17:55:37] [INFO] Processing Batch 3...
+[17:55:37] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[17:55:51] [INFO] Search 'malice' (1/1) in window 'New tab - Personal 15 - Microsoft​ Edge'
+[17:55:56] [INFO] Search 'tent' (1/1) in window 'New tab - Personal 13 - Microsoft​ Edge'
+[17:56:01] [INFO] Search 'combat' (1/1) in window 'New tab - Personal 14 - Microsoft​ Edge'
+[17:56:05] [INFO] Search 'being' (1/1) in window 'being - Search - Personal 12 - Microsoft​ Edge'
+[17:56:10] [INFO] Search 'cue' (1/1) in window 'cue - Search - Personal 11 - Microsoft​ Edge'
+[17:56:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:56:13] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[17:56:13] [INFO] Skipping progress check for suspended profile: Personal 11
+[17:56:13] [INFO] Skipping progress check for suspended profile: Personal 12
+[17:56:13] [DEBUG] Headless mode enabled for this Selenium session.
+[17:56:16] [ERROR] Failed to set up Selenium driver for Personal 13: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff680138c85+23461]
+	(No symbol) [0x0x7ff68008cd70]
+	GetHandleVerifier [0x0x7ff6803b0bb8+2611928]
+	(No symbol) [0x0x7ff67fe94f83]
+	(No symbol) [0x0x7ff67fe91045]
+	(No symbol) [0x0x7ff67fed5a92]
+	(No symbol) [0x0x7ff67feca423]
+	(No symbol) [0x0x7ff67fe9ea86]
+	(No symbol) [0x0x7ff67fe9dd11]
+	(No symbol) [0x0x7ff67fe9e8b3]
+	(No symbol) [0x0x7ff67ff9e6fd]
+	(No symbol) [0x0x7ff67ffaba88]
+	GetHandleVerifier [0x0x7ff680218acb+940523]
+	GetHandleVerifier [0x0x7ff680221821+976705]
+	(No symbol) [0x0x7ff68009a961]
+	(No symbol) [0x0x7ff680093344]
+	(No symbol) [0x0x7ff680093493]
+	(No symbol) [0x0x7ff680084f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[17:56:16] [DEBUG] Headless mode enabled for this Selenium session.
+[17:56:36] [DEBUG] Headless mode enabled for this Selenium session.
+[17:56:52] [INFO] Batch 3: All points collected.
+[17:56:52] [INFO] Batch 3: Saving final progress to history...
+[17:56:52] [INFO] Processing Batch 4...
+[17:56:52] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[17:57:04] [INFO] Search 'war' (1/1) in window 'New tab - Personal 19 - Microsoft​ Edge'
+[17:57:08] [INFO] Search 'patch' (1/1) in window 'New tab - Personal 18 - Microsoft​ Edge'
+[17:57:13] [INFO] Search 'handsaw' (1/1) in window 'handsaw - Search - Personal 17 - Microsoft​ Edge'
+[17:57:18] [INFO] Search 'constant' (1/1) in window 'New tab - Personal 16 - Microsoft​ Edge'
+[17:57:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:57:22] [INFO] Batch 4: Verifying progress (Attempt 1)...
+[17:57:22] [DEBUG] Headless mode enabled for this Selenium session.
+[17:57:24] [ERROR] Failed to set up Selenium driver for Personal 16: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff680138c85+23461]
+	(No symbol) [0x0x7ff68008cd70]
+	GetHandleVerifier [0x0x7ff6803b0bb8+2611928]
+	(No symbol) [0x0x7ff67fe94f83]
+	(No symbol) [0x0x7ff67fe91045]
+	(No symbol) [0x0x7ff67fed5a92]
+	(No symbol) [0x0x7ff67feca423]
+	(No symbol) [0x0x7ff67fe9ea86]
+	(No symbol) [0x0x7ff67fe9dd11]
+	(No symbol) [0x0x7ff67fe9e8b3]
+	(No symbol) [0x0x7ff67ff9e6fd]
+	(No symbol) [0x0x7ff67ffaba88]
+	GetHandleVerifier [0x0x7ff680218acb+940523]
+	GetHandleVerifier [0x0x7ff680221821+976705]
+	(No symbol) [0x0x7ff68009a961]
+	(No symbol) [0x0x7ff680093344]
+	(No symbol) [0x0x7ff680093493]
+	(No symbol) [0x0x7ff680084f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[17:57:25] [DEBUG] Headless mode enabled for this Selenium session.
+[17:57:37] [INFO] Skipping progress check for suspended profile: Personal 18
+[17:57:37] [DEBUG] Headless mode enabled for this Selenium session.
+[17:57:49] [DEBUG] Headless mode enabled for this Selenium session.
+[17:58:27] [INFO] Batch 4: All points collected.
+[17:58:27] [INFO] Batch 4: Saving final progress to history...
+[17:58:27] [INFO] Processing Batch 5...
+[17:58:27] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[17:58:37] [INFO] Search 'basin' (1/1) in window 'New tab - Personal 24 - Microsoft​ Edge'
+[17:58:44] [INFO] Search 'progress' (1/1) in window 'New tab - Personal 23 - Microsoft​ Edge'
+[17:58:50] [INFO] Search 'compile' (1/1) in window 'compiler - Search - Personal 25 - Microsoft​ Edge'
+[17:58:55] [INFO] Search 'tendency' (1/1) in window 'tendency - Search - Personal 22 - Microsoft​ Edge'
+[17:59:00] [INFO] Search 'handball' (1/1) in window 'handball - Search - Personal 21 - Microsoft​ Edge'
+[17:59:03] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:59:03] [INFO] Batch 5: Verifying progress (Attempt 1)...
+[17:59:03] [DEBUG] Headless mode enabled for this Selenium session.
+[17:59:16] [INFO] Skipping progress check for suspended profile: Personal 22
+[17:59:16] [DEBUG] Headless mode enabled for this Selenium session.
+[17:59:33] [DEBUG] Headless mode enabled for this Selenium session.
+[17:59:43] [INFO] Skipping progress check for suspended profile: Personal 25
+[17:59:43] [INFO] Batch 5: All points collected.
+[17:59:43] [INFO] Batch 5: Saving final progress to history...
+[17:59:43] [INFO] Processing Batch 6...
+[17:59:43] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[17:59:55] [INFO] Search 'clever' (1/1) in window 'clever - Search - Personal 29 - Microsoft​ Edge'
+[17:59:59] [INFO] Search 'taxi' (1/1) in window 'taxi - Search - Personal 28 - Microsoft​ Edge'
+[18:00:04] [INFO] Search 'savory' (1/1) in window 'savory - Search - Personal 27 - Microsoft​ Edge'
+[18:00:08] [INFO] Search 'eel' (1/1) in window 'eel - Search - Personal 26 - Microsoft​ Edge'
+[18:00:10] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:00:10] [INFO] Batch 6: Verifying progress (Attempt 1)...
+[18:00:10] [DEBUG] Headless mode enabled for this Selenium session.
+[18:00:13] [ERROR] Failed to set up Selenium driver for Personal 26: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff680138c85+23461]
+	(No symbol) [0x0x7ff68008cd70]
+	GetHandleVerifier [0x0x7ff6803b0bb8+2611928]
+	(No symbol) [0x0x7ff67fe94f83]
+	(No symbol) [0x0x7ff67fe91045]
+	(No symbol) [0x0x7ff67fed5a92]
+	(No symbol) [0x0x7ff67feca423]
+	(No symbol) [0x0x7ff67fe9ea86]
+	(No symbol) [0x0x7ff67fe9dd11]
+	(No symbol) [0x0x7ff67fe9e8b3]
+	(No symbol) [0x0x7ff67ff9e6fd]
+	(No symbol) [0x0x7ff67ffaba88]
+	GetHandleVerifier [0x0x7ff680218acb+940523]
+	GetHandleVerifier [0x0x7ff680221821+976705]
+	(No symbol) [0x0x7ff68009a961]
+	(No symbol) [0x0x7ff680093344]
+	(No symbol) [0x0x7ff680093493]
+	(No symbol) [0x0x7ff680084f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[18:00:13] [DEBUG] Headless mode enabled for this Selenium session.
+[18:00:25] [DEBUG] Headless mode enabled for this Selenium session.
+[18:01:01] [DEBUG] Headless mode enabled for this Selenium session.
+[18:01:13] [INFO] Batch 6: All points collected.
+[18:01:13] [INFO] Batch 6: Saving final progress to history...
+[18:01:13] [INFO] Search Automation Complete!
+[18:01:21] [INFO] Manually opening points breakdown for Personal 26
+[18:01:21] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:01:54] [INFO] Fetching all points...
+[18:01:57] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:01:58] [DEBUG] Headless mode enabled for this Selenium session.
+[18:02:09] [DEBUG] Headless mode enabled for this Selenium session.
+[18:02:23] [DEBUG] Headless mode enabled for this Selenium session.
+[18:02:43] [INFO] Points fetching complete.
+[18:03:44] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[18:03:44] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 18:03:56 ---
+[18:03:56] [INFO] Application starting up.
+[18:03:56] [INFO] Loading profiles from data.json.
+[18:03:56] [INFO] Successfully loaded 29 profiles.
+[18:03:58] [INFO] Loaded 23 progress records from today's history.
+[18:03:58] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[18:05:12] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[18:05:12] [INFO] Application has been closed.
