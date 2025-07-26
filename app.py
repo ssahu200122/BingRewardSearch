@@ -27,11 +27,11 @@ class BingAutomatorApp(customtkinter.CTk):
 
         self.profiles = profiles
         self.automation_service = automation_service
-        self.selected_profiles: Set[EdgeProfile] = set(self.profiles) # Reverted: Select all by default
+        self.selected_profiles: Set[EdgeProfile] = set(self.profiles)
         self.profile_widget_map: Dict[EdgeProfile, ProfileRow] = {}
         self.settings = self._load_settings()
         self.stop_event = None
-        self.selenium_lock = threading.Lock() # Lock to prevent concurrent Selenium tasks
+        self.selenium_lock = threading.Lock()
 
         self._configure_window()
         self._create_widgets()
@@ -99,7 +99,7 @@ class BingAutomatorApp(customtkinter.CTk):
                 profile, 
                 self._on_profile_select, 
                 self._on_profile_label_click,
-                self._on_status_toggle # Pass the new callback
+                self._on_status_toggle  # Pass the new callback here
             )
             profile_widget.pack(fill="x", expand=True, padx=5, pady=2)
             self.profile_widget_map[profile] = profile_widget
@@ -182,18 +182,9 @@ class BingAutomatorApp(customtkinter.CTk):
         self.status_label.grid(row=3, column=0, columnspan=2, padx=10, pady=(0, 5), sticky="ew")
 
     def _on_status_toggle(self, profile: EdgeProfile):
-        """Called when a profile's status button is clicked."""
+        """Called when a profile's status button is clicked. Only saves the state."""
         self._update_status(f"Profile {profile.name} set to '{profile.status}'.")
-        
-        # If a profile is suspended, it should be deselected.
-        if profile.status == 'suspended':
-            self.selected_profiles.discard(profile)
-            widget = self.profile_widget_map.get(profile)
-            if widget:
-                widget.set_checked(False)
-            
         self._save_all_profiles_to_json()
-        self._update_all_checkbox_state()
 
     def _save_all_profiles_to_json(self):
         """Saves the current state of all profiles back to data.json."""
@@ -229,11 +220,11 @@ class BingAutomatorApp(customtkinter.CTk):
     def _start_automation_thread(self):
         self.stop_event = threading.Event()
         
-        # Filter for profiles that are both selected AND active
-        profiles_to_run = [p for p in self.selected_profiles if p.status == 'active']
+        # Automation runs on ALL selected profiles, regardless of status
+        profiles_to_run = list(self.selected_profiles)
         
         if not profiles_to_run:
-            self._update_status("No active profiles selected. Nothing to do.")
+            self._update_status("No profiles selected. Nothing to do.")
             return
 
         self.start_button.configure(text="Stop", command=self._stop_automation, fg_color="red", hover_color="#C40000")
@@ -375,10 +366,10 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _start_daily_sets_thread(self):
         self.stop_event = threading.Event()
-        profiles_to_run = [p for p in self.selected_profiles if p.status == 'active']
+        profiles_to_run = list(self.selected_profiles)
         
         if not profiles_to_run:
-            self._update_status("No active profiles selected. Nothing to do.")
+            self._update_status("No profiles selected. Nothing to do.")
             return
 
         self.start_button.configure(state="disabled")
@@ -418,10 +409,10 @@ class BingAutomatorApp(customtkinter.CTk):
 
     def _start_fetch_progress_thread(self):
         self.stop_event = threading.Event()
-        profiles_to_run = [p for p in self.selected_profiles if p.status == 'active']
+        profiles_to_run = list(self.selected_profiles)
 
         if not profiles_to_run:
-            self._update_status("No active profiles selected. Nothing to do.")
+            self._update_status("No profiles selected. Nothing to do.")
             return
 
         self.start_button.configure(state="disabled")
@@ -517,8 +508,8 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_status(f"Running scheduled tasks for {time.strftime('%Y-%m-%d')}...")
         stop_event = threading.Event()
         
-        # Scheduled tasks should only run on selected and active profiles
-        profiles_to_run = [p for p in self.selected_profiles if p.status == 'active']
+        # Scheduled tasks run on all profiles marked as "active"
+        profiles_to_run = [p for p in self.profiles if p.status == 'active']
 
         def task_runner():
             self._automation_worker(profiles_to_run, stop_event)
@@ -539,8 +530,6 @@ class BingAutomatorApp(customtkinter.CTk):
                     widget.pack_forget()
     
     def _on_profile_select(self, profile: EdgeProfile, is_selected: bool):
-        if profile.status == 'suspended': # Should not happen with disabled checkbox, but as a safeguard
-            return
         if is_selected:
             self.selected_profiles.add(profile)
         else:
@@ -548,12 +537,10 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_all_checkbox_state()
 
     def _on_profile_label_click(self, profile: EdgeProfile):
-        # Reverted: Allow clicking on any profile label
         thread = threading.Thread(target=self.automation_service.open_single_profile_to_breakdown, args=(profile,), daemon=True)
         thread.start()
 
     def _toggle_all_profiles(self):
-        # Reverted: Toggles all profiles regardless of status
         is_all_selected = self.all_check_var.get() == "on"
         if is_all_selected:
             self.selected_profiles = set(self.profiles)
@@ -565,7 +552,6 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_all_checkbox_text()
 
     def _update_all_checkbox_state(self):
-        # Reverted: Checkbox state depends on all profiles
         if len(self.selected_profiles) == len(self.profiles):
             self.all_check_var.set("on")
         else:
@@ -573,7 +559,6 @@ class BingAutomatorApp(customtkinter.CTk):
         self._update_all_checkbox_text()
 
     def _update_all_checkbox_text(self):
-        # Reverted: Text shows count of all profiles
         self.all_checkbox.configure(text=f"All ({len(self.selected_profiles)}/{len(self.profiles)})")
 
     def _update_selection_ui(self):
@@ -589,7 +574,6 @@ class BingAutomatorApp(customtkinter.CTk):
         self.optionmenu.configure(values=full_options)
 
     def _optionmenu_callback(self, choice: str):
-        # Reverted: Selections apply to all profiles, filtering happens at runtime
         if choice == "Inverse Selection":
             all_profiles_set = set(self.profiles)
             self.selected_profiles = all_profiles_set.difference(self.selected_profiles)

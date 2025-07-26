@@ -161,3 +161,532 @@
 [05:49:42] [INFO] Processing activities for Personal 2...
 [05:49:49] [INFO] No activities found for Personal 2. Might be complete.
 [05:49:52] [INFO] Daily Set Automation Complete!
+[05:55:07] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '05:49'}
+[05:55:07] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 05:55:08 ---
+[05:55:08] [INFO] Application starting up.
+[05:55:08] [INFO] Loading profiles from data.json.
+[05:55:08] [INFO] Successfully loaded 29 profiles.
+[05:55:10] [INFO] Loaded 8 progress records from today's history.
+[05:55:10] [SYSTEM] Tasks scheduled to run daily at 05:49.
+[05:55:21] [INFO] Profile Personal set to 'suspended'.
+[05:55:21] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[05:55:42] [INFO] Profile Personal set to 'active'.
+[05:55:42] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[05:55:44] [INFO] Profile Personal set to 'suspended'.
+[05:55:44] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[05:55:51] [INFO] Profile Personal set to 'active'.
+[05:55:51] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[05:55:54] [INFO] Profile Personal set to 'suspended'.
+[05:55:54] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[05:56:02] [INFO] Profile Personal set to 'active'.
+[05:56:02] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[06:02:14] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '05:49'}
+[06:02:14] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 06:02:54 ---
+[06:02:54] [INFO] Application starting up.
+[06:02:54] [INFO] Loading profiles from data.json.
+[06:02:54] [INFO] Successfully loaded 29 profiles.
+
+--- Log Session Started: 2025-07-26 06:05:00 ---
+[06:05:00] [INFO] Application starting up.
+[06:05:00] [INFO] Loading profiles from data.json.
+[06:05:00] [INFO] Successfully loaded 29 profiles.
+[06:05:02] [INFO] Loaded 8 progress records from today's history.
+[06:05:02] [SYSTEM] Tasks scheduled to run daily at 05:49.
+[06:05:08] [INFO] Profile Personal set to 'suspended'.
+[06:05:08] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[06:05:09] [INFO] Profile Personal set to 'active'.
+[06:05:09] [ERROR] Error saving profile statuses: [Errno 13] Permission denied: 'data.json'
+[06:05:11] [INFO] Profile Personal set to 'suspended'.
+[06:05:11] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[06:05:25] [INFO] Range 0-4 selected.
+[06:05:55] [INFO] Loaded 8 progress records from today's history.
+[06:05:55] [INFO] Smart Search Automation started...
+[06:05:55] [INFO] Processing Batch 1...
+[06:05:55] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:06:04] [INFO] Search 'wry' (1/2) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[06:06:09] [INFO] Search 'stress' (1/2) in window 'stress - Search - Personal - Microsoft​ Edge'
+[06:06:13] [INFO] Search 'tiger' (1/2) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[06:06:17] [INFO] Search 'crepe' (1/2) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[06:06:21] [INFO] Search 'dragon' (2/2) in window 'dragon - Search - Personal 4 - Microsoft​ Edge'
+[06:06:27] [INFO] Search 'reorganization' (2/2) in window 'reorganization - Search - Personal - Microsoft​ Edge'
+[06:06:31] [INFO] Search 'melt' (2/2) in window 'melt - Search - Personal 2 - Microsoft​ Edge'
+[06:06:36] [INFO] Search 'loneliness' (2/2) in window 'Google Gemini - Personal - Microsoft​ Edge'
+[06:06:38] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:06:38] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:06:38] [INFO] Skipping fetch for Personal 2: Already completed.
+[06:06:38] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:06:38] [INFO] Skipping fetch for Personal: Already completed.
+[06:06:38] [INFO] Batch 1: All points collected.
+[06:06:38] [INFO] Batch 1: Saving final progress to history...
+[06:06:38] [INFO] Processing Batch 2...
+[06:06:38] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:06:48] [INFO] Search 'boxer' (1/2) in window 'boxer - Search - Personal 3 - Microsoft​ Edge'
+[06:06:54] [INFO] Search 'embellishment' (2/2) in window 'embellishment - Search - Personal 3 - Microsoft​ Edge'
+[06:06:56] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:06:56] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:06:56] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:06:56] [INFO] Batch 2: All points collected.
+[06:06:56] [INFO] Batch 2: Saving final progress to history...
+[06:06:56] [INFO] Search Automation Complete!
+[06:07:13] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '05:49'}
+[06:07:13] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 06:18:18 ---
+[06:18:18] [INFO] Application starting up.
+[06:18:18] [INFO] Loading profiles from data.json.
+[06:18:18] [INFO] Successfully loaded 29 profiles.
+[06:18:19] [INFO] Loaded 8 progress records from today's history.
+[06:18:19] [SYSTEM] Tasks scheduled to run daily at 05:49.
+[06:18:32] [INFO] Range 0-4 selected.
+[06:18:40] [INFO] Fetching progress sequentially...
+[06:18:40] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:18:41] [DEBUG] Headless mode enabled for this Selenium session.
+[06:18:52] [DEBUG] Headless mode enabled for this Selenium session.
+[06:19:00] [DEBUG] Headless mode enabled for this Selenium session.
+[06:19:16] [DEBUG] Headless mode enabled for this Selenium session.
+[06:19:25] [INFO] Progress fetching complete.
+[06:19:48] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '05:20'}
+[06:19:48] [INFO] Schedule time updated to 05:20.
+[06:19:48] [SYSTEM] Tasks scheduled to run daily at 05:20.
+[06:20:33] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[06:20:33] [INFO] Schedule time updated to 06:21.
+[06:20:33] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[06:20:41] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[06:20:41] [INFO] Schedule time updated to 06:21.
+[06:20:41] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[06:21:00] [INFO] Running scheduled tasks for 2025-07-26...
+[06:21:00] [INFO] Loaded 8 progress records from today's history.
+[06:21:00] [INFO] Smart Search Automation started...
+[06:21:00] [INFO] Processing Batch 1...
+[06:21:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:21:11] [INFO] Search 'aback' (1/2) in window 'New tab - Personal 3 - Microsoft​ Edge'
+[06:21:16] [INFO] Search 'occur' (1/2) in window 'occur - Search - Personal 2 - Microsoft​ Edge'
+[06:21:20] [INFO] Search 'caper' (2/2) in window 'caper - Search - Personal 3 - Microsoft​ Edge'
+[06:21:24] [INFO] Search 'folklore' (2/2) in window 'folklore - Search - Personal 2 - Microsoft​ Edge'
+[06:21:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:21:27] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:21:27] [INFO] Skipping fetch for Personal 2: Already completed.
+[06:21:27] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:21:27] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:21:27] [DEBUG] Headless mode enabled for this Selenium session.
+[06:21:35] [INFO] Batch 1: All points collected.
+[06:21:35] [INFO] Batch 1: Saving final progress to history...
+[06:21:35] [INFO] Processing Batch 2...
+[06:21:35] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:21:46] [INFO] Search 'utopian' (1/2) in window 'New tab - Personal 9 - Microsoft​ Edge'
+[06:21:51] [INFO] Search 'glacier' (1/2) in window 'glacier - Search - Personal 8 - Microsoft​ Edge'
+[06:21:56] [INFO] Search 'spokesman' (1/2) in window 'bing.com/search?pglt=299&q=spokesman&cvid=c1be8a6351c0451f8841d6176f498ed3&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDE4NTJqMGoxqAIIsAIB&FORM=ANSPA1&PC=ASTS - Personal 7 - Microsoft​ Edge'
+[06:22:01] [INFO] Search 'pain' (1/2) in window 'pain - Search - Personal 6 - Microsoft​ Edge'
+[06:22:07] [INFO] Search 'reference' (2/2) in window 'utopian - Search - Personal 9 - Microsoft​ Edge'
+[06:22:11] [INFO] Search 'scenery' (2/2) in window 'scenery - Search - Personal 8 - Microsoft​ Edge'
+[06:22:17] [INFO] Search 'champagne' (2/2) in window 'champagne - Search - Personal 7 - Microsoft​ Edge'
+[06:22:21] [INFO] Search 'atheist' (2/2) in window 'atheist - Search - Personal 6 - Microsoft​ Edge'
+[06:22:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:22:24] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:22:24] [DEBUG] Headless mode enabled for this Selenium session.
+[06:22:35] [DEBUG] Headless mode enabled for this Selenium session.
+[06:22:43] [DEBUG] Headless mode enabled for this Selenium session.
+[06:23:06] [WARN] Could not find daily search progress for Personal 8.
+[06:23:09] [DEBUG] Headless mode enabled for this Selenium session.
+[06:23:18] [INFO] Batch 2: All points collected.
+[06:23:18] [INFO] Batch 2: Saving final progress to history...
+[06:23:18] [INFO] Processing Batch 3...
+[06:23:18] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:23:29] [INFO] Search 'number' (1/2) in window 'New tab - Personal 13 - Microsoft​ Edge'
+[06:23:33] [INFO] Search 'heap' (1/2) in window 'New tab - Personal 11 - Microsoft​ Edge'
+[06:23:40] [INFO] Search 'recognition' (1/2) in window 'recognition - Search - Personal 12 - Microsoft​ Edge'
+[06:23:45] [INFO] Search 'dapper' (1/2) in window 'dapper - Search - Personal 10 - Microsoft​ Edge'
+[06:23:49] [INFO] Search 'compost' (2/2) in window 'number - Search - Personal 13 - Microsoft​ Edge'
+[06:23:53] [INFO] Search 'land' (2/2) in window 'heap - Search - Personal 11 - Microsoft​ Edge'
+[06:23:58] [INFO] Search 'obligation' (2/2) in window 'obligation - Search - Personal 12 - Microsoft​ Edge'
+[06:24:02] [INFO] Search 'celsius' (2/2) in window 'Settings and 1 more page - Personal 10 - Microsoft​ Edge'
+[06:24:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:24:04] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[06:24:04] [DEBUG] Headless mode enabled for this Selenium session.
+[06:24:15] [DEBUG] Headless mode enabled for this Selenium session.
+[06:24:34] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[06:24:35] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 06:24:42 ---
+[06:24:42] [INFO] Application starting up.
+[06:24:42] [INFO] Loading profiles from data.json.
+[06:24:42] [INFO] Successfully loaded 29 profiles.
+[06:24:43] [INFO] Loaded 12 progress records from today's history.
+[06:24:43] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[06:24:49] [INFO] Range 0-4 selected.
+[06:24:54] [INFO] Loaded 12 progress records from today's history.
+[06:24:54] [INFO] Smart Search Automation started...
+[06:24:54] [INFO] Processing Batch 1...
+[06:24:54] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:24:59] [INFO] Error: No Edge windows found for PC search.
+[06:24:59] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:24:59] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:24:59] [INFO] Skipping fetch for Personal: Already completed.
+[06:24:59] [INFO] Skipping fetch for Personal 2: Already completed.
+[06:24:59] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:24:59] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:24:59] [INFO] Batch 1: All points collected.
+[06:24:59] [INFO] Batch 1: Saving final progress to history...
+[06:24:59] [INFO] Search Automation Complete!
+[06:25:17] [INFO] Loaded 12 progress records from today's history.
+[06:25:18] [INFO] Smart Search Automation started...
+[06:25:18] [INFO] Processing Batch 1...
+[06:25:18] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:25:30] [INFO] Search 'thesis' (1/2) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[06:25:35] [INFO] Search 'armor' (1/2) in window 'New tab - Personal - Microsoft​ Edge'
+[06:25:40] [INFO] Search 'strawberry' (2/2) in window 'strawberry - Search - Personal 2 - Microsoft​ Edge'
+[06:25:45] [INFO] Search 'whirlpool' (2/2) in window 'whirlpool - Search - Personal - Microsoft​ Edge'
+[06:25:47] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:25:47] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:25:47] [INFO] Skipping fetch for Personal: Already completed.
+[06:25:47] [INFO] Skipping fetch for Personal 2: Already completed.
+[06:25:47] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:25:47] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:25:47] [INFO] Batch 1: All points collected.
+[06:25:47] [INFO] Batch 1: Saving final progress to history...
+[06:25:47] [INFO] Search Automation Complete!
+[06:26:00] [INFO] Loaded 12 progress records from today's history.
+[06:26:00] [INFO] Smart Search Automation started...
+[06:26:00] [INFO] Processing Batch 1...
+[06:26:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:26:15] [INFO] Search 'television' (1/2) in window 'television - Search - Personal 4 - Microsoft​ Edge'
+[06:26:22] [INFO] Search 'decimal' (1/2) in window 'New tab - Personal 3 - Microsoft​ Edge'
+[06:26:26] [INFO] Search 'scanner' (1/2) in window 'scanner - Search - Personal 2 - Microsoft​ Edge'
+[06:26:31] [INFO] Search 'itch' (1/2) in window 'itch - Search - Personal - Microsoft​ Edge'
+[06:26:35] [INFO] Search 'vendor' (2/2) in window 'vendor - Search - Personal 4 - Microsoft​ Edge'
+[06:26:38] [INFO] Search 'mind' (2/2) in window 'decimal - Search - Personal 3 - Microsoft​ Edge'
+[06:26:42] [INFO] Search 'peer' (2/2) in window 'scanner - Search - Personal 2 - Microsoft​ Edge'
+[06:26:46] [INFO] Search 'lawyer' (2/2) in window 'lawyer - Search - Personal - Microsoft​ Edge'
+[06:26:48] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:26:48] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:26:48] [INFO] Skipping fetch for Personal: Already completed.
+[06:26:48] [INFO] Skipping fetch for Personal 2: Already completed.
+[06:26:48] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:26:49] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:26:49] [INFO] Batch 1: All points collected.
+[06:26:49] [INFO] Batch 1: Saving final progress to history...
+[06:26:49] [INFO] Search Automation Complete!
+[06:26:56] [INFO] Range 4-8 selected.
+[06:27:04] [INFO] Loaded 12 progress records from today's history.
+[06:27:04] [INFO] Smart Search Automation started...
+[06:27:04] [INFO] Processing Batch 1...
+[06:27:04] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:27:17] [INFO] Search 'guitarist' (1/2) in window 'guitarist - Search - Personal 7 - Microsoft​ Edge'
+[06:27:22] [INFO] Search 'eligibility' (1/2) in window 'eligibility - Search - Personal 8 - Microsoft​ Edge'
+[06:27:26] [INFO] Search 'sow' (1/2) in window 'sow - Search - Personal 5 - Microsoft​ Edge'
+[06:27:30] [INFO] Search 'crow' (2/2) in window 'crow - Search - Personal 7 - Microsoft​ Edge'
+[06:27:34] [INFO] Search 'chew' (2/2) in window 'chew - Search - Personal 8 - Microsoft​ Edge'
+[06:27:38] [INFO] Search 'farrow' (2/2) in window 'farrow - Search - Personal 5 - Microsoft​ Edge'
+[06:27:40] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:27:40] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:27:40] [INFO] Skipping fetch for Personal 5: Already completed.
+[06:27:40] [DEBUG] Headless mode enabled for this Selenium session.
+[06:28:06] [WARN] Could not find daily search progress for Personal 8.
+[06:28:09] [INFO] Skipping fetch for Personal 7: Already completed.
+[06:28:09] [INFO] Batch 1: All points collected.
+[06:28:09] [INFO] Batch 1: Saving final progress to history...
+[06:28:09] [INFO] Processing Batch 2...
+[06:28:09] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:28:17] [INFO] Search 'armament' (1/2) in window 'armament - Search - Personal 6 - Microsoft​ Edge'
+[06:28:21] [INFO] Search 'margin' (2/2) in window 'margin - Search - Personal 6 - Microsoft​ Edge'
+[06:28:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:28:23] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:28:23] [INFO] Skipping fetch for Personal 6: Already completed.
+[06:28:23] [INFO] Batch 2: All points collected.
+[06:28:23] [INFO] Batch 2: Saving final progress to history...
+[06:28:23] [INFO] Search Automation Complete!
+[06:28:35] [INFO] Loaded 12 progress records from today's history.
+[06:28:35] [INFO] Smart Search Automation started...
+[06:28:35] [INFO] Processing Batch 1...
+[06:28:35] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:28:49] [INFO] Search 'miscommunication' (1/2) in window 'miscommunication - Search - Personal 7 - Microsoft​ Edge'
+[06:28:54] [INFO] Search 'hardcover' (1/2) in window 'bing.com/search?pglt=299&q=hardcover&cvid=8bbedbfc5f064f5a9dc277e8804cadbb&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQgxODgzajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 8 - Microsoft​ Edge'
+[06:29:00] [INFO] Search 'scheduling' (1/2) in window 'scheduling - Search - Personal 5 - Microsoft​ Edge'
+[06:29:04] [INFO] Search 'level' (2/2) in window 'level - Search - Personal 7 - Microsoft​ Edge'
+[06:29:08] [INFO] Search 'casement' (2/2) in window 'casement - Search - Personal 8 - Microsoft​ Edge'
+[06:29:12] [INFO] Search 'font' (2/2) in window 'font - Search - Personal 5 - Microsoft​ Edge'
+[06:29:15] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:29:15] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:29:15] [INFO] Skipping fetch for Personal 5: Already completed.
+[06:29:15] [DEBUG] Headless mode enabled for this Selenium session.
+[06:29:40] [WARN] Could not find daily search progress for Personal 8.
+[06:29:43] [INFO] Skipping fetch for Personal 7: Already completed.
+[06:29:43] [INFO] Batch 1: All points collected.
+[06:29:43] [INFO] Batch 1: Saving final progress to history...
+[06:29:43] [INFO] Processing Batch 2...
+[06:29:43] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:29:53] [INFO] Search 'sightseeing' (1/2) in window 'sightseeing - Search - Personal 6 - Microsoft​ Edge'
+[06:29:58] [INFO] Search 'leader' (2/2) in window 'leader - Search - Personal 6 - Microsoft​ Edge'
+[06:30:00] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:30:00] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:30:00] [INFO] Skipping fetch for Personal 6: Already completed.
+[06:30:00] [INFO] Batch 2: All points collected.
+[06:30:00] [INFO] Batch 2: Saving final progress to history...
+[06:30:00] [INFO] Search Automation Complete!
+[06:30:08] [INFO] Range 9-12 selected.
+[06:30:39] [INFO] Loaded 12 progress records from today's history.
+[06:30:39] [INFO] Smart Search Automation started...
+[06:30:39] [INFO] Processing Batch 1...
+[06:30:39] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:30:48] [INFO] Search 'quit' (1/2) in window 'quit - Search - Personal 11 - Microsoft​ Edge'
+[06:30:53] [INFO] Search 'contrary' (1/2) in window 'contrary - Search - Personal 12 - Microsoft​ Edge'
+[06:30:58] [INFO] Search 'apology' (1/2) in window 'apology - Search - Personal 9 - Microsoft​ Edge'
+[06:31:03] [INFO] Search 'confidentiality' (2/2) in window 'confidentiality - Search - Personal 11 - Microsoft​ Edge'
+[06:31:08] [INFO] Search 'admission' (2/2) in window 'admission - Search - Personal 12 - Microsoft​ Edge'
+[06:31:13] [INFO] Search 'tacit' (2/2) in window 'tacit - Search - Personal 9 - Microsoft​ Edge'
+[06:31:15] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:31:15] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:31:15] [DEBUG] Headless mode enabled for this Selenium session.
+[06:31:40] [WARN] Could not find daily search progress for Personal 11.
+[06:31:42] [INFO] Skipping fetch for Personal 9: Already completed.
+[06:31:42] [DEBUG] Headless mode enabled for this Selenium session.
+[06:32:08] [WARN] Could not find daily search progress for Personal 12.
+[06:32:11] [INFO] Batch 1: All points collected.
+[06:32:11] [INFO] Batch 1: Saving final progress to history...
+[06:32:11] [INFO] Processing Batch 2...
+[06:32:11] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:32:20] [INFO] Search 'island' (1/2) in window 'island - Search - Personal 10 - Microsoft​ Edge'
+[06:32:24] [INFO] Search 'thrift' (2/2) in window 'thrift - Search - Personal 10 - Microsoft​ Edge'
+[06:32:26] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:32:27] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:32:27] [DEBUG] Headless mode enabled for this Selenium session.
+[06:32:36] [INFO] Batch 2: All points collected.
+[06:32:36] [INFO] Batch 2: Saving final progress to history...
+[06:32:36] [INFO] Search Automation Complete!
+[06:33:02] [INFO] Custom range 13-30 selected.
+[06:33:10] [INFO] Loaded 13 progress records from today's history.
+[06:33:10] [INFO] Smart Search Automation started...
+[06:33:10] [INFO] Processing Batch 1...
+[06:33:10] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:33:19] [INFO] Search 'password' (1/2) in window 'New tab - Personal 14 - Microsoft​ Edge'
+[06:33:23] [INFO] Search 'ovary' (1/2) in window 'ovary - Search - Personal 20 - Microsoft​ Edge'
+[06:33:28] [INFO] Search 'knickers' (1/2) in window 'knickers - Search - Personal 27 - Microsoft​ Edge'
+[06:33:32] [INFO] Search 'rum' (2/2) in window 'rum - Search - Personal 14 - Microsoft​ Edge'
+[06:33:38] [INFO] Search 'developmental' (2/2) in window 'developmental - Search - Personal 20 - Microsoft​ Edge'
+[06:33:44] [INFO] Search 'kettledrum' (2/2) in window 'kettledrum - Search - Personal 27 - Microsoft​ Edge'
+[06:33:46] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:33:46] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:33:46] [INFO] Skipping fetch for Personal 27: Already completed.
+[06:33:46] [DEBUG] Headless mode enabled for this Selenium session.
+[06:33:57] [DEBUG] Headless mode enabled for this Selenium session.
+[06:34:09] [INFO] Batch 1: All points collected.
+[06:34:09] [INFO] Batch 1: Saving final progress to history...
+[06:34:09] [INFO] Processing Batch 2...
+[06:34:09] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:34:21] [INFO] Search 'stumbling' (1/2) in window 'stumbling - Search - Personal 25 - Microsoft​ Edge'
+[06:34:26] [INFO] Search 'offence' (1/2) in window 'offence - Search - Personal 17 - Microsoft​ Edge'
+[06:34:30] [INFO] Search 'wakeful' (1/2) in window 'wakeful - Search - Personal 19 - Microsoft​ Edge'
+[06:34:35] [INFO] Search 'produce' (2/2) in window 'produce - Search - Personal 25 - Microsoft​ Edge'
+[06:34:39] [INFO] Search 'abrasive' (2/2) in window 'abrasive - Search - Personal 17 - Microsoft​ Edge'
+[06:34:44] [INFO] Search 'bathrobe' (2/2) in window 'bathrobe - Search - Personal 19 - Microsoft​ Edge'
+[06:34:47] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:34:47] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:34:47] [DEBUG] Headless mode enabled for this Selenium session.
+[06:35:00] [DEBUG] Headless mode enabled for this Selenium session.
+[06:35:10] [DEBUG] Headless mode enabled for this Selenium session.
+[06:35:33] [WARN] Could not find daily search progress for Personal 25.
+[06:35:35] [INFO] Batch 2: All points collected.
+[06:35:35] [INFO] Batch 2: Saving final progress to history...
+[06:35:35] [INFO] Processing Batch 3...
+[06:35:35] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:35:46] [INFO] Search 'finisher' (1/2) in window 'finisher - Search - Personal 26 - Microsoft​ Edge'
+[06:35:51] [INFO] Search 'interpreter' (1/2) in window 'interpreter - Search - Personal 23 - Microsoft​ Edge'
+[06:35:55] [INFO] Search 'walnut' (1/2) in window 'walnut - Search - Personal 28 - Microsoft​ Edge'
+[06:36:01] [INFO] Search 'bricklaying' (2/2) in window 'bricklaying - Search - Personal 26 - Microsoft​ Edge'
+[06:36:05] [INFO] Search 'shorts' (2/2) in window 'shorts - Search - Personal 23 - Microsoft​ Edge'
+[06:36:09] [INFO] Search 'buzz' (2/2) in window 'buzz - Search - Personal 28 - Microsoft​ Edge'
+[06:36:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:36:11] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[06:36:11] [INFO] Skipping fetch for Personal 28: Already completed.
+[06:36:11] [DEBUG] Headless mode enabled for this Selenium session.
+[06:36:23] [DEBUG] Headless mode enabled for this Selenium session.
+[06:36:31] [INFO] Batch 3: All points collected.
+[06:36:31] [INFO] Batch 3: Saving final progress to history...
+[06:36:31] [INFO] Processing Batch 4...
+[06:36:31] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:36:43] [INFO] Search 'parched' (1/2) in window 'parched meaning - Search - Personal 15 - Microsoft​ Edge'
+[06:36:48] [INFO] Search 'polyester' (1/2) in window 'polyester - Search - Personal 21 - Microsoft​ Edge'
+[06:36:53] [INFO] Search 'cyclamen' (1/2) in window 'cyclamen - Search - Personal 13 - Microsoft​ Edge'
+[06:36:58] [INFO] Search 'occupation' (2/2) in window 'occupation - Search - Personal 15 - Microsoft​ Edge'
+[06:37:03] [INFO] Search 'scribble' (2/2) in window 'scribble - Search - Personal 21 - Microsoft​ Edge'
+[06:37:06] [INFO] Search 'bra' (2/2) in window 'bra - Search - Personal 13 - Microsoft​ Edge'
+[06:37:08] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:37:08] [INFO] Batch 4: Verifying progress (Attempt 1)...
+[06:37:08] [DEBUG] Headless mode enabled for this Selenium session.
+[06:37:21] [DEBUG] Headless mode enabled for this Selenium session.
+[06:37:30] [DEBUG] Headless mode enabled for this Selenium session.
+[06:37:41] [INFO] Batch 4: All points collected.
+[06:37:41] [INFO] Batch 4: Saving final progress to history...
+[06:37:41] [INFO] Processing Batch 5...
+[06:37:41] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:37:53] [INFO] Search 'instinctive' (1/2) in window 'instinctive - Search - Personal 18 - Microsoft​ Edge'
+[06:37:58] [INFO] Search 'range' (1/2) in window 'range - Search - Personal 16 - Microsoft​ Edge'
+[06:38:02] [INFO] Search 'pouch' (1/2) in window 'pouch - Search - Personal 29 - Microsoft​ Edge'
+[06:38:07] [INFO] Search 'intelligence' (2/2) in window 'intelligence - Search - Personal 18 - Microsoft​ Edge'
+[06:38:13] [INFO] Search 'restructure' (2/2) in window 'restructure - Search - Personal 16 - Microsoft​ Edge'
+[06:38:18] [INFO] Search 'maintenance' (2/2) in window 'maintenance - Search - Personal 29 - Microsoft​ Edge'
+[06:38:20] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:38:20] [INFO] Batch 5: Verifying progress (Attempt 1)...
+[06:38:20] [INFO] Skipping fetch for Personal 29: Already completed.
+[06:38:20] [INFO] Skipping fetch for Personal 16: Already completed.
+[06:38:20] [DEBUG] Headless mode enabled for this Selenium session.
+[06:38:48] [WARN] Could not find daily search progress for Personal 18.
+[06:38:50] [INFO] Batch 5: All points collected.
+[06:38:50] [INFO] Batch 5: Saving final progress to history...
+[06:38:50] [INFO] Processing Batch 6...
+[06:38:50] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[06:39:00] [INFO] Search 'scissors' (1/2) in window 'scissors - Search - Personal 24 - Microsoft​ Edge'
+[06:39:05] [INFO] Search 'synergy' (1/2) in window 'synergy - Search - Personal 22 - Microsoft​ Edge'
+[06:39:09] [INFO] Search 'rib' (2/2) in window 'rib - Search - Personal 24 - Microsoft​ Edge'
+[06:39:14] [INFO] Search 'interval' (2/2) in window 'interval - Search - Personal 22 - Microsoft​ Edge'
+[06:39:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:39:16] [INFO] Batch 6: Verifying progress (Attempt 1)...
+[06:39:16] [DEBUG] Headless mode enabled for this Selenium session.
+[06:39:46] [WARN] Could not find daily search progress for Personal 22.
+[06:39:48] [DEBUG] Headless mode enabled for this Selenium session.
+[06:39:57] [INFO] Batch 6: All points collected.
+[06:39:57] [INFO] Batch 6: Saving final progress to history...
+[06:39:57] [INFO] Search Automation Complete!
+[06:40:08] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[06:40:09] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-26 06:40:12 ---
+[06:40:12] [INFO] Application starting up.
+[06:40:12] [INFO] Loading profiles from data.json.
+[06:40:12] [INFO] Successfully loaded 29 profiles.
+[06:40:14] [INFO] Loaded 23 progress records from today's history.
+[06:40:14] [SYSTEM] Tasks scheduled to run daily at 06:21.
+[06:40:52] [INFO] Loaded 23 progress records from today's history.
+[06:40:52] [INFO] Smart Search Automation started...
+[06:40:52] [INFO] Processing Batch 1...
+[06:40:52] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[06:41:03] [INFO] Search 'reset' (1/1) in window 'reset - Search - Personal 27 - Microsoft​ Edge'
+[06:41:08] [INFO] Search 'understood' (1/1) in window 'understood - Search - Personal 25 - Microsoft​ Edge'
+[06:41:12] [INFO] Search 'brood' (1/1) in window 'New tab - Personal 7 - Microsoft​ Edge'
+[06:41:17] [INFO] Search 'compulsion' (1/1) in window 'compulsion - Search - Personal 11 - Microsoft​ Edge'
+[06:41:22] [INFO] Search 'checkbook' (1/1) in window 'checkbook - Search - Personal 16 - Microsoft​ Edge'
+[06:41:25] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:41:25] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:41:25] [INFO] Skipping fetch for Personal 16: Already completed.
+[06:41:25] [DEBUG] Headless mode enabled for this Selenium session.
+[06:41:28] [ERROR] Failed to set up Selenium driver for Personal 25: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7cf798c85+23461]
+	(No symbol) [0x0x7ff7cf6ecd70]
+	GetHandleVerifier [0x0x7ff7cfa10bb8+2611928]
+	(No symbol) [0x0x7ff7cf4f4f83]
+	(No symbol) [0x0x7ff7cf4f1045]
+	(No symbol) [0x0x7ff7cf535a92]
+	(No symbol) [0x0x7ff7cf52a423]
+	(No symbol) [0x0x7ff7cf4fea86]
+	(No symbol) [0x0x7ff7cf4fdd11]
+	(No symbol) [0x0x7ff7cf4fe8b3]
+	(No symbol) [0x0x7ff7cf5fe6fd]
+	(No symbol) [0x0x7ff7cf60ba88]
+	GetHandleVerifier [0x0x7ff7cf878acb+940523]
+	GetHandleVerifier [0x0x7ff7cf881821+976705]
+	(No symbol) [0x0x7ff7cf6fa961]
+	(No symbol) [0x0x7ff7cf6f3344]
+	(No symbol) [0x0x7ff7cf6f3493]
+	(No symbol) [0x0x7ff7cf6e4f36]
+	BaseThreadInitThunk [0x0x7ff9fb6ce8d7+23]
+	RtlUserThreadStart [0x0x7ff9fcdfc5dc+44]
+[06:41:28] [DEBUG] Headless mode enabled for this Selenium session.
+[06:41:51] [WARN] Could not find daily search progress for Personal 11.
+[06:41:53] [INFO] Skipping fetch for Personal 7: Already completed.
+[06:41:53] [INFO] Skipping fetch for Personal 27: Already completed.
+[06:41:53] [INFO] Batch 1: All points collected.
+[06:41:53] [INFO] Batch 1: Saving final progress to history...
+[06:41:53] [INFO] Processing Batch 2...
+[06:41:53] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[06:42:07] [INFO] Search 'clumsy' (1/1) in window 'New tab - Personal 21 - Microsoft​ Edge'
+[06:42:15] [INFO] Search 'literature' (1/1) in window 'New tab - Personal 22 - Microsoft​ Edge'
+[06:42:18] [INFO] Search 'farm' (1/1) in window 'farm - Search - Personal 18 - Microsoft​ Edge'
+[06:42:21] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:42:21] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[06:42:21] [DEBUG] Headless mode enabled for this Selenium session.
+[06:42:48] [WARN] Could not find daily search progress for Personal 18.
+[06:42:50] [DEBUG] Headless mode enabled for this Selenium session.
+[06:43:10] [INFO] Opening history file...
+[06:43:15] [WARN] Could not find daily search progress for Personal 22.
+[06:43:18] [INFO] Skipping fetch for Personal 3: Already completed.
+[06:43:18] [DEBUG] Headless mode enabled for this Selenium session.
+[06:43:43] [WARN] Could not find daily search progress for Personal 12.
+[06:43:45] [INFO] Skipping fetch for Personal 21: Already completed.
+[06:43:45] [INFO] Batch 2: All points collected.
+[06:43:45] [INFO] Batch 2: Saving final progress to history...
+[06:43:45] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:43:45] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:43:45] [INFO] Processing Batch 3...
+[06:43:45] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[06:43:57] [INFO] Search 'sir' (1/1) in window 'New tab - Personal 19 - Microsoft​ Edge'
+[06:44:01] [INFO] Search 'own' (1/1) in window 'own - Search - Personal - Microsoft​ Edge'
+[06:44:06] [INFO] Search 'bobcat' (1/1) in window 'bobcat - Search - Personal 10 - Microsoft​ Edge'
+[06:44:10] [INFO] Search 'demand' (1/1) in window 'demand - Search - Personal 24 - Microsoft​ Edge'
+[06:44:14] [INFO] Search 'exile' (1/1) in window 'exile - Search - Personal 13 - Microsoft​ Edge'
+[06:44:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:44:17] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[06:44:17] [INFO] Skipping fetch for Personal 13: Already completed.
+[06:44:17] [INFO] Skipping fetch for Personal 24: Already completed.
+[06:44:17] [INFO] Skipping fetch for Personal 10: Already completed.
+[06:44:17] [INFO] Skipping fetch for Personal 19: Already completed.
+[06:44:17] [INFO] Skipping fetch for Personal: Already completed.
+[06:44:17] [INFO] Batch 3: All points collected.
+[06:44:17] [INFO] Batch 3: Saving final progress to history...
+[06:44:17] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:17] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:17] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:17] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:17] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:17] [INFO] Processing Batch 4...
+[06:44:17] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[06:44:31] [INFO] Search 'nightingale' (1/1) in window 'New tab - Personal 29 - Microsoft​ Edge'
+[06:44:35] [INFO] Search 'willow' (1/1) in window 'willow - Search - Personal 28 - Microsoft​ Edge'
+[06:44:40] [INFO] Search 'sale' (1/1) in window 'sale - Search - Personal 26 - Microsoft​ Edge'
+[06:44:44] [INFO] Search 'recliner' (1/1) in window 'recliner - Search - Personal 6 - Microsoft​ Edge'
+[06:44:46] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:44:46] [INFO] Batch 4: Verifying progress (Attempt 1)...
+[06:44:46] [INFO] Skipping fetch for Personal 6: Already completed.
+[06:44:46] [INFO] Skipping fetch for Personal 26: Already completed.
+[06:44:47] [INFO] Skipping fetch for Personal 28: Already completed.
+[06:44:47] [INFO] Skipping fetch for Personal 29: Already completed.
+[06:44:47] [INFO] Skipping fetch for Personal 15: Already completed.
+[06:44:47] [INFO] Batch 4: All points collected.
+[06:44:47] [INFO] Batch 4: Saving final progress to history...
+[06:44:47] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:47] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:47] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:47] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:47] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:44:47] [INFO] Processing Batch 5...
+[06:44:47] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[06:44:59] [INFO] Search 'deduce' (1/1) in window 'New tab - Personal 14 - Microsoft​ Edge'
+[06:45:06] [INFO] Search 'forecast' (1/1) in window 'forecast - Search - Personal 5 - Microsoft​ Edge'
+[06:45:11] [INFO] Search 'difficulty' (1/1) in window 'difficulty - Search - Personal 4 - Microsoft​ Edge'
+[06:45:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:45:13] [INFO] Batch 5: Verifying progress (Attempt 1)...
+[06:45:13] [INFO] Skipping fetch for Personal 4: Already completed.
+[06:45:13] [INFO] Skipping fetch for Personal 5: Already completed.
+[06:45:13] [INFO] Skipping fetch for Personal 14: Already completed.
+[06:45:13] [INFO] Skipping fetch for Personal 20: Already completed.
+[06:45:13] [INFO] Skipping fetch for Personal 23: Already completed.
+[06:45:13] [INFO] Batch 5: All points collected.
+[06:45:13] [INFO] Batch 5: Saving final progress to history...
+[06:45:13] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:45:13] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:45:13] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:45:13] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:45:13] [ERROR] Failed to write to history file: [Errno 13] Permission denied: 'progress_history.csv'
+[06:45:13] [INFO] Processing Batch 6...
+[06:45:13] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:45:18] [INFO] Stop signal sent. Finishing current action...
+[06:45:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[06:45:23] [INFO] Search Automation Stopped by User.
+[06:45:29] [SYSTEM] Settings saved: {'schedule_enabled': True, 'schedule_time': '06:21'}
+[06:45:29] [INFO] Application has been closed.

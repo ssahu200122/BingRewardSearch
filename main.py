@@ -17,21 +17,23 @@ def extract_email_from_name(full_name: str) -> str:
     return match.group(0) if match else "unknown@example.com"
 
 def load_profiles(file_path: str) -> List[EdgeProfile]:
-    """Loads Edge profiles from a JSON file."""
+    """Loads Edge profiles from a JSON file and assigns an index."""
     logger.log(f"Loading profiles from {file_path}.", "INFO")
     profiles = []
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        for full_name, details in data.items():
+        
+        # Enumerate to get the index for each profile
+        for index, (full_name, details) in enumerate(data.items()):
             email = extract_email_from_name(full_name)
             name_part_match = re.search(r'\((.*?)\)', full_name)
             name = name_part_match.group(1) if name_part_match else "Profile"
             
-            # Updated to load the status, defaulting to 'active' if not present
             status = details.get("status", "active")
             
             profiles.append(EdgeProfile(
+                index=index + 1,  # Use a 1-based index for display
                 name=name,
                 email=email,
                 cmd_arg=details["cmd"],
@@ -46,15 +48,12 @@ def main():
     """The main entry point of the application."""
     logger.log("Application starting up.", "INFO")
     
-    # Set the appearance mode
     customtkinter.set_appearance_mode("System")
     customtkinter.set_default_color_theme("blue")
 
-    # Load profiles and initialize services
     profiles = load_profiles(config.PROFILES_JSON_PATH)
     automation_service = AutomationService()
     
-    # Create and run the application
     app = BingAutomatorApp(profiles, automation_service)
     app.run()
     logger.log("Application has been closed.", "INFO")

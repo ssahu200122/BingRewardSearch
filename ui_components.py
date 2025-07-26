@@ -17,10 +17,10 @@ class ProfileRow(customtkinter.CTkFrame):
 
         self.grid_columnconfigure(2, weight=1)
 
-        # --- Status Toggle Button ---
+        # --- Status Toggle Button with Serial Number ---
         self.status_button = customtkinter.CTkButton(
             self,
-            text="●",
+            text=str(profile.index), # Display serial number
             width=28,
             command=self._toggle_status
         )
@@ -34,9 +34,12 @@ class ProfileRow(customtkinter.CTkFrame):
         self.label_font = customtkinter.CTkFont(weight="bold", slant="italic", underline=True, size=14)
         self.points_font = customtkinter.CTkFont(weight="bold", size=14)
         
-        self.default_color = "#3498db"  # A distinct blue color
-        self.hover_color = "#f1c40f"   # A bright yellow for hover
+        self.default_color = "#3498db"
+        self.hover_color = "#f1c40f"
         self.suspended_color = "gray60"
+        
+        self.active_bg_color = "#2ECC71"  # Green
+        self.suspended_bg_color = "#E74C3C" # Light Red
 
         self.label = customtkinter.CTkLabel(self, text=profile.full_name, anchor="w", cursor="hand2", font=self.label_font, text_color=self.default_color)
         self.label.grid(row=0, column=2, sticky="ew", padx=5)
@@ -52,11 +55,9 @@ class ProfileRow(customtkinter.CTkFrame):
         self.update_status_visual()
 
     def _on_enter(self, event):
-        """Changes the label color on mouse hover."""
         self.label.configure(text_color=self.hover_color)
 
     def _on_leave(self, event):
-        """Resets the label color based on the profile's status."""
         if self.profile.status == 'active':
             self.label.configure(text_color=self.default_color)
         else:
@@ -73,27 +74,24 @@ class ProfileRow(customtkinter.CTkFrame):
         self.points_label.configure(text=points_text)
 
     def _toggle_status(self):
-        """Toggles the profile's status between 'active' and 'suspended'."""
         self.profile.status = "suspended" if self.profile.status == "active" else "active"
         self.update_status_visual()
         if self.on_status_toggle_callback:
             self.on_status_toggle_callback(self.profile)
 
     def update_status_visual(self):
-        """Updates the entire row's visual appearance based on the profile's status."""
         if self.profile.status == "active":
-            self.status_button.configure(fg_color="#2ECC71", text_color="white") # Green
+            self.status_button.configure(fg_color=self.active_bg_color)
             self.label.configure(text_color=self.default_color, font=self.label_font)
             self.points_label.configure(text_color=customtkinter.ThemeManager.theme["CTkLabel"]["text_color"])
             self.checkbox.configure(state="normal")
         else:
-            self.status_button.configure(fg_color="#95a5a6", text_color="black") # Gray
-            self.label.configure(text_color=self.suspended_color, font=customtkinter.CTkFont(slant="roman", underline=False)) # Revert font style
+            self.status_button.configure(fg_color=self.suspended_bg_color)
+            self.label.configure(text_color=self.suspended_color, font=customtkinter.CTkFont(slant="roman", underline=False, size=14))
             self.points_label.configure(text_color=self.suspended_color)
-            self.checkbox.configure(state="disabled")
+            self.checkbox.configure(state="normal") # <-- THIS IS THE CHANGE
 
 class LabeledSlider(customtkinter.CTkFrame):
-    """A custom widget combining a label and a slider."""
     def __init__(self, master, text: str, from_: int, to: int, step: int, initial_value: int, command=None):
         super().__init__(master)
         self.configure(fg_color="transparent")
