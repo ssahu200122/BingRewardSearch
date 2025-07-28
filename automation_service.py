@@ -236,13 +236,25 @@ class AutomationService:
         logger.log(f"Manually opening points breakdown for {profile.name}", "INFO")
         self.close_all_edge_windows()
         time.sleep(1)
-        driver = self._setup_driver(profile, headless=False)
-        if not driver:
-            return
+        base_command = ["start", "msedge"]
         try:
-            driver.get("https://rewards.bing.com/pointsbreakdown")
-            self.active_drivers.append(driver)
-        except WebDriverException as e:
+            subprocess.Popen(base_command + [profile.cmd_arg], shell=True)
+            time.sleep(random.uniform(1, 1.5))
+            link = "https://rewards.bing.com/pointsbreakdown"
+            pyautogui.hotkey('ctrl','l')
+            time.sleep(0.4)
+            for char in link:
+                    pyautogui.write(char)
+                    time.sleep(random.uniform(*config.KEY_PRESS_DELAY))
+            pyautogui.press('enter')
+        
+        # driver = self._setup_driver(profile, headless=False)
+        # if not driver:
+        #     return
+        # try:
+        #     driver.get("https://rewards.bing.com/pointsbreakdown")
+        #     self.active_drivers.append(driver)
+        except Exception as e:
             logger.log(f"Failed to open browser for {profile.name}: {e}", "ERROR")
 
     # --- History Methods ---

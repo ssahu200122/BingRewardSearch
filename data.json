@@ -33,7 +33,7 @@
   },
   "guitartrimmer@hotmail.com (Personal 9)": {
     "cmd": "--profile-directory=Profile 9",
-    "status": "active"
+    "status": "suspended"
   },
   "GUITAR1947@hotmail.com (Personal 10)": {
     "cmd": "--profile-directory=Profile 10",
@@ -41,11 +41,11 @@
   },
   "Guitar.1947@outlook.com (Personal 11)": {
     "cmd": "--profile-directory=Profile 11",
-    "status": "suspended"
+    "status": "active"
   },
   "Guitar.1947@hotmail.com (Personal 12)": {
     "cmd": "--profile-directory=Profile 13",
-    "status": "suspended"
+    "status": "active"
   },
   "oldhouse.1947@hotmail.com (Personal 13)": {
     "cmd": "--profile-directory=Profile 20",
@@ -69,7 +69,7 @@
   },
   "mathsscience1947@gmail.com (Personal 18)": {
     "cmd": "--profile-directory=Profile 25",
-    "status": "suspended"
+    "status": "active"
   },
   "Mathscience1947@hotmail.com (Personal 19)": {
     "cmd": "--profile-directory=Profile 26",
@@ -85,7 +85,7 @@
   },
   "Newhouse.1947@outlook.com (Personal 22)": {
     "cmd": "--profile-directory=Profile 29",
-    "status": "suspended"
+    "status": "active"
   },
   "jhaduPochha@outlook.com (Personal 23)": {
     "cmd": "--profile-directory=Profile 30",
@@ -97,7 +97,7 @@
   },
   "sciencemath1947@hotmail.com (Personal 25)": {
     "cmd": "--profile-directory=Profile 32",
-    "status": "suspended"
+    "status": "active"
   },
   "kapilsharmasahu@outlook.com (Personal 26)": {
     "cmd": "--profile-directory=Profile 35",
@@ -113,6 +113,14 @@
   },
   "kumarsanulata@hotmail.com (Personal 29)": {
     "cmd": "--profile-directory=Profile 38",
+    "status": "active"
+  },
+  "kallukaliyadevil@hotmail.com (Personal 30)": {
+    "cmd": "--profile-directory=Profile 41",
+    "status": "active"
+  },
+  "kallukaliyadevil@outlook.com (Personal 31)": {
+    "cmd": "--profile-directory=Profile 42",
     "status": "active"
   }
 }

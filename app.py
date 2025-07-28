@@ -76,8 +76,8 @@ class BingAutomatorApp(customtkinter.CTk):
         app_width = int(app_width_str)
         app_height = int(app_height_str)
 
-        x_coordinate = screen_width - app_width - 10
-        y_coordinate = screen_height - app_height - 80
+        x_coordinate = screen_width - app_width - 230
+        y_coordinate = screen_height - app_height - 180
 
         self.geometry(f"{app_width}x{app_height}+{x_coordinate}+{y_coordinate}")
 
@@ -239,7 +239,7 @@ class BingAutomatorApp(customtkinter.CTk):
         self.controls_content_frame.grid_columnconfigure(0, weight=1)
 
         self.batch_slider = LabeledSlider(self.controls_content_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu)
-        self.pc_slider = LabeledSlider(self.controls_content_frame, "PC Searches (x3 points):", 0, 34, 1, 34)
+        self.pc_slider = LabeledSlider(self.controls_content_frame, "PC Searches :", 0, 60, 3, 60)
         self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
         self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
 

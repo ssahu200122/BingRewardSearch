@@ -7,7 +7,7 @@ from edge_profile import EdgeProfile
 class LabeledSlider(customtkinter.CTkFrame):
     """A custom widget combining a label, a slider, and a value display."""
     def __init__(self, master, text: str, from_: int, to: int, step: int, initial_value: int, command: Callable[[int], None] = None):
-        super().__init__(master, fg_color="transparent")
+        super().__init__(master, fg_color=("gray85","gray25"), corner_radius=6)
         self.command = command
 
         self.grid_columnconfigure(1, weight=1)
@@ -17,10 +17,10 @@ class LabeledSlider(customtkinter.CTkFrame):
 
         self.slider = customtkinter.CTkSlider(self, from_=from_, to=to, number_of_steps=(to - from_) // step, command=self._on_slider_change)
         self.slider.set(initial_value)
-        self.slider.grid(row=0, column=1, padx=5, pady=5, sticky="ew")
+        self.slider.grid(row=1, column=0, padx=(5,2.5), pady=5, sticky="ew")
 
         self.value_label = customtkinter.CTkLabel(self, text=str(initial_value), width=30)
-        self.value_label.grid(row=0, column=2, padx=5, pady=5, sticky="e")
+        self.value_label.grid(row=1, column=1, padx=(2.5,5), pady=5)
 
     def _on_slider_change(self, value):
         int_value = int(value)
@@ -37,8 +37,8 @@ class ProfileRow(customtkinter.CTkFrame):
         super().__init__(master, fg_color=("gray90","gray20"), corner_radius=6)
         
         self.profile = profile
-        self.on_select = on_select
-        self.on_label_click = on_label_click
+        self.on_select = on_select             # Callback for checkbox toggle -> self.on_select(self.profile, is_selected)
+        self.on_label_click = on_label_click   # Callback for label click -> self.on_status_toggle(self.profile) 
         self.on_status_toggle = on_status_toggle
 
         # --- Grid Configuration ---
@@ -56,7 +56,7 @@ class ProfileRow(customtkinter.CTkFrame):
         self.check_var = customtkinter.StringVar(value="on")
         self.checkbox = customtkinter.CTkCheckBox(
             self, text="", variable=self.check_var, onvalue="on", offvalue="off", 
-            command=self._on_select_callback, width=25
+            command=self._on_select_callback, width=30
         )
         self.checkbox.grid(row=1, column=0, padx=5, pady=(0, 5))
 
@@ -121,4 +121,4 @@ class ProfileRow(customtkinter.CTkFrame):
         if self.profile.status == "active":
             self.status_button.configure(fg_color="green", hover_color="#006400")
         else:
-            self.status_button.configure(fg_color="orange", hover_color="#CD853F")
+            self.status_button.configure(fg_color="#E30B0B", hover_color="#CD853F")

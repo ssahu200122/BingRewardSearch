@@ -35,4 +35,4 @@ ACTION_DELAY = (0.8, 1.5)
 RETRY_ACTION_DELAY = (2.0, 3.0) 
 BATCH_DELAY = (1.5, 2.5)
 # Add a delay between individual key presses to simulate typing
-KEY_PRESS_DELAY = (0.05, 0.15)
+KEY_PRESS_DELAY = (0.05, 0.10)
