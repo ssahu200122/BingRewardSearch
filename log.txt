@@ -4053,3 +4053,2156 @@ Stacktrace:
 [23:05:30] [SYSTEM] Forcefully closed all Edge processes via UI button.
 [23:06:22] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
 [23:06:22] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-28 23:08:48 ---
+[23:08:48] [INFO] Application starting up.
+[23:08:48] [INFO] Loading profiles from data.json.
+[23:08:48] [INFO] Successfully loaded 31 profiles.
+[23:08:50] [INFO] Loaded 11 progress records from today's history.
+[23:09:17] [INFO] Loaded 11 progress records from today's history.
+[23:09:17] [INFO] Smart Search Automation started...
+[23:09:17] [INFO] Processing Batch 1...
+[23:09:17] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:09:29] [INFO] Search 'baggage' (1/10) in window 'baggage - Search - Personal 4 - Microsoft​ Edge'
+[23:09:35] [INFO] Search 'trigger' (1/10) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[23:09:40] [INFO] Search 'appliance' (1/10) in window 'appliance - Search - Personal 3 - Microsoft​ Edge'
+[23:09:44] [INFO] Search 'tune-up' (1/10) in window 'New tab - Personal - Microsoft​ Edge'
+[23:09:44] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:44] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'baggage - Search - Personal 4 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal 2 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'appliance - Search - Personal 3 - Microsoft​ Edge' may have been closed.
+[23:09:45] [WARN] Could not perform search. Window 'New tab - Personal - Microsoft​ Edge' may have been closed.
+[23:09:49] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:09:49] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:09:49] [DEBUG] Headless mode enabled for this Selenium session.
+[23:09:53] [ERROR] Failed to set up Selenium driver for Personal: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ec988c85+23461]
+	(No symbol) [0x0x7ff7ec8dcd70]
+	GetHandleVerifier [0x0x7ff7ecc00bb8+2611928]
+	(No symbol) [0x0x7ff7ec6e4f83]
+	(No symbol) [0x0x7ff7ec6e1045]
+	(No symbol) [0x0x7ff7ec725a92]
+	(No symbol) [0x0x7ff7ec71a423]
+	(No symbol) [0x0x7ff7ec6eea86]
+	(No symbol) [0x0x7ff7ec6edd11]
+	(No symbol) [0x0x7ff7ec6ee8b3]
+	(No symbol) [0x0x7ff7ec7ee6fd]
+	(No symbol) [0x0x7ff7ec7fba88]
+	GetHandleVerifier [0x0x7ff7eca68acb+940523]
+	GetHandleVerifier [0x0x7ff7eca71821+976705]
+	(No symbol) [0x0x7ff7ec8ea961]
+	(No symbol) [0x0x7ff7ec8e3344]
+	(No symbol) [0x0x7ff7ec8e3493]
+	(No symbol) [0x0x7ff7ec8d4f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[23:09:53] [DEBUG] Headless mode enabled for this Selenium session.
+[23:09:55] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:09:56] [ERROR] An error occurred while fetching points for Personal 2: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: MicrosoftEdge=138.0.3351.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7ec988c85+23461]
+	(No symbol) [0x0x7ff7ec8dcd70]
+	GetHandleVerifier [0x0x7ff7ecc00bb8+2611928]
+	(No symbol) [0x0x7ff7ec69e342]
+	(No symbol) [0x0x7ff7ec69e0b8]
+	(No symbol) [0x0x7ff7ec69c0b9]
+	(No symbol) [0x0x7ff7ec69c68c]
+	(No symbol) [0x0x7ff7ec6b057a]
+	(No symbol) [0x0x7ff7ec737ade]
+	(No symbol) [0x0x7ff7ec71a6ba]
+	(No symbol) [0x0x7ff7ec6ef58d]
+	(No symbol) [0x0x7ff7ec73754f]
+	(No symbol) [0x0x7ff7ec71a423]
+	(No symbol) [0x0x7ff7ec6eea86]
+	(No symbol) [0x0x7ff7ec6edd11]
+	(No symbol) [0x0x7ff7ec6ee8b3]
+	(No symbol) [0x0x7ff7ec7ee6fd]
+	(No symbol) [0x0x7ff7ec7fba88]
+	GetHandleVerifier [0x0x7ff7eca68acb+940523]
+	GetHandleVerifier [0x0x7ff7eca71821+976705]
+	(No symbol) [0x0x7ff7ec8ea961]
+	(No symbol) [0x0x7ff7ec8e3344]
+	(No symbol) [0x0x7ff7ec8e3493]
+	(No symbol) [0x0x7ff7ec8d4f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[23:09:56] [INFO] Stop signal sent. Finishing current action...
+[23:09:58] [INFO] Batch 1: All points collected.
+[23:09:58] [INFO] Search Automation Stopped by User.
+[23:09:59] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:10:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:10:50] [INFO] Loaded 11 progress records from today's history.
+[23:10:50] [INFO] Smart Search Automation started...
+[23:10:50] [INFO] Processing Batch 1...
+[23:10:50] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:11:02] [INFO] Search 'abiding' (1/10) in window 'New tab - Personal 3 - Microsoft​ Edge'
+[23:11:06] [INFO] Stop signal sent. Finishing current action...
+[23:11:07] [INFO] Search 'hysterical' (1/10) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[23:11:09] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:11:09] [INFO] Search Automation Stopped by User.
+[23:11:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:11:13] [INFO] Loaded 11 progress records from today's history.
+[23:11:13] [INFO] Smart Search Automation started...
+[23:11:13] [INFO] Processing Batch 1...
+[23:11:13] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:11:27] [INFO] Search 'minimalism' (1/10) in window 'New tab - Personal 3 - Microsoft​ Edge'
+[23:11:31] [INFO] Search 'contract' (1/10) in window 'contract - Search - Personal 2 - Microsoft​ Edge'
+[23:11:36] [INFO] Search 'lighting' (1/10) in window 'lighting - Search - Personal - Microsoft​ Edge'
+[23:11:40] [INFO] Search 'weigh' (2/10) in window 'weigh - Search - Personal 3 - Microsoft​ Edge'
+[23:11:44] [INFO] Search 'muscat' (2/10) in window 'muscat - Search - Personal 2 - Microsoft​ Edge'
+[23:11:49] [INFO] Search 'chicory' (2/10) in window 'chicory - Search - Personal - Microsoft​ Edge'
+[23:11:54] [INFO] Search 'initialize' (3/10) in window 'initialize - Search - Personal 3 - Microsoft​ Edge'
+[23:11:58] [INFO] Search 'evening' (3/10) in window 'evening - Search - Personal 2 - Microsoft​ Edge'
+[23:12:02] [INFO] Search 'carp' (3/10) in window 'carp - Search - Personal - Microsoft​ Edge'
+[23:12:07] [INFO] Search 'preset' (4/10) in window 'preset - Search - Personal 3 - Microsoft​ Edge'
+[23:12:12] [INFO] Search 'enclosure' (4/10) in window 'enclosure - Search - Personal 2 - Microsoft​ Edge'
+[23:12:15] [INFO] Search 'shaky' (4/10) in window 'shaky - Search - Personal - Microsoft​ Edge'
+[23:12:20] [INFO] Search 'debris' (5/10) in window 'debris - Search - Personal 3 - Microsoft​ Edge'
+[23:12:24] [INFO] Search 'sidewalk' (5/10) in window 'sidewalk - Search - Personal 2 - Microsoft​ Edge'
+[23:12:28] [INFO] Search 'creche' (5/10) in window 'creche - Search - Personal - Microsoft​ Edge'
+[23:12:33] [INFO] Search 'interlay' (6/10) in window 'interlay - Search - Personal 3 - Microsoft​ Edge'
+[23:12:38] [INFO] Search 'convertible' (6/10) in window 'convertible - Search - Personal 2 - Microsoft​ Edge'
+[23:12:42] [INFO] Search 'homosexual' (6/10) in window 'homosexual - Search - Personal - Microsoft​ Edge'
+[23:12:48] [INFO] Search 'dispensable' (7/10) in window 'dispensable - Search - Personal 3 - Microsoft​ Edge'
+[23:12:51] [INFO] Search 'lag' (7/10) in window 'lag - Search - Personal 2 - Microsoft​ Edge'
+[23:12:56] [INFO] Search 'situation' (7/10) in window 'situation - Search - Personal - Microsoft​ Edge'
+[23:13:00] [INFO] Search 'slice' (8/10) in window 'slice - Search - Personal 3 - Microsoft​ Edge'
+[23:13:04] [INFO] Search 'seat' (8/10) in window 'seat - Search - Personal 2 - Microsoft​ Edge'
+[23:13:08] [INFO] Search 'circadian' (8/10) in window 'circadian - Search - Personal - Microsoft​ Edge'
+[23:13:12] [INFO] Search 'corps' (9/10) in window 'corps - Search - Personal 3 - Microsoft​ Edge'
+[23:13:15] [INFO] Search 'bid' (9/10) in window 'bid - Search - Personal 2 - Microsoft​ Edge'
+[23:13:20] [INFO] Search 'producer' (9/10) in window 'producer - Search - Personal - Microsoft​ Edge'
+[23:13:25] [INFO] Search 'insurrection' (10/10) in window 'insurrection - Search - Personal 3 - Microsoft​ Edge'
+[23:13:30] [INFO] Search 'specify' (10/10) in window 'specify - Search - Personal 2 - Microsoft​ Edge'
+[23:13:34] [INFO] Search 'invoice' (10/10) in window 'invoice - Search - Personal - Microsoft​ Edge'
+[23:13:37] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:13:37] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:13:37] [DEBUG] Headless mode enabled for this Selenium session.
+[23:13:58] [DEBUG] Headless mode enabled for this Selenium session.
+[23:14:08] [DEBUG] Headless mode enabled for this Selenium session.
+[23:14:20] [DEBUG] Headless mode enabled for this Selenium session.
+[23:14:37] [INFO] Batch 1: 3 profiles need more points. Retrying with 20 searches...
+[23:14:37] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:14:50] [INFO] Search 'equable' (1/20) in window 'equable - Search - Personal 4 - Microsoft​ Edge'
+[23:14:55] [INFO] Search 'armament' (1/20) in window 'armament - Search - Personal 3 - Microsoft​ Edge'
+[23:15:00] [INFO] Search 'willingness' (1/20) in window 'willingness - Search - Personal 2 - Microsoft​ Edge'
+[23:15:04] [INFO] Search 'swanling' (2/20) in window 'swing - Search - Personal 4 - Microsoft​ Edge'
+[23:15:09] [INFO] Search 'interject' (2/20) in window 'interjection - Search - Personal 3 - Microsoft​ Edge'
+[23:15:14] [INFO] Search 'accordion' (2/20) in window 'accordion - Search - Personal 2 - Microsoft​ Edge'
+[23:15:19] [INFO] Search 'shrine' (3/20) in window 'shrine - Search - Personal 4 - Microsoft​ Edge'
+[23:15:22] [INFO] Search 'lyre' (3/20) in window 'lyre - Search - Personal 3 - Microsoft​ Edge'
+[23:15:26] [INFO] Search 'psychedelic' (3/20) in window 'psychedelic - Search - Personal 2 - Microsoft​ Edge'
+[23:15:31] [INFO] Search 'teammate' (4/20) in window 'teammate - Search - Personal 4 - Microsoft​ Edge'
+[23:15:36] [INFO] Search 'workout' (4/20) in window 'workout - Search - Personal 3 - Microsoft​ Edge'
+[23:15:41] [INFO] Search 'spiritual' (4/20) in window 'spiritual - Search - Personal 2 - Microsoft​ Edge'
+[23:15:46] [INFO] Search 'countryside' (5/20) in window 'countryside - Search - Personal 4 - Microsoft​ Edge'
+[23:15:51] [INFO] Search 'exasperation' (5/20) in window 'exasperation - Search - Personal 3 - Microsoft​ Edge'
+[23:15:55] [INFO] Search 'voter' (5/20) in window 'voter - Search - Personal 2 - Microsoft​ Edge'
+[23:15:59] [INFO] Search 'tough-guy' (6/20) in window 'tough-guy - Search - Personal 4 - Microsoft​ Edge'
+[23:16:03] [INFO] Search 'adviser' (6/20) in window 'adviser - Search - Personal 3 - Microsoft​ Edge'
+[23:16:07] [INFO] Search 'inform' (6/20) in window 'inform - Search - Personal 2 - Microsoft​ Edge'
+[23:16:11] [INFO] Search 'gravitas' (7/20) in window 'gravitas - Search - Personal 4 - Microsoft​ Edge'
+[23:16:16] [INFO] Search 'tailbud' (7/20) in window 'tailbud - Search - Personal 3 - Microsoft​ Edge'
+[23:16:20] [INFO] Search 'trap' (7/20) in window 'trap - Search - Personal 2 - Microsoft​ Edge'
+[23:16:23] [INFO] Search 'heat' (8/20) in window 'heat - Search - Personal 4 - Microsoft​ Edge'
+[23:16:28] [INFO] Search 'pantologist' (8/20) in window 'pantologist - Search - Personal 3 - Microsoft​ Edge'
+[23:16:33] [INFO] Search 'cemetery' (8/20) in window 'cemetery - Search - Personal 2 - Microsoft​ Edge'
+[23:16:37] [INFO] Search 'unequaled' (9/20) in window 'unequaled - Search - Personal 4 - Microsoft​ Edge'
+[23:16:42] [INFO] Search 'ephemeris' (9/20) in window 'ephemeris - Search - Personal 3 - Microsoft​ Edge'
+[23:16:45] [INFO] Search 'bout' (9/20) in window 'bout - Search - Personal 2 - Microsoft​ Edge'
+[23:16:50] [INFO] Search 'library' (10/20) in window 'library - Search - Personal 4 - Microsoft​ Edge'
+[23:16:54] [INFO] Search 'knuckle' (10/20) in window 'knuckle - Search - Personal 3 - Microsoft​ Edge'
+[23:16:59] [INFO] Search 'create' (10/20) in window 'create - Search - Personal 2 - Microsoft​ Edge'
+[23:17:02] [INFO] Search 'petal' (11/20) in window 'petal - Search - Personal 4 - Microsoft​ Edge'
+[23:17:06] [INFO] Search 'kale' (11/20) in window 'kale - Search - Personal 3 - Microsoft​ Edge'
+[23:17:11] [INFO] Search 'unequaled' (11/20) in window 'unequaled - Search - Personal 2 - Microsoft​ Edge'
+[23:17:15] [INFO] Search 'debris' (12/20) in window 'debris - Search - Personal 4 - Microsoft​ Edge'
+[23:17:19] [INFO] Search 'swim' (12/20) in window 'swim - Search - Personal 3 - Microsoft​ Edge'
+[23:17:24] [INFO] Search 'fringe' (12/20) in window 'fringe - Search - Personal 2 - Microsoft​ Edge'
+[23:17:28] [INFO] Search 'home' (13/20) in window 'home - Search - Personal 4 - Microsoft​ Edge'
+[23:17:33] [INFO] Search 'incense' (13/20) in window 'bing.com/search?q=incense&cvid=73a70dcaadf34b4898c240c28a148d64&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDEyNDdqMGo5qAIIsAIB&FORM=ANAB01&PC=ASTS - Personal 3 - Microsoft​ Edge'
+[23:17:39] [INFO] Search 'tear' (13/20) in window 'tear - Search - Personal 2 - Microsoft​ Edge'
+[23:17:43] [INFO] Search 'trash' (14/20) in window 'trash - Search - Personal 4 - Microsoft​ Edge'
+[23:17:48] [INFO] Search 'understand' (14/20) in window 'understand - Search - Personal 3 - Microsoft​ Edge'
+[23:17:53] [INFO] Search 'wedding' (14/20) in window 'wedding - Search - Personal 2 - Microsoft​ Edge'
+[23:17:57] [INFO] Search 'jealous' (15/20) in window 'jealous - Search - Personal 4 - Microsoft​ Edge'
+[23:18:02] [INFO] Search 'academy' (15/20) in window 'academy - Search - Personal 3 - Microsoft​ Edge'
+[23:18:07] [INFO] Search 'digestive' (15/20) in window 'digestive - Search - Personal 2 - Microsoft​ Edge'
+[23:18:11] [INFO] Search 'ethernet' (16/20) in window 'ethernet - Search - Personal 4 - Microsoft​ Edge'
+[23:18:16] [INFO] Search 'hourglass' (16/20) in window 'hourglass - Search - Personal 3 - Microsoft​ Edge'
+[23:18:20] [INFO] Search 'flan' (16/20) in window 'flan - Search - Personal 2 - Microsoft​ Edge'
+[23:18:24] [INFO] Search 'cultured' (17/20) in window 'cultured - Search - Personal 4 - Microsoft​ Edge'
+[23:18:29] [INFO] Search 'carpeting' (17/20) in window 'carpeting - Search - Personal 3 - Microsoft​ Edge'
+[23:18:33] [INFO] Search 'scrub' (17/20) in window 'scrub - Search - Personal 2 - Microsoft​ Edge'
+[23:18:39] [INFO] Search 'specification' (18/20) in window 'specification - Search - Personal 4 - Microsoft​ Edge'
+[23:18:43] [INFO] Search 'spy' (18/20) in window 'spy - Search - Personal 3 - Microsoft​ Edge'
+[23:18:46] [INFO] Search 'soda' (18/20) in window 'soda - Search - Personal 2 - Microsoft​ Edge'
+[23:18:51] [INFO] Search 'omnivore' (19/20) in window 'omnivore - Search - Personal 4 - Microsoft​ Edge'
+[23:18:56] [INFO] Search 'downgrade' (19/20) in window 'downgrade - Search - Personal 3 - Microsoft​ Edge'
+[23:19:01] [INFO] Search 'audience' (19/20) in window 'audience - Search - Personal 2 - Microsoft​ Edge'
+[23:19:05] [INFO] Search 'pigeon' (20/20) in window 'pigeon - Search - Personal 4 - Microsoft​ Edge'
+[23:19:09] [INFO] Search 'cyst' (20/20) in window 'cyst - Search - Personal 3 - Microsoft​ Edge'
+[23:19:13] [INFO] Search 'quail' (20/20) in window 'quail - Search - Personal 2 - Microsoft​ Edge'
+[23:19:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:19:14] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[23:19:14] [DEBUG] Headless mode enabled for this Selenium session.
+[23:19:27] [DEBUG] Headless mode enabled for this Selenium session.
+[23:19:38] [DEBUG] Headless mode enabled for this Selenium session.
+[23:19:53] [INFO] Batch 1: 3 profiles need more points. Retrying with 16 searches...
+[23:19:53] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:20:04] [INFO] Search 'artificer' (1/16) in window 'artificer - Search - Personal 4 - Microsoft​ Edge'
+[23:20:08] [INFO] Search 'fall' (1/16) in window 'fall - Search - Personal 3 - Microsoft​ Edge'
+[23:20:12] [INFO] Search 'heaven' (1/16) in window 'heaven - Search - Personal 2 - Microsoft​ Edge'
+[23:20:16] [INFO] Search 'halting' (2/16) in window 'halting - Search - Personal 4 - Microsoft​ Edge'
+[23:20:20] [INFO] Search 'rope' (2/16) in window 'rope - Search - Personal 3 - Microsoft​ Edge'
+[23:20:25] [INFO] Search 'evaluate' (2/16) in window 'evaluate - Search - Personal 2 - Microsoft​ Edge'
+[23:20:29] [INFO] Search 'editor' (3/16) in window 'editor - Search - Personal 4 - Microsoft​ Edge'
+[23:20:33] [INFO] Search 'objection' (3/16) in window 'objection - Search - Personal 3 - Microsoft​ Edge'
+[23:20:38] [INFO] Search 'mystery' (3/16) in window 'mystery - Search - Personal 2 - Microsoft​ Edge'
+[23:20:43] [INFO] Search 'plasterboard' (4/16) in window 'plasterboard - Search - Personal 4 - Microsoft​ Edge'
+[23:20:47] [INFO] Search 'chess' (4/16) in window 'chess - Search - Personal 3 - Microsoft​ Edge'
+[23:20:51] [INFO] Search 'approve' (4/16) in window 'approve - Search - Personal 2 - Microsoft​ Edge'
+[23:20:56] [INFO] Search 'recommend' (5/16) in window 'recommend - Search - Personal 4 - Microsoft​ Edge'
+[23:21:00] [INFO] Search 'margin' (5/16) in window 'margin - Search - Personal 3 - Microsoft​ Edge'
+[23:21:04] [INFO] Search 'dissemination' (5/16) in window 'dissemination - Search - Personal 2 - Microsoft​ Edge'
+[23:21:09] [INFO] Search 'assumption' (6/16) in window 'assumption - Search - Personal 4 - Microsoft​ Edge'
+[23:21:14] [INFO] Search 'raccoon' (6/16) in window 'raccoon - Search - Personal 3 - Microsoft​ Edge'
+[23:21:19] [INFO] Search 'declination' (6/16) in window 'declination - Search - Personal 2 - Microsoft​ Edge'
+[23:21:24] [INFO] Search 'elevation' (7/16) in window 'elevation - Search - Personal 4 - Microsoft​ Edge'
+[23:21:28] [INFO] Search 'blinker' (7/16) in window 'blinker - Search - Personal 3 - Microsoft​ Edge'
+[23:21:32] [INFO] Search 'metric' (7/16) in window 'metric - Search - Personal 2 - Microsoft​ Edge'
+[23:21:35] [INFO] Search 'scrub' (8/16) in window 'scrub - Search - Personal 4 - Microsoft​ Edge'
+[23:21:40] [INFO] Search 'transition' (8/16) in window 'transition - Search - Personal 3 - Microsoft​ Edge'
+[23:21:46] [INFO] Search 'sister-in-law' (8/16) in window 'sister-in-law - Search - Personal 2 - Microsoft​ Edge'
+[23:21:50] [INFO] Search 'injury' (9/16) in window 'injury - Search - Personal 4 - Microsoft​ Edge'
+[23:21:54] [INFO] Search 'move' (9/16) in window 'move - Search - Personal 3 - Microsoft​ Edge'
+[23:21:57] [INFO] Search 'compare' (9/16) in window 'compare - Search - Personal 2 - Microsoft​ Edge'
+[23:22:02] [INFO] Search 'overcome' (10/16) in window 'overcome - Search - Personal 4 - Microsoft​ Edge'
+[23:22:06] [INFO] Search 'chunky' (10/16) in window 'chunky - Search - Personal 3 - Microsoft​ Edge'
+[23:22:11] [INFO] Search 'marketer' (10/16) in window 'marketer - Search - Personal 2 - Microsoft​ Edge'
+[23:22:15] [INFO] Search 'synod' (11/16) in window 'synod - Search - Personal 4 - Microsoft​ Edge'
+[23:22:20] [INFO] Search 'objective' (11/16) in window 'objective - Search - Personal 3 - Microsoft​ Edge'
+[23:22:24] [INFO] Search 'gear' (11/16) in window 'gear - Search - Personal 2 - Microsoft​ Edge'
+[23:22:29] [INFO] Search 'plywood' (12/16) in window 'plywood - Search - Personal 4 - Microsoft​ Edge'
+[23:22:32] [INFO] Search 'army' (12/16) in window 'army - Search - Personal 3 - Microsoft​ Edge'
+[23:22:37] [INFO] Search 'heroine' (12/16) in window 'heroine - Search - Personal 2 - Microsoft​ Edge'
+[23:22:41] [INFO] Search 'grandpa' (13/16) in window 'grandpa - Search - Personal 4 - Microsoft​ Edge'
+[23:22:45] [INFO] Search 'exist' (13/16) in window 'exist - Search - Personal 3 - Microsoft​ Edge'
+[23:22:49] [INFO] Search 'today' (13/16) in window 'today - Search - Personal 2 - Microsoft​ Edge'
+[23:22:53] [INFO] Search 'loan' (14/16) in window 'loan - Search - Personal 4 - Microsoft​ Edge'
+[23:22:58] [INFO] Search 'icicle' (14/16) in window 'icicle - Search - Personal 3 - Microsoft​ Edge'
+[23:23:02] [INFO] Search 'clef' (14/16) in window 'clef - Search - Personal 2 - Microsoft​ Edge'
+[23:23:05] [INFO] Search 'dhow' (15/16) in window 'dhow - Search - Personal 4 - Microsoft​ Edge'
+[23:23:10] [INFO] Search 'prostanoid' (15/16) in window 'prostanoid - Search - Personal 3 - Microsoft​ Edge'
+[23:23:15] [INFO] Search 'cornflakes' (15/16) in window 'cornflakes - Search - Personal 2 - Microsoft​ Edge'
+[23:23:20] [INFO] Search 'rediscovery' (16/16) in window 'rediscovery - Search - Personal 4 - Microsoft​ Edge'
+[23:23:26] [INFO] Search 'devastation' (16/16) in window 'devastation - Search - Personal 3 - Microsoft​ Edge'
+[23:23:30] [INFO] Search 'rudiment' (16/16) in window 'rudiment - Search - Personal 2 - Microsoft​ Edge'
+[23:23:32] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:23:32] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[23:23:32] [DEBUG] Headless mode enabled for this Selenium session.
+[23:23:49] [DEBUG] Headless mode enabled for this Selenium session.
+[23:23:59] [DEBUG] Headless mode enabled for this Selenium session.
+[23:24:13] [INFO] Batch 1: 3 profiles need more points. Retrying with 16 searches...
+[23:24:13] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:24:14] [INFO] Stop signal sent. Finishing current action...
+[23:24:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:24:22] [INFO] Search Automation Stopped by User.
+[23:24:28] [INFO] Manually opening points breakdown for Personal 2
+[23:24:29] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-29 21:25:12 ---
+[21:25:12] [INFO] Application starting up.
+[21:25:12] [INFO] Loading profiles from data.json.
+[21:25:13] [INFO] Successfully loaded 31 profiles.
+[21:25:16] [INFO] Loaded 0 progress records from today's history.
+[21:25:41] [INFO] Loaded 0 progress records from today's history.
+[21:25:41] [INFO] Smart Search Automation started...
+[21:25:41] [INFO] Processing Batch 1...
+[21:25:41] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[21:25:55] [INFO] Search 'replica' (1/12) in window 'replica - Search - Personal 4 - Microsoft​ Edge'
+[21:26:02] [INFO] Search 'lentil' (1/12) in window 'lentils - Search - Personal 3 - Microsoft​ Edge'
+[21:26:08] [INFO] Search 'drawbridge' (1/12) in window 'drawbridge - Search - Personal 2 - Microsoft​ Edge'
+[21:26:12] [INFO] Search 'negligee' (1/12) in window 'negligee - Search - Personal 2 - Microsoft​ Edge'
+[21:26:16] [INFO] Search 'most' (2/12) in window 'most - Search - Personal 4 - Microsoft​ Edge'
+[21:26:21] [INFO] Search 'crooked' (2/12) in window 'crooked - Search - Personal 3 - Microsoft​ Edge'
+[21:26:26] [INFO] Search 'residence' (2/12) in window 'residence - Search - Personal 2 - Microsoft​ Edge'
+[21:26:31] [INFO] Search 'dressing' (2/12) in window 'dressing - Search - Personal 2 - Microsoft​ Edge'
+[21:26:35] [INFO] Search 'mindless' (3/12) in window 'mindless - Search - Personal 4 - Microsoft​ Edge'
+[21:26:40] [INFO] Search 'blowhole' (3/12) in window 'blowhole - Search - Personal 3 - Microsoft​ Edge'
+[21:26:44] [INFO] Search 'echidna' (3/12) in window 'echidna - Search - Personal 2 - Microsoft​ Edge'
+[21:26:49] [INFO] Search 'vestment' (3/12) in window 'vestment - Search - Personal 2 - Microsoft​ Edge'
+[21:26:54] [INFO] Search 'resistance' (4/12) in window 'resistance - Search - Personal 4 - Microsoft​ Edge'
+[21:26:58] [INFO] Search 'sole' (4/12) in window 'sole - Search - Personal 3 - Microsoft​ Edge'
+[21:27:01] [INFO] Search 'id' (4/12) in window 'id - Search - Personal 2 - Microsoft​ Edge'
+[21:27:05] [INFO] Search 'premise' (4/12) in window 'premise - Search - Personal 2 - Microsoft​ Edge'
+[21:27:09] [INFO] Search 'recall' (5/12) in window 'recall - Search - Personal 4 - Microsoft​ Edge'
+[21:27:14] [INFO] Search 'lilac' (5/12) in window 'sole - Search - Personal 3 - Microsoft​ Edge'
+[21:27:19] [INFO] Search 'adorable' (5/12) in window 'adorable - Search - Personal 2 - Microsoft​ Edge'
+[21:27:23] [INFO] Search 'shelter' (5/12) in window 'shelter - Search - Personal 2 - Microsoft​ Edge'
+[21:27:27] [INFO] Search 'daily' (6/12) in window 'daily - Search - Personal 4 - Microsoft​ Edge'
+[21:27:31] [INFO] Search 'nightclub' (6/12) in window 'nightclub - Search - Personal 3 - Microsoft​ Edge'
+[21:27:36] [INFO] Search 'parser' (6/12) in window 'parser - Search - Personal 2 - Microsoft​ Edge'
+[21:27:40] [INFO] Search 'election' (6/12) in window 'election - Search - Personal 2 - Microsoft​ Edge'
+[21:27:45] [INFO] Search 'cemetery' (7/12) in window 'cemetery - Search - Personal 4 - Microsoft​ Edge'
+[21:27:49] [INFO] Search 'stair' (7/12) in window 'stair - Search - Personal 3 - Microsoft​ Edge'
+[21:27:53] [INFO] Search 'surname' (7/12) in window 'surname - Search - Personal 2 - Microsoft​ Edge'
+[21:27:57] [INFO] Search 'king' (7/12) in window 'king - Search - Personal 2 - Microsoft​ Edge'
+[21:28:00] [INFO] Search 'duck' (8/12) in window 'duck - Search - Personal 4 - Microsoft​ Edge'
+[21:28:05] [INFO] Search 'lesbian' (8/12) in window 'lesbian - Search - Personal 3 - Microsoft​ Edge'
+[21:28:09] [INFO] Search 'outlaw' (8/12) in window 'outlaw - Search - Personal 2 - Microsoft​ Edge'
+[21:28:13] [INFO] Search 'summer' (8/12) in window 'summer - Search - Personal 2 - Microsoft​ Edge'
+[21:28:19] [INFO] Search 'neuropsychiatry' (9/12) in window 'neuropsychiatry - Search - Personal 4 - Microsoft​ Edge'
+[21:28:23] [INFO] Search 'being' (9/12) in window 'being - Search - Personal 3 - Microsoft​ Edge'
+[21:28:28] [INFO] Search 'micronutrient' (9/12) in window 'micronutrient - Search - Personal 2 - Microsoft​ Edge'
+[21:28:33] [INFO] Search 'good-bye' (9/12) in window 'good-bye - Search - Personal 2 - Microsoft​ Edge'
+[21:28:37] [INFO] Search 'olive' (10/12) in window 'olive - Search - Personal 4 - Microsoft​ Edge'
+[21:28:42] [INFO] Search 'overclocking' (10/12) in window 'overclocking - Search - Personal 3 - Microsoft​ Edge'
+[21:28:47] [INFO] Search 'beaver' (10/12) in window 'beaver - Search - Personal 2 - Microsoft​ Edge'
+[21:28:51] [INFO] Search 'prospect' (10/12) in window 'prospect - Search - Personal 2 - Microsoft​ Edge'
+[21:28:56] [INFO] Search 'quotation' (11/12) in window 'quotation - Search - Personal 4 - Microsoft​ Edge'
+[21:29:00] [INFO] Search 'quickest' (11/12) in window 'quickest - Search - Personal 3 - Microsoft​ Edge'
+[21:29:05] [INFO] Search 'command' (11/12) in window 'command - Search - Personal 2 - Microsoft​ Edge'
+[21:29:09] [INFO] Search 'assist' (11/12) in window 'assist - Search - Personal 2 - Microsoft​ Edge'
+[21:29:13] [INFO] Search 'communion' (12/12) in window 'communion - Search - Personal 4 - Microsoft​ Edge'
+[21:29:18] [INFO] Search 'mining' (12/12) in window 'mining - Search - Personal 3 - Microsoft​ Edge'
+[21:29:21] [INFO] Search 'route' (12/12) in window 'route - Search - Personal 2 - Microsoft​ Edge'
+[21:29:26] [INFO] Search 'scare' (12/12) in window 'scare - Search - Personal 2 - Microsoft​ Edge'
+[21:29:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[21:29:28] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[21:29:28] [DEBUG] Headless mode enabled for this Selenium session.
+[21:29:46] [DEBUG] Headless mode enabled for this Selenium session.
+[21:30:12] [DEBUG] Headless mode enabled for this Selenium session.
+[21:30:23] [DEBUG] Headless mode enabled for this Selenium session.
+[21:30:45] [INFO] Batch 1: 3 profiles need more points. Retrying with 20 searches...
+[21:30:45] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[21:30:50] [INFO] Stop signal sent. Finishing current action...
+[21:30:53] [INFO] Search 'placid' (1/20) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[21:30:56] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[21:30:56] [INFO] Search Automation Stopped by User.
+[21:31:01] [INFO] Range 1-4 selected.
+[21:31:08] [INFO] Loaded 0 progress records from today's history.
+[21:31:08] [INFO] Smart Search Automation started...
+[21:31:08] [INFO] Processing Batch 1...
+[21:31:08] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[21:31:21] [INFO] Search 'blot' (1/12) in window 'New tab - Personal 7 - Microsoft​ Edge'
+[21:31:30] [INFO] Search 'drag' (1/12) in window 'drag - Search - Personal 10 - Microsoft​ Edge'
+[21:31:35] [INFO] Search 'duration' (1/12) in window 'New tab - Personal 6 - Microsoft​ Edge'
+[21:31:40] [INFO] Search 'axiomatic' (1/12) in window 'axiomatic - Search - Personal 5 - Microsoft​ Edge'
+[21:31:44] [INFO] Search 'bear' (2/12) in window 'bear - Search - Personal 7 - Microsoft​ Edge'
+[21:31:48] [INFO] Search 'dose' (2/12) in window 'dose - Search - Personal 10 - Microsoft​ Edge'
+[21:31:52] [INFO] Search 'shortage' (2/12) in window 'shortage - Search - Personal 6 - Microsoft​ Edge'
+[21:31:56] [INFO] Search 'someone' (2/12) in window 'axiomatic - Search - Personal 5 - Microsoft​ Edge'
+[21:32:00] [INFO] Search 'orchard' (3/12) in window 'orchard - Search - Personal 7 - Microsoft​ Edge'
+[21:32:05] [INFO] Search 'mystery' (3/12) in window 'mystery - Search - Personal 10 - Microsoft​ Edge'
+[21:32:09] [INFO] Search 'combative' (3/12) in window 'combative - Search - Personal 6 - Microsoft​ Edge'
+[21:32:14] [INFO] Search 'blinker' (3/12) in window 'blinker - Search - Personal 5 - Microsoft​ Edge'
+[21:32:17] [INFO] Search 'stereo' (4/12) in window 'stereo - Search - Personal 7 - Microsoft​ Edge'
+[21:32:21] [INFO] Search 'tackle' (4/12) in window 'tackle - Search - Personal 10 - Microsoft​ Edge'
+[21:32:26] [INFO] Search 'newsletter' (4/12) in window 'newsletter - Search - Personal 6 - Microsoft​ Edge'
+[21:32:31] [INFO] Search 'disposition' (4/12) in window 'disposition - Search - Personal 5 - Microsoft​ Edge'
+[21:32:37] [INFO] Search 'variability' (5/12) in window 'variability - Search - Personal 7 - Microsoft​ Edge'
+[21:32:42] [INFO] Search 'nucleotide' (5/12) in window 'nucleotide - Search - Personal 10 - Microsoft​ Edge'
+[21:32:47] [INFO] Search 'victorious' (5/12) in window 'victorious - Search - Personal 6 - Microsoft​ Edge'
+[21:32:52] [INFO] Search 'zucchini' (5/12) in window 'zucchini - Search - Personal 5 - Microsoft​ Edge'
+[21:32:57] [INFO] Search 'legislature' (6/12) in window 'legislature - Search - Personal 7 - Microsoft​ Edge'
+[21:33:02] [INFO] Search 'briefs' (6/12) in window 'briefs - Search - Personal 10 - Microsoft​ Edge'
+[21:33:05] [INFO] Search 'sniff' (6/12) in window 'sniff - Search - Personal 6 - Microsoft​ Edge'
+[21:33:11] [INFO] Search 'panoramic' (6/12) in window 'panoramic - Search - Personal 5 - Microsoft​ Edge'
+[21:33:15] [INFO] Search 'destruction' (7/12) in window 'destruction - Search - Personal 7 - Microsoft​ Edge'
+[21:33:19] [INFO] Search 'alley' (7/12) in window 'briefs - Search - Personal 10 - Microsoft​ Edge'
+[21:33:22] [INFO] Search 'pump' (7/12) in window 'pump - Search - Personal 6 - Microsoft​ Edge'
+[21:33:26] [INFO] Search 'tense' (7/12) in window 'tense - Search - Personal 5 - Microsoft​ Edge'
+[21:33:30] [INFO] Search 'toilet' (8/12) in window 'toilet - Search - Personal 7 - Microsoft​ Edge'
+[21:33:35] [INFO] Search 'harmonious' (8/12) in window 'alley - Search - Personal 10 - Microsoft​ Edge'
+[21:33:40] [INFO] Search 'marimba' (8/12) in window 'marimba - Search - Personal 6 - Microsoft​ Edge'
+[21:33:45] [INFO] Search 'embarrassment' (8/12) in window 'embarrassment - Search - Personal 5 - Microsoft​ Edge'
+[21:33:50] [INFO] Search 'rain' (9/12) in window 'rain - Search - Personal 7 - Microsoft​ Edge'
+[21:33:54] [INFO] Search 'contrast' (9/12) in window 'contrast - Search - Personal 10 - Microsoft​ Edge'
+[21:33:58] [INFO] Search 'rosemary' (9/12) in window 'rosemary - Search - Personal 6 - Microsoft​ Edge'
+[21:34:02] [INFO] Search 'needless' (9/12) in window 'needless - Search - Personal 5 - Microsoft​ Edge'
+[21:34:06] [INFO] Search 'potato' (10/12) in window 'potato - Search - Personal 7 - Microsoft​ Edge'
+[21:34:11] [INFO] Search 'bunghole' (10/12) in window 'bunghole - Search - Personal 10 - Microsoft​ Edge'
+[21:34:15] [INFO] Search 'generator' (10/12) in window 'generator - Search - Personal 6 - Microsoft​ Edge'
+[21:34:19] [INFO] Search 'warden' (10/12) in window 'warden - Search - Personal 5 - Microsoft​ Edge'
+[21:34:23] [INFO] Search 'mosquito' (11/12) in window 'mosquito - Search - Personal 7 - Microsoft​ Edge'
+[21:34:27] [INFO] Search 'turtle' (11/12) in window 'turtle - Search - Personal 10 - Microsoft​ Edge'
+[21:34:31] [INFO] Search 'adult' (11/12) in window 'adult - Search - Personal 6 - Microsoft​ Edge'
+[21:34:35] [INFO] Search 'paperwork' (11/12) in window 'paperwork - Search - Personal 5 - Microsoft​ Edge'
+[21:34:40] [INFO] Search 'shrug' (12/12) in window 'shrug - Search - Personal 7 - Microsoft​ Edge'
+[21:34:43] [INFO] Search 'rug' (12/12) in window 'rug - Search - Personal 10 - Microsoft​ Edge'
+[21:34:48] [INFO] Search 'spaghetti' (12/12) in window 'spaghetti - Search - Personal 6 - Microsoft​ Edge'
+[21:34:52] [INFO] Search 'snap' (12/12) in window 'snap - Search - Personal 5 - Microsoft​ Edge'
+[21:34:55] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[21:34:55] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[21:34:55] [DEBUG] Headless mode enabled for this Selenium session.
+[21:35:12] [DEBUG] Headless mode enabled for this Selenium session.
+[21:35:29] [DEBUG] Headless mode enabled for this Selenium session.
+[21:35:40] [DEBUG] Headless mode enabled for this Selenium session.
+[21:35:47] [INFO] Stop signal sent. Finishing current action...
+
+--- Log Session Started: 2025-07-29 21:45:56 ---
+[21:45:56] [INFO] Application starting up.
+[21:45:56] [INFO] Loading profiles from data.json.
+[21:45:56] [INFO] Successfully loaded 31 profiles.
+[21:46:01] [INFO] Loaded 0 progress records from today's history.
+[21:46:08] [INFO] Fetching all points...
+[21:46:08] [INFO] Loaded 0 progress records from today's history.
+[21:46:08] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[21:46:09] [DEBUG] Headless mode enabled for this Selenium session.
+[21:46:49] [DEBUG] Headless mode enabled for this Selenium session.
+[21:47:25] [DEBUG] Headless mode enabled for this Selenium session.
+[21:47:58] [DEBUG] Headless mode enabled for this Selenium session.
+[21:48:24] [DEBUG] Headless mode enabled for this Selenium session.
+[21:48:41] [DEBUG] Headless mode enabled for this Selenium session.
+[21:49:08] [DEBUG] Headless mode enabled for this Selenium session.
+[21:49:39] [DEBUG] Headless mode enabled for this Selenium session.
+[21:50:18] [DEBUG] Headless mode enabled for this Selenium session.
+[21:50:41] [WARN] A timeout occurred while fetching points for Personal 11.
+[21:50:44] [DEBUG] Headless mode enabled for this Selenium session.
+[21:50:49] [INFO] Profile Personal 11 set to 'suspended'.
+[21:50:49] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:51:12] [WARN] A timeout occurred while fetching points for Personal 12.
+[21:51:15] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:17] [INFO] Profile Personal 12 set to 'suspended'.
+[21:51:17] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:51:37] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:58] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:16] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:39] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:58] [DEBUG] Headless mode enabled for this Selenium session.
+[21:53:24] [WARN] A timeout occurred while fetching points for Personal 18.
+[21:53:27] [DEBUG] Headless mode enabled for this Selenium session.
+[21:53:30] [INFO] Profile Personal 18 set to 'suspended'.
+[21:53:30] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:53:52] [DEBUG] Headless mode enabled for this Selenium session.
+[21:53:59] [INFO] Stop signal sent. Finishing current action...
+[21:54:13] [INFO] Points fetching stopped by user.
+
+--- Log Session Started: 2025-07-29 22:15:20 ---
+[22:15:20] [INFO] Application starting up.
+[22:15:20] [INFO] Loading profiles from data.json.
+[22:15:20] [INFO] Successfully loaded 31 profiles.
+[22:15:23] [INFO] Loaded 18 progress records from today's history.
+[22:15:29] [INFO] Manually opening points breakdown for Personal 2
+[22:15:29] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-29 22:16:37 ---
+[22:16:37] [INFO] Application starting up.
+[22:16:37] [INFO] Loading profiles from data.json.
+[22:16:37] [INFO] Successfully loaded 31 profiles.
+[22:16:40] [INFO] Loaded 18 progress records from today's history.
+[22:16:52] [INFO] Fetching all points...
+[22:16:52] [INFO] Loaded 18 progress records from today's history.
+[22:16:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:16:54] [DEBUG] Headless mode enabled for this Selenium session.
+[22:17:05] [INFO] Points fetching complete.
+[22:17:07] [INFO] Manually opening points breakdown for Personal 3
+[22:17:07] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:17:36] [INFO] Range 1-4 selected.
+[22:17:39] [INFO] Loaded 18 progress records from today's history.
+[22:17:39] [INFO] Smart Search Automation started...
+[22:17:39] [INFO] Processing Batch 1...
+[22:17:39] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[22:17:46] [INFO] Error: No Edge windows found for PC search.
+[22:17:46] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:17:47] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[22:17:47] [INFO] Skipping fetch for Personal: Already completed.
+[22:17:47] [DEBUG] Headless mode enabled for this Selenium session.
+[22:17:48] [INFO] Stop signal sent. Finishing current action...
+[22:18:06] [INFO] Batch 1: 1 profiles need more points. Retrying with 16 searches...
+[22:18:06] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[22:18:06] [INFO] Search Automation Stopped by User.
+[22:18:08] [INFO] Loaded 18 progress records from today's history.
+[22:18:08] [INFO] Smart Search Automation started...
+[22:18:08] [INFO] Processing Batch 1...
+[22:18:08] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[22:18:20] [INFO] Search 'unable' (1/5) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[22:18:26] [INFO] Search 'grandiose' (1/5) in window 'grandiose meaning - Search - Personal - Microsoft​ Edge'
+[22:18:30] [INFO] Search 'hotel' (2/5) in window 'hotel - Search - Personal 2 - Microsoft​ Edge'
+[22:18:34] [INFO] Search 'redhead' (2/5) in window 'redhead - Search - Personal - Microsoft​ Edge'
+[22:18:39] [INFO] Search 'birch' (3/5) in window 'birch - Search - Personal 2 - Microsoft​ Edge'
+[22:18:43] [INFO] Search 'decoder' (3/5) in window 'decoder - Search - Personal - Microsoft​ Edge'
+[22:18:48] [INFO] Search 'veranda' (4/5) in window 'veranda - Search - Personal 2 - Microsoft​ Edge'
+[22:18:52] [INFO] Search 'contrast' (4/5) in window 'contrast - Search - Personal - Microsoft​ Edge'
+[22:18:57] [INFO] Search 'preference' (5/5) in window 'preference - Search - Personal 2 - Microsoft​ Edge'
+[22:19:02] [INFO] Search 'taxicab' (5/5) in window 'contrast - Search - Personal - Microsoft​ Edge'
+[22:19:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:19:04] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[22:19:04] [INFO] Skipping fetch for Personal: Already completed.
+[22:19:04] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:32] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:47] [DEBUG] Headless mode enabled for this Selenium session.
+[22:20:14] [INFO] Batch 1: 3 profiles need more points. Retrying with 16 searches...
+[22:20:14] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[22:20:25] [INFO] Search 'lush' (1/16) in window 'bing.com/search?pglt=299&q=lush&cvid=3ed90fce1f154ab4a1647e2a50d18bfc&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQLhhAMgYICBAAGEDSAQgxMTIwajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 4 - Microsoft​ Edge'
+[22:20:30] [INFO] Search 'handwrite' (1/16) in window 'handwrite - Search - Personal 3 - Microsoft​ Edge'
+[22:20:34] [INFO] Search 'sponge' (1/16) in window 'sponge - Search - Personal 2 - Microsoft​ Edge'
+[22:20:38] [INFO] Search 'calf' (2/16) in window 'calf - Search - Personal 4 - Microsoft​ Edge'
+[22:20:43] [INFO] Search 'colonialism' (2/16) in window 'colonialism - Search - Personal 3 - Microsoft​ Edge'
+[22:20:48] [INFO] Search 'earth' (2/16) in window 'earth - Search - Personal 2 - Microsoft​ Edge'
+[22:20:52] [INFO] Search 'bargain' (3/16) in window 'bargain - Search - Personal 4 - Microsoft​ Edge'
+[22:20:57] [INFO] Search 'footprint' (3/16) in window 'footprint - Search - Personal 3 - Microsoft​ Edge'
+[22:21:01] [INFO] Search 'shut' (3/16) in window 'shut - Search - Personal 2 - Microsoft​ Edge'
+[22:21:05] [INFO] Search 'pigpen' (4/16) in window 'pigpen - Search - Personal 4 - Microsoft​ Edge'
+[22:21:09] [INFO] Search 'fruit' (4/16) in window 'fruit - Search - Personal 3 - Microsoft​ Edge'
+[22:21:12] [INFO] Search 'link' (4/16) in window 'link - Search - Personal 2 - Microsoft​ Edge'
+[22:21:17] [INFO] Search 'native' (5/16) in window 'native - Search - Personal 4 - Microsoft​ Edge'
+[22:21:21] [INFO] Search 'ski' (5/16) in window 'ski - Search - Personal 3 - Microsoft​ Edge'
+[22:21:24] [INFO] Search 'wealth' (5/16) in window 'wealth - Search - Personal 2 - Microsoft​ Edge'
+[22:21:30] [INFO] Search 'charming' (6/16) in window 'charming - Search - Personal 4 - Microsoft​ Edge'
+[22:21:34] [INFO] Search 'measles' (6/16) in window 'measles - Search - Personal 3 - Microsoft​ Edge'
+[22:21:38] [INFO] Search 'vitro' (6/16) in window 'vitro - Search - Personal 2 - Microsoft​ Edge'
+[22:21:42] [INFO] Search 'foam' (7/16) in window 'foam - Search - Personal 4 - Microsoft​ Edge'
+[22:21:48] [INFO] Search 'step-daughter' (7/16) in window 'step-daughter - Search - Personal 3 - Microsoft​ Edge'
+[22:21:52] [INFO] Search 'boon' (7/16) in window 'boon - Search - Personal 2 - Microsoft​ Edge'
+[22:21:56] [INFO] Search 'choker' (8/16) in window 'choker - Search - Personal 4 - Microsoft​ Edge'
+[22:22:00] [INFO] Search 'correct' (8/16) in window 'correct - Search - Personal 3 - Microsoft​ Edge'
+[22:22:05] [INFO] Search 'shorts' (8/16) in window 'shorts - Search - Personal 2 - Microsoft​ Edge'
+[22:22:09] [INFO] Search 'shutdown' (9/16) in window 'shutdown - Search - Personal 4 - Microsoft​ Edge'
+[22:22:13] [INFO] Search 'chew' (9/16) in window 'chew - Search - Personal 3 - Microsoft​ Edge'
+[22:22:18] [INFO] Search 'chaplain' (9/16) in window 'chaplain - Search - Personal 2 - Microsoft​ Edge'
+[22:22:23] [INFO] Search 'saviour' (10/16) in window 'saviour - Search - Personal 4 - Microsoft​ Edge'
+[22:22:26] [INFO] Search 'pocket' (10/16) in window 'pocket - Search - Personal 3 - Microsoft​ Edge'
+[22:22:31] [INFO] Search 'shanty' (10/16) in window 'shanty - Search - Personal 2 - Microsoft​ Edge'
+[22:22:34] [INFO] Search 'auto' (11/16) in window 'auto - Search - Personal 4 - Microsoft​ Edge'
+[22:22:38] [INFO] Search 'chicory' (11/16) in window 'chicory - Search - Personal 3 - Microsoft​ Edge'
+[22:22:42] [INFO] Search 'erect' (11/16) in window 'erect - Search - Personal 2 - Microsoft​ Edge'
+[22:22:45] [INFO] Search 'madam' (12/16) in window 'madam - Search - Personal 4 - Microsoft​ Edge'
+[22:22:50] [INFO] Search 'peasant' (12/16) in window 'peasant - Search - Personal 3 - Microsoft​ Edge'
+[22:22:53] [INFO] Search 'medium' (12/16) in window 'medium - Search - Personal 2 - Microsoft​ Edge'
+[22:22:58] [INFO] Search 'slavery' (13/16) in window 'slavery - Search - Personal 4 - Microsoft​ Edge'
+[22:23:02] [INFO] Search 'hike' (13/16) in window 'hike - Search - Personal 3 - Microsoft​ Edge'
+[22:23:07] [INFO] Search 'porcupine' (13/16) in window 'porcupine - Search - Personal 2 - Microsoft​ Edge'
+[22:23:11] [INFO] Search 'syndicate' (14/16) in window 'syndicate - Search - Personal 4 - Microsoft​ Edge'
+[22:23:16] [INFO] Search 'crackers' (14/16) in window 'crackers - Search - Personal 3 - Microsoft​ Edge'
+[22:23:20] [INFO] Search 'brooch' (14/16) in window 'brooch - Search - Personal 2 - Microsoft​ Edge'
+[22:23:25] [INFO] Search 'sunflower' (15/16) in window 'sunflower - Search - Personal 4 - Microsoft​ Edge'
+[22:23:29] [INFO] Search 'breath' (15/16) in window 'breath - Search - Personal 3 - Microsoft​ Edge'
+[22:23:35] [INFO] Search 'grandparent' (15/16) in window 'grandparent - Search - Personal 2 - Microsoft​ Edge'
+[22:23:39] [INFO] Search 'heartwood' (16/16) in window 'heartwood - Search - Personal 4 - Microsoft​ Edge'
+[22:23:43] [INFO] Search 'carbon' (16/16) in window 'carbon - Search - Personal 3 - Microsoft​ Edge'
+[22:23:47] [INFO] Search 'tell' (16/16) in window 'tell - Search - Personal 2 - Microsoft​ Edge'
+[22:23:50] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:23:50] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[22:23:50] [DEBUG] Headless mode enabled for this Selenium session.
+[22:24:13] [DEBUG] Headless mode enabled for this Selenium session.
+[22:24:34] [DEBUG] Headless mode enabled for this Selenium session.
+[22:25:19] [INFO] Batch 1: 3 profiles need more points. Retrying with 15 searches...
+[22:25:19] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[22:25:29] [INFO] Search 'porpoise' (1/15) in window 'porpoise - Search - Personal 4 - Microsoft​ Edge'
+[22:25:35] [INFO] Search 'location' (1/15) in window 'location - Search - Personal 3 - Microsoft​ Edge'
+[22:25:39] [INFO] Search 'takeover' (1/15) in window 'takeover - Search - Personal 2 - Microsoft​ Edge'
+[22:25:44] [INFO] Search 'originate' (2/15) in window 'originate - Search - Personal 4 - Microsoft​ Edge'
+[22:25:48] [INFO] Search 'anteater' (2/15) in window 'anteater - Search - Personal 3 - Microsoft​ Edge'
+[22:25:53] [INFO] Search 'moonshine' (2/15) in window 'moonshine - Search - Personal 2 - Microsoft​ Edge'
+[22:25:59] [INFO] Search 'transformation' (3/15) in window 'transformation - Search - Personal 4 - Microsoft​ Edge'
+[22:26:03] [INFO] Search 'brushing' (3/15) in window 'brushing - Search - Personal 3 - Microsoft​ Edge'
+[22:26:08] [INFO] Search 'courageous' (3/15) in window 'courageous - Search - Personal 2 - Microsoft​ Edge'
+[22:26:12] [INFO] Search 'tabletop' (4/15) in window 'tabletop - Search - Personal 4 - Microsoft​ Edge'
+[22:26:17] [INFO] Search 'obscene' (4/15) in window 'obscene - Search - Personal 3 - Microsoft​ Edge'
+[22:26:20] [INFO] Search 'give' (4/15) in window 'give - Search - Personal 2 - Microsoft​ Edge'
+[22:26:24] [INFO] Search 'fishing' (5/15) in window 'fishing - Search - Personal 4 - Microsoft​ Edge'
+[22:26:28] [INFO] Search 'savory' (5/15) in window 'savory - Search - Personal 3 - Microsoft​ Edge'
+[22:26:33] [INFO] Search 'stripe' (5/15) in window 'stripe - Search - Personal 2 - Microsoft​ Edge'
+[22:26:38] [INFO] Search 'underground' (6/15) in window 'underground - Search - Personal 4 - Microsoft​ Edge'
+[22:26:42] [INFO] Search 'slope' (6/15) in window 'slope - Search - Personal 3 - Microsoft​ Edge'
+[22:26:46] [INFO] Search 'bonnet' (6/15) in window 'bonnet - Search - Personal 2 - Microsoft​ Edge'
+[22:26:50] [INFO] Search 'silence' (7/15) in window 'silence - Search - Personal 4 - Microsoft​ Edge'
+[22:26:54] [INFO] Search 'lout' (7/15) in window 'lout - Search - Personal 3 - Microsoft​ Edge'
+[22:26:58] [INFO] Search 'planula' (7/15) in window 'planula - Search - Personal 2 - Microsoft​ Edge'
+[22:27:03] [INFO] Search 'nutritious' (8/15) in window 'nutritious - Search - Personal 4 - Microsoft​ Edge'
+[22:27:07] [INFO] Search 'awe' (8/15) in window 'awe - Search - Personal 3 - Microsoft​ Edge'
+[22:27:11] [INFO] Search 'software' (8/15) in window 'software - Search - Personal 2 - Microsoft​ Edge'
+[22:27:15] [INFO] Search 'top' (9/15) in window 'top - Search - Personal 4 - Microsoft​ Edge'
+[22:27:19] [INFO] Search 'removal' (9/15) in window 'removal - Search - Personal 3 - Microsoft​ Edge'
+[22:27:23] [INFO] Search 'pyramid' (9/15) in window 'pyramid - Search - Personal 2 - Microsoft​ Edge'
+[22:27:27] [INFO] Search 'mutton' (10/15) in window 'top - Search - Personal 4 - Microsoft​ Edge'
+[22:27:31] [INFO] Search 'keystone' (10/15) in window 'keystone - Search - Personal 3 - Microsoft​ Edge'
+[22:27:35] [INFO] Search 'ride' (10/15) in window 'ride - Search - Personal 2 - Microsoft​ Edge'
+[22:27:39] [INFO] Search 'bother' (11/15) in window 'bother - Search - Personal 4 - Microsoft​ Edge'
+[22:27:42] [INFO] Search 'pat' (11/15) in window 'pat - Search - Personal 3 - Microsoft​ Edge'
+[22:27:47] [INFO] Search 'infix' (11/15) in window 'infix - Search - Personal 2 - Microsoft​ Edge'
+[22:27:51] [INFO] Search 'retina' (12/15) in window 'retina - Search - Personal 4 - Microsoft​ Edge'
+[22:27:55] [INFO] Search 'vengeful' (12/15) in window 'vengeful - Search - Personal 3 - Microsoft​ Edge'
+[22:27:59] [INFO] Search 'blue' (12/15) in window 'blue - Search - Personal 2 - Microsoft​ Edge'
+[22:28:05] [INFO] Search 'congressperson' (13/15) in window 'congressperson - Search - Personal 4 - Microsoft​ Edge'
+[22:28:11] [INFO] Search 'proprietor' (13/15) in window 'proprietor - Search - Personal 3 - Microsoft​ Edge'
+[22:28:15] [INFO] Search 'royal' (13/15) in window 'royal - Search - Personal 2 - Microsoft​ Edge'
+[22:28:19] [INFO] Search 'theory' (14/15) in window 'theory - Search - Personal 4 - Microsoft​ Edge'
+[22:28:23] [INFO] Search 'disposer' (14/15) in window 'disposer - Search - Personal 3 - Microsoft​ Edge'
+[22:28:28] [INFO] Search 'crewmen' (14/15) in window 'crewmen - Search - Personal 2 - Microsoft​ Edge'
+[22:28:32] [INFO] Search 'ground' (15/15) in window 'ground - Search - Personal 4 - Microsoft​ Edge'
+[22:28:37] [INFO] Search 'courageous' (15/15) in window 'courageous - Search - Personal 3 - Microsoft​ Edge'
+[22:28:41] [INFO] Search 'beg' (15/15) in window 'beg - Search - Personal 2 - Microsoft​ Edge'
+[22:28:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:28:43] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[22:28:43] [DEBUG] Headless mode enabled for this Selenium session.
+[22:29:07] [DEBUG] Headless mode enabled for this Selenium session.
+[22:29:32] [DEBUG] Headless mode enabled for this Selenium session.
+[22:29:56] [INFO] Batch 1: 3 profiles need more points. Retrying with 15 searches...
+[22:29:56] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[22:30:09] [INFO] Search 'politician' (1/15) in window 'politician - Search - Personal 4 - Microsoft​ Edge'
+[22:30:14] [INFO] Search 'shame' (1/15) in window 'shame - Search - Personal 3 - Microsoft​ Edge'
+[22:30:19] [INFO] Search 'subsidy' (1/15) in window 'subsidy - Search - Personal 2 - Microsoft​ Edge'
+[22:30:24] [INFO] Search 'analogue' (2/15) in window 'analogue - Search - Personal 4 - Microsoft​ Edge'
+[22:30:28] [INFO] Search 'event' (2/15) in window 'event - Search - Personal 3 - Microsoft​ Edge'
+[22:30:33] [INFO] Search 'wraparound' (2/15) in window 'wraparound - Search - Personal 2 - Microsoft​ Edge'
+[22:30:36] [INFO] Search 'bra' (3/15) in window 'bra - Search - Personal 4 - Microsoft​ Edge'
+[22:30:40] [INFO] Search 'lens' (3/15) in window 'lens - Search - Personal 3 - Microsoft​ Edge'
+[22:30:44] [INFO] Search 'server' (3/15) in window 'server - Search - Personal 2 - Microsoft​ Edge'
+[22:30:49] [INFO] Search 'truculent' (4/15) in window 'truculent - Search - Personal 4 - Microsoft​ Edge'
+[22:30:53] [INFO] Search 'logistics' (4/15) in window 'logistics - Search - Personal 3 - Microsoft​ Edge'
+[22:30:59] [INFO] Search 'veterinarian' (4/15) in window 'veterinarian - Search - Personal 2 - Microsoft​ Edge'
+[22:31:02] [INFO] Search 'sneak' (5/15) in window 'sneak - Search - Personal 4 - Microsoft​ Edge'
+[22:31:08] [INFO] Search 'understood' (5/15) in window 'understood - Search - Personal 3 - Microsoft​ Edge'
+[22:31:12] [INFO] Search 'submitter' (5/15) in window 'submitter - Search - Personal 2 - Microsoft​ Edge'
+[22:31:17] [INFO] Search 'admission' (6/15) in window 'admission - Search - Personal 4 - Microsoft​ Edge'
+[22:31:21] [INFO] Search 'hunger' (6/15) in window 'hunger - Search - Personal 3 - Microsoft​ Edge'
+[22:31:24] [INFO] Search 'pad' (6/15) in window 'submitter - Search - Personal 2 - Microsoft​ Edge'
+[22:31:28] [INFO] Search 'dish' (7/15) in window 'dish - Search - Personal 4 - Microsoft​ Edge'
+[22:31:32] [INFO] Search 'coaster' (7/15) in window 'coaster - Search - Personal 3 - Microsoft​ Edge'
+[22:31:37] [INFO] Search 'plowman' (7/15) in window 'plowman - Search - Personal 2 - Microsoft​ Edge'
+[22:31:41] [INFO] Search 'beastie' (8/15) in window 'beastie - Search - Personal 4 - Microsoft​ Edge'
+[22:31:46] [INFO] Search 'singing' (8/15) in window 'singing - Search - Personal 3 - Microsoft​ Edge'
+[22:31:51] [INFO] Search 'congressman' (8/15) in window 'congressman - Search - Personal 2 - Microsoft​ Edge'
+[22:31:55] [INFO] Search 'stacking' (9/15) in window 'stacking - Search - Personal 4 - Microsoft​ Edge'
+[22:31:59] [INFO] Search 'quick' (9/15) in window 'quickest - Search - Personal 3 - Microsoft​ Edge'
+[22:32:03] [INFO] Search 'today' (9/15) in window 'today - Search - Personal 2 - Microsoft​ Edge'
+[22:32:07] [INFO] Search 'cabin' (10/15) in window 'cabin - Search - Personal 4 - Microsoft​ Edge'
+[22:32:12] [INFO] Search 'landscape' (10/15) in window 'landscape - Search - Personal 3 - Microsoft​ Edge'
+[22:32:15] [INFO] Search 'blood' (10/15) in window 'blood - Search - Personal 2 - Microsoft​ Edge'
+[22:32:20] [INFO] Search 'justice' (11/15) in window 'justice - Search - Personal 4 - Microsoft​ Edge'
+[22:32:24] [INFO] Search 'input' (11/15) in window 'input - Search - Personal 3 - Microsoft​ Edge'
+[22:32:28] [INFO] Search 'cursor' (11/15) in window 'cursor - Search - Personal 2 - Microsoft​ Edge'
+[22:32:32] [INFO] Search 'tight' (12/15) in window 'tight - Search - Personal 4 - Microsoft​ Edge'
+[22:32:36] [INFO] Search 'lovely' (12/15) in window 'lovely - Search - Personal 3 - Microsoft​ Edge'
+[22:32:41] [INFO] Search 'baritone' (12/15) in window 'baritone - Search - Personal 2 - Microsoft​ Edge'
+[22:32:46] [INFO] Search 'terrapin' (13/15) in window 'terrapin - Search - Personal 4 - Microsoft​ Edge'
+[22:32:49] [INFO] Search 'icing' (13/15) in window 'icing - Search - Personal 3 - Microsoft​ Edge'
+[22:32:54] [INFO] Search 'workshop' (13/15) in window 'workshop - Search - Personal 2 - Microsoft​ Edge'
+[22:32:58] [INFO] Search 'tread' (14/15) in window 'tread - Search - Personal 4 - Microsoft​ Edge'
+[22:33:02] [INFO] Search 'leaker' (14/15) in window 'leaker - Search - Personal 3 - Microsoft​ Edge'
+[22:33:07] [INFO] Search 'temptress' (14/15) in window 'temptress - Search - Personal 2 - Microsoft​ Edge'
+[22:33:11] [INFO] Search 'supreme' (15/15) in window 'supreme - Search - Personal 4 - Microsoft​ Edge'
+[22:33:16] [INFO] Search 'agreeable' (15/15) in window 'agreeable - Search - Personal 3 - Microsoft​ Edge'
+[22:33:20] [INFO] Search 'vibraphone' (15/15) in window 'vibraphone - Search - Personal 2 - Microsoft​ Edge'
+[22:33:23] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:33:23] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[22:33:23] [DEBUG] Headless mode enabled for this Selenium session.
+[22:33:42] [DEBUG] Headless mode enabled for this Selenium session.
+[22:33:58] [DEBUG] Headless mode enabled for this Selenium session.
+[22:34:15] [INFO] Batch 1: 3 profiles need more points. Retrying with 15 searches...
+[22:34:15] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[22:34:30] [INFO] Search 'polenta' (1/15) in window 'polenta - Search - Personal 4 - Microsoft​ Edge'
+[22:34:34] [INFO] Search 'deep' (1/15) in window 'deep - Search - Personal 3 - Microsoft​ Edge'
+[22:34:39] [INFO] Search 'source' (1/15) in window 'source - Search - Personal 2 - Microsoft​ Edge'
+[22:34:43] [INFO] Search 'harp' (2/15) in window 'harp - Search - Personal 4 - Microsoft​ Edge'
+[22:34:46] [INFO] Search 'epoxy' (2/15) in window 'epoxy - Search - Personal 3 - Microsoft​ Edge'
+[22:34:51] [INFO] Search 'reciprocity' (2/15) in window 'reciprocity - Search - Personal 2 - Microsoft​ Edge'
+[22:34:55] [INFO] Search 'washcloth' (3/15) in window 'washcloth - Search - Personal 4 - Microsoft​ Edge'
+[22:34:59] [INFO] Search 'flee' (3/15) in window 'flee - Search - Personal 3 - Microsoft​ Edge'
+[22:35:04] [INFO] Search 'hurt' (3/15) in window 'hurt - Search - Personal 2 - Microsoft​ Edge'
+[22:35:09] [INFO] Search 'watercress' (4/15) in window 'watercress - Search - Personal 4 - Microsoft​ Edge'
+[22:35:12] [INFO] Search 'pear' (4/15) in window 'pear - Search - Personal 3 - Microsoft​ Edge'
+[22:35:17] [INFO] Search 'sparkling' (4/15) in window 'sparkling - Search - Personal 2 - Microsoft​ Edge'
+[22:35:22] [INFO] Search 'following' (5/15) in window 'following - Search - Personal 4 - Microsoft​ Edge'
+[22:35:27] [INFO] Search 'psychedelic' (5/15) in window 'psychedelic - Search - Personal 3 - Microsoft​ Edge'
+[22:35:32] [INFO] Search 'originality' (5/15) in window 'originality - Search - Personal 2 - Microsoft​ Edge'
+[22:35:37] [INFO] Search 'register' (6/15) in window 'register - Search - Personal 4 - Microsoft​ Edge'
+[22:35:41] [INFO] Search 'heat' (6/15) in window 'heat - Search - Personal 3 - Microsoft​ Edge'
+[22:35:46] [INFO] Search 'impropriety' (6/15) in window 'impropriety - Search - Personal 2 - Microsoft​ Edge'
+[22:35:49] [INFO] Search 'hope' (7/15) in window 'hope - Search - Personal 4 - Microsoft​ Edge'
+[22:35:54] [INFO] Search 'mini-skirt' (7/15) in window 'mini-skirt - Search - Personal 3 - Microsoft​ Edge'
+[22:35:58] [INFO] Search 'rabbi' (7/15) in window 'rabbi - Search - Personal 2 - Microsoft​ Edge'
+[22:36:02] [INFO] Search 'crowded' (8/15) in window 'crowded - Search - Personal 4 - Microsoft​ Edge'
+[22:36:06] [INFO] Search 'sable' (8/15) in window 'sable - Search - Personal 3 - Microsoft​ Edge'
+[22:36:10] [INFO] Search 'graph' (8/15) in window 'graph - Search - Personal 2 - Microsoft​ Edge'
+[22:36:15] [INFO] Search 'momentous' (9/15) in window 'momentous - Search - Personal 4 - Microsoft​ Edge'
+[22:36:19] [INFO] Search 'tonic' (9/15) in window 'tonic - Search - Personal 3 - Microsoft​ Edge'
+[22:36:23] [INFO] Search 'acorn' (9/15) in window 'acorn - Search - Personal 2 - Microsoft​ Edge'
+[22:36:28] [INFO] Search 'moonscape' (10/15) in window 'moonscape - Search - Personal 4 - Microsoft​ Edge'
+[22:36:31] [INFO] Search 'bat' (10/15) in window 'bat - Search - Personal 3 - Microsoft​ Edge'
+[22:36:35] [INFO] Search 'freon' (10/15) in window 'freon - Search - Personal 2 - Microsoft​ Edge'
+[22:36:39] [INFO] Search 'petticoat' (11/15) in window 'petticoat - Search - Personal 4 - Microsoft​ Edge'
+[22:36:43] [INFO] Search 'pour' (11/15) in window 'pour - Search - Personal 3 - Microsoft​ Edge'
+[22:36:48] [INFO] Search 'utility' (11/15) in window 'utility - Search - Personal 2 - Microsoft​ Edge'
+[22:36:52] [INFO] Search 'frame' (12/15) in window 'frame - Search - Personal 4 - Microsoft​ Edge'
+[22:36:57] [INFO] Search 'inquisitive' (12/15) in window 'inquisitive - Search - Personal 3 - Microsoft​ Edge'
+[22:37:00] [INFO] Search 'bright' (12/15) in window 'bright - Search - Personal 2 - Microsoft​ Edge'
+[22:37:04] [INFO] Search 'rotation' (13/15) in window 'rotation - Search - Personal 4 - Microsoft​ Edge'
+[22:37:09] [INFO] Search 'submitter' (13/15) in window 'submitter - Search - Personal 3 - Microsoft​ Edge'
+[22:37:14] [INFO] Search 'anchovy' (13/15) in window 'anchovy - Search - Personal 2 - Microsoft​ Edge'
+[22:37:19] [INFO] Search 'macaroni' (14/15) in window 'macaroni - Search - Personal 4 - Microsoft​ Edge'
+[22:37:24] [INFO] Search 'sentencing' (14/15) in window 'sentencing - Search - Personal 3 - Microsoft​ Edge'
+[22:37:28] [INFO] Search 'sea' (14/15) in window 'seat - Search - Personal 2 - Microsoft​ Edge'
+[22:37:32] [INFO] Search 'usual' (15/15) in window 'usual - Search - Personal 4 - Microsoft​ Edge'
+[22:37:36] [INFO] Search 'trowel' (15/15) in window 'trowel - Search - Personal 3 - Microsoft​ Edge'
+[22:37:40] [INFO] Search 'death' (15/15) in window 'death - Search - Personal 2 - Microsoft​ Edge'
+[22:37:42] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:37:42] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[22:37:42] [DEBUG] Headless mode enabled for this Selenium session.
+[22:38:03] [DEBUG] Headless mode enabled for this Selenium session.
+[22:38:25] [DEBUG] Headless mode enabled for this Selenium session.
+[22:38:38] [INFO] Batch 1: 3 profiles need more points. Retrying with 15 searches...
+[22:38:38] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[22:38:54] [INFO] Search 'knuckle' (1/15) in window 'knuckles - Search - Personal 4 - Microsoft​ Edge'
+[22:39:01] [INFO] Search 'revascularization' (1/15) in window 'revascularization - Search - Personal 3 - Microsoft​ Edge'
+[22:39:05] [INFO] Search 'acupuncture' (1/15) in window 'acupuncture - Search - Personal 2 - Microsoft​ Edge'
+[22:39:09] [INFO] Search 'market' (2/15) in window 'knuckles - Search - Personal 4 - Microsoft​ Edge'
+[22:39:14] [INFO] Search 'womanly' (2/15) in window 'womanly - Search - Personal 3 - Microsoft​ Edge'
+[22:39:18] [INFO] Search 'mime' (2/15) in window 'mime - Search - Personal 2 - Microsoft​ Edge'
+[22:39:22] [INFO] Search 'spike' (3/15) in window 'spike - Search - Personal 4 - Microsoft​ Edge'
+[22:39:26] [INFO] Search 'fen' (3/15) in window 'fen - Search - Personal 3 - Microsoft​ Edge'
+[22:39:29] [INFO] Search 'gopher' (3/15) in window 'gopher - Search - Personal 2 - Microsoft​ Edge'
+[22:39:33] [INFO] Search 'ice' (4/15) in window 'ice - Search - Personal 4 - Microsoft​ Edge'
+[22:39:37] [INFO] Search 'dory' (4/15) in window 'dory - Search - Personal 3 - Microsoft​ Edge'
+[22:39:42] [INFO] Search 'lavish' (4/15) in window 'lavish - Search - Personal 2 - Microsoft​ Edge'
+[22:39:47] [INFO] Search 'subcontractor' (5/15) in window 'subcontractor - Search - Personal 4 - Microsoft​ Edge'
+[22:39:52] [INFO] Search 'collapse' (5/15) in window 'collapse - Search - Personal 3 - Microsoft​ Edge'
+[22:39:57] [INFO] Search 'investigation' (5/15) in window 'investigation - Search - Personal 2 - Microsoft​ Edge'
+[22:40:01] [INFO] Search 'prick' (6/15) in window 'prick - Search - Personal 4 - Microsoft​ Edge'
+[22:40:05] [INFO] Search 'usual' (6/15) in window 'usual - Search - Personal 3 - Microsoft​ Edge'
+[22:40:09] [INFO] Search 'rip' (6/15) in window 'rip - Search - Personal 2 - Microsoft​ Edge'
+[22:40:14] [INFO] Search 'reliability' (7/15) in window 'reliability - Search - Personal 4 - Microsoft​ Edge'
+[22:40:19] [INFO] Search 'landform' (7/15) in window 'landform - Search - Personal 3 - Microsoft​ Edge'
+[22:40:23] [INFO] Search 'reply' (7/15) in window 'reply - Search - Personal 2 - Microsoft​ Edge'
+[22:40:27] [INFO] Search 'rain' (8/15) in window 'rain - Search - Personal 4 - Microsoft​ Edge'
+[22:40:32] [INFO] Search 'baggage' (8/15) in window 'baggage - Search - Personal 3 - Microsoft​ Edge'
+[22:40:36] [INFO] Search 'review' (8/15) in window 'review - Search - Personal 2 - Microsoft​ Edge'
+[22:40:40] [INFO] Search 'king' (9/15) in window 'king - Search - Personal 4 - Microsoft​ Edge'
+[22:40:44] [INFO] Search 'role' (9/15) in window 'role - Search - Personal 3 - Microsoft​ Edge'
+[22:40:48] [INFO] Search 'lavish' (9/15) in window 'lavish - Search - Personal 2 - Microsoft​ Edge'
+[22:40:52] [INFO] Search 'void' (10/15) in window 'void - Search - Personal 4 - Microsoft​ Edge'
+[22:40:57] [INFO] Search 'recruit' (10/15) in window 'recruit - Search - Personal 3 - Microsoft​ Edge'
+[22:41:01] [INFO] Search 'manhunt' (10/15) in window 'manhunt - Search - Personal 2 - Microsoft​ Edge'
+[22:41:06] [INFO] Search 'tickle' (11/15) in window 'tickle - Search - Personal 4 - Microsoft​ Edge'
+[22:41:12] [INFO] Search 'disillusioned' (11/15) in window 'disillusioned - Search - Personal 3 - Microsoft​ Edge'
+[22:41:16] [INFO] Search 'daylight' (11/15) in window 'daylight - Search - Personal 2 - Microsoft​ Edge'
+[22:41:21] [INFO] Search 'airforce' (12/15) in window 'airforce - Search - Personal 4 - Microsoft​ Edge'
+[22:41:25] [INFO] Search 'license' (12/15) in window 'license - Search - Personal 3 - Microsoft​ Edge'
+[22:41:30] [INFO] Search 'cowbell' (12/15) in window 'cowbell - Search - Personal 2 - Microsoft​ Edge'
+[22:41:35] [INFO] Search 'barbiturate' (13/15) in window 'barbiturate - Search - Personal 4 - Microsoft​ Edge'
+[22:41:39] [INFO] Search 'tomorrow' (13/15) in window 'tomorrow - Search - Personal 3 - Microsoft​ Edge'
+[22:41:44] [INFO] Search 'teenager' (13/15) in window 'teenager - Search - Personal 2 - Microsoft​ Edge'
+[22:41:48] [INFO] Search 'vinegar' (14/15) in window 'vinegar - Search - Personal 4 - Microsoft​ Edge'
+[22:41:52] [INFO] Search 'mutt' (14/15) in window 'tomorrow - Search - Personal 3 - Microsoft​ Edge'
+[22:41:56] [INFO] Search 'chub' (14/15) in window 'chub - Search - Personal 2 - Microsoft​ Edge'
+[22:42:00] [INFO] Search 'decisive' (15/15) in window 'decisive - Search - Personal 4 - Microsoft​ Edge'
+[22:42:06] [INFO] Search 'incandescent' (15/15) in window 'incandescent - Search - Personal 3 - Microsoft​ Edge'
+[22:42:11] [INFO] Search 'recapitulation' (15/15) in window 'recapitulation - Search - Personal 2 - Microsoft​ Edge'
+[22:42:14] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:42:14] [INFO] Batch 1: Max retries reached.
+[22:42:14] [INFO] Batch 1: Saving final progress to history...
+[22:42:14] [INFO] Search Automation Complete!
+[23:14:38] [INFO] Range 25-28 selected.
+[23:15:04] [INFO] Loaded 18 progress records from today's history.
+[23:15:04] [INFO] Smart Search Automation started...
+[23:15:04] [INFO] Processing Batch 1...
+[23:15:04] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:15:14] [INFO] Search 'bump' (1/5) in window 'New tab - Personal 28 - Microsoft​ Edge'
+[23:15:23] [INFO] Search 'goddess' (1/5) in window 'New tab - Personal 27 - Microsoft​ Edge'
+[23:15:30] [INFO] Search 'ceaseless' (1/5) in window 'ceaseless - Search - Personal 26 - Microsoft​ Edge'
+[23:15:34] [INFO] Search 'entirety' (1/5) in window 'entirety - Search - Personal 25 - Microsoft​ Edge'
+[23:15:39] [INFO] Search 'warm-up' (1/5) in window 'warm-up - Search and 1 more page - Personal - Microsoft​ Edge'
+[23:15:42] [INFO] Search 'wry' (2/5) in window 'wry - Search - Personal 28 - Microsoft​ Edge'
+[23:15:47] [INFO] Search 'technician' (2/5) in window 'technician - Search - Personal 27 - Microsoft​ Edge'
+[23:15:51] [INFO] Search 'blank' (2/5) in window 'blank - Search - Personal 26 - Microsoft​ Edge'
+[23:15:56] [INFO] Search 'credential' (2/5) in window 'credential - Search - Personal 25 - Microsoft​ Edge'
+[23:16:00] [INFO] Search 'choir' (2/5) in window 'choir - Search and 1 more page - Personal - Microsoft​ Edge'
+[23:16:04] [INFO] Search 'hacksaw' (3/5) in window 'hacksaw - Search - Personal 28 - Microsoft​ Edge'
+[23:16:09] [INFO] Search 'reflect' (3/5) in window 'reflect - Search - Personal 27 - Microsoft​ Edge'
+[23:16:13] [INFO] Search 'crayon' (3/5) in window 'crayon - Search - Personal 26 - Microsoft​ Edge'
+[23:16:18] [INFO] Search 'analogue' (3/5) in window 'analogue - Search - Personal 25 - Microsoft​ Edge'
+[23:16:23] [INFO] Search 'perfume' (3/5) in window 'perfume - Search and 1 more page - Personal - Microsoft​ Edge'
+[23:16:28] [INFO] Search 'electrocardiogram' (4/5) in window 'electrocardiogram - Search - Personal 28 - Microsoft​ Edge'
+[23:16:33] [INFO] Search 'ritzy' (4/5) in window 'ritzy - Search - Personal 27 - Microsoft​ Edge'
+[23:16:37] [INFO] Search 'whispering' (4/5) in window 'whispering - Search - Personal 26 - Microsoft​ Edge'
+[23:16:42] [INFO] Search 'overtake' (4/5) in window 'overtake - Search - Personal 25 - Microsoft​ Edge'
+[23:16:46] [INFO] Search 'singing' (4/5) in window 'singing - Search and 1 more page - Personal - Microsoft​ Edge'
+[23:16:50] [INFO] Search 'pest' (5/5) in window 'pest - Search - Personal 28 - Microsoft​ Edge'
+[23:16:54] [INFO] Search 'blight' (5/5) in window 'blight - Search - Personal 27 - Microsoft​ Edge'
+[23:16:59] [INFO] Search 'borrowing' (5/5) in window 'borrowing - Search - Personal 26 - Microsoft​ Edge'
+[23:17:04] [INFO] Search 'newspaper' (5/5) in window 'newspaper - Search - Personal 25 - Microsoft​ Edge'
+[23:17:08] [INFO] Search 'bang' (5/5) in window 'bang - Search and 1 more page - Personal - Microsoft​ Edge'
+[23:17:10] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:17:10] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:17:10] [DEBUG] Headless mode enabled for this Selenium session.
+[23:17:38] [WARN] A timeout occurred while fetching points for Personal 25.
+[23:17:41] [DEBUG] Headless mode enabled for this Selenium session.
+[23:17:48] [ERROR] An error occurred while fetching points for Personal 26: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: Unable to receive message from renderer
+  (Session info: MicrosoftEdge=138.0.3351.109); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ada78c85+23461]
+	(No symbol) [0x0x7ff6ad9ccd70]
+	GetHandleVerifier [0x0x7ff6adcf0bb8+2611928]
+	(No symbol) [0x0x7ff6ad78e342]
+	(No symbol) [0x0x7ff6ad78e0b8]
+	(No symbol) [0x0x7ff6ad78cfdc]
+	(No symbol) [0x0x7ff6ad7aac59]
+	(No symbol) [0x0x7ff6ad82771c]
+	(No symbol) [0x0x7ff6ad80a423]
+	(No symbol) [0x0x7ff6ad7dea86]
+	(No symbol) [0x0x7ff6ad7ddd11]
+	(No symbol) [0x0x7ff6ad7de8b3]
+	(No symbol) [0x0x7ff6ad8de6fd]
+	(No symbol) [0x0x7ff6ad8eba88]
+	GetHandleVerifier [0x0x7ff6adb58acb+940523]
+	GetHandleVerifier [0x0x7ff6adb61821+976705]
+	(No symbol) [0x0x7ff6ad9da961]
+	(No symbol) [0x0x7ff6ad9d3344]
+	(No symbol) [0x0x7ff6ad9d3493]
+	(No symbol) [0x0x7ff6ad9c4f36]
+	BaseThreadInitThunk [0x0x7ff984bfe8d7+23]
+	RtlUserThreadStart [0x0x7ff9866dc5dc+44]
+[23:17:50] [DEBUG] Headless mode enabled for this Selenium session.
+[23:20:16] [DEBUG] Headless mode enabled for this Selenium session.
+[23:20:29] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[23:20:29] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:20:42] [INFO] Search 'campanile' (1/1) in window 'campanile - Search - Personal 27 - Microsoft​ Edge'
+[23:20:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:20:44] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[23:20:44] [DEBUG] Headless mode enabled for this Selenium session.
+[23:20:56] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[23:20:56] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:21:07] [INFO] Search 'snatch' (1/1) in window 'snatch - Search - Personal 27 - Microsoft​ Edge'
+[23:21:09] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:21:09] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[23:21:09] [DEBUG] Headless mode enabled for this Selenium session.
+[23:21:21] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[23:21:21] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:21:34] [INFO] Search 'certification' (1/1) in window 'certification - Search - Personal 27 - Microsoft​ Edge'
+[23:21:36] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:21:36] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[23:21:36] [DEBUG] Headless mode enabled for this Selenium session.
+[23:21:50] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[23:21:50] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:22:02] [INFO] Search 'alteration' (1/1) in window 'alteration - Search - Personal 27 - Microsoft​ Edge'
+[23:22:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:22:04] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[23:22:04] [DEBUG] Headless mode enabled for this Selenium session.
+[23:22:16] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[23:22:16] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:22:28] [INFO] Search 'teaching' (1/1) in window 'teaching - Search - Personal 27 - Microsoft​ Edge'
+[23:22:30] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:22:30] [INFO] Batch 1: Max retries reached.
+[23:22:30] [INFO] Batch 1: Saving final progress to history...
+[23:22:30] [INFO] Processing Batch 2...
+[23:22:30] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:22:45] [INFO] Search 'terrorist' (1/5) in window 'terrorist - Search and 1 more page - Personal 31 - Microsoft​ Edge'
+[23:22:50] [INFO] Search 'sorbet' (1/5) in window 'sorbet - Search and 1 more page - Personal 30 - Microsoft​ Edge'
+[23:22:55] [INFO] Search 'newsletter' (1/5) in window 'bing.com/search?pglt=2339&q=newsletter&cvid=db1949a0397d4d62b35f638b23d675b7&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEC4YQDIGCAcQABhAMgYICBAFGEDSAQgyMjM2ajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 29 - Microsoft​ Edge'
+[23:23:01] [INFO] Search 'hardening' (2/5) in window 'hardening - Search and 1 more page - Personal 31 - Microsoft​ Edge'
+[23:23:05] [INFO] Search 'volatility' (2/5) in window 'volatility - Search and 1 more page - Personal 30 - Microsoft​ Edge'
+[23:23:09] [INFO] Search 'spark' (2/5) in window 'spark - Search - Personal 29 - Microsoft​ Edge'
+[23:23:13] [INFO] Search 'seagull' (3/5) in window 'seagull - Search and 1 more page - Personal 31 - Microsoft​ Edge'
+[23:23:18] [INFO] Search 'gunpowder' (3/5) in window 'gunpowder - Search and 1 more page - Personal 30 - Microsoft​ Edge'
+[23:23:22] [INFO] Search 'tooth' (3/5) in window 'tooth - Search - Personal 29 - Microsoft​ Edge'
+[23:23:26] [INFO] Search 'medicine' (4/5) in window 'medicine - Search and 1 more page - Personal 31 - Microsoft​ Edge'
+[23:23:30] [INFO] Search 'elephant' (4/5) in window 'elephant - Search and 1 more page - Personal 30 - Microsoft​ Edge'
+[23:23:34] [INFO] Search 'vaccine' (4/5) in window 'vaccine - Search - Personal 29 - Microsoft​ Edge'
+[23:23:37] [INFO] Search 'lamb' (5/5) in window 'lamb - Search and 1 more page - Personal 31 - Microsoft​ Edge'
+[23:23:41] [INFO] Search 'carriage' (5/5) in window 'carriage - Search and 1 more page - Personal 30 - Microsoft​ Edge'
+[23:23:46] [INFO] Search 'resource' (5/5) in window 'resource - Search - Personal 29 - Microsoft​ Edge'
+[23:23:49] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:23:49] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[23:23:49] [DEBUG] Headless mode enabled for this Selenium session.
+[23:24:04] [DEBUG] Headless mode enabled for this Selenium session.
+[23:24:16] [DEBUG] Headless mode enabled for this Selenium session.
+[23:24:25] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:24:25] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:24:36] [INFO] Search 'flint' (1/1) in window 'flint - Search - Personal 29 - Microsoft​ Edge'
+[23:24:39] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:24:39] [INFO] Batch 2: Verifying progress (Attempt 2)...
+[23:24:39] [DEBUG] Headless mode enabled for this Selenium session.
+[23:24:50] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:24:50] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:25:00] [INFO] Search 'custom' (1/1) in window 'custom - Search - Personal 29 - Microsoft​ Edge'
+[23:25:02] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:25:02] [INFO] Batch 2: Verifying progress (Attempt 3)...
+[23:25:02] [DEBUG] Headless mode enabled for this Selenium session.
+[23:25:13] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:25:13] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:25:24] [INFO] Search 'slate' (1/1) in window 'slate - Search - Personal 29 - Microsoft​ Edge'
+[23:25:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:25:27] [INFO] Batch 2: Verifying progress (Attempt 4)...
+[23:25:27] [DEBUG] Headless mode enabled for this Selenium session.
+[23:25:38] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:25:38] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:25:50] [INFO] Search 'upbeat' (1/1) in window 'upbeat - Search - Personal 29 - Microsoft​ Edge'
+[23:25:52] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:25:52] [INFO] Batch 2: Verifying progress (Attempt 5)...
+[23:25:52] [DEBUG] Headless mode enabled for this Selenium session.
+[23:26:02] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:26:02] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:26:14] [INFO] Search 'tunnel' (1/1) in window 'tunnel - Search - Personal 29 - Microsoft​ Edge'
+[23:26:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:26:16] [INFO] Batch 2: Max retries reached.
+[23:26:16] [INFO] Batch 2: Saving final progress to history...
+[23:26:16] [INFO] Search Automation Complete!
+[23:26:34] [INFO] Loaded 20 progress records from today's history.
+[23:26:34] [INFO] Smart Search Automation started...
+[23:26:34] [INFO] Processing Batch 1...
+[23:26:34] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:26:46] [INFO] Search 'fedora' (1/5) in window 'fedora - Search - Personal 28 - Microsoft​ Edge'
+[23:26:51] [INFO] Search 'boar' (1/5) in window 'boar - Search - Personal 27 - Microsoft​ Edge'
+[23:26:56] [INFO] Search 'blueberry' (1/5) in window 'blueberry - Search - Personal 26 - Microsoft​ Edge'
+[23:27:00] [INFO] Search 'wallet' (1/5) in window 'wallet - Search - Personal 25 - Microsoft​ Edge'
+[23:27:05] [INFO] Search 'confectionery' (2/5) in window 'confectionery - Search - Personal 28 - Microsoft​ Edge'
+[23:27:09] [INFO] Search 'incense' (2/5) in window 'incense - Search - Personal 27 - Microsoft​ Edge'
+[23:27:12] [INFO] Search 'fry' (2/5) in window 'fry - Search - Personal 26 - Microsoft​ Edge'
+[23:27:18] [INFO] Search 'organisation' (2/5) in window 'organisation - Search - Personal 25 - Microsoft​ Edge'
+[23:27:22] [INFO] Search 'crewman' (3/5) in window 'crewman - Search - Personal 28 - Microsoft​ Edge'
+[23:27:27] [INFO] Search 'paradise' (3/5) in window 'paradise - Search - Personal 27 - Microsoft​ Edge'
+[23:27:31] [INFO] Search 'mortal' (3/5) in window 'mortal - Search - Personal 26 - Microsoft​ Edge'
+[23:27:35] [INFO] Search 'tailbud' (3/5) in window 'tailbud - Search - Personal 25 - Microsoft​ Edge'
+[23:27:39] [INFO] Search 'riot' (4/5) in window 'riot - Search - Personal 28 - Microsoft​ Edge'
+[23:27:43] [INFO] Search 'platypus' (4/5) in window 'platypus - Search - Personal 27 - Microsoft​ Edge'
+[23:27:47] [INFO] Search 'gentleman' (4/5) in window 'gentleman - Search - Personal 26 - Microsoft​ Edge'
+[23:27:53] [INFO] Search 'establishment' (4/5) in window 'establishment - Search - Personal 25 - Microsoft​ Edge'
+[23:27:56] [INFO] Search 'slave' (5/5) in window 'slave - Search - Personal 28 - Microsoft​ Edge'
+[23:28:00] [INFO] Search 'stot' (5/5) in window 'stot - Search - Personal 27 - Microsoft​ Edge'
+[23:28:04] [INFO] Search 'early' (5/5) in window 'early - Search - Personal 26 - Microsoft​ Edge'
+[23:28:09] [INFO] Search 'cannon' (5/5) in window 'cannon - Search - Personal 25 - Microsoft​ Edge'
+[23:28:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:28:11] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:28:12] [DEBUG] Headless mode enabled for this Selenium session.
+[23:28:36] [WARN] A timeout occurred while fetching points for Personal 25.
+[23:28:39] [DEBUG] Headless mode enabled for this Selenium session.
+[23:28:51] [DEBUG] Headless mode enabled for this Selenium session.
+[23:29:00] [DEBUG] Headless mode enabled for this Selenium session.
+[23:29:09] [INFO] Batch 1: 2 profiles need more points. Retrying with 1 searches...
+[23:29:09] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:29:21] [INFO] Search 'axis' (1/1) in window 'axis - Search - Personal 27 - Microsoft​ Edge'
+[23:29:29] [INFO] Search 'different' (1/1) in window 'different - Search - Personal 26 - Microsoft​ Edge'
+[23:29:31] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:29:31] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[23:29:31] [DEBUG] Headless mode enabled for this Selenium session.
+[23:29:42] [DEBUG] Headless mode enabled for this Selenium session.
+[23:29:52] [INFO] Batch 1: 2 profiles need more points. Retrying with 1 searches...
+[23:29:52] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:30:03] [INFO] Search 'parsley' (1/1) in window 'parsley - Search - Personal 27 - Microsoft​ Edge'
+[23:30:09] [INFO] Search 'trend' (1/1) in window 'trend - Search - Personal 26 - Microsoft​ Edge'
+[23:30:11] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:30:11] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[23:30:11] [DEBUG] Headless mode enabled for this Selenium session.
+[23:30:22] [DEBUG] Headless mode enabled for this Selenium session.
+[23:30:56] [INFO] Batch 1: 2 profiles need more points. Retrying with 1 searches...
+[23:30:56] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:31:08] [INFO] Search 'cradle' (1/1) in window 'cradle - Search - Personal 27 - Microsoft​ Edge'
+[23:31:15] [INFO] Search 'thread' (1/1) in window 'threads - Search - Personal 26 - Microsoft​ Edge'
+[23:31:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:31:17] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[23:31:17] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:26] [DEBUG] Headless mode enabled for this Selenium session.
+[23:31:35] [INFO] Batch 1: 2 profiles need more points. Retrying with 1 searches...
+[23:31:35] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:31:49] [INFO] Search 'sausage' (1/1) in window 'sausage - Search - Personal 27 - Microsoft​ Edge'
+[23:31:56] [INFO] Search 'change' (1/1) in window 'change - Search - Personal 26 - Microsoft​ Edge'
+[23:31:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:31:58] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[23:31:58] [DEBUG] Headless mode enabled for this Selenium session.
+[23:32:08] [DEBUG] Headless mode enabled for this Selenium session.
+[23:32:23] [INFO] Batch 1: 2 profiles need more points. Retrying with 1 searches...
+[23:32:23] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:32:35] [INFO] Search 'motivate' (1/1) in window 'motivate - Search - Personal 27 - Microsoft​ Edge'
+[23:32:42] [INFO] Search 'fondue' (1/1) in window 'fondue - Search - Personal 26 - Microsoft​ Edge'
+[23:32:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:32:44] [INFO] Batch 1: Max retries reached.
+[23:32:44] [INFO] Batch 1: Saving final progress to history...
+[23:32:44] [INFO] Processing Batch 2...
+[23:32:44] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:32:54] [INFO] Search 'margarine' (1/5) in window 'margarine - Search - Personal 31 - Microsoft​ Edge'
+[23:32:58] [INFO] Search 'slit' (1/5) in window 'bing.com/search?pglt=2339&q=slit&cvid=9ca09fd44d314705b8d888c3eb52eac2&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBBzc1MmowajGoAgiwAgE&FORM=ANSPA1&PC=ASTS - Personal 30 - Microsoft​ Edge'
+[23:33:03] [INFO] Search 'tenement' (1/5) in window 'tenement - Search - Personal 29 - Microsoft​ Edge'
+[23:33:07] [INFO] Search 'sauce' (2/5) in window 'sauce - Search - Personal 31 - Microsoft​ Edge'
+[23:33:12] [INFO] Search 'garbage' (2/5) in window 'garbage - Search - Personal 30 - Microsoft​ Edge'
+[23:33:15] [INFO] Search 'finer' (2/5) in window 'finer - Search - Personal 29 - Microsoft​ Edge'
+[23:33:19] [INFO] Search 'tensor' (3/5) in window 'tensor - Search - Personal 31 - Microsoft​ Edge'
+[23:33:25] [INFO] Search 'configuration' (3/5) in window 'configuration - Search - Personal 30 - Microsoft​ Edge'
+[23:33:29] [INFO] Search 'switch' (3/5) in window 'switch - Search - Personal 29 - Microsoft​ Edge'
+[23:33:34] [INFO] Search 'formulate' (4/5) in window 'formulate - Search - Personal 31 - Microsoft​ Edge'
+[23:33:39] [INFO] Search 'plaintiff' (4/5) in window 'plaintiff - Search - Personal 30 - Microsoft​ Edge'
+[23:33:44] [INFO] Search 'linseed' (4/5) in window 'linseed - Search - Personal 29 - Microsoft​ Edge'
+[23:33:47] [INFO] Search 'murky' (5/5) in window 'murky - Search - Personal 31 - Microsoft​ Edge'
+[23:33:51] [INFO] Search 'crow' (5/5) in window 'crow - Search - Personal 30 - Microsoft​ Edge'
+[23:33:55] [INFO] Search 'crayon' (5/5) in window 'crayon - Search - Personal 29 - Microsoft​ Edge'
+[23:33:58] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:33:58] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[23:33:58] [DEBUG] Headless mode enabled for this Selenium session.
+[23:34:10] [DEBUG] Headless mode enabled for this Selenium session.
+[23:34:20] [DEBUG] Headless mode enabled for this Selenium session.
+[23:34:31] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:34:31] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:34:43] [INFO] Search 'moccasins' (1/1) in window 'moccasins - Search - Personal 29 - Microsoft​ Edge'
+[23:34:45] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:34:45] [INFO] Batch 2: Verifying progress (Attempt 2)...
+[23:34:45] [DEBUG] Headless mode enabled for this Selenium session.
+[23:35:03] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:35:03] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:35:14] [INFO] Search 'weary' (1/1) in window 'weary - Search - Personal 29 - Microsoft​ Edge'
+[23:35:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:35:17] [INFO] Batch 2: Verifying progress (Attempt 3)...
+[23:35:17] [DEBUG] Headless mode enabled for this Selenium session.
+[23:35:38] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:35:38] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:35:48] [INFO] Search 'pen' (1/1) in window 'pen - Search - Personal 29 - Microsoft​ Edge'
+[23:35:51] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:35:51] [INFO] Batch 2: Verifying progress (Attempt 4)...
+[23:35:51] [DEBUG] Headless mode enabled for this Selenium session.
+[23:36:03] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:36:03] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:36:14] [INFO] Search 'mighty' (1/1) in window 'mighty - Search - Personal 29 - Microsoft​ Edge'
+[23:36:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:36:16] [INFO] Batch 2: Verifying progress (Attempt 5)...
+[23:36:16] [DEBUG] Headless mode enabled for this Selenium session.
+[23:36:42] [INFO] Batch 2: 1 profiles need more points. Retrying with 1 searches...
+[23:36:42] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[23:36:54] [INFO] Search 'platform' (1/1) in window 'platform - Search - Personal 29 - Microsoft​ Edge'
+[23:36:56] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:36:56] [INFO] Batch 2: Max retries reached.
+[23:36:56] [INFO] Batch 2: Saving final progress to history...
+[23:36:56] [INFO] Search Automation Complete!
+[23:37:10] [INFO] Range 21-24 selected.
+[23:37:11] [INFO] Loaded 21 progress records from today's history.
+[23:37:11] [INFO] Smart Search Automation started...
+[23:37:11] [INFO] Processing Batch 1...
+[23:37:11] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:37:23] [INFO] Search 'novel' (1/5) in window 'New tab - Personal 23 - Microsoft​ Edge'
+[23:37:29] [INFO] Search 'police' (1/5) in window 'police - Search - Personal 22 - Microsoft​ Edge'
+[23:37:34] [INFO] Search 'pencil' (1/5) in window 'pencil - Search - Personal 21 - Microsoft​ Edge'
+[23:37:40] [INFO] Search 'prepare' (2/5) in window 'bing.com/search?pglt=299&q=prepare&cvid=88869a41127f47d6b7636843379b76e7&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAuGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQgyNDY3ajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 23 - Microsoft​ Edge'
+[23:37:44] [INFO] Search 'panicky' (2/5) in window 'panicky - Search - Personal 22 - Microsoft​ Edge'
+[23:37:50] [INFO] Search 'prescribe' (2/5) in window 'prescribe - Search - Personal 21 - Microsoft​ Edge'
+[23:37:54] [INFO] Search 'cinnamon' (3/5) in window 'cinnamon - Search - Personal 23 - Microsoft​ Edge'
+[23:37:59] [INFO] Search 'gathering' (3/5) in window 'gathering - Search - Personal 22 - Microsoft​ Edge'
+[23:38:04] [INFO] Search 'fresh' (3/5) in window 'fresh - Search - Personal 21 - Microsoft​ Edge'
+[23:38:08] [INFO] Search 'citizen' (4/5) in window 'citizen - Search - Personal 23 - Microsoft​ Edge'
+[23:38:12] [INFO] Search 'descent' (4/5) in window 'descent - Search - Personal 22 - Microsoft​ Edge'
+[23:38:16] [INFO] Search 'rifle' (4/5) in window 'rifle - Search - Personal 21 - Microsoft​ Edge'
+[23:38:20] [INFO] Search 'secret' (5/5) in window 'secret - Search - Personal 23 - Microsoft​ Edge'
+[23:38:25] [INFO] Search 'quickest' (5/5) in window 'quickest - Search - Personal 22 - Microsoft​ Edge'
+[23:38:29] [INFO] Search 'noise' (5/5) in window 'noise - Search - Personal 21 - Microsoft​ Edge'
+[23:38:31] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:38:31] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:38:31] [DEBUG] Headless mode enabled for this Selenium session.
+[23:38:56] [DEBUG] Headless mode enabled for this Selenium session.
+[23:39:21] [WARN] A timeout occurred while fetching points for Personal 22.
+[23:39:24] [DEBUG] Headless mode enabled for this Selenium session.
+[23:39:29] [INFO] Profile Personal 22 set to 'suspended'.
+[23:39:29] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[23:39:36] [DEBUG] Headless mode enabled for this Selenium session.
+[23:39:57] [INFO] Batch 1: 3 profiles need more points. Retrying with 20 searches...
+[23:39:57] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:40:10] [INFO] Search 'correlate' (1/20) in window 'correlate - Search - Personal 24 - Microsoft​ Edge'
+[23:40:16] [INFO] Search 'professional' (1/20) in window 'professional - Search - Personal 23 - Microsoft​ Edge'
+[23:40:20] [INFO] Search 'firm' (1/20) in window 'firm - Search - Personal 21 - Microsoft​ Edge'
+[23:40:24] [INFO] Search 'shirt' (2/20) in window 'correlate - Search - Personal 24 - Microsoft​ Edge'
+[23:40:28] [INFO] Search 'flax' (2/20) in window 'flax - Search - Personal 23 - Microsoft​ Edge'
+[23:40:33] [INFO] Search 'slapstick' (2/20) in window 'slapstick - Search - Personal 21 - Microsoft​ Edge'
+[23:40:37] [INFO] Search 'rheumatism' (3/20) in window 'rheumatism - Search - Personal 24 - Microsoft​ Edge'
+[23:40:41] [INFO] Search 'sidecar' (3/20) in window 'sidecar - Search - Personal 23 - Microsoft​ Edge'
+[23:40:45] [INFO] Search 'boatload' (3/20) in window 'boatload - Search - Personal 21 - Microsoft​ Edge'
+[23:40:50] [INFO] Search 'tested' (4/20) in window 'tested - Search - Personal 24 - Microsoft​ Edge'
+[23:40:55] [INFO] Search 'counselor' (4/20) in window 'counselor - Search - Personal 23 - Microsoft​ Edge'
+[23:40:59] [INFO] Search 'tote' (4/20) in window 'tote - Search - Personal 21 - Microsoft​ Edge'
+[23:41:03] [INFO] Search 'pill' (5/20) in window 'pill - Search - Personal 24 - Microsoft​ Edge'
+[23:41:07] [INFO] Search 'creature' (5/20) in window 'creature - Search - Personal 23 - Microsoft​ Edge'
+[23:41:12] [INFO] Search 'baggage' (5/20) in window 'baggage - Search - Personal 21 - Microsoft​ Edge'
+[23:41:16] [INFO] Search 'gunpowder' (6/20) in window 'gunpowder - Search - Personal 24 - Microsoft​ Edge'
+[23:41:20] [INFO] Search 'reward' (6/20) in window 'Microsoft Rewards redemption catalog - Personal 23 - Microsoft​ Edge'
+[23:41:25] [INFO] Search 'conductor' (6/20) in window 'conductor - Search - Personal 21 - Microsoft​ Edge'
+[23:41:31] [INFO] Search 'simvastatin' (7/20) in window 'simvastatin - Search - Personal 24 - Microsoft​ Edge'
+[23:41:35] [INFO] Search 'foregoing' (7/20) in window 'foregoing - Search - Personal 23 - Microsoft​ Edge'
+[23:41:40] [INFO] Search 'severity' (7/20) in window 'severity - Search - Personal 21 - Microsoft​ Edge'
+[23:41:43] [INFO] Search 'woozy' (8/20) in window 'woozy - Search - Personal 24 - Microsoft​ Edge'
+[23:41:48] [INFO] Search 'tunnel' (8/20) in window 'tunnel - Search - Personal 23 - Microsoft​ Edge'
+[23:41:51] [INFO] Search 'info' (8/20) in window 'info - Search - Personal 21 - Microsoft​ Edge'
+[23:41:56] [INFO] Search 'judicious' (9/20) in window 'judicious - Search - Personal 24 - Microsoft​ Edge'
+[23:42:00] [INFO] Search 'sublet' (9/20) in window 'sublet - Search - Personal 23 - Microsoft​ Edge'
+[23:42:04] [INFO] Search 'jewelry' (9/20) in window 'jewelry - Search - Personal 21 - Microsoft​ Edge'
+[23:42:09] [INFO] Search 'music-box' (10/20) in window 'music-box - Search - Personal 24 - Microsoft​ Edge'
+[23:42:13] [INFO] Search 'buggy' (10/20) in window 'buggy - Search - Personal 23 - Microsoft​ Edge'
+[23:42:18] [INFO] Search 'gall-bladder' (10/20) in window 'gall-bladder - Search - Personal 21 - Microsoft​ Edge'
+[23:42:23] [INFO] Search 'expression' (11/20) in window 'expression - Search - Personal 24 - Microsoft​ Edge'
+[23:42:28] [INFO] Search 'chicory' (11/20) in window 'chicory - Search - Personal 23 - Microsoft​ Edge'
+[23:42:32] [INFO] Search 'bonus' (11/20) in window 'bonus - Search - Personal 21 - Microsoft​ Edge'
+[23:42:36] [INFO] Search 'eponym' (12/20) in window 'eponym - Search - Personal 24 - Microsoft​ Edge'
+[23:42:42] [INFO] Search 'depressed' (12/20) in window 'depressed - Search - Personal 23 - Microsoft​ Edge'
+[23:42:45] [INFO] Search 'appeal' (12/20) in window 'appeal - Search - Personal 21 - Microsoft​ Edge'
+[23:42:50] [INFO] Search 'controversy' (13/20) in window 'controversy - Search - Personal 24 - Microsoft​ Edge'
+[23:42:55] [INFO] Search 'maddening' (13/20) in window 'maddening - Search - Personal 23 - Microsoft​ Edge'
+[23:42:59] [INFO] Search 'pork' (13/20) in window 'pork - Search - Personal 21 - Microsoft​ Edge'
+[23:43:03] [INFO] Search 'attempt' (14/20) in window 'attempt - Search - Personal 24 - Microsoft​ Edge'
+[23:43:07] [INFO] Search 'cape' (14/20) in window 'cape - Search - Personal 23 - Microsoft​ Edge'
+[23:43:11] [INFO] Search 'spouse' (14/20) in window 'spouse - Search - Personal 21 - Microsoft​ Edge'
+[23:43:14] [INFO] Search 'loan' (15/20) in window 'loan - Search - Personal 24 - Microsoft​ Edge'
+[23:43:18] [INFO] Search 'call' (15/20) in window 'call - Search - Personal 23 - Microsoft​ Edge'
+[23:43:23] [INFO] Search 'boundless' (15/20) in window 'boundless - Search - Personal 21 - Microsoft​ Edge'
+[23:43:28] [INFO] Search 'immigrant' (16/20) in window 'immigrant - Search - Personal 24 - Microsoft​ Edge'
+[23:43:31] [INFO] Search 'rations' (16/20) in window 'rations - Search - Personal 23 - Microsoft​ Edge'
+[23:43:37] [INFO] Search 'recommendation' (16/20) in window 'recommendation - Search - Personal 21 - Microsoft​ Edge'
+[23:43:40] [INFO] Search 'vest' (17/20) in window 'vest - Search - Personal 24 - Microsoft​ Edge'
+[23:43:44] [INFO] Search 'warden' (17/20) in window 'warden - Search - Personal 23 - Microsoft​ Edge'
+[23:43:48] [INFO] Search 'dial' (17/20) in window 'dial - Search - Personal 21 - Microsoft​ Edge'
+[23:43:52] [INFO] Search 'tonality' (18/20) in window 'tonality - Search - Personal 24 - Microsoft​ Edge'
+[23:43:58] [INFO] Search 'subcomponent' (18/20) in window 'subcomponent - Search - Personal 23 - Microsoft​ Edge'
+[23:44:01] [INFO] Search 'awake' (18/20) in window 'awake - Search - Personal 21 - Microsoft​ Edge'
+[23:44:05] [INFO] Search 'tilt' (19/20) in window 'tilt - Search - Personal 24 - Microsoft​ Edge'
+[23:44:09] [INFO] Search 'direct' (19/20) in window 'direct - Search - Personal 23 - Microsoft​ Edge'
+[23:44:13] [INFO] Search 'atmosphere' (19/20) in window 'atmosphere - Search - Personal 21 - Microsoft​ Edge'
+[23:44:18] [INFO] Search 'tradition' (20/20) in window 'tradition - Search - Personal 24 - Microsoft​ Edge'
+[23:44:23] [INFO] Search 'undesirable' (20/20) in window 'undesirable - Search - Personal 23 - Microsoft​ Edge'
+[23:44:26] [INFO] Search 'foot' (20/20) in window 'foot - Search - Personal 21 - Microsoft​ Edge'
+[23:44:29] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:44:29] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[23:44:29] [DEBUG] Headless mode enabled for this Selenium session.
+[23:44:46] [DEBUG] Headless mode enabled for this Selenium session.
+[23:44:58] [DEBUG] Headless mode enabled for this Selenium session.
+[23:45:16] [INFO] Batch 1: 3 profiles need more points. Retrying with 16 searches...
+[23:45:16] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:45:21] [INFO] Stop signal sent. Finishing current action...
+[23:45:24] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:45:24] [INFO] Search Automation Stopped by User.
+[23:45:44] [INFO] Manually opening points breakdown for Personal 22
+[23:45:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:46:22] [INFO] Manually opening points breakdown for Personal 25
+[23:46:22] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:46:43] [INFO] Profile Personal 25 set to 'suspended'.
+[23:46:43] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[23:46:53] [INFO] Range 17-20 selected.
+[23:46:58] [INFO] Loaded 21 progress records from today's history.
+[23:46:58] [INFO] Smart Search Automation started...
+[23:46:58] [INFO] Processing Batch 1...
+[23:46:58] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:47:09] [INFO] Search 'executor' (1/5) in window 'executor - Search - Personal 20 - Microsoft​ Edge'
+[23:47:13] [INFO] Search 'gavel' (1/5) in window 'New tab - Personal 19 - Microsoft​ Edge'
+[23:47:19] [INFO] Search 'backbone' (1/5) in window 'backbone - Search - Personal 17 - Microsoft​ Edge'
+[23:47:23] [INFO] Search 'horror' (2/5) in window 'horror - Search - Personal 20 - Microsoft​ Edge'
+[23:47:27] [INFO] Search 'diplomacy' (2/5) in window 'diplomacy - Search - Personal 19 - Microsoft​ Edge'
+[23:47:32] [INFO] Search 'diver' (2/5) in window 'diver - Search - Personal 17 - Microsoft​ Edge'
+[23:47:37] [INFO] Search 'restoration' (3/5) in window 'restoration - Search - Personal 20 - Microsoft​ Edge'
+[23:47:41] [INFO] Search 'snatch' (3/5) in window 'snatch - Search - Personal 19 - Microsoft​ Edge'
+[23:47:46] [INFO] Search 'nation' (3/5) in window 'nation - Search - Personal 17 - Microsoft​ Edge'
+[23:47:50] [INFO] Search 'squeak' (4/5) in window 'squeak - Search - Personal 20 - Microsoft​ Edge'
+[23:47:54] [INFO] Search 'degradation' (4/5) in window 'degradation - Search - Personal 19 - Microsoft​ Edge'
+[23:47:57] [INFO] Search 'dune' (4/5) in window 'dune - Search - Personal 17 - Microsoft​ Edge'
+[23:48:02] [INFO] Search 'grenade' (5/5) in window 'grenade - Search - Personal 20 - Microsoft​ Edge'
+[23:48:07] [INFO] Search 'trophy' (5/5) in window 'trophy - Search - Personal 19 - Microsoft​ Edge'
+[23:48:11] [INFO] Search 'swivel' (5/5) in window 'swivel - Search - Personal 17 - Microsoft​ Edge'
+[23:48:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:48:13] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:48:13] [DEBUG] Headless mode enabled for this Selenium session.
+[23:48:31] [DEBUG] Headless mode enabled for this Selenium session.
+[23:49:58] [DEBUG] Headless mode enabled for this Selenium session.
+[23:50:18] [INFO] Batch 1: 3 profiles need more points. Retrying with 6 searches...
+[23:50:18] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:50:32] [INFO] Search 'anterior' (1/6) in window 'anterior - Search - Personal 20 - Microsoft​ Edge'
+[23:50:36] [INFO] Search 'seaplane' (1/6) in window 'seaplane - Search - Personal 19 - Microsoft​ Edge'
+[23:50:40] [INFO] Search 'weary' (1/6) in window 'New tab - Personal 17 - Microsoft​ Edge'
+[23:50:44] [INFO] Search 'pea' (2/6) in window 'pea - Search - Personal 20 - Microsoft​ Edge'
+[23:50:48] [INFO] Search 'vixen' (2/6) in window 'vixen - Search - Personal 19 - Microsoft​ Edge'
+[23:50:52] [INFO] Search 'fight' (2/6) in window 'fight - Search - Personal 17 - Microsoft​ Edge'
+[23:50:56] [INFO] Search 'liability' (3/6) in window 'liability - Search - Personal 20 - Microsoft​ Edge'
+[23:51:00] [INFO] Search 'maiden' (3/6) in window 'maiden - Search - Personal 19 - Microsoft​ Edge'
+[23:51:04] [INFO] Search 'rope' (3/6) in window 'rope - Search - Personal 17 - Microsoft​ Edge'
+[23:51:08] [INFO] Search 'forager' (4/6) in window 'forager - Search - Personal 20 - Microsoft​ Edge'
+[23:51:11] [INFO] Search 'user' (4/6) in window 'user - Search - Personal 19 - Microsoft​ Edge'
+[23:51:15] [INFO] Search 'age' (4/6) in window 'rope - Search - Personal 17 - Microsoft​ Edge'
+[23:51:20] [INFO] Search 'pitching' (5/6) in window 'pitching - Search - Personal 20 - Microsoft​ Edge'
+[23:51:23] [INFO] Search 'ketch' (5/6) in window 'ketch - Search - Personal 19 - Microsoft​ Edge'
+[23:51:27] [INFO] Search 'knife' (5/6) in window 'knife - Search - Personal 17 - Microsoft​ Edge'
+[23:51:31] [INFO] Search 'chainstay' (6/6) in window 'chainstay - Search - Personal 20 - Microsoft​ Edge'
+[23:51:36] [INFO] Search 'intuition' (6/6) in window 'intuition - Search - Personal 19 - Microsoft​ Edge'
+[23:51:41] [INFO] Search 'innocent' (6/6) in window 'innocent - Search - Personal 17 - Microsoft​ Edge'
+[23:51:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:51:43] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[23:51:43] [DEBUG] Headless mode enabled for this Selenium session.
+[23:51:56] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:11] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:28] [INFO] Batch 1: 3 profiles need more points. Retrying with 6 searches...
+[23:52:28] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[23:52:40] [INFO] Search 'validity' (1/6) in window 'validity - Search - Personal 19 - Microsoft​ Edge'
+[23:52:46] [INFO] Search 'resemblance' (1/6) in window 'resemblance - Search - Personal 20 - Microsoft​ Edge'
+[23:52:50] [INFO] Search 'electricity' (1/6) in window 'electricity - Search - Personal 17 - Microsoft​ Edge'
+[23:52:54] [INFO] Search 'horn' (2/6) in window 'horn - Search - Personal 19 - Microsoft​ Edge'
+[23:52:58] [INFO] Search 'dramatic' (2/6) in window 'dramatic - Search - Personal 20 - Microsoft​ Edge'
+[23:53:02] [INFO] Search 'query' (2/6) in window 'query - Search - Personal 17 - Microsoft​ Edge'
+[23:53:06] [INFO] Search 'softball' (3/6) in window 'softball - Search - Personal 19 - Microsoft​ Edge'
+[23:53:11] [INFO] Search 'reorganize' (3/6) in window 'reorganize - Search - Personal 20 - Microsoft​ Edge'
+[23:53:15] [INFO] Search 'wealth' (3/6) in window 'wealth - Search - Personal 17 - Microsoft​ Edge'
+[23:53:19] [INFO] Search 'contour' (4/6) in window 'contour - Search - Personal 19 - Microsoft​ Edge'
+[23:53:24] [INFO] Search 'ecosystem' (4/6) in window 'ecosystem - Search - Personal 20 - Microsoft​ Edge'
+[23:53:29] [INFO] Search 'temptation' (4/6) in window 'temptation - Search - Personal 17 - Microsoft​ Edge'
+[23:53:33] [INFO] Search 'doubt' (5/6) in window 'doubt - Search - Personal 19 - Microsoft​ Edge'
+[23:53:37] [INFO] Search 'warm-up' (5/6) in window 'warm-up - Search - Personal 20 - Microsoft​ Edge'
+[23:53:41] [INFO] Search 'chard' (5/6) in window 'chard - Search - Personal 17 - Microsoft​ Edge'
+[23:53:45] [INFO] Search 'disposal' (6/6) in window 'disposal - Search - Personal 19 - Microsoft​ Edge'
+[23:53:48] [INFO] Search 'round' (6/6) in window 'warm-up - Search - Personal 20 - Microsoft​ Edge'
+[23:53:54] [INFO] Search 'randomization' (6/6) in window 'randomization - Search - Personal 17 - Microsoft​ Edge'
+[23:53:56] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:53:56] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[23:53:56] [DEBUG] Headless mode enabled for this Selenium session.
+[23:54:32] [DEBUG] Headless mode enabled for this Selenium session.
+[23:54:42] [INFO] Stop signal sent. Finishing current action...
+[23:54:46] [INFO] Range 13-16 selected.
+[23:54:57] [INFO] Batch 1: 2 profiles need more points. Retrying with 6 searches...
+[23:54:58] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[23:54:58] [INFO] Search Automation Stopped by User.
+[23:55:00] [INFO] Loaded 21 progress records from today's history.
+[23:55:00] [INFO] Smart Search Automation started...
+[23:55:00] [INFO] Processing Batch 1...
+[23:55:00] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:55:13] [INFO] Search 'obeisant' (1/5) in window 'New tab - Personal 16 - Microsoft​ Edge'
+[23:55:17] [INFO] Search 'time' (1/5) in window 'time - Search - Personal 14 - Microsoft​ Edge'
+[23:55:22] [INFO] Search 'karate' (1/5) in window 'New tab - Personal 15 - Microsoft​ Edge'
+[23:55:27] [INFO] Search 'trailpatrol' (1/5) in window 'trailpatrol - Search - Personal 13 - Microsoft​ Edge'
+[23:55:31] [INFO] Search 'airbus' (2/5) in window 'airbus - Search - Personal 16 - Microsoft​ Edge'
+[23:55:36] [INFO] Search 'elderberry' (2/5) in window 'elderberry - Search - Personal 14 - Microsoft​ Edge'
+[23:55:40] [INFO] Search 'response' (2/5) in window 'response - Search - Personal 15 - Microsoft​ Edge'
+[23:55:45] [INFO] Search 'adorable' (2/5) in window 'adorable - Search - Personal 13 - Microsoft​ Edge'
+[23:55:49] [INFO] Search 'museum' (3/5) in window 'museum - Search - Personal 16 - Microsoft​ Edge'
+[23:55:53] [INFO] Search 'bay' (3/5) in window 'bay - Search - Personal 14 - Microsoft​ Edge'
+[23:55:59] [INFO] Search 'pumpkinseed' (3/5) in window 'pumpkinseed - Search - Personal 15 - Microsoft​ Edge'
+[23:56:03] [INFO] Search 'achiever' (3/5) in window 'achiever - Search - Personal 13 - Microsoft​ Edge'
+[23:56:07] [INFO] Search 'warning' (4/5) in window 'warning - Search - Personal 16 - Microsoft​ Edge'
+[23:56:11] [INFO] Search 'apple' (4/5) in window 'apple - Search - Personal 14 - Microsoft​ Edge'
+[23:56:15] [INFO] Search 'grass' (4/5) in window 'grass - Search - Personal 15 - Microsoft​ Edge'
+[23:56:19] [INFO] Search 'lively' (4/5) in window 'lively - Search - Personal 13 - Microsoft​ Edge'
+[23:56:24] [INFO] Search 'vermicelli' (5/5) in window 'vermicelli - Search - Personal 16 - Microsoft​ Edge'
+[23:56:28] [INFO] Search 'faulty' (5/5) in window 'faulty - Search - Personal 14 - Microsoft​ Edge'
+[23:56:32] [INFO] Search 'commission' (5/5) in window 'commission - Search - Personal 15 - Microsoft​ Edge'
+[23:56:36] [INFO] Search 'hound' (5/5) in window 'hound - Search - Personal 13 - Microsoft​ Edge'
+[23:56:38] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:56:38] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[23:56:38] [DEBUG] Headless mode enabled for this Selenium session.
+[23:56:56] [DEBUG] Headless mode enabled for this Selenium session.
+[23:57:18] [DEBUG] Headless mode enabled for this Selenium session.
+[23:57:33] [DEBUG] Headless mode enabled for this Selenium session.
+[23:57:49] [INFO] Batch 1: 4 profiles need more points. Retrying with 12 searches...
+[23:57:49] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[23:58:00] [INFO] Search 'adobe' (1/12) in window 'adobe - Search - Personal 16 - Microsoft​ Edge'
+[23:58:06] [INFO] Search 'stretch' (1/12) in window 'stretch - Search - Personal 15 - Microsoft​ Edge'
+[23:58:08] [INFO] Stop signal sent. Finishing current action...
+[23:58:10] [INFO] Search 'ethnicity' (1/12) in window 'New tab - Personal 14 - Microsoft​ Edge'
+[23:58:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:58:13] [INFO] Search Automation Stopped by User.
+[23:58:40] [INFO] Manually opening points breakdown for Personal 8
+[23:58:40] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:58:57] [INFO] Manually opening points breakdown for Personal 9
+[23:58:57] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:59:14] [INFO] Profile Personal 9 set to 'active'.
+[23:59:14] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[23:59:41] [INFO] Manually opening points breakdown for Personal 13
+[23:59:41] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[00:03:04] [INFO] Manually opening points breakdown for Personal 14
+[00:03:04] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-30 22:15:34 ---
+[22:15:34] [INFO] Application starting up.
+[22:15:34] [INFO] Loading profiles from data.json.
+[22:15:34] [INFO] Successfully loaded 31 profiles.
+
+--- Log Session Started: 2025-07-30 22:16:57 ---
+[22:16:57] [INFO] Application starting up.
+[22:16:57] [INFO] Loading profiles from data.json.
+[22:16:57] [INFO] Successfully loaded 31 profiles.
+[22:17:08] [INFO] Loaded 0 progress records from today's history.
+[22:17:16] [INFO] Fetching all points...
+[22:17:16] [INFO] Loaded 0 progress records from today's history.
+[22:17:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:17:17] [DEBUG] Headless mode enabled for this Selenium session.
+[22:17:32] [DEBUG] Headless mode enabled for this Selenium session.
+[22:17:44] [DEBUG] Headless mode enabled for this Selenium session.
+[22:17:55] [DEBUG] Headless mode enabled for this Selenium session.
+[22:18:06] [DEBUG] Headless mode enabled for this Selenium session.
+[22:18:21] [DEBUG] Headless mode enabled for this Selenium session.
+[22:18:33] [DEBUG] Headless mode enabled for this Selenium session.
+[22:18:44] [DEBUG] Headless mode enabled for this Selenium session.
+[22:18:55] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:06] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:17] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:33] [DEBUG] Headless mode enabled for this Selenium session.
+[22:19:45] [DEBUG] Headless mode enabled for this Selenium session.
+[22:20:01] [DEBUG] Headless mode enabled for this Selenium session.
+[22:20:14] [DEBUG] Headless mode enabled for this Selenium session.
+[22:20:25] [DEBUG] Headless mode enabled for this Selenium session.
+[22:20:35] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[22:20:36] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-30 22:22:50 ---
+[22:22:50] [INFO] Application starting up.
+[22:22:50] [INFO] Loading profiles from data.json.
+[22:22:50] [INFO] Successfully loaded 31 profiles.
+[22:22:51] [INFO] Loaded 15 progress records from today's history.
+[22:22:57] [INFO] Detecting profiles...
+[22:22:57] [INFO] Successfully saved 30 profiles to data.json
+[22:22:57] [INFO] Profiles saved. Restarting application...
+[22:22:57] [INFO] Restarting application via C:\Users\ssahu\OneDrive\Desktop\bing.bat...
+
+--- Log Session Started: 2025-07-30 22:22:59 ---
+[22:22:59] [INFO] Application starting up.
+[22:22:59] [INFO] Loading profiles from data.json.
+[22:22:59] [INFO] Successfully loaded 30 profiles.
+[22:23:01] [INFO] Loaded 15 progress records from today's history.
+[22:23:30] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[22:23:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-31 02:13:47 ---
+[02:13:47] [INFO] Application starting up.
+[02:13:47] [INFO] Loading profiles from data.json.
+[02:13:47] [INFO] Successfully loaded 30 profiles.
+[02:13:49] [INFO] Loaded 0 progress records from today's history.
+[02:13:54] [INFO] Fetching all points...
+[02:13:54] [INFO] Loaded 0 progress records from today's history.
+[02:13:54] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:13:55] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:11] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:21] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:37] [DEBUG] Headless mode enabled for this Selenium session.
+[02:14:55] [DEBUG] Headless mode enabled for this Selenium session.
+[02:15:22] [DEBUG] Headless mode enabled for this Selenium session.
+[02:15:25] [INFO] Stop signal sent. Finishing current action...
+[02:15:47] [INFO] Points fetching stopped by user.
+
+--- Log Session Started: 2025-07-31 02:24:29 ---
+[02:24:29] [INFO] Application starting up.
+[02:24:29] [INFO] Loading profiles from data.json.
+[02:24:29] [INFO] Successfully loaded 30 profiles.
+[02:24:31] [INFO] Loaded 6 progress records from today's history.
+[02:24:36] [INFO] Fetching all points...
+[02:24:36] [INFO] Loaded 6 progress records from today's history.
+[02:24:36] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[02:24:37] [DEBUG] Headless mode enabled for this Selenium session.
+[02:24:53] [DEBUG] Headless mode enabled for this Selenium session.
+[02:25:05] [DEBUG] Headless mode enabled for this Selenium session.
+[02:25:17] [DEBUG] Headless mode enabled for this Selenium session.
+[02:25:33] [DEBUG] Headless mode enabled for this Selenium session.
+[02:25:44] [DEBUG] Headless mode enabled for this Selenium session.
+[02:25:57] [DEBUG] Headless mode enabled for this Selenium session.
+[02:26:08] [DEBUG] Headless mode enabled for this Selenium session.
+[02:26:22] [DEBUG] Headless mode enabled for this Selenium session.
+[02:26:35] [DEBUG] Headless mode enabled for this Selenium session.
+[02:27:03] [WARN] A timeout occurred while fetching points for Personal 11.
+[02:27:05] [DEBUG] Headless mode enabled for this Selenium session.
+[02:27:32] [WARN] A timeout occurred while fetching points for Personal 12.
+[02:27:35] [DEBUG] Headless mode enabled for this Selenium session.
+[02:27:47] [DEBUG] Headless mode enabled for this Selenium session.
+[02:28:00] [DEBUG] Headless mode enabled for this Selenium session.
+[02:28:12] [DEBUG] Headless mode enabled for this Selenium session.
+[02:28:26] [DEBUG] Headless mode enabled for this Selenium session.
+[02:28:32] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[02:28:33] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-07-31 13:49:08 ---
+[13:49:08] [INFO] Application starting up.
+[13:49:08] [INFO] Loading profiles from data.json.
+[13:49:08] [INFO] Successfully loaded 30 profiles.
+[13:49:14] [INFO] Loaded 15 progress records from today's history.
+[13:49:24] [INFO] Range 1-4 selected.
+[13:49:27] [INFO] Fetching all points...
+[13:49:27] [INFO] Loaded 15 progress records from today's history.
+[13:49:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[13:49:28] [DEBUG] Headless mode enabled for this Selenium session.
+[13:49:49] [DEBUG] Headless mode enabled for this Selenium session.
+[13:50:00] [DEBUG] Headless mode enabled for this Selenium session.
+[13:50:18] [DEBUG] Headless mode enabled for this Selenium session.
+[13:50:31] [INFO] Points fetching complete.
+
+--- Log Session Started: 2025-07-31 21:45:56 ---
+[21:45:56] [INFO] Application starting up.
+[21:45:56] [INFO] Loading profiles from data.json.
+[21:45:56] [INFO] Successfully loaded 30 profiles.
+[21:45:58] [INFO] Loaded 15 progress records from today's history.
+[21:46:02] [INFO] Fetching all points...
+[21:46:02] [INFO] Loaded 15 progress records from today's history.
+[21:46:02] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[21:46:03] [DEBUG] Headless mode enabled for this Selenium session.
+[21:46:17] [DEBUG] Headless mode enabled for this Selenium session.
+[21:46:29] [DEBUG] Headless mode enabled for this Selenium session.
+[21:46:41] [DEBUG] Headless mode enabled for this Selenium session.
+[21:46:55] [DEBUG] Headless mode enabled for this Selenium session.
+[21:47:41] [DEBUG] Headless mode enabled for this Selenium session.
+[21:47:52] [DEBUG] Headless mode enabled for this Selenium session.
+[21:48:05] [DEBUG] Headless mode enabled for this Selenium session.
+[21:48:29] [DEBUG] Headless mode enabled for this Selenium session.
+[21:48:49] [DEBUG] Headless mode enabled for this Selenium session.
+[21:49:15] [WARN] A timeout occurred while fetching points for Personal 11.
+[21:49:18] [DEBUG] Headless mode enabled for this Selenium session.
+[21:49:44] [WARN] A timeout occurred while fetching points for Personal 12.
+[21:49:46] [DEBUG] Headless mode enabled for this Selenium session.
+[21:50:28] [DEBUG] Headless mode enabled for this Selenium session.
+[21:50:42] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:01] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:15] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:28] [DEBUG] Headless mode enabled for this Selenium session.
+[21:51:53] [WARN] A timeout occurred while fetching points for Personal 18.
+[21:51:55] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:08] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:18] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:29] [DEBUG] Headless mode enabled for this Selenium session.
+[21:52:54] [WARN] A timeout occurred while fetching points for Personal 22.
+[21:52:56] [DEBUG] Headless mode enabled for this Selenium session.
+[21:53:19] [DEBUG] Headless mode enabled for this Selenium session.
+[21:53:42] [DEBUG] Headless mode enabled for this Selenium session.
+[21:54:07] [WARN] A timeout occurred while fetching points for Personal 25.
+[21:54:09] [DEBUG] Headless mode enabled for this Selenium session.
+[21:55:31] [DEBUG] Headless mode enabled for this Selenium session.
+[21:55:43] [DEBUG] Headless mode enabled for this Selenium session.
+[21:55:57] [DEBUG] Headless mode enabled for this Selenium session.
+[21:56:27] [DEBUG] Headless mode enabled for this Selenium session.
+[21:56:46] [DEBUG] Headless mode enabled for this Selenium session.
+[21:57:10] [INFO] Points fetching complete.
+[21:57:18] [INFO] Profile Personal 25 set to 'suspended'.
+[21:57:18] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:57:23] [INFO] Profile Personal 22 set to 'suspended'.
+[21:57:23] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:57:30] [INFO] Profile Personal 18 set to 'suspended'.
+[21:57:30] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:57:35] [INFO] Profile Personal 12 set to 'suspended'.
+[21:57:35] [SYSTEM] Successfully saved updated profile statuses to data.json.
+[21:57:37] [INFO] Profile Personal 11 set to 'suspended'.
+[21:57:37] [SYSTEM] Successfully saved updated profile statuses to data.json.
+
+--- Log Session Started: 2025-07-31 18:06:25 ---
+[18:06:25] [INFO] Application starting up.
+[18:06:25] [INFO] Loading profiles from data.json.
+[18:06:25] [INFO] Successfully loaded 30 profiles.
+[18:06:28] [INFO] Loaded 30 progress records from today's history.
+[18:06:38] [INFO] Loaded 30 progress records from today's history.
+[18:06:38] [INFO] Smart Search Automation started...
+[18:06:38] [INFO] Processing Batch 1...
+[18:06:38] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:06:49] [INFO] Search 'gherkin' (1/3) in window 'gherkin - Search - Personal 4 - Microsoft​ Edge'
+[18:06:55] [INFO] Search 'colonization' (1/3) in window 'colonization - Search - Personal 3 - Microsoft​ Edge'
+[18:06:58] [INFO] Search 'brown' (1/3) in window 'brown - Search - Personal 2 - Microsoft​ Edge'
+[18:07:02] [INFO] Search 'hole' (1/3) in window 'hole - Search - Personal - Microsoft​ Edge'
+[18:07:06] [INFO] Search 'stormy' (2/3) in window 'stormy - Search - Personal 4 - Microsoft​ Edge'
+[18:07:11] [INFO] Search 'enjoyment' (2/3) in window 'enjoyment - Search - Personal 3 - Microsoft​ Edge'
+[18:07:16] [INFO] Search 'nestling' (2/3) in window 'nestling - Search - Personal 2 - Microsoft​ Edge'
+[18:07:20] [INFO] Search 'tug' (2/3) in window 'tug - Search - Personal - Microsoft​ Edge'
+[18:07:24] [INFO] Search 'biscuit' (3/3) in window 'biscuit - Search - Personal 4 - Microsoft​ Edge'
+[18:07:29] [INFO] Search 'attendance' (3/3) in window 'attendance - Search - Personal 3 - Microsoft​ Edge'
+[18:07:35] [INFO] Search 'allocation' (3/3) in window 'allocation - Search - Personal 2 - Microsoft​ Edge'
+[18:07:38] [INFO] Search 'dill' (3/3) in window 'dill - Search - Personal - Microsoft​ Edge'
+[18:07:41] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:07:41] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[18:07:41] [DEBUG] Headless mode enabled for this Selenium session.
+[18:08:06] [DEBUG] Headless mode enabled for this Selenium session.
+[18:08:17] [DEBUG] Headless mode enabled for this Selenium session.
+[18:08:27] [DEBUG] Headless mode enabled for this Selenium session.
+[18:08:40] [INFO] Batch 1: 3 profiles need more points. Retrying with 2 searches...
+[18:08:40] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[18:08:54] [INFO] Search 'acknowledgment' (1/2) in window 'acknowledgment - Search - Personal 4 - Microsoft​ Edge'
+[18:08:58] [INFO] Search 'assumption' (1/2) in window 'assumption - Search - Personal 3 - Microsoft​ Edge'
+[18:09:03] [INFO] Search 'widget' (1/2) in window 'widget - Search - Personal 2 - Microsoft​ Edge'
+[18:09:07] [INFO] Search 'nation' (2/2) in window 'nation - Search - Personal 4 - Microsoft​ Edge'
+[18:09:11] [INFO] Search 'bulb' (2/2) in window 'bulb - Search - Personal 3 - Microsoft​ Edge'
+[18:09:15] [INFO] Search 'dollar' (2/2) in window 'dollar - Search - Personal 2 - Microsoft​ Edge'
+[18:09:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:09:18] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[18:09:18] [DEBUG] Headless mode enabled for this Selenium session.
+[18:09:29] [DEBUG] Headless mode enabled for this Selenium session.
+[18:09:42] [DEBUG] Headless mode enabled for this Selenium session.
+[18:09:54] [INFO] Batch 1: 3 profiles need more points. Retrying with 1 searches...
+[18:09:54] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[18:10:06] [INFO] Search 'champion' (1/1) in window 'champion - Search - Personal 4 - Microsoft​ Edge'
+[18:10:11] [INFO] Search 'drawbridge' (1/1) in window 'drawbridge - Search - Personal 2 - Microsoft​ Edge'
+[18:10:15] [INFO] Search 'washcloth' (1/1) in window 'washcloth - Search - Personal 3 - Microsoft​ Edge'
+[18:10:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:10:17] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[18:10:17] [DEBUG] Headless mode enabled for this Selenium session.
+[18:10:29] [DEBUG] Headless mode enabled for this Selenium session.
+[18:10:39] [DEBUG] Headless mode enabled for this Selenium session.
+[18:10:53] [INFO] Batch 1: 3 profiles need more points. Retrying with 1 searches...
+[18:10:53] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[18:11:05] [INFO] Search 'grandiose' (1/1) in window 'grandiose - Search - Personal 4 - Microsoft​ Edge'
+[18:11:09] [INFO] Search 'guinea' (1/1) in window 'guinea - Search - Personal 3 - Microsoft​ Edge'
+[18:11:14] [INFO] Search 'melodic' (1/1) in window 'melodic - Search - Personal 2 - Microsoft​ Edge'
+[18:11:16] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:11:16] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[18:11:16] [DEBUG] Headless mode enabled for this Selenium session.
+[18:11:27] [DEBUG] Headless mode enabled for this Selenium session.
+[18:11:39] [DEBUG] Headless mode enabled for this Selenium session.
+[18:11:53] [INFO] Batch 1: 3 profiles need more points. Retrying with 1 searches...
+[18:11:53] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[18:12:03] [INFO] Search 'leg' (1/1) in window 'bing.com/search?pglt=299&q=leg&cvid=12cd01b05f2b46dbaa2ff84aea1d5e7d&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEEUYOzIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQLhhAMgYICBAFGEDSAQgxMTA5ajBqMagCCLACAQ&FORM=ANSPA1&PC=ASTS - Personal 4 - Microsoft​ Edge'
+[18:12:08] [INFO] Search 'optimal' (1/1) in window 'optimal - Search - Personal 3 - Microsoft​ Edge'
+[18:12:13] [INFO] Search 'loading' (1/1) in window 'loading - Search - Personal 2 - Microsoft​ Edge'
+[18:12:15] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:12:15] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[18:12:15] [DEBUG] Headless mode enabled for this Selenium session.
+[18:12:27] [DEBUG] Headless mode enabled for this Selenium session.
+[18:12:41] [DEBUG] Headless mode enabled for this Selenium session.
+[18:12:53] [INFO] Batch 1: 3 profiles need more points. Retrying with 1 searches...
+[18:12:53] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[18:13:04] [INFO] Search 'cheque' (1/1) in window 'cheque - Search - Personal 3 - Microsoft​ Edge'
+[18:13:08] [INFO] Search 'bribery' (1/1) in window 'bing.com/search?pglt=299&q=bribery&cvid=65feb4acceb34d8995a77e33ed6a54b8&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDExOTVqMGoxqAIIsAIB&FORM=ANSPA1&PC=ASTS - Personal 4 - Microsoft​ Edge'
+[18:13:13] [INFO] Search 'raincoat' (1/1) in window 'raincoat - Search - Personal 2 - Microsoft​ Edge'
+[18:13:15] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:13:15] [INFO] Batch 1: Max retries reached.
+[18:13:15] [INFO] Batch 1: Saving final progress to history...
+[18:13:15] [INFO] Processing Batch 2...
+[18:13:15] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:13:28] [INFO] Search 'sweatshop' (1/3) in window 'sweatshop - Search - Personal 9 - Microsoft​ Edge'
+[18:13:32] [INFO] Search 'original' (1/3) in window 'original - Search - Personal 6 - Microsoft​ Edge'
+[18:13:37] [INFO] Search 'premeditation' (1/3) in window 'premeditation - Search - Personal 7 - Microsoft​ Edge'
+[18:13:41] [INFO] Search 'summit' (1/3) in window 'summit - Search - Personal 5 - Microsoft​ Edge'
+[18:13:46] [INFO] Search 'financing' (2/3) in window 'financing - Search - Personal 9 - Microsoft​ Edge'
+[18:13:51] [INFO] Search 'thongs' (2/3) in window 'thongs - Search - Personal 6 - Microsoft​ Edge'
+[18:13:55] [INFO] Search 'evasive' (2/3) in window 'evasive - Search - Personal 7 - Microsoft​ Edge'
+[18:14:00] [INFO] Search 'insectarium' (2/3) in window 'insectarium - Search - Personal 5 - Microsoft​ Edge'
+[18:14:04] [INFO] Search 'business' (3/3) in window 'business - Search - Personal 9 - Microsoft​ Edge'
+[18:14:08] [INFO] Search 'bet' (3/3) in window 'bet - Search - Personal 6 - Microsoft​ Edge'
+[18:14:12] [INFO] Search 'chafe' (3/3) in window 'chafe - Search - Personal 7 - Microsoft​ Edge'
+[18:14:17] [INFO] Search 'gullible' (3/3) in window 'gullible - Search - Personal 5 - Microsoft​ Edge'
+[18:14:20] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:14:20] [INFO] Batch 2: Verifying progress (Attempt 1)...
+[18:14:20] [INFO] Skipping fetch for Personal 5: Already completed.
+[18:14:20] [INFO] Skipping fetch for Personal 6: Already completed.
+[18:14:20] [INFO] Skipping fetch for Personal 7: Already completed.
+[18:14:20] [INFO] Skipping fetch for Personal 9: Already completed.
+[18:14:20] [INFO] Batch 2: All points collected.
+[18:14:20] [INFO] Batch 2: Saving final progress to history...
+[18:14:20] [INFO] Processing Batch 3...
+[18:14:20] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:14:31] [INFO] Search 'takeover' (1/3) in window 'takeover - Search - Personal 15 - Microsoft​ Edge'
+[18:14:36] [INFO] Search 'thermometer' (1/3) in window 'thermometer - Search - Personal 14 - Microsoft​ Edge'
+[18:14:41] [INFO] Search 'softdrink' (1/3) in window 'softdrink - Search - Personal 13 - Microsoft​ Edge'
+[18:14:45] [INFO] Search 'grass' (2/3) in window 'grass - Search - Personal 15 - Microsoft​ Edge'
+[18:14:49] [INFO] Search 'workforce' (2/3) in window 'workforce - Search - Personal 14 - Microsoft​ Edge'
+[18:14:53] [INFO] Search 'fries' (2/3) in window 'fries - Search - Personal 13 - Microsoft​ Edge'
+[18:14:58] [INFO] Search 'seashore' (3/3) in window 'seashore - Search - Personal 15 - Microsoft​ Edge'
+[18:15:01] [INFO] Search 'parrot' (3/3) in window 'parrot - Search - Personal 14 - Microsoft​ Edge'
+[18:15:06] [INFO] Search 'bitter' (3/3) in window 'bitter - Search - Personal 13 - Microsoft​ Edge'
+[18:15:07] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:15:07] [INFO] Batch 3: Verifying progress (Attempt 1)...
+[18:15:08] [INFO] Skipping fetch for Personal 10: Already completed.
+[18:15:08] [DEBUG] Headless mode enabled for this Selenium session.
+[18:15:19] [DEBUG] Headless mode enabled for this Selenium session.
+[18:15:41] [DEBUG] Headless mode enabled for this Selenium session.
+[18:15:55] [INFO] Batch 3: 2 profiles need more points. Retrying with 2 searches...
+[18:15:55] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[18:16:07] [INFO] Search 'foal' (1/2) in window 'foal - Search - Personal 15 - Microsoft​ Edge'
+[18:16:14] [INFO] Search 'viola' (1/2) in window 'viola - Search - Personal 13 - Microsoft​ Edge'
+[18:16:21] [INFO] Search 'cluster' (2/2) in window 'cluster - Search - Personal 15 - Microsoft​ Edge'
+[18:16:26] [INFO] Search 'mist' (2/2) in window 'mist - Search - Personal 13 - Microsoft​ Edge'
+[18:16:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:16:28] [INFO] Batch 3: Verifying progress (Attempt 2)...
+[18:16:28] [DEBUG] Headless mode enabled for this Selenium session.
+[18:16:52] [DEBUG] Headless mode enabled for this Selenium session.
+[18:17:14] [INFO] Batch 3: 2 profiles need more points. Retrying with 2 searches...
+[18:17:14] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[18:17:27] [INFO] Search 'perception' (1/2) in window 'perception - Search - Personal 15 - Microsoft​ Edge'
+[18:17:34] [INFO] Search 'sleeping' (1/2) in window 'sleeping - Search - Personal 13 - Microsoft​ Edge'
+[18:17:42] [INFO] Search 'criterion' (2/2) in window 'criterion - Search - Personal 15 - Microsoft​ Edge'
+[18:17:49] [INFO] Search 'fluttering' (2/2) in window 'fluttering - Search - Personal 13 - Microsoft​ Edge'
+[18:17:51] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:17:51] [INFO] Batch 3: Verifying progress (Attempt 3)...
+[18:17:51] [DEBUG] Headless mode enabled for this Selenium session.
+[18:18:04] [DEBUG] Headless mode enabled for this Selenium session.
+[18:18:20] [INFO] Batch 3: 2 profiles need more points. Retrying with 2 searches...
+[18:18:20] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[18:18:32] [INFO] Search 'swear' (1/2) in window 'swear - Search - Personal 15 - Microsoft​ Edge'
+[18:18:39] [INFO] Search 'veranda' (1/2) in window 'veranda - Search - Personal 13 - Microsoft​ Edge'
+[18:18:45] [INFO] Search 'pen' (2/2) in window 'pen - Search - Personal 15 - Microsoft​ Edge'
+[18:18:54] [INFO] Search 'comestible' (2/2) in window 'comestible - Search - Personal 13 - Microsoft​ Edge'
+[18:18:56] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:18:56] [INFO] Batch 3: Verifying progress (Attempt 4)...
+[18:18:56] [DEBUG] Headless mode enabled for this Selenium session.
+[18:19:12] [DEBUG] Headless mode enabled for this Selenium session.
+[18:19:52] [INFO] Batch 3: 2 profiles need more points. Retrying with 2 searches...
+[18:19:52] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[18:20:04] [INFO] Search 'pitch' (1/2) in window 'pitch - Search - Personal 15 - Microsoft​ Edge'
+[18:20:11] [INFO] Search 'courtroom' (1/2) in window 'courtroom - Search - Personal 13 - Microsoft​ Edge'
+[18:20:19] [INFO] Search 'disclaimer' (2/2) in window 'disclaimer - Search - Personal 15 - Microsoft​ Edge'
+[18:20:26] [INFO] Search 'wobble' (2/2) in window 'wobble - Search - Personal 13 - Microsoft​ Edge'
+[18:20:28] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:20:28] [INFO] Batch 3: Verifying progress (Attempt 5)...
+[18:20:28] [DEBUG] Headless mode enabled for this Selenium session.
+[18:20:45] [DEBUG] Headless mode enabled for this Selenium session.
+[18:21:03] [INFO] Batch 3: 2 profiles need more points. Retrying with 2 searches...
+[18:21:03] [INFO] Starting PyAutoGUI searches for 2 profiles...
+[18:21:14] [INFO] Search 'washer' (1/2) in window 'washer - Search - Personal 15 - Microsoft​ Edge'
+[18:21:22] [INFO] Search 'littleneck' (1/2) in window 'littleneck - Search - Personal 13 - Microsoft​ Edge'
+[18:21:28] [INFO] Search 'shut' (2/2) in window 'shut - Search - Personal 15 - Microsoft​ Edge'
+[18:21:34] [INFO] Search 'attorney' (2/2) in window 'attorney - Search - Personal 13 - Microsoft​ Edge'
+[18:21:37] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:21:37] [INFO] Batch 3: Max retries reached.
+[18:21:37] [INFO] Batch 3: Saving final progress to history...
+[18:21:37] [INFO] Processing Batch 4...
+[18:21:37] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:21:47] [INFO] Search 'jazz' (1/3) in window 'jazz - Search - Personal 20 - Microsoft​ Edge'
+[18:21:51] [INFO] Search 'error' (1/3) in window 'error - Search - Personal 19 - Microsoft​ Edge'
+[18:21:55] [INFO] Search 'save' (1/3) in window 'save - Search - Personal 17 - Microsoft​ Edge'
+[18:21:59] [INFO] Search 'result' (1/3) in window 'result - Search - Personal 16 - Microsoft​ Edge'
+[18:22:03] [INFO] Search 'soft' (2/3) in window 'soft - Search - Personal 20 - Microsoft​ Edge'
+[18:22:07] [INFO] Search 'dynamite' (2/3) in window 'dynamite - Search - Personal 19 - Microsoft​ Edge'
+[18:22:11] [INFO] Search 'redirect' (2/3) in window 'redirect - Search - Personal 17 - Microsoft​ Edge'
+[18:22:16] [INFO] Search 'ectodermal' (2/3) in window 'ectodermal - Search - Personal 16 - Microsoft​ Edge'
+[18:22:20] [INFO] Search 'create' (3/3) in window 'create - Search - Personal 20 - Microsoft​ Edge'
+[18:22:25] [INFO] Search 'sourwood' (3/3) in window 'sourwood - Search - Personal 19 - Microsoft​ Edge'
+[18:22:30] [INFO] Search 'disagreeable' (3/3) in window 'disagreeable - Search - Personal 17 - Microsoft​ Edge'
+[18:22:35] [INFO] Search 'spectrograph' (3/3) in window 'spectrograph - Search - Personal 16 - Microsoft​ Edge'
+[18:22:38] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:22:38] [INFO] Batch 4: Verifying progress (Attempt 1)...
+[18:22:38] [DEBUG] Headless mode enabled for this Selenium session.
+[18:22:51] [INFO] Skipping fetch for Personal 17: Already completed.
+[18:22:51] [INFO] Skipping fetch for Personal 19: Already completed.
+[18:22:51] [INFO] Skipping fetch for Personal 20: Already completed.
+[18:22:51] [INFO] Batch 4: All points collected.
+[18:22:51] [INFO] Batch 4: Saving final progress to history...
+[18:22:51] [INFO] Processing Batch 5...
+[18:22:51] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:23:02] [INFO] Search 'rank' (1/3) in window 'New tab - Profile 24 - Microsoft​ Edge'
+[18:23:06] [INFO] Search 'mussel' (1/3) in window 'New tab - Personal 26 - Microsoft​ Edge'
+[18:23:10] [INFO] Search 'hollow' (1/3) in window 'hollow - Search - Personal 23 - Microsoft​ Edge'
+[18:23:14] [INFO] Search 'console' (1/3) in window 'console - Search - Personal 21 - Microsoft​ Edge'
+[18:23:18] [INFO] Search 'bring' (2/3) in window 'bring - Search - Profile 24 - Microsoft​ Edge'
+[18:23:23] [INFO] Search 'godmother' (2/3) in window 'godmother - Search - Personal 26 - Microsoft​ Edge'
+[18:23:28] [INFO] Search 'contention' (2/3) in window 'contention - Search - Personal 23 - Microsoft​ Edge'
+[18:23:31] [INFO] Search 'cooing' (2/3) in window 'cooing - Search - Personal 21 - Microsoft​ Edge'
+[18:23:36] [INFO] Search 'crabby' (3/3) in window 'crabby - Search - Profile 24 - Microsoft​ Edge'
+[18:23:40] [INFO] Search 'language' (3/3) in window 'language - Search - Personal 26 - Microsoft​ Edge'
+[18:23:45] [INFO] Search 'acoustic' (3/3) in window 'acoustic - Search - Personal 23 - Microsoft​ Edge'
+[18:23:49] [INFO] Search 'grenade' (3/3) in window 'grenade - Search - Personal 21 - Microsoft​ Edge'
+[18:23:51] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:23:51] [INFO] Batch 5: Verifying progress (Attempt 1)...
+[18:23:52] [INFO] Skipping fetch for Personal 21: Already completed.
+[18:23:52] [INFO] Skipping fetch for Personal 23: Already completed.
+[18:23:52] [DEBUG] Headless mode enabled for this Selenium session.
+[18:24:11] [INFO] Skipping fetch for Personal 26: Already completed.
+[18:24:11] [INFO] Batch 5: 1 profiles need more points. Retrying with 2 searches...
+[18:24:11] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:24:23] [INFO] Search 'journal' (1/2) in window 'journal - Search - Profile 24 - Microsoft​ Edge'
+[18:24:31] [INFO] Search 'chairperson' (2/2) in window 'chairperson - Search - Profile 24 - Microsoft​ Edge'
+[18:24:33] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:24:33] [INFO] Batch 5: Verifying progress (Attempt 2)...
+[18:24:33] [DEBUG] Headless mode enabled for this Selenium session.
+[18:24:52] [INFO] Batch 5: 1 profiles need more points. Retrying with 2 searches...
+[18:24:52] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:25:03] [INFO] Search 'make' (1/2) in window 'make - Search - Profile 24 - Microsoft​ Edge'
+[18:25:10] [INFO] Search 'moldy' (2/2) in window 'moldy - Search - Profile 24 - Microsoft​ Edge'
+[18:25:12] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:25:12] [INFO] Batch 5: Verifying progress (Attempt 3)...
+[18:25:12] [DEBUG] Headless mode enabled for this Selenium session.
+[18:25:25] [INFO] Batch 5: 1 profiles need more points. Retrying with 2 searches...
+[18:25:25] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:25:35] [INFO] Search 'clean' (1/2) in window 'clean - Search - Profile 24 - Microsoft​ Edge'
+[18:25:42] [INFO] Search 'kebab' (2/2) in window 'kebab - Search - Profile 24 - Microsoft​ Edge'
+[18:25:44] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:25:44] [INFO] Batch 5: Verifying progress (Attempt 4)...
+[18:25:44] [DEBUG] Headless mode enabled for this Selenium session.
+[18:25:57] [INFO] Batch 5: 1 profiles need more points. Retrying with 2 searches...
+[18:25:57] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:26:09] [INFO] Search 'blizzard' (1/2) in window 'blizzard - Search - Profile 24 - Microsoft​ Edge'
+[18:26:16] [INFO] Search 'anthropology' (2/2) in window 'anthropology - Search - Profile 24 - Microsoft​ Edge'
+[18:26:17] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:26:17] [INFO] Batch 5: Verifying progress (Attempt 5)...
+[18:26:17] [DEBUG] Headless mode enabled for this Selenium session.
+[18:26:32] [INFO] Batch 5: 1 profiles need more points. Retrying with 2 searches...
+[18:26:32] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:26:43] [INFO] Search 'buyer' (1/2) in window 'buyer - Search - Profile 24 - Microsoft​ Edge'
+[18:26:49] [INFO] Search 'fill' (2/2) in window 'fill - Search - Profile 24 - Microsoft​ Edge'
+[18:26:51] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:26:51] [INFO] Batch 5: Max retries reached.
+[18:26:51] [INFO] Batch 5: Saving final progress to history...
+[18:26:51] [INFO] Processing Batch 6...
+[18:26:51] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[18:27:02] [INFO] Search 'carrot' (1/3) in window 'carrot - Search - Personal 30 - Microsoft​ Edge'
+[18:27:06] [INFO] Search 'garment' (1/3) in window 'garment - Search - Personal 29 - Microsoft​ Edge'
+[18:27:11] [INFO] Search 'notoriety' (1/3) in window 'notoriety - Search - Personal 28 - Microsoft​ Edge'
+[18:27:16] [INFO] Search 'detainee' (1/3) in window 'detainee - Search - Personal 27 - Microsoft​ Edge'
+[18:27:20] [INFO] Search 'science' (2/3) in window 'science - Search - Personal 30 - Microsoft​ Edge'
+[18:27:23] [INFO] Search 'wren' (2/3) in window 'wren - Search - Personal 29 - Microsoft​ Edge'
+[18:27:28] [INFO] Search 'omega' (2/3) in window 'omega - Search - Personal 28 - Microsoft​ Edge'
+[18:27:32] [INFO] Search 'gadget' (2/3) in window 'gadget - Search - Personal 27 - Microsoft​ Edge'
+[18:27:36] [INFO] Search 'somber' (3/3) in window 'somber - Search - Personal 30 - Microsoft​ Edge'
+[18:27:41] [INFO] Search 'administrator' (3/3) in window 'administrator - Search - Personal 29 - Microsoft​ Edge'
+[18:27:46] [INFO] Search 'shaggy' (3/3) in window 'shaggy - Search - Personal 28 - Microsoft​ Edge'
+[18:27:51] [INFO] Search 'compensation' (3/3) in window 'compensation - Search - Personal 27 - Microsoft​ Edge'
+[18:27:53] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:27:53] [INFO] Batch 6: Verifying progress (Attempt 1)...
+[18:27:53] [INFO] Skipping fetch for Personal 27: Already completed.
+[18:27:53] [INFO] Skipping fetch for Personal 28: Already completed.
+[18:27:53] [INFO] Skipping fetch for Personal 29: Already completed.
+[18:27:53] [INFO] Skipping fetch for Personal 30: Already completed.
+[18:27:53] [INFO] Batch 6: All points collected.
+[18:27:53] [INFO] Batch 6: Saving final progress to history...
+[18:27:53] [INFO] Processing Batch 7...
+[18:27:53] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[18:28:03] [INFO] Search 'hypnotic' (1/3) in window 'hypnotic - Search - Personal 31 - Microsoft​ Edge'
+[18:28:08] [INFO] Search 'inequality' (2/3) in window 'inequality - Search - Personal 31 - Microsoft​ Edge'
+[18:28:12] [INFO] Search 'dungarees' (3/3) in window 'dungarees - Search - Personal 31 - Microsoft​ Edge'
+[18:28:15] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[18:28:15] [INFO] Batch 7: Verifying progress (Attempt 1)...
+[18:28:15] [INFO] Skipping fetch for Personal 31: Already completed.
+[18:28:15] [INFO] Batch 7: All points collected.
+[18:28:15] [INFO] Batch 7: Saving final progress to history...
+[18:28:15] [INFO] Search Automation Complete!
+[18:34:38] [INFO] Manually opening points breakdown for Personal 15
+[18:34:38] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-31 18:37:10 ---
+[18:37:10] [INFO] Application starting up.
+[18:37:10] [INFO] Loading profiles from data.json.
+[18:37:10] [INFO] Successfully loaded 30 profiles.
+[18:37:12] [INFO] Loaded 30 progress records from today's history.
+[18:37:49] [INFO] Manually opening points breakdown for Personal 19
+[18:37:50] [SYSTEM] Forcefully closed all Edge processes via UI button.
+
+--- Log Session Started: 2025-07-31 23:51:37 ---
+[23:51:37] [INFO] Application starting up.
+[23:51:37] [INFO] Loading profiles from data.json.
+[23:51:37] [INFO] Successfully loaded 30 profiles.
+[23:51:39] [INFO] Loaded 30 progress records from today's history.
+[23:51:43] [INFO] Fetching all points...
+[23:51:43] [INFO] Loaded 30 progress records from today's history.
+[23:51:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[23:51:44] [DEBUG] Headless mode enabled for this Selenium session.
+[23:51:57] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:12] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:25] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:39] [INFO] Skipping fetch for Personal 5: Already completed.
+[23:52:39] [INFO] Skipping fetch for Personal 6: Already completed.
+[23:52:39] [INFO] Skipping fetch for Personal 7: Already completed.
+[23:52:39] [INFO] Skipping fetch for Personal 9: Already completed.
+[23:52:39] [INFO] Skipping fetch for Personal 10: Already completed.
+[23:52:39] [DEBUG] Headless mode enabled for this Selenium session.
+[23:52:50] [DEBUG] Headless mode enabled for this Selenium session.
+[23:53:02] [DEBUG] Headless mode enabled for this Selenium session.
+[23:53:19] [INFO] Skipping fetch for Personal 16: Already completed.
+[23:53:19] [INFO] Skipping fetch for Personal 17: Already completed.
+[23:53:19] [INFO] Skipping fetch for Personal 19: Already completed.
+[23:53:19] [INFO] Skipping fetch for Personal 20: Already completed.
+[23:53:19] [INFO] Skipping fetch for Personal 21: Already completed.
+[23:53:19] [INFO] Skipping fetch for Personal 23: Already completed.
+[23:53:19] [DEBUG] Headless mode enabled for this Selenium session.
+[23:53:35] [INFO] Skipping fetch for Personal 26: Already completed.
+[23:53:35] [INFO] Skipping fetch for Personal 27: Already completed.
+[23:53:35] [INFO] Skipping fetch for Personal 28: Already completed.
+[23:53:35] [INFO] Skipping fetch for Personal 29: Already completed.
+[23:53:35] [INFO] Skipping fetch for Personal 30: Already completed.
+[23:53:35] [INFO] Skipping fetch for Personal 31: Already completed.
+[23:53:35] [INFO] Points fetching complete.
+[23:54:26] [SYSTEM] Settings saved: {'schedule_enabled': False, 'schedule_time': '06:21'}
+[23:54:26] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-08-01 15:39:04 ---
+[15:39:04] [INFO] Application starting up.
+[15:39:04] [INFO] Loading profiles from data.json.
+[15:39:04] [INFO] Successfully loaded 30 profiles.
+[15:39:08] [INFO] Loaded 0 progress records from today's history.
+[15:39:12] [INFO] Fetching all points...
+[15:39:12] [INFO] Loaded 0 progress records from today's history.
+[15:39:13] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[15:39:14] [DEBUG] Headless mode enabled for this Selenium session.
+[15:39:46] [DEBUG] Headless mode enabled for this Selenium session.
+[15:40:04] [DEBUG] Headless mode enabled for this Selenium session.
+[15:40:26] [DEBUG] Headless mode enabled for this Selenium session.
+[15:40:58] [DEBUG] Headless mode enabled for this Selenium session.
+[15:41:14] [DEBUG] Headless mode enabled for this Selenium session.
+[15:41:48] [DEBUG] Headless mode enabled for this Selenium session.
+[15:43:14] [DEBUG] Headless mode enabled for this Selenium session.
+[15:43:57] [DEBUG] Headless mode enabled for this Selenium session.
+[15:44:26] [DEBUG] Headless mode enabled for this Selenium session.
+[15:44:53] [DEBUG] Headless mode enabled for this Selenium session.
+[15:45:17] [DEBUG] Headless mode enabled for this Selenium session.
+[15:45:34] [DEBUG] Headless mode enabled for this Selenium session.
+[15:45:54] [DEBUG] Headless mode enabled for this Selenium session.
+[15:46:22] [DEBUG] Headless mode enabled for this Selenium session.
+[15:46:58] [DEBUG] Headless mode enabled for this Selenium session.
+[15:47:26] [DEBUG] Headless mode enabled for this Selenium session.
+[15:47:54] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:34] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:42] [ERROR] Failed to set up Selenium driver for Personal 24: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14c64]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:42] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:45] [ERROR] Failed to set up Selenium driver for Personal 26: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:46] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:49] [ERROR] Failed to set up Selenium driver for Personal 27: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:49] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:52] [ERROR] Failed to set up Selenium driver for Personal 28: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:52] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:55] [ERROR] Failed to set up Selenium driver for Personal 29: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:55] [DEBUG] Headless mode enabled for this Selenium session.
+[15:48:57] [ERROR] Failed to set up Selenium driver for Personal 30: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:48:58] [DEBUG] Headless mode enabled for this Selenium session.
+[15:49:01] [ERROR] Failed to set up Selenium driver for Personal 31: Message: session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6d7fb8c85+23461]
+	(No symbol) [0x0x7ff6d7f0cd70]
+	GetHandleVerifier [0x0x7ff6d8230bb8+2611928]
+	(No symbol) [0x0x7ff6d7d14f83]
+	(No symbol) [0x0x7ff6d7d11045]
+	(No symbol) [0x0x7ff6d7d55a92]
+	(No symbol) [0x0x7ff6d7d4a423]
+	(No symbol) [0x0x7ff6d7d1ea86]
+	(No symbol) [0x0x7ff6d7d1dd11]
+	(No symbol) [0x0x7ff6d7d1e8b3]
+	(No symbol) [0x0x7ff6d7e1e6fd]
+	(No symbol) [0x0x7ff6d7e2ba88]
+	GetHandleVerifier [0x0x7ff6d8098acb+940523]
+	GetHandleVerifier [0x0x7ff6d80a1821+976705]
+	(No symbol) [0x0x7ff6d7f1a961]
+	(No symbol) [0x0x7ff6d7f13344]
+	(No symbol) [0x0x7ff6d7f13493]
+	(No symbol) [0x0x7ff6d7f04f36]
+	BaseThreadInitThunk [0x0x7ffedebfe8d7+23]
+	RtlUserThreadStart [0x0x7ffedfadc5dc+44]
+[15:49:01] [INFO] Points fetching complete.
+
+--- Log Session Started: 2025-08-01 19:07:49 ---
+[19:07:49] [INFO] Application starting up.
+[19:07:49] [INFO] Loading profiles from data.json.
+[19:07:49] [INFO] Successfully loaded 30 profiles.
+[19:07:53] [INFO] Loaded 18 progress records from today's history.
+
+--- Log Session Started: 2025-08-03 17:18:03 ---
+[17:18:03] [INFO] Application starting up.
+[17:18:03] [INFO] Loading profiles from data.json.
+[17:18:03] [INFO] Successfully loaded 30 profiles.
+[17:18:06] [INFO] Loaded 0 progress records from today's history.
+[17:18:17] [INFO] Fetching all points...
+[17:18:17] [INFO] Loaded 0 progress records from today's history.
+[17:18:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:18:19] [DEBUG] Headless mode enabled for this Selenium session.
+[17:18:40] [DEBUG] Headless mode enabled for this Selenium session.
+[17:19:14] [DEBUG] Headless mode enabled for this Selenium session.
+[17:19:29] [DEBUG] Headless mode enabled for this Selenium session.
+[17:19:44] [DEBUG] Headless mode enabled for this Selenium session.
+[17:20:01] [DEBUG] Headless mode enabled for this Selenium session.
+[17:20:17] [DEBUG] Headless mode enabled for this Selenium session.
+[17:20:32] [DEBUG] Headless mode enabled for this Selenium session.
+[17:20:45] [DEBUG] Headless mode enabled for this Selenium session.
+[17:20:59] [DEBUG] Headless mode enabled for this Selenium session.
+[17:21:13] [DEBUG] Headless mode enabled for this Selenium session.
+[17:21:33] [DEBUG] Headless mode enabled for this Selenium session.
+[17:21:54] [DEBUG] Headless mode enabled for this Selenium session.
+[17:22:13] [DEBUG] Headless mode enabled for this Selenium session.
+[17:22:33] [DEBUG] Headless mode enabled for this Selenium session.
+[17:22:45] [DEBUG] Headless mode enabled for this Selenium session.
+[17:22:56] [DEBUG] Headless mode enabled for this Selenium session.
+[17:23:22] [DEBUG] Headless mode enabled for this Selenium session.
+[17:23:38] [DEBUG] Headless mode enabled for this Selenium session.
+[17:23:59] [DEBUG] Headless mode enabled for this Selenium session.
+[17:24:10] [DEBUG] Headless mode enabled for this Selenium session.
+[17:24:24] [DEBUG] Headless mode enabled for this Selenium session.
+[17:24:36] [DEBUG] Headless mode enabled for this Selenium session.
+[17:24:51] [DEBUG] Headless mode enabled for this Selenium session.
+[17:25:01] [DEBUG] Headless mode enabled for this Selenium session.
+[17:25:14] [INFO] Points fetching complete.
+[17:28:16] [INFO] Range 1-4 selected.
+[17:28:18] [INFO] Fetching all points...
+[17:28:18] [INFO] Loaded 25 progress records from today's history.
+[17:28:18] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[17:28:19] [DEBUG] Headless mode enabled for this Selenium session.
+[17:28:33] [DEBUG] Headless mode enabled for this Selenium session.
+[17:28:52] [DEBUG] Headless mode enabled for this Selenium session.
+[17:29:01] [DEBUG] Headless mode enabled for this Selenium session.
+
+--- Log Session Started: 2025-08-06 22:43:35 ---
+[22:43:35] [INFO] Application starting up.
+[22:43:35] [INFO] Loading profiles from data.json.
+[22:43:35] [INFO] Successfully loaded 30 profiles.
+[22:43:38] [INFO] Loaded 0 progress records from today's history.
+[22:43:43] [INFO] Fetching all points...
+[22:43:43] [INFO] Loaded 0 progress records from today's history.
+[22:43:43] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:43:44] [DEBUG] Headless mode enabled for this Selenium session.
+[22:43:48] [ERROR] An error occurred while fetching points for Personal: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: MicrosoftEdge=138.0.3351.121)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ad048c85+23461]
+	(No symbol) [0x0x7ff6acf9cd70]
+	GetHandleVerifier [0x0x7ff6ad2c0bb8+2611928]
+	(No symbol) [0x0x7ff6acd6a250]
+	(No symbol) [0x0x7ff6acd5e4ff]
+	(No symbol) [0x0x7ff6acd5fb66]
+	(No symbol) [0x0x7ff6acd5e769]
+	(No symbol) [0x0x7ff6acd5e36c]
+	(No symbol) [0x0x7ff6acd5e0b8]
+	(No symbol) [0x0x7ff6acd5c0b9]
+	(No symbol) [0x0x7ff6acd5c68c]
+	(No symbol) [0x0x7ff6acd7057a]
+	(No symbol) [0x0x7ff6acdf7ade]
+	(No symbol) [0x0x7ff6acdda6ba]
+	(No symbol) [0x0x7ff6acdaf58d]
+	(No symbol) [0x0x7ff6acdf754f]
+	(No symbol) [0x0x7ff6acdda423]
+	(No symbol) [0x0x7ff6acdaea86]
+	(No symbol) [0x0x7ff6acdadd11]
+	(No symbol) [0x0x7ff6acdae8b3]
+	(No symbol) [0x0x7ff6aceae6fd]
+	(No symbol) [0x0x7ff6acebba88]
+	GetHandleVerifier [0x0x7ff6ad128acb+940523]
+	GetHandleVerifier [0x0x7ff6ad131821+976705]
+	(No symbol) [0x0x7ff6acfaa961]
+	(No symbol) [0x0x7ff6acfa3344]
+	(No symbol) [0x0x7ff6acfa3493]
+	(No symbol) [0x0x7ff6acf94f36]
+	BaseThreadInitThunk [0x0x7ffcaa56e8d7+23]
+	RtlUserThreadStart [0x0x7ffcab35c5dc+44]
+[22:43:51] [DEBUG] Headless mode enabled for this Selenium session.
+[22:43:53] [ERROR] An error occurred while fetching points for Personal 2: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: MicrosoftEdge=138.0.3351.121)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ad048c85+23461]
+	(No symbol) [0x0x7ff6acf9cd70]
+	GetHandleVerifier [0x0x7ff6ad2c0bb8+2611928]
+	(No symbol) [0x0x7ff6acd6a250]
+	(No symbol) [0x0x7ff6acd5e4ff]
+	(No symbol) [0x0x7ff6acd5fb66]
+	(No symbol) [0x0x7ff6acd5e769]
+	(No symbol) [0x0x7ff6acd5e36c]
+	(No symbol) [0x0x7ff6acd5e0b8]
+	(No symbol) [0x0x7ff6acd5c0b9]
+	(No symbol) [0x0x7ff6acd5c68c]
+	(No symbol) [0x0x7ff6acd7057a]
+	(No symbol) [0x0x7ff6acdf7ade]
+	(No symbol) [0x0x7ff6acdda6ba]
+	(No symbol) [0x0x7ff6acdaf58d]
+	(No symbol) [0x0x7ff6acdf754f]
+	(No symbol) [0x0x7ff6acdda423]
+	(No symbol) [0x0x7ff6acdaea86]
+	(No symbol) [0x0x7ff6acdadd11]
+	(No symbol) [0x0x7ff6acdae8b3]
+	(No symbol) [0x0x7ff6aceae6fd]
+	(No symbol) [0x0x7ff6acebba88]
+	GetHandleVerifier [0x0x7ff6ad128acb+940523]
+	GetHandleVerifier [0x0x7ff6ad131821+976705]
+	(No symbol) [0x0x7ff6acfaa961]
+	(No symbol) [0x0x7ff6acfa3344]
+	(No symbol) [0x0x7ff6acfa3493]
+	(No symbol) [0x0x7ff6acf94f36]
+	BaseThreadInitThunk [0x0x7ffcaa56e8d7+23]
+	RtlUserThreadStart [0x0x7ffcab35c5dc+44]
+[22:43:56] [DEBUG] Headless mode enabled for this Selenium session.
+[22:43:58] [ERROR] An error occurred while fetching points for Personal 3: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: MicrosoftEdge=138.0.3351.121)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6ad048c85+23461]
+	(No symbol) [0x0x7ff6acf9cd70]
+	GetHandleVerifier [0x0x7ff6ad2c0bb8+2611928]
+	(No symbol) [0x0x7ff6acd6a250]
+	(No symbol) [0x0x7ff6acd5e4ff]
+	(No symbol) [0x0x7ff6acd5fb66]
+	(No symbol) [0x0x7ff6acd5e769]
+	(No symbol) [0x0x7ff6acd5e36c]
+	(No symbol) [0x0x7ff6acd5e0b8]
+	(No symbol) [0x0x7ff6acd5c0b9]
+	(No symbol) [0x0x7ff6acd5c68c]
+	(No symbol) [0x0x7ff6acd7057a]
+	(No symbol) [0x0x7ff6acdf7ade]
+	(No symbol) [0x0x7ff6acdda6ba]
+	(No symbol) [0x0x7ff6acdaf58d]
+	(No symbol) [0x0x7ff6acdf754f]
+	(No symbol) [0x0x7ff6acdda423]
+	(No symbol) [0x0x7ff6acdaea86]
+	(No symbol) [0x0x7ff6acdadd11]
+	(No symbol) [0x0x7ff6acdae8b3]
+	(No symbol) [0x0x7ff6aceae6fd]
+	(No symbol) [0x0x7ff6acebba88]
+	GetHandleVerifier [0x0x7ff6ad128acb+940523]
+	GetHandleVerifier [0x0x7ff6ad131821+976705]
+	(No symbol) [0x0x7ff6acfaa961]
+	(No symbol) [0x0x7ff6acfa3344]
+	(No symbol) [0x0x7ff6acfa3493]
+	(No symbol) [0x0x7ff6acf94f36]
+	BaseThreadInitThunk [0x0x7ffcaa56e8d7+23]
+	RtlUserThreadStart [0x0x7ffcab35c5dc+44]
+
+--- Log Session Started: 2025-08-06 22:44:06 ---
+[22:44:06] [INFO] Application starting up.
+[22:44:06] [INFO] Loading profiles from data.json.
+[22:44:06] [INFO] Successfully loaded 30 profiles.
+[22:44:08] [INFO] Loaded 0 progress records from today's history.
+[22:44:27] [INFO] Fetching all points...
+[22:44:27] [INFO] Loaded 0 progress records from today's history.
+[22:44:27] [SYSTEM] Forcefully closed all Edge processes via UI button.
+[22:44:28] [DEBUG] Headless mode enabled for this Selenium session.
+[22:44:41] [DEBUG] Headless mode enabled for this Selenium session.
+[22:44:58] [DEBUG] Headless mode enabled for this Selenium session.
+[22:45:09] [DEBUG] Headless mode enabled for this Selenium session.
+[22:45:21] [DEBUG] Headless mode enabled for this Selenium session.
+[22:45:33] [DEBUG] Headless mode enabled for this Selenium session.
+[22:45:45] [DEBUG] Headless mode enabled for this Selenium session.
+[22:46:02] [DEBUG] Headless mode enabled for this Selenium session.
+[22:46:20] [DEBUG] Headless mode enabled for this Selenium session.
+[22:46:34] [DEBUG] Headless mode enabled for this Selenium session.
+[22:46:49] [DEBUG] Headless mode enabled for this Selenium session.
+[22:47:09] [DEBUG] Headless mode enabled for this Selenium session.
