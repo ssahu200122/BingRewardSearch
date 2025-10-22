@@ -20,59 +20,86 @@ from logger import logger
 import config
 
 class BingAutomatorApp(customtkinter.CTk):
-    # ... (Code before _fetch_progress_worker is unchanged) ...
+    """
+    The main application class for the Bing Automator GUI.
+    """
     def __init__(self, profiles: List[EdgeProfile], automation_service: AutomationService):
         super().__init__()
+
         self.profiles = profiles
         self.automation_service = automation_service
         self.selected_profiles: Set[EdgeProfile] = set(self.profiles)
         self.profile_widget_map: Dict[EdgeProfile, ProfileRow] = {}
-        self.settings = self._load_settings()
+        self.settings = self._load_settings() # Loads new delay settings
         self.stop_event = None
         self.selenium_lock = threading.Lock()
+
         self.left_frame_visible = True
         self.right_frame_visible = True
         self.top_frame_visible = True
+
         self.original_geometry = config.APP_GEOMETRY
+
         self._configure_window()
-        self._create_widgets()
+        self._create_widgets() # Creates new sliders
         self._update_all_checkbox_text()
+
         self._update_status_counts()
+
         self._load_and_display_initial_progress()
+
         self._start_scheduler_thread()
 
     def _load_settings(self) -> dict:
         try:
             with open(config.SETTINGS_JSON_PATH, 'r') as f:
                 default_settings = {
-                    "schedule_enabled": False, "schedule_time": "08:00",
-                    "post_search_delay_min": config.POST_SEARCH_DELAY[0], "post_search_delay_max": config.POST_SEARCH_DELAY[1],
-                    "scroll_delay_min": config.SCROLL_DELAY[0], "scroll_delay_max": config.SCROLL_DELAY[1],
-                    "mouse_move_duration_min": config.MOUSE_MOVE_DURATION[0], "mouse_move_duration_max": config.MOUSE_MOVE_DURATION[1],
-                    "key_press_delay_min": config.KEY_PRESS_DELAY[0], "key_press_delay_max": config.KEY_PRESS_DELAY[1],
+                    "schedule_enabled": False,
+                    "schedule_time": "08:00",
+                    "post_search_delay_min": config.POST_SEARCH_DELAY[0],
+                    "post_search_delay_max": config.POST_SEARCH_DELAY[1],
+                    "scroll_delay_min": config.SCROLL_DELAY[0],
+                    "scroll_delay_max": config.SCROLL_DELAY[1],
+                    "mouse_move_duration_min": config.MOUSE_MOVE_DURATION[0],
+                    "mouse_move_duration_max": config.MOUSE_MOVE_DURATION[1],
+                    "key_press_delay_min": config.KEY_PRESS_DELAY[0],
+                    "key_press_delay_max": config.KEY_PRESS_DELAY[1],
                     "smart_search_mode": True,
                 }
-                settings = json.load(f); updated = False
+                settings = json.load(f)
+                updated = False
                 for key, value in default_settings.items():
-                    if key not in settings: settings[key] = value; updated = True
+                    if key not in settings:
+                        settings[key] = value
+                        updated = True
+
                 if updated:
                     logger.log("Added default settings (including search mode) to settings.json.", "SYSTEM")
                     try:
-                        with open(config.SETTINGS_JSON_PATH, 'w') as f_update: json.dump(settings, f_update, indent=2)
-                    except Exception: pass
+                        with open(config.SETTINGS_JSON_PATH, 'w') as f_update:
+                             json.dump(settings, f_update, indent=2)
+                    except Exception:
+                         pass
+
                 return settings
         except (FileNotFoundError, json.JSONDecodeError):
             logger.log("settings.json not found or invalid. Using default settings.", "WARN")
             return {
-                "schedule_enabled": False, "schedule_time": "08:00",
-                "post_search_delay_min": config.POST_SEARCH_DELAY[0], "post_search_delay_max": config.POST_SEARCH_DELAY[1],
-                "scroll_delay_min": config.SCROLL_DELAY[0], "scroll_delay_max": config.SCROLL_DELAY[1],
-                "mouse_move_duration_min": config.MOUSE_MOVE_DURATION[0], "mouse_move_duration_max": config.MOUSE_MOVE_DURATION[1],
-                "key_press_delay_min": config.KEY_PRESS_DELAY[0], "key_press_delay_max": config.KEY_PRESS_DELAY[1],
+                "schedule_enabled": False,
+                "schedule_time": "08:00",
+                "post_search_delay_min": config.POST_SEARCH_DELAY[0],
+                "post_search_delay_max": config.POST_SEARCH_DELAY[1],
+                "scroll_delay_min": config.SCROLL_DELAY[0],
+                "scroll_delay_max": config.SCROLL_DELAY[1],
+                "mouse_move_duration_min": config.MOUSE_MOVE_DURATION[0],
+                "mouse_move_duration_max": config.MOUSE_MOVE_DURATION[1],
+                "key_press_delay_min": config.KEY_PRESS_DELAY[0],
+                "key_press_delay_max": config.KEY_PRESS_DELAY[1],
                 "smart_search_mode": True,
             }
 
     def _save_settings(self):
+        # Update settings dict from slider values before saving
         self.settings["post_search_delay_min"] = self.post_search_delay_slider.get_min()
         self.settings["post_search_delay_max"] = self.post_search_delay_slider.get_max()
         self.settings["scroll_delay_min"] = self.scroll_delay_slider.get_min()
@@ -82,71 +109,158 @@ class BingAutomatorApp(customtkinter.CTk):
         self.settings["key_press_delay_min"] = self.key_press_slider.get_min()
         self.settings["key_press_delay_max"] = self.key_press_slider.get_max()
         self.settings["smart_search_mode"] = self.search_mode_switch_var.get() == "on"
-        try:
-            with open(config.SETTINGS_JSON_PATH, 'w') as f: json.dump(self.settings, f, indent=2)
-        except Exception as e: logger.log(f"Failed to save settings: {e}", "ERROR")
 
+        try:
+            with open(config.SETTINGS_JSON_PATH, 'w') as f:
+                json.dump(self.settings, f, indent=2)
+            # logger.log(f"Settings saved: {self.settings}", "SYSTEM") # Log less frequently
+        except Exception as e:
+            logger.log(f"Failed to save settings: {e}", "ERROR")
+
+    # Range Slider Component
     class RangeSlider(customtkinter.CTkFrame):
         def __init__(self, master, text: str, min_val: float, max_val: float, step: float, initial_min: float, initial_max: float, command: Callable = None, value_format:str = "{:.2f}"):
             super().__init__(master, fg_color="transparent")
-            self.command = command; self.min_val = min_val; self.max_val = max_val; self.step = step; self.value_format = value_format
-            self.grid_columnconfigure(0, weight=1); self.grid_columnconfigure(1, weight=1)
-            self.label = customtkinter.CTkLabel(self, text=text); self.label.grid(row=0, column=0, columnspan=2, padx=5, pady=(5,0), sticky="w")
+            self.command = command
+            self.min_val = min_val
+            self.max_val = max_val
+            self.step = step
+            self.value_format = value_format
+
+            self.grid_columnconfigure(0, weight=1)
+            self.grid_columnconfigure(1, weight=1)
+
+            self.label = customtkinter.CTkLabel(self, text=text)
+            self.label.grid(row=0, column=0, columnspan=2, padx=5, pady=(5,0), sticky="w")
+
             num_steps = int((max_val - min_val) / step) if step > 0 else 0
-            self.slider_min = customtkinter.CTkSlider(self, from_=min_val, to=max_val, number_of_steps=num_steps, command=self._on_min_change); self.slider_min.set(initial_min)
+
+            self.slider_min = customtkinter.CTkSlider(self, from_=min_val, to=max_val, number_of_steps=num_steps, command=self._on_min_change)
+            self.slider_min.set(initial_min)
             self.slider_min.grid(row=1, column=0, padx=(5, 2.5), pady=5, sticky="ew")
-            self.slider_max = customtkinter.CTkSlider(self, from_=min_val, to=max_val, number_of_steps=num_steps, command=self._on_max_change); self.slider_max.set(initial_max)
+
+            self.slider_max = customtkinter.CTkSlider(self, from_=min_val, to=max_val, number_of_steps=num_steps, command=self._on_max_change)
+            self.slider_max.set(initial_max)
             self.slider_max.grid(row=1, column=1, padx=(2.5, 5), pady=5, sticky="ew")
+
             self.value_label = customtkinter.CTkLabel(self, text=f"{self.value_format.format(initial_min)} - {self.value_format.format(initial_max)} s")
-            self.value_label.grid(row=2, column=0, columnspan=2, padx=5, pady=(0,5)); self._update_label()
-        def _update_label(self): min_v = self.get_min(); max_v = self.get_max(); self.value_label.configure(text=f"{self.value_format.format(min_v)} - {self.value_format.format(max_v)} s")
+            self.value_label.grid(row=2, column=0, columnspan=2, padx=5, pady=(0,5))
+
+            self._update_label()
+
+        def _update_label(self):
+            min_v = self.get_min()
+            max_v = self.get_max()
+            self.value_label.configure(text=f"{self.value_format.format(min_v)} - {self.value_format.format(max_v)} s")
+
+        # --- CORRECTED SYNTAX ---
         def _on_min_change(self, value):
             current_max = self.slider_max.get()
-            if value >= current_max: new_min = max(self.min_val, current_max - self.step); self.slider_min.set(new_min)
-            self._update_label();
-            if self.command: self.command()
+            if value >= current_max:
+                new_min = max(self.min_val, current_max - self.step)
+                self.slider_min.set(new_min)
+            self._update_label()
+            if self.command:
+                self.command()
+
+        # --- CORRECTED SYNTAX ---
         def _on_max_change(self, value):
             current_min = self.slider_min.get()
-            if value <= current_min: new_max = min(self.max_val, current_min + self.step); self.slider_max.set(new_max)
-            self._update_label();
-            if self.command: self.command()
-        def get_min(self) -> float: val = self.slider_min.get(); return round(val / self.step) * self.step if self.step > 0 else val
-        def get_max(self) -> float: val = self.slider_max.get(); return round(val / self.step) * self.step if self.step > 0 else val
+            if value <= current_min:
+                new_max = min(self.max_val, current_min + self.step)
+                self.slider_max.set(new_max)
+            self._update_label()
+            if self.command:
+                self.command()
+
+        def get_min(self) -> float:
+            val = self.slider_min.get()
+            return round(val / self.step) * self.step if self.step > 0 else val
+
+        def get_max(self) -> float:
+            val = self.slider_max.get()
+            return round(val / self.step) * self.step if self.step > 0 else val
+
 
     def _configure_window(self):
-        self.title(config.APP_TITLE); self.update_idletasks(); screen_width = self.winfo_screenwidth(); screen_height = self.winfo_screenheight()
-        app_width_str, app_height_str = self.original_geometry.split('x'); app_width = int(app_width_str); app_height = int(app_height_str)
-        x_coordinate = screen_width - app_width - 230; y_coordinate = screen_height - app_height - 180
-        self.geometry(f"{app_width}x{app_height}+{x_coordinate}+{y_coordinate}"); self.attributes("-topmost", True)
-        self.grid_columnconfigure(0, weight=1); self.grid_rowconfigure(0, weight=1); self.grid_rowconfigure(1, weight=0)
+        self.title(config.APP_TITLE)
+        self.update_idletasks()
+        screen_width = self.winfo_screenwidth()
+        screen_height = self.winfo_screenheight()
+        app_width_str, app_height_str = self.original_geometry.split('x')
+        app_width = int(app_width_str)
+        app_height = int(app_height_str)
+        x_coordinate = screen_width - app_width - 230
+        y_coordinate = screen_height - app_height - 180
+        self.geometry(f"{app_width}x{app_height}+{x_coordinate}+{y_coordinate}")
+        self.attributes("-topmost", True)
+        self.grid_columnconfigure(0, weight=1)
+        self.grid_rowconfigure(0, weight=1)
+        self.grid_rowconfigure(1, weight=0)
         self.protocol("WM_DELETE_WINDOW", self._on_closing)
 
     def _create_widgets(self):
-        self.top_frame = customtkinter.CTkFrame(self, fg_color="transparent"); self.top_frame.grid(row=0, column=0, sticky="nsew")
-        self.top_frame.grid_columnconfigure(0, weight=7); self.top_frame.grid_columnconfigure(1, weight=3); self.top_frame.grid_rowconfigure(0, weight=1)
-        self._create_left_frame(); self._create_left_frame_collapsed(); self.left_frame_collapsed.grid_remove()
-        self._create_right_frame(); self._create_right_frame_collapsed(); self.right_frame_collapsed.grid_remove()
-        self.bottom_frame = customtkinter.CTkFrame(self); self.bottom_frame.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="ew"); self.bottom_frame.grid_columnconfigure(0, weight=1)
-        action_frame = customtkinter.CTkFrame(self.bottom_frame); action_frame.grid(row=0, column=0, padx=5, pady=5, sticky="ew"); action_frame.grid_columnconfigure(4, weight=1)
-        self.all_check_var = customtkinter.StringVar(value="on"); self.all_checkbox = customtkinter.CTkCheckBox(action_frame, text="", variable=self.all_check_var, onvalue="on", offvalue="off", command=self._toggle_all_profiles); self.all_checkbox.grid(row=0, column=0, padx=5, pady=5)
-        self.optionmenu_var = customtkinter.StringVar(value="Options"); self.optionmenu = customtkinter.CTkOptionMenu(action_frame, variable=self.optionmenu_var, command=self._optionmenu_callback); self.optionmenu.grid(row=0, column=1, padx=5, pady=5); self._update_option_menu()
-        self.close_button = customtkinter.CTkButton(action_frame, text="Close Edge", command=self.automation_service.close_all_edge_windows, fg_color="green"); self.close_button.grid(row=0, column=2, padx=5, pady=5)
-        self.start_button = customtkinter.CTkButton(action_frame, text="Start Searches", command=self._start_automation_thread); self.start_button.grid(row=0, column=3, padx=5, pady=5)
+        self.top_frame = customtkinter.CTkFrame(self, fg_color="transparent")
+        self.top_frame.grid(row=0, column=0, sticky="nsew")
+        self.top_frame.grid_columnconfigure(0, weight=7)
+        self.top_frame.grid_columnconfigure(1, weight=3)
+        self.top_frame.grid_rowconfigure(0, weight=1)
+        self._create_left_frame()
+        self._create_left_frame_collapsed()
+        self.left_frame_collapsed.grid_remove()
+        self._create_right_frame()
+        self._create_right_frame_collapsed()
+        self.right_frame_collapsed.grid_remove()
+        self.bottom_frame = customtkinter.CTkFrame(self)
+        self.bottom_frame.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="ew")
+        self.bottom_frame.grid_columnconfigure(0, weight=1)
+        action_frame = customtkinter.CTkFrame(self.bottom_frame)
+        action_frame.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
+        action_frame.grid_columnconfigure(4, weight=1)
+        self.all_check_var = customtkinter.StringVar(value="on")
+        self.all_checkbox = customtkinter.CTkCheckBox(action_frame, text="", variable=self.all_check_var, onvalue="on", offvalue="off", command=self._toggle_all_profiles)
+        self.all_checkbox.grid(row=0, column=0, padx=5, pady=5)
+        self.optionmenu_var = customtkinter.StringVar(value="Options")
+        self.optionmenu = customtkinter.CTkOptionMenu(action_frame, variable=self.optionmenu_var, command=self._optionmenu_callback)
+        self.optionmenu.grid(row=0, column=1, padx=5, pady=5)
+        self._update_option_menu()
+        self.close_button = customtkinter.CTkButton(action_frame, text="Close Edge", command=self.automation_service.close_all_edge_windows, fg_color="green")
+        self.close_button.grid(row=0, column=2, padx=5, pady=5)
+        self.start_button = customtkinter.CTkButton(action_frame, text="Start Searches", command=self._start_automation_thread)
+        self.start_button.grid(row=0, column=3, padx=5, pady=5)
         self.search_mode_switch_var = customtkinter.StringVar(value="on" if self.settings["smart_search_mode"] else "off")
-        search_mode_switch = customtkinter.CTkSwitch(action_frame, text="Smart Search", variable=self.search_mode_switch_var, onvalue="on", offvalue="off", command=self._on_search_mode_toggle); search_mode_switch.grid(row=0, column=4, padx=10, pady=5, sticky="e")
-        self.collapse_top_button = customtkinter.CTkButton(action_frame, text="▲", width=25, command=lambda: self._toggle_top_frame()); self.collapse_top_button.grid(row=0, column=5, padx=5, pady=5)
-        progress_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent"); progress_frame.grid(row=1, column=0, padx=5, pady=0, sticky="ew"); progress_frame.grid_columnconfigure(1, weight=1)
-        batch_label = customtkinter.CTkLabel(progress_frame, text="Batch:", width=50); batch_label.grid(row=0, column=0, padx=(5,0), pady=2, sticky="w")
-        self.batch_progress_bar = customtkinter.CTkProgressBar(progress_frame); self.batch_progress_bar.set(0); self.batch_progress_bar.grid(row=0, column=1, padx=5, pady=2, sticky="ew")
-        self.batch_progress_label = customtkinter.CTkLabel(progress_frame, text="0 / 0 Points", width=100, anchor="w"); self.batch_progress_label.grid(row=0, column=2, padx=5, pady=2)
-        overall_label = customtkinter.CTkLabel(progress_frame, text="Overall:", width=50); overall_label.grid(row=1, column=0, padx=(5,0), pady=2, sticky="w")
-        self.overall_progress_bar = customtkinter.CTkProgressBar(progress_frame); self.overall_progress_bar.set(0); self.overall_progress_bar.grid(row=1, column=1, padx=5, pady=2, sticky="ew")
-        self.overall_progress_label = customtkinter.CTkLabel(progress_frame, text="0 / 0 Points", width=100, anchor="w"); self.overall_progress_label.grid(row=1, column=2, padx=5, pady=2)
-        bottom_info_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent"); bottom_info_frame.grid(row=2, column=0, padx=5, pady=5, sticky="ew"); bottom_info_frame.grid_columnconfigure(0, weight=1)
-        self.status_label = customtkinter.CTkLabel(bottom_info_frame, text="Ready", anchor="w"); self.status_label.grid(row=0, column=0, sticky="ew")
-        status_count_frame = customtkinter.CTkFrame(bottom_info_frame, fg_color="transparent"); status_count_frame.grid(row=0, column=1, sticky="e")
-        self.active_count_label = customtkinter.CTkLabel(status_count_frame, text="Active: 0", font=customtkinter.CTkFont(weight="bold")); self.active_count_label.pack(side="left", padx=(0, 10))
-        self.suspended_count_label = customtkinter.CTkLabel(status_count_frame, text="Suspended: 0", font=customtkinter.CTkFont(weight="bold")); self.suspended_count_label.pack(side="left")
+        search_mode_switch = customtkinter.CTkSwitch(action_frame, text="Smart Search", variable=self.search_mode_switch_var, onvalue="on", offvalue="off", command=self._on_search_mode_toggle)
+        search_mode_switch.grid(row=0, column=4, padx=10, pady=5, sticky="e")
+        self.collapse_top_button = customtkinter.CTkButton(action_frame, text="▲", width=25, command=lambda: self._toggle_top_frame())
+        self.collapse_top_button.grid(row=0, column=5, padx=5, pady=5)
+        progress_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent")
+        progress_frame.grid(row=1, column=0, padx=5, pady=0, sticky="ew")
+        progress_frame.grid_columnconfigure(1, weight=1)
+        batch_label = customtkinter.CTkLabel(progress_frame, text="Batch:", width=50)
+        batch_label.grid(row=0, column=0, padx=(5,0), pady=2, sticky="w")
+        self.batch_progress_bar = customtkinter.CTkProgressBar(progress_frame)
+        self.batch_progress_bar.set(0)
+        self.batch_progress_bar.grid(row=0, column=1, padx=5, pady=2, sticky="ew")
+        self.batch_progress_label = customtkinter.CTkLabel(progress_frame, text="0 / 0 Points", width=100, anchor="w")
+        self.batch_progress_label.grid(row=0, column=2, padx=5, pady=2)
+        overall_label = customtkinter.CTkLabel(progress_frame, text="Overall:", width=50)
+        overall_label.grid(row=1, column=0, padx=(5,0), pady=2, sticky="w")
+        self.overall_progress_bar = customtkinter.CTkProgressBar(progress_frame)
+        self.overall_progress_bar.set(0)
+        self.overall_progress_bar.grid(row=1, column=1, padx=5, pady=2, sticky="ew")
+        self.overall_progress_label = customtkinter.CTkLabel(progress_frame, text="0 / 0 Points", width=100, anchor="w")
+        self.overall_progress_label.grid(row=1, column=2, padx=5, pady=2)
+        bottom_info_frame = customtkinter.CTkFrame(self.bottom_frame, fg_color="transparent")
+        bottom_info_frame.grid(row=2, column=0, padx=5, pady=5, sticky="ew")
+        bottom_info_frame.grid_columnconfigure(0, weight=1)
+        self.status_label = customtkinter.CTkLabel(bottom_info_frame, text="Ready", anchor="w")
+        self.status_label.grid(row=0, column=0, sticky="ew")
+        status_count_frame = customtkinter.CTkFrame(bottom_info_frame, fg_color="transparent")
+        status_count_frame.grid(row=0, column=1, sticky="e")
+        self.active_count_label = customtkinter.CTkLabel(status_count_frame, text="Active: 0", font=customtkinter.CTkFont(weight="bold"))
+        self.active_count_label.pack(side="left", padx=(0, 10))
+        self.suspended_count_label = customtkinter.CTkLabel(status_count_frame, text="Suspended: 0", font=customtkinter.CTkFont(weight="bold"))
+        self.suspended_count_label.pack(side="left")
 
     def _on_search_mode_toggle(self):
         is_smart = self.search_mode_switch_var.get() == "on"
@@ -184,7 +298,7 @@ class BingAutomatorApp(customtkinter.CTk):
         collapse_right_button = customtkinter.CTkButton(right_header, text="►", width=25, command=lambda: self._toggle_right_frame()); collapse_right_button.grid(row=0, column=1, padx=5, pady=5, sticky="e")
         self.controls_content_frame = customtkinter.CTkScrollableFrame(self.controls_frame); self.controls_content_frame.grid(row=1, column=0, sticky="nsew"); self.controls_content_frame.grid_columnconfigure(0, weight=1)
         self.batch_slider = LabeledSlider(self.controls_content_frame, "Profiles per Batch:", 1, 15, 1, 4, command=self._update_option_menu); self.batch_slider.pack(fill="x", padx=10, pady=10, anchor="n")
-        self.pc_slider = LabeledSlider(self.controls_content_frame, "PC Searches:", 0, 90, 3, 60); self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
+        self.pc_slider = LabeledSlider(self.controls_content_frame, "PC Searches:", 0, 90, 3, 9); self.pc_slider.pack(fill="x", padx=10, pady=10, anchor="n")
         self.fetch_progress_button = customtkinter.CTkButton(self.controls_content_frame, text="Fetch All Points", command=self._start_fetch_progress_thread, fg_color="teal"); self.fetch_progress_button.pack(fill="x", padx=10, pady=(0, 10))
         behavior_frame = customtkinter.CTkFrame(self.controls_content_frame); behavior_frame.pack(fill="x", padx=10, pady=10)
         behavior_title = customtkinter.CTkLabel(behavior_frame, text="Human Behavior Delays", font=customtkinter.CTkFont(weight="bold")); behavior_title.pack(padx=10, pady=(5, 10), anchor="w")
@@ -265,97 +379,97 @@ class BingAutomatorApp(customtkinter.CTk):
             todays_progress_history = self.automation_service.load_todays_progress_from_history()
             batch_size = self.batch_slider.get(); pc_searches_target = self.pc_slider.get() // 3; num_profiles = len(profiles_to_run)
             total_possible_searches = num_profiles * pc_searches_target
-            if total_possible_searches == 0 and pc_searches_target > 0: # Avoid div by zero if searches > 0 but profiles = 0
-                self._update_status("No profiles selected or batch size issue."); self.selenium_lock.release(); return
-            elif pc_searches_target == 0: # Handle 0 searches specifically
-                self._update_status("PC searches set to 0. Skipping search task."); self.selenium_lock.release(); return
+            if pc_searches_target == 0: self._update_status("PC searches set to 0. Skipping search task.");
+            elif total_possible_searches == 0: self._update_status("No profiles selected or batch size issue.");
+            else: # Only proceed if searches > 0 and profiles > 0
+                self.overall_progress_label.configure(text=f"0 / {total_possible_searches * 3} Points"); self.overall_progress_bar.set(0)
+                self._update_status("Search Automation started..."); searches_completed_so_far = 0
+                post_search_delay = (self.settings["post_search_delay_min"], self.settings["post_search_delay_max"])
+                scroll_delay = (self.settings["scroll_delay_min"], self.settings["scroll_delay_max"])
+                mouse_move_duration = (self.settings["mouse_move_duration_min"], self.settings["mouse_move_duration_max"])
+                key_press_delay = (self.settings["key_press_delay_min"], self.settings["key_press_delay_max"])
+                is_smart_mode = self.settings.get("smart_search_mode", True)
 
-            self.overall_progress_label.configure(text=f"0 / {total_possible_searches * 3} Points"); self.overall_progress_bar.set(0)
-            self._update_status("Search Automation started..."); searches_completed_so_far = 0
-            post_search_delay = (self.settings["post_search_delay_min"], self.settings["post_search_delay_max"])
-            scroll_delay = (self.settings["scroll_delay_min"], self.settings["scroll_delay_max"])
-            mouse_move_duration = (self.settings["mouse_move_duration_min"], self.settings["mouse_move_duration_max"])
-            key_press_delay = (self.settings["key_press_delay_min"], self.settings["key_press_delay_max"])
-            is_smart_mode = self.settings.get("smart_search_mode", True)
+                for i in range(0, num_profiles, batch_size):
+                    if stop_event.is_set(): break
+                    batch = profiles_to_run[i:i + batch_size]; batch_num = (i // batch_size) + 1
+                    self._update_status(f"Processing Batch {batch_num}...")
+                    def create_progress_updater(searches_done_before_this_run, total_searches_in_run):
+                        def update_progress_bars(searches_done_this_run, total_searches_this_run_param):
+                            progress_val = (searches_done_this_run / total_searches_this_run_param) if total_searches_this_run_param > 0 else 0
+                            self.batch_progress_bar.set(progress_val)
+                            self.batch_progress_label.configure(text=f"{searches_done_this_run * 3} / {total_searches_this_run_param * 3} Points")
+                            current_overall_searches = searches_done_before_this_run + searches_done_this_run
+                            overall_progress_val = (current_overall_searches / total_possible_searches) if total_possible_searches > 0 else 0
+                            self.overall_progress_bar.set(overall_progress_val)
+                            self.overall_progress_label.configure(text=f"{current_overall_searches * 3} / {total_possible_searches * 3} Points")
+                        return update_progress_bars
 
-            for i in range(0, num_profiles, batch_size):
-                if stop_event.is_set(): break
-                batch = profiles_to_run[i:i + batch_size]; batch_num = (i // batch_size) + 1
-                self._update_status(f"Processing Batch {batch_num}...")
-                def create_progress_updater(searches_done_before_this_run, total_searches_in_run):
-                    def update_progress_bars(searches_done_this_run, total_searches_this_run_param):
-                        progress_val = (searches_done_this_run / total_searches_this_run_param) if total_searches_this_run_param > 0 else 0
-                        self.batch_progress_bar.set(progress_val)
-                        self.batch_progress_label.configure(text=f"{searches_done_this_run * 3} / {total_searches_this_run_param * 3} Points")
-                        current_overall_searches = searches_done_before_this_run + searches_done_this_run
-                        overall_progress_val = (current_overall_searches / total_possible_searches) if total_possible_searches > 0 else 0
-                        self.overall_progress_bar.set(overall_progress_val)
-                        self.overall_progress_label.configure(text=f"{current_overall_searches * 3} / {total_possible_searches * 3} Points")
-                    return update_progress_bars
+                    initial_searches_in_batch = pc_searches_target * len(batch) if pc_searches_target > 0 else 0
+                    if initial_searches_in_batch > 0:
+                        self.automation_service.run_search_session(
+                            profiles=batch, pc_searches=pc_searches_target, stop_event=stop_event,
+                            progress_callback=self._update_status, on_search_progress=create_progress_updater(searches_completed_so_far, initial_searches_in_batch),
+                            post_search_delay=post_search_delay, scroll_delay=scroll_delay, mouse_move_duration=mouse_move_duration, key_press_delay=key_press_delay
+                        )
+                        searches_completed_so_far += initial_searches_in_batch
 
-                initial_searches_in_batch = pc_searches_target * len(batch) if pc_searches_target > 0 else 0
-                if initial_searches_in_batch > 0:
-                    self.automation_service.run_search_session(
-                        profiles=batch, pc_searches=pc_searches_target, stop_event=stop_event,
-                        progress_callback=self._update_status, on_search_progress=create_progress_updater(searches_completed_so_far, initial_searches_in_batch),
-                        post_search_delay=post_search_delay, scroll_delay=scroll_delay, mouse_move_duration=mouse_move_duration, key_press_delay=key_press_delay
-                    )
-                    searches_completed_so_far += initial_searches_in_batch
-                else: self._update_status(f"Batch {batch_num}: Skipping initial search (0 searches set).")
-
-                if is_smart_mode and not stop_event.is_set() and pc_searches_target > 0: # Only run smart mode if initial searches were attempted
-                    MAX_RETRIES = 5; profiles_to_verify = batch[:]
-                    for retry_count in range(MAX_RETRIES):
-                        if stop_event.is_set(): break
-                        self._update_status(f"Batch {batch_num}: Verifying progress (Attempt {retry_count + 1})...")
-                        profiles_to_retry = []; points_needed = []; batch_progress_data = {}
-                        for profile in profiles_to_verify:
+                    if is_smart_mode and not stop_event.is_set() and pc_searches_target > 0:
+                        MAX_RETRIES = 5; profiles_to_verify = batch[:]
+                        for retry_count in range(MAX_RETRIES):
                             if stop_event.is_set(): break
-                            self.after(0, self._scroll_to_profile, profile)
-                            if profile.status == 'suspended': self._update_status(f"Skipping progress check for suspended profile: {profile.name}"); continue
-                            widget = self.profile_widget_map.get(profile); points_data = None; cached_data = todays_progress_history.get(profile.email)
-                            if cached_data and cached_data.get("daily_progress"):
-                                try:
-                                    progress_str = cached_data["daily_progress"]
-                                    if "N/A" not in progress_str and "Error" not in progress_str: earned, max_pts = map(int, re.findall(r'\d+', progress_str));
-                                    if earned >= max_pts: self._update_status(f"Skipping fetch for {profile.name}: Already completed."); points_data = cached_data;
+                            self._update_status(f"Batch {batch_num}: Verifying progress (Attempt {retry_count + 1})...")
+                            profiles_to_retry = []; points_needed = []; batch_progress_data = {}
+                            for profile in profiles_to_verify:
+                                if stop_event.is_set(): break
+                                self.after(0, self._scroll_to_profile, profile)
+                                if profile.status == 'suspended': self._update_status(f"Skipping progress check for suspended profile: {profile.name}"); continue
+                                widget = self.profile_widget_map.get(profile); points_data = None; cached_data = todays_progress_history.get(profile.email)
+                                if cached_data and cached_data.get("daily_progress"):
+                                    try:
+                                        progress_str = cached_data["daily_progress"]
+                                        if "N/A" not in progress_str and "Error" not in progress_str: earned, max_pts = map(int, re.findall(r'\d+', progress_str));
+                                        if earned >= max_pts: self._update_status(f"Skipping fetch for {profile.name}: Already completed."); points_data = cached_data;
+                                        if widget: self.after(0, widget.update_points_display, points_data)
+                                    except (ValueError, IndexError): pass
+                                if points_data is None:
+                                    if widget: self.after(0, widget.update_points_display, {"daily_progress": "Fetching..."})
+                                    points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
+                                    if points_data: todays_progress_history[profile.email] = points_data
                                     if widget: self.after(0, widget.update_points_display, points_data)
-                                except (ValueError, IndexError): pass
-                            if points_data is None:
-                                if widget: self.after(0, widget.update_points_display, {"daily_progress": "Fetching..."})
-                                points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
-                                if points_data: todays_progress_history[profile.email] = points_data
-                                if widget: self.after(0, widget.update_points_display, points_data)
-                            batch_progress_data[profile] = points_data; progress_str = points_data.get("daily_progress") if points_data else None
-                            if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
-                                try:
-                                    earned, max_pts = map(int, re.findall(r'\d+', progress_str))
-                                    if earned < max_pts: profiles_to_retry.append(profile); points_needed.append(max_pts - earned)
-                                except (ValueError, IndexError): logger.log(f"Could not parse progress string: '{progress_str}'", "WARN")
-                        if not profiles_to_retry: self._update_status(f"Batch {batch_num}: All points collected."); break
-                        profiles_to_verify = profiles_to_retry[:]; max_points_needed = max(points_needed) if points_needed else 0
-                        searches_for_next_cycle = math.ceil(max_points_needed / 3); use_slower_delay = len(profiles_to_retry) <= 2
-                        self._update_status(f"Batch {batch_num}: {len(profiles_to_retry)} profiles need more points. Retrying with {searches_for_next_cycle} searches...")
-                        total_retry_searches = searches_for_next_cycle * len(profiles_to_retry)
-                        if total_retry_searches > 0 :
-                             self.automation_service.run_search_session(
-                                 profiles=profiles_to_retry, pc_searches=searches_for_next_cycle, stop_event=stop_event, use_retry_delay=use_slower_delay,
-                                 progress_callback=self._update_status, on_search_progress=create_progress_updater(searches_completed_so_far, total_retry_searches),
-                                 post_search_delay=post_search_delay, scroll_delay=scroll_delay, mouse_move_duration=mouse_move_duration, key_press_delay=key_press_delay
-                             )
-                             searches_completed_so_far += total_retry_searches
-                        else: self._update_status(f"Batch {batch_num}: No points needed for retry, skipping.")
-                    else: self._update_status(f"Batch {batch_num}: Max retries reached.")
-                    if not stop_event.is_set():
-                        self._update_status(f"Batch {batch_num}: Saving final progress to history...")
-                        # Save history only if smart mode ran and potentially updated points_data
-                        if batch_progress_data:
-                            for profile, points_data in batch_progress_data.items():
-                                 if points_data and "Error" not in points_data.get("daily_progress", ""): self.automation_service.save_progress_to_history(profile, points_data); todays_progress_history[profile.email] = points_data
-                elif not is_smart_mode: self._update_status(f"Batch {batch_num}: Smart Search disabled, skipping point verification.")
+                                batch_progress_data[profile] = points_data; progress_str = points_data.get("daily_progress") if points_data else None
+                                if progress_str and "N/A" not in progress_str and "Error" not in progress_str:
+                                    try:
+                                        earned, max_pts = map(int, re.findall(r'\d+', progress_str))
+                                        if earned < max_pts: profiles_to_retry.append(profile); points_needed.append(max_pts - earned)
+                                    except (ValueError, IndexError): logger.log(f"Could not parse progress string: '{progress_str}'", "WARN")
+                            if not profiles_to_retry: self._update_status(f"Batch {batch_num}: All points collected."); break
+                            profiles_to_verify = profiles_to_retry[:]; max_points_needed = max(points_needed) if points_needed else 0
+                            searches_for_next_cycle = math.ceil(max_points_needed / 3); use_slower_delay = len(profiles_to_retry) <= 2
+                            self._update_status(f"Batch {batch_num}: {len(profiles_to_retry)} profiles need more points. Retrying with {searches_for_next_cycle} searches...")
+                            total_retry_searches = searches_for_next_cycle * len(profiles_to_retry)
+                            if total_retry_searches > 0 :
+                                 self.automation_service.run_search_session(
+                                     profiles=profiles_to_retry, pc_searches=searches_for_next_cycle, stop_event=stop_event, use_retry_delay=use_slower_delay,
+                                     progress_callback=self._update_status, on_search_progress=create_progress_updater(searches_completed_so_far, total_retry_searches),
+                                     post_search_delay=post_search_delay, scroll_delay=scroll_delay, mouse_move_duration=mouse_move_duration, key_press_delay=key_press_delay
+                                 )
+                                 searches_completed_so_far += total_retry_searches
+                            else: self._update_status(f"Batch {batch_num}: No points needed for retry, skipping.")
+                        else: self._update_status(f"Batch {batch_num}: Max retries reached.")
+                        if not stop_event.is_set():
+                            self._update_status(f"Batch {batch_num}: Saving final progress to history...")
+                            if batch_progress_data:
+                                for profile, points_data in batch_progress_data.items():
+                                     if points_data and "Error" not in points_data.get("daily_progress", ""): self.automation_service.save_progress_to_history(profile, points_data); todays_progress_history[profile.email] = points_data
+                    elif not is_smart_mode: self._update_status(f"Batch {batch_num}: Smart Search disabled, skipping point verification.")
 
-            if stop_event.is_set(): self._update_status("Search Automation Stopped by User.")
-            else: self._update_status(f"Search Automation Complete!")
+                if stop_event.is_set(): self._update_status("Search Automation Stopped by User.")
+                else: self._update_status(f"Search Automation Complete!") # Only log once after all batches if not stopped
+        # --- Catch potential errors in the worker ---
+        except Exception as e:
+            logger.log(f"Error in automation worker: {e}", "ERROR")
+            self._update_status(f"Error occurred: {e}")
         finally:
             self.start_button.configure(text="Start Searches", command=self._start_automation_thread, state="normal", fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], hover_color=customtkinter.ThemeManager.theme["CTkButton"]["hover_color"])
             self.fetch_progress_button.configure(state="normal"); self.stop_event = None;
@@ -381,19 +495,15 @@ class BingAutomatorApp(customtkinter.CTk):
                 if stop_event.is_set(): break
                 self.after(0, self._scroll_to_profile, profile); widget = self.profile_widget_map.get(profile)
                 cached_data = todays_progress_history.get(profile.email); is_complete = False
-                # --- ADDED CHECK FOR NONE before using cached_data ---
-                if cached_data and cached_data.get("daily_progress"): # Check cached_data exists
+                if cached_data and cached_data.get("daily_progress"):
                     try:
                         progress_str = cached_data["daily_progress"]
                         if "N/A" not in progress_str and "Error" not in progress_str: earned, max_pts = map(int, re.findall(r'\d+', progress_str));
                         if earned >= max_pts: is_complete = True
                     except (ValueError, IndexError): pass
-
                 if is_complete:
                     self._update_status(f"Skipping fetch for {profile.name}: Already completed.")
-                    # --- ADDED CHECK FOR NONE before updating UI ---
-                    if widget and cached_data: # Check both exist
-                        widget.update_points_display(cached_data)
+                    if widget and cached_data: widget.update_points_display(cached_data)
                 else:
                     if widget: widget.update_points_display({"available_points": "Fetching...", "daily_progress": "Fetching..."})
                     points_data = self.automation_service.fetch_points_details(profile, stop_event, headless=True)
@@ -403,6 +513,10 @@ class BingAutomatorApp(customtkinter.CTk):
                 self.overall_progress_bar.set((i + 1) / total_profiles); self.overall_progress_label.configure(text=f"{i + 1} / {total_profiles} Profiles")
             if stop_event.is_set(): self._update_status("Points fetching stopped by user.")
             else: self._update_status("Points fetching complete.")
+        # --- Catch potential errors in the worker ---
+        except Exception as e:
+            logger.log(f"Error in fetch progress worker: {e}", "ERROR")
+            self._update_status(f"Error occurred during fetch: {e}")
         finally:
             self.start_button.configure(state="normal"); self.fetch_progress_button.configure(text="Fetch All Points", command=self._start_fetch_progress_thread, state="normal", fg_color="teal")
             self.stop_event = None;

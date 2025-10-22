@@ -8355,3 +8355,267 @@ Stacktrace:
 [05:31:37] [INFO] Batch 1: All points collected.
 [05:31:37] [INFO] Batch 1: Saving final progress to history...
 [05:31:37] [INFO] Search Automation Complete!
+[05:33:38] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-22 05:37:48 ---
+[05:37:48] [INFO] Application starting up.
+[05:37:48] [INFO] Loading profiles from data.json.
+[05:37:48] [INFO] Successfully loaded 27 profiles.
+[05:37:48] [SYSTEM] SearchQueryGenerator initialized.
+[05:37:49] [ERROR] Failed to read history file: cannot access local variable 'email' where it is not associated with a value
+[05:37:51] [INFO] Search mode set to: Default Search (Fixed count)
+
+--- Log Session Started: 2025-10-22 05:37:56 ---
+[05:37:56] [INFO] Application starting up.
+[05:37:56] [INFO] Loading profiles from data.json.
+[05:37:56] [INFO] Successfully loaded 27 profiles.
+[05:37:56] [SYSTEM] SearchQueryGenerator initialized.
+[05:37:57] [ERROR] Failed to read history file: cannot access local variable 'email' where it is not associated with a value
+[05:38:10] [INFO] Fetching all points...
+[05:38:10] [ERROR] Failed to read history file: cannot access local variable 'email' where it is not associated with a value
+[05:38:11] [SYSTEM] Forcefully closed all Edge processes.
+[05:38:12] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:38:20] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:38:30] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:38:42] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:38:51] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:00] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:08] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:18] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:27] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:39] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:47] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:39:55] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:05] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:17] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:27] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:35] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:43] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:40:52] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:00] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:09] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:18] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:26] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:37] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:46] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:41:54] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:42:03] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:42:11] [DEBUG] Headless mode enabled for Selenium points fetching.
+[05:42:20] [INFO] Points fetching complete.
+
+--- Log Session Started: 2025-10-22 05:42:44 ---
+[05:42:44] [INFO] Application starting up.
+[05:42:44] [INFO] Loading profiles from data.json.
+[05:42:44] [INFO] Successfully loaded 27 profiles.
+[05:42:44] [SYSTEM] SearchQueryGenerator initialized.
+[05:42:45] [ERROR] Failed to read history file: cannot access local variable 'email' where it is not associated with a value
+
+--- Log Session Started: 2025-10-22 05:47:19 ---
+[05:47:19] [INFO] Application starting up.
+[05:47:19] [INFO] Loading profiles from data.json.
+[05:47:19] [INFO] Successfully loaded 27 profiles.
+[05:47:19] [SYSTEM] SearchQueryGenerator initialized.
+[05:47:21] [ERROR] Failed to read history file: cannot access local variable 'email' where it is not associated with a value
+
+--- Log Session Started: 2025-10-22 05:54:28 ---
+
+--- Log Session Started: 2025-10-22 05:59:23 ---
+[05:59:23] [INFO] Application starting up.
+[05:59:23] [INFO] Loading profiles from data.json.
+[05:59:23] [INFO] Successfully loaded 27 profiles.
+[05:59:23] [SYSTEM] SearchQueryGenerator initialized.
+[05:59:24] [INFO] Loaded 27 progress records from today's history.
+[05:59:29] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-22 05:59:33 ---
+[05:59:33] [INFO] Application starting up.
+[05:59:33] [INFO] Loading profiles from data.json.
+[05:59:33] [INFO] Successfully loaded 27 profiles.
+[05:59:33] [SYSTEM] SearchQueryGenerator initialized.
+[05:59:34] [INFO] Loaded 27 progress records from today's history.
+[05:59:43] [INFO] Loaded 27 progress records from today's history.
+[05:59:43] [INFO] Search Automation started...
+[05:59:43] [INFO] Processing Batch 1...
+[05:59:43] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[05:59:51] [INFO] Search 'curse' (1/2) in window 'New tab - Personal 4 - Microsoft​ Edge'
+[06:00:01] [INFO] Search 'reviews for cluster' (1/2) in window 'reviews for cluster - Search and 2 more pages - Personal 2 - Microsoft​ Edge'
+[06:00:09] [INFO] Search 'where is banquette' (1/2) in window 'where is banquette - Search - Personal 3 - Microsoft​ Edge'
+[06:00:12] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:00:14] [INFO] Search 'ladder' (1/2) in window 'ladder - Search - Personal - Microsoft​ Edge'
+[06:00:18] [INFO] Search 'why is realm' (2/2) in window 'why is realm - Search - Personal 4 - Microsoft​ Edge'
+[06:00:20] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:00:21] [INFO] Search 'consent' (2/2) in window 'consent - Search and 2 more pages - Personal 2 - Microsoft​ Edge'
+[06:00:27] [INFO] Search 'when did take-out' (2/2) in window 'when did take-out - Search - Personal 3 - Microsoft​ Edge'
+[06:00:33] [INFO] Search 'what is mist' (2/2) in window 'what is mist - Search - Personal - Microsoft​ Edge'
+[06:00:35] [SYSTEM] Forcefully closed all Edge processes.
+[06:00:35] [INFO] Batch 1: Smart Search disabled, skipping point verification.
+[06:00:35] [INFO] Processing Batch 2...
+[06:00:35] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:00:44] [INFO] Search 'how to drawer' (1/2) in window 'how to drawer - Search - Personal 8 - Microsoft​ Edge'
+[06:00:50] [INFO] Search 'fairness' (1/2) in window 'fairness - Search - Personal 7 - Microsoft​ Edge'
+[06:00:57] [INFO] Search 'paste' (1/2) in window 'paste - Search - Personal 6 - Microsoft​ Edge'
+[06:01:02] [INFO] Search 'why is botany' (1/2) in window 'why is botany - Search - Personal 5 - Microsoft​ Edge'
+[06:01:07] [INFO] Search 'weather in information' (2/2) in window 'weather in information - Search - Personal 8 - Microsoft​ Edge'
+[06:01:10] [INFO] Search 'plate' (2/2) in window 'plate - Search - Personal 7 - Microsoft​ Edge'
+[06:01:17] [INFO] Search 'recipe for goldfish' (2/2) in window 'recipe for goldfish - Search - Personal 6 - Microsoft​ Edge'
+[06:01:22] [INFO] Search 'best way to layer' (2/2) in window 'best way to layer - Search - Personal 5 - Microsoft​ Edge'
+[06:01:24] [SYSTEM] Forcefully closed all Edge processes.
+[06:01:24] [INFO] Batch 2: Smart Search disabled, skipping point verification.
+[06:01:24] [INFO] Processing Batch 3...
+[06:01:24] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:01:35] [INFO] Search 'heir' (1/2) in window 'heir - Search - Personal 12 - Microsoft​ Edge'
+[06:01:41] [INFO] Search 'meaning of condominium' (1/2) in window 'meaning of condominium - Search - Personal 11 - Microsoft​ Edge'
+[06:01:45] [INFO] Search 'relieved' (1/2) in window 'relieved - Search - Personal 10 - Microsoft​ Edge'
+[06:01:52] [INFO] Search 'news about agony' (1/2) in window 'news about agony - Search - Personal 9 - Microsoft​ Edge'
+[06:01:59] [INFO] Search 'best way to footwear' (2/2) in window 'best way to footwear - Search - Personal 12 - Microsoft​ Edge'
+[06:02:02] [INFO] Search 'hang' (2/2) in window 'hang - Search - Personal 11 - Microsoft​ Edge'
+[06:02:08] [INFO] Search 'news about sight' (2/2) in window 'news about sight - Search - Personal 10 - Microsoft​ Edge'
+[06:02:15] [INFO] Search 'what is icy' (2/2) in window 'what is icy - Search - Personal 9 - Microsoft​ Edge'
+[06:02:16] [SYSTEM] Forcefully closed all Edge processes.
+[06:02:16] [INFO] Batch 3: Smart Search disabled, skipping point verification.
+[06:02:16] [INFO] Processing Batch 4...
+[06:02:16] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:02:25] [INFO] Search 'history of pharmacopoeia' (1/2) in window 'history of pharmacopoeia - Search - Personal 16 - Microsoft​ Edge'
+[06:02:34] [INFO] Search 'reviews for beancurd' (1/2) in window 'reviews for beancurd - Search - Personal 15 - Microsoft​ Edge'
+[06:02:40] [INFO] Search 'where is cent' (1/2) in window 'where is cent - Search - Personal 14 - Microsoft​ Edge'
+[06:02:49] [INFO] Search 'when did steamroller' (1/2) in window 'when did steamroller - Search - Personal 13 - Microsoft​ Edge'
+[06:02:55] [INFO] Search 'why is tune-up' (2/2) in window 'why is tune-up - Search - Personal 16 - Microsoft​ Edge'
+[06:02:58] [INFO] Search 'meaning of inevitable' (2/2) in window 'meaning of inevitable - Search - Personal 15 - Microsoft​ Edge'
+[06:03:03] [INFO] Search 'mixture' (2/2) in window 'mixture - Search - Personal 14 - Microsoft​ Edge'
+[06:03:08] [INFO] Search 'best way to belligerency' (2/2) in window 'best way to belligerency - Search - Personal 13 - Microsoft​ Edge'
+[06:03:10] [SYSTEM] Forcefully closed all Edge processes.
+[06:03:10] [INFO] Batch 4: Smart Search disabled, skipping point verification.
+[06:03:10] [INFO] Processing Batch 5...
+[06:03:10] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:03:18] [INFO] Search 'integer' (1/2) in window 'integer - Search - Personal 20 - Microsoft​ Edge'
+[06:03:22] [INFO] Search 'compare feng' (1/2) in window 'compare feng - Search - Personal 19 - Microsoft​ Edge'
+[06:03:30] [INFO] Search 'deals for trombone' (1/2) in window 'deals for trombone - Search - Personal 18 - Microsoft​ Edge'
+[06:03:35] [INFO] Search 'what is accord' (1/2) in window 'what is accord - Search - Personal 17 - Microsoft​ Edge'
+[06:03:43] [INFO] Search 'desktop' (2/2) in window 'desktop - Search - Personal 20 - Microsoft​ Edge'
+[06:03:45] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:03:48] [INFO] Search 'pate' (2/2) in window 'pate - Search - Personal 19 - Microsoft​ Edge'
+[06:03:49] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:03:56] [INFO] Search 'diamond' (2/2) in window 'diamond - Search - Personal 18 - Microsoft​ Edge'
+[06:04:03] [INFO] Search 'how to addicted' (2/2) in window 'how to addicted - Search - Personal 17 - Microsoft​ Edge'
+[06:04:05] [SYSTEM] Forcefully closed all Edge processes.
+[06:04:05] [INFO] Batch 5: Smart Search disabled, skipping point verification.
+[06:04:05] [INFO] Processing Batch 6...
+[06:04:05] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[06:04:14] [INFO] Search 'how to polenta' (1/2) in window 'how to polenta - Search - Personal 24 - Microsoft​ Edge'
+[06:04:17] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:04:23] [INFO] Search 'damaging' (1/2) in window 'damaging - Search - Personal 23 - Microsoft​ Edge'
+[06:04:26] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:04:30] [INFO] Search 'posterior' (1/2) in window 'posterior - Search - Personal 22 - Microsoft​ Edge'
+[06:04:33] [INFO] Search 'acid' (1/2) in window 'acid - Search - Personal 21 - Microsoft​ Edge'
+[06:04:37] [INFO] Search 'porcelain' (2/2) in window 'porcelain - Search - Personal 24 - Microsoft​ Edge'
+[06:04:40] [INFO] Search 'refreshments' (2/2) in window 'refreshments - Search - Personal 23 - Microsoft​ Edge'
+[06:04:42] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:04:43] [INFO] Search 'populist' (2/2) in window 'populist - Search - Personal 22 - Microsoft​ Edge'
+[06:04:49] [INFO] Search 'notation' (2/2) in window 'notation - Search - Personal 21 - Microsoft​ Edge'
+[06:04:52] [SYSTEM] Forcefully closed all Edge processes.
+[06:04:52] [INFO] Batch 6: Smart Search disabled, skipping point verification.
+[06:04:52] [INFO] Processing Batch 7...
+[06:04:52] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[06:05:00] [INFO] Search 'facts about correspondence' (1/2) in window 'facts about correspondence - Search - Personal 27 - Microsoft​ Edge'
+[06:05:04] [INFO] Search 'where is publisher' (1/2) in window 'where is publisher - Search - Personal 26 - Microsoft​ Edge'
+[06:05:09] [INFO] Search 'how to self-confidence' (1/2) in window 'how to self-confidence - Search - Personal 25 - Microsoft​ Edge'
+[06:05:12] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:05:13] [INFO] Search 'saxophone' (2/2) in window 'saxophone - Search - Personal 27 - Microsoft​ Edge'
+[06:05:20] [INFO] Search 'why is operator' (2/2) in window 'why is operator - Search - Personal 26 - Microsoft​ Edge'
+[06:05:24] [INFO] Search 'why is script' (2/2) in window 'why is script - Search - Personal 25 - Microsoft​ Edge'
+[06:05:26] [SYSTEM] Forcefully closed all Edge processes.
+[06:05:26] [INFO] Batch 7: Smart Search disabled, skipping point verification.
+[06:05:26] [INFO] Search Automation Complete!
+
+--- Log Session Started: 2025-10-22 06:05:42 ---
+[06:05:42] [INFO] Application starting up.
+[06:05:42] [INFO] Loading profiles from data.json.
+[06:05:42] [INFO] Successfully loaded 27 profiles.
+[06:05:42] [SYSTEM] SearchQueryGenerator initialized.
+[06:05:44] [INFO] Loaded 27 progress records from today's history.
+[06:06:24] [INFO] Search mode set to: Smart Search (Auto-complete)
+[06:06:25] [INFO] Loaded 27 progress records from today's history.
+[06:06:25] [INFO] Search Automation started...
+[06:06:25] [INFO] Processing Batch 1...
+[06:06:25] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:06:34] [INFO] Search 'news about revenue' (1/20) in window 'news about revenue - Search - Personal 23 - Microsoft​ Edge'
+[06:06:40] [INFO] Search 'recipe for ad hoc' (2/20) in window 'recipe for ad hoc - Search - Personal 23 - Microsoft​ Edge'
+[06:06:42] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:06:43] [INFO] Search 'wound' (3/20) in window 'wound - Search - Personal 23 - Microsoft​ Edge'
+[06:06:50] [INFO] Search 'valley' (4/20) in window 'valley - Search - Personal 23 - Microsoft​ Edge'
+[06:06:51] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:06:54] [INFO] Search 'thickness' (5/20) in window 'thickness - Search - Personal 23 - Microsoft​ Edge'
+[06:06:55] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:06:56] [INFO] Search 'remember' (6/20) in window 'remember - Search - Personal 23 - Microsoft​ Edge'
+[06:07:01] [INFO] Search 'reviews for mimosa' (7/20) in window 'reviews for mimosa - Search - Personal 23 - Microsoft​ Edge'
+[06:07:04] [INFO] Search 'influence' (8/20) in window 'influence - Search - Personal 23 - Microsoft​ Edge'
+[06:07:08] [INFO] Search 'news about knitting' (9/20) in window 'news about knitting - Search - Personal 23 - Microsoft​ Edge'
+[06:07:13] [INFO] Search 'how to task' (10/20) in window 'how to task - Search - Personal 23 - Microsoft​ Edge'
+[06:07:16] [INFO] Search 'news about steam' (11/20) in window 'news about steam - Search - Personal 23 - Microsoft​ Edge'
+[06:07:24] [INFO] Search 'meaning of volunteering' (12/20) in window 'meaning of volunteering - Search - Personal 23 - Microsoft​ Edge'
+[06:07:27] [INFO] Search 'arithmetic' (13/20) in window 'arithmetic - Search - Personal 23 - Microsoft​ Edge'
+[06:07:33] [INFO] Search 'when did cornet' (14/20) in window 'when did cornet - Search - Personal 23 - Microsoft​ Edge'
+[06:07:39] [INFO] Search 'what is diaper' (15/20) in window 'what is diaper - Search - Personal 23 - Microsoft​ Edge'
+[06:07:44] [INFO] Search 'agreeable' (16/20) in window 'agreeable - Search - Personal 23 - Microsoft​ Edge'
+[06:07:46] [INFO] Search 'how to merit' (17/20) in window 'how to merit - Search - Personal 23 - Microsoft​ Edge'
+[06:07:52] [INFO] Search 'history of sparkling' (18/20) in window 'history of sparkling - Search - Personal 23 - Microsoft​ Edge'
+[06:07:55] [INFO] Search 'sketch' (19/20) in window 'sketch - Search - Personal 23 - Microsoft​ Edge'
+[06:07:59] [INFO] Search 'news about middleman' (20/20) in window 'news about middleman - Search - Personal 23 - Microsoft​ Edge'
+[06:08:02] [SYSTEM] Forcefully closed all Edge processes.
+[06:08:02] [INFO] Batch 1: Verifying progress (Attempt 1)...
+[06:08:02] [DEBUG] Headless mode enabled for Selenium points fetching.
+[06:08:17] [INFO] Batch 1: 1 profiles need more points. Retrying with 11 searches...
+[06:08:17] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:08:28] [INFO] Search 'chap' (1/11) in window 'chap - Search - Personal 23 - Microsoft​ Edge'
+[06:08:31] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:08:35] [INFO] Search 'kettle' (2/11) in window 'kettle - Search - Personal 23 - Microsoft​ Edge'
+[06:08:43] [INFO] Search 'best way to proof-reader' (3/11) in window 'best way to proof-reader - Search - Personal 23 - Microsoft​ Edge'
+[06:08:48] [INFO] Search 'review' (4/11) in window 'review - Search - Personal 23 - Microsoft​ Edge'
+[06:08:53] [INFO] Search 'reviews for prayer' (5/11) in window 'reviews for prayer - Search - Personal 23 - Microsoft​ Edge'
+[06:08:58] [INFO] Search 'history of mosque' (6/11) in window 'history of mosque - Search - Personal 23 - Microsoft​ Edge'
+[06:09:02] [INFO] Search 'lighten' (7/11) in window 'lighten - Search - Personal 23 - Microsoft​ Edge'
+[06:09:07] [INFO] Search 'what is cone' (8/11) in window 'what is cone - Search - Personal 23 - Microsoft​ Edge'
+[06:09:10] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:09:16] [INFO] Search 'tenet' (9/11) in window 'tenet - Search - Personal 23 - Microsoft​ Edge'
+[06:09:24] [INFO] Search 'facts about siding' (10/11) in window 'facts about siding - Search - Personal 23 - Microsoft​ Edge'
+[06:09:30] [INFO] Search 'contention' (11/11) in window 'contention - Search - Personal 23 - Microsoft​ Edge'
+[06:09:33] [SYSTEM] Forcefully closed all Edge processes.
+[06:09:33] [INFO] Batch 1: Verifying progress (Attempt 2)...
+[06:09:33] [DEBUG] Headless mode enabled for Selenium points fetching.
+[06:09:50] [INFO] Batch 1: 1 profiles need more points. Retrying with 5 searches...
+[06:09:50] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:10:03] [INFO] Search 'superiority' (1/5) in window 'superiority - Search - Personal 23 - Microsoft​ Edge'
+[06:10:11] [INFO] Search 'bookend' (2/5) in window 'bookend - Search - Personal 23 - Microsoft​ Edge'
+[06:10:14] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:10:15] [INFO] Search 'grandpa' (3/5) in window 'grandpa - Search - Personal 23 - Microsoft​ Edge'
+[06:10:20] [INFO] Search 'starter' (4/5) in window 'starter - Search - Personal 23 - Microsoft​ Edge'
+[06:10:23] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[06:10:28] [INFO] Search 'tail' (5/5) in window 'tail - Search - Personal 23 - Microsoft​ Edge'
+[06:10:31] [SYSTEM] Forcefully closed all Edge processes.
+[06:10:31] [INFO] Batch 1: Verifying progress (Attempt 3)...
+[06:10:31] [DEBUG] Headless mode enabled for Selenium points fetching.
+[06:10:43] [INFO] Batch 1: 1 profiles need more points. Retrying with 2 searches...
+[06:10:43] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:10:53] [INFO] Search 'glue' (1/2) in window 'glue - Search - Personal 23 - Microsoft​ Edge'
+[06:11:01] [INFO] Search 'history of fundraising' (2/2) in window 'history of fundraising - Search - Personal 23 - Microsoft​ Edge'
+[06:11:03] [SYSTEM] Forcefully closed all Edge processes.
+[06:11:03] [INFO] Batch 1: Verifying progress (Attempt 4)...
+[06:11:03] [DEBUG] Headless mode enabled for Selenium points fetching.
+[06:11:13] [INFO] Batch 1: 1 profiles need more points. Retrying with 1 searches...
+[06:11:13] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[06:11:24] [INFO] Search 'history of pruner' (1/1) in window 'history of pruner - Search - Personal 23 - Microsoft​ Edge'
+[06:11:26] [SYSTEM] Forcefully closed all Edge processes.
+[06:11:26] [INFO] Batch 1: Verifying progress (Attempt 5)...
+[06:11:26] [DEBUG] Headless mode enabled for Selenium points fetching.
+[06:11:36] [INFO] Batch 1: All points collected.
+[06:11:36] [INFO] Batch 1: Saving final progress to history...
+[06:11:36] [INFO] Search Automation Complete!
+[06:11:46] [INFO] Search mode set to: Default Search (Fixed count)
+
+--- Log Session Started: 2025-10-22 06:12:19 ---
+[06:12:19] [INFO] Application starting up.
+[06:12:19] [INFO] Loading profiles from data.json.
+[06:12:19] [INFO] Successfully loaded 27 profiles.
+[06:12:19] [SYSTEM] SearchQueryGenerator initialized.
+[06:12:20] [INFO] Loaded 27 progress records from today's history.
+[06:12:30] [INFO] Application has been closed.
