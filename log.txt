@@ -8619,3 +8619,292 @@ Stacktrace:
 [06:12:19] [SYSTEM] SearchQueryGenerator initialized.
 [06:12:20] [INFO] Loaded 27 progress records from today's history.
 [06:12:30] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-22 06:15:03 ---
+[06:15:03] [INFO] Application starting up.
+[06:15:03] [INFO] Loading profiles from data.json.
+[06:15:03] [INFO] Successfully loaded 27 profiles.
+[06:15:03] [SYSTEM] SearchQueryGenerator initialized.
+[06:15:04] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-22 21:57:31 ---
+[21:57:31] [INFO] Application starting up.
+[21:57:31] [INFO] Loading profiles from data.json.
+[21:57:31] [INFO] Successfully loaded 27 profiles.
+[21:57:31] [SYSTEM] SearchQueryGenerator initialized.
+[21:57:32] [INFO] Loaded 27 progress records from today's history.
+[21:59:44] [INFO] Manually opening points breakdown for Personal 10
+[21:59:44] [SYSTEM] Forcefully closed all Edge processes.
+
+--- Log Session Started: 2025-10-22 22:15:04 ---
+[22:15:04] [INFO] Application starting up.
+[22:15:04] [INFO] Loading profiles from data.json.
+[22:15:04] [INFO] Successfully loaded 27 profiles.
+[22:15:04] [SYSTEM] SearchQueryGenerator initialized.
+[22:15:05] [INFO] Loaded 27 progress records from today's history.
+[22:15:12] [INFO] Profile Personal 4 set to 'suspended'.
+[22:15:19] [INFO] Profile Personal 5 set to 'suspended'.
+[22:15:26] [INFO] Profile Personal 7 set to 'suspended'.
+[22:15:30] [INFO] Profile Personal 10 set to 'suspended'.
+[22:15:40] [INFO] Profile Personal 12 set to 'suspended'.
+
+--- Log Session Started: 2025-10-22 22:18:43 ---
+[22:18:43] [INFO] Application starting up.
+[22:18:43] [INFO] Loading profiles from data.json.
+[22:18:43] [INFO] Successfully loaded 27 profiles.
+[22:18:43] [SYSTEM] SearchQueryGenerator initialized.
+[22:18:44] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-22 22:19:20 ---
+[22:19:20] [INFO] Application starting up.
+[22:19:20] [INFO] Loading profiles from data.json.
+[22:19:20] [INFO] Successfully loaded 27 profiles.
+[22:19:20] [SYSTEM] SearchQueryGenerator initialized.
+[22:19:22] [INFO] Loaded 27 progress records from today's history.
+[22:20:24] [INFO] No active profiles selected. Nothing to do.
+[22:20:32] [INFO] No active profiles selected. Nothing to do.
+
+--- Log Session Started: 2025-10-22 22:28:18 ---
+
+--- Log Session Started: 2025-10-22 22:32:37 ---
+
+--- Log Session Started: 2025-10-22 22:35:33 ---
+[22:35:33] [INFO] Application starting up.
+[22:35:33] [INFO] Loading profiles from data.json.
+[22:35:33] [INFO] Successfully loaded 27 profiles.
+[22:35:33] [SYSTEM] SearchQueryGenerator initialized.
+[22:35:34] [INFO] Loaded 27 progress records from today's history.
+[22:35:53] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-22 22:41:48 ---
+
+--- Log Session Started: 2025-10-22 22:45:48 ---
+[22:45:48] [INFO] Application starting up.
+[22:45:48] [INFO] Loading profiles from data.json.
+[22:45:48] [INFO] Successfully loaded 27 profiles.
+[22:45:48] [SYSTEM] SearchQueryGenerator initialized.
+[22:45:50] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-22 23:01:55 ---
+
+--- Log Session Started: 2025-10-22 23:04:34 ---
+[23:04:34] [INFO] Application starting up.
+[23:04:34] [INFO] Loading profiles from data.json.
+[23:04:34] [INFO] Successfully loaded 27 profiles.
+[23:04:34] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-22 23:07:19 ---
+[23:07:19] [INFO] Application starting up.
+[23:07:19] [INFO] Loading profiles from data.json.
+[23:07:19] [INFO] Successfully loaded 27 profiles.
+[23:07:19] [SYSTEM] SearchQueryGenerator initialized.
+[23:07:21] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-22 23:12:39 ---
+
+--- Log Session Started: 2025-10-22 23:18:42 ---
+
+--- Log Session Started: 2025-10-22 23:21:40 ---
+[23:21:40] [INFO] Application starting up.
+[23:21:40] [INFO] Loading profiles from data.json.
+[23:21:40] [INFO] Successfully loaded 27 profiles.
+[23:21:40] [SYSTEM] SearchQueryGenerator initialized.
+[23:21:42] [INFO] Loaded 27 progress records from today's history.
+[23:21:55] [INFO] Selected profiles in points range: Select 7k+ Pts (2 found)
+[23:21:55] [INFO] Selected 2 profiles with 7k+ Pts.
+[00:00:50] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 00:02:48 ---
+[00:02:48] [INFO] Application starting up.
+[00:02:48] [INFO] Loading profiles from data.json.
+[00:02:48] [INFO] Successfully loaded 27 profiles.
+[00:02:48] [SYSTEM] SearchQueryGenerator initialized.
+[00:02:49] [INFO] No progress records found for today in history.
+[00:04:00] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 00:10:16 ---
+[00:10:16] [INFO] Application starting up.
+[00:10:16] [INFO] Loading profiles from data.json.
+[00:10:16] [INFO] Successfully loaded 27 profiles.
+[00:10:16] [SYSTEM] SearchQueryGenerator initialized.
+[00:10:17] [INFO] No progress records found for today in history.
+[00:10:33] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:10:33] [INFO] Selected 5 profiles with <1k Pts.
+[00:12:42] [INFO] Unrecognized points range: Select 1k-2k Pts
+[00:12:42] [WARN] Unrecognized points range selection: Select 1k-2k Pts
+[00:12:51] [INFO] Unrecognized points range: Select 3k-4k Pts
+[00:12:51] [WARN] Unrecognized points range selection: Select 3k-4k Pts
+[00:13:09] [INFO] Unrecognized points range: Select 3k-4k Pts
+[00:13:09] [WARN] Unrecognized points range selection: Select 3k-4k Pts
+[00:13:20] [INFO] Unrecognized points range: Select 1k-2k Pts
+[00:13:20] [WARN] Unrecognized points range selection: Select 1k-2k Pts
+[00:13:22] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:13:22] [INFO] Selected 5 profiles with <1k Pts.
+[00:13:29] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 00:22:22 ---
+[00:22:22] [INFO] Application starting up.
+[00:22:22] [INFO] Loading profiles from data.json.
+[00:22:22] [INFO] Successfully loaded 27 profiles.
+[00:22:22] [SYSTEM] SearchQueryGenerator initialized.
+[00:22:24] [INFO] No progress records found for today in history.
+[00:22:40] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:22:40] [INFO] Selected 5 profiles with <1k Pts.
+[00:22:44] [INFO] Unrecognized points range: Select 1k-2k Pts
+[00:22:44] [WARN] Unrecognized points range selection: Select 1k-2k Pts
+[00:22:50] [INFO] Unrecognized points range: Select 1k-2k Pts
+[00:22:50] [WARN] Unrecognized points range selection: Select 1k-2k Pts
+[00:22:57] [INFO] Unrecognized points range: Select 6k-7k Pts
+[00:22:57] [WARN] Unrecognized points range selection: Select 6k-7k Pts
+[00:23:03] [INFO] Selected profiles in points range: Select 7k+ Pts (2 found)
+[00:23:03] [INFO] Selected 2 profiles with 7k+ Pts.
+[00:23:11] [INFO] Unrecognized points range: Select 6k-7k Pts
+[00:23:11] [WARN] Unrecognized points range selection: Select 6k-7k Pts
+[00:23:18] [INFO] Unrecognized points range: Select 6k-7k Pts
+[00:23:18] [WARN] Unrecognized points range selection: Select 6k-7k Pts
+[00:23:21] [INFO] Selected profiles in points range: Select 7k+ Pts (2 found)
+[00:23:21] [INFO] Selected 2 profiles with 7k+ Pts.
+[00:23:25] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:23:25] [INFO] Selected 5 profiles with <1k Pts.
+[00:23:28] [INFO] Unrecognized points range: Select 3k-4k Pts
+[00:23:28] [WARN] Unrecognized points range selection: Select 3k-4k Pts
+
+--- Log Session Started: 2025-10-23 00:27:13 ---
+
+--- Log Session Started: 2025-10-23 00:31:12 ---
+[00:31:12] [INFO] Application starting up.
+[00:31:12] [INFO] Loading profiles from data.json.
+[00:31:12] [INFO] Successfully loaded 27 profiles.
+[00:31:12] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 00:31:29 ---
+[00:31:29] [INFO] Application starting up.
+[00:31:29] [INFO] Loading profiles from data.json.
+[00:31:29] [INFO] Successfully loaded 27 profiles.
+[00:31:29] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 00:34:18 ---
+[00:34:18] [INFO] Application starting up.
+[00:34:18] [INFO] Loading profiles from data.json.
+[00:34:18] [INFO] Successfully loaded 27 profiles.
+[00:34:18] [SYSTEM] SearchQueryGenerator initialized.
+[00:34:20] [INFO] No progress records found for today in history.
+[00:34:26] [INFO] Selected profiles in points range: Select 5k Pts (2 found)
+[00:34:26] [INFO] Selected 2 profiles with 5k Pts.
+[00:34:34] [INFO] Selected profiles in points range: Select 4k Pts (1 found)
+[00:34:34] [INFO] Selected 1 profiles with 4k Pts.
+[00:39:22] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 00:39:23 ---
+[00:39:23] [INFO] Application starting up.
+[00:39:23] [INFO] Loading profiles from data.json.
+[00:39:23] [INFO] Successfully loaded 27 profiles.
+[00:39:23] [SYSTEM] SearchQueryGenerator initialized.
+[00:39:24] [INFO] No progress records found for today in history.
+[00:40:08] [INFO] Batch range 25-27 selected.
+[00:40:16] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:40:16] [INFO] Selected 5 profiles with <1k Pts.
+[00:40:41] [INFO] No progress records found for today in history.
+[00:40:41] [INFO] Search Automation started...
+[00:40:41] [INFO] Processing Batch 1...
+[00:40:41] [INFO] Starting PyAutoGUI searches for 5 profiles...
+[00:40:50] [INFO] Search 'crawl' (1/3) in window 'porcelain - Search - Personal 24 - Microsoft​ Edge'
+[00:40:52] [INFO] Search 'improve' (1/3) in window 'how to self-confidence - Search - Personal 25 - Microsoft​ Edge'
+[00:40:55] [INFO] Search 'why is scandalous' (1/3) in window 'why is operator - Search - Personal 26 - Microsoft​ Edge'
+[00:40:57] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[00:40:57] [INFO] Search 'litter' (1/3) in window 'saxophone - Search - Personal 27 - Microsoft​ Edge'
+[00:41:00] [INFO] Search 'meaning of polish' (1/3) in window 'trillion - Search - Personal 2 - Microsoft​ Edge'
+[00:41:02] [INFO] Search 'why is landing' (2/3) in window 'crawl - Search - Personal 24 - Microsoft​ Edge'
+[00:41:05] [INFO] Search 'hometown' (2/3) in window 'improve - Search - Personal 25 - Microsoft​ Edge'
+[00:41:07] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[00:41:07] [INFO] Search 'opportunist' (2/3) in window 'why is scandalous - Search - Personal 26 - Microsoft​ Edge'
+[00:41:11] [INFO] Search 'when did seemly' (2/3) in window 'litter - Search - Personal 27 - Microsoft​ Edge'
+[00:41:13] [INFO] Search 'how to antechamber' (2/3) in window 'meaning of polish - Search - Personal 2 - Microsoft​ Edge'
+[00:41:16] [INFO] Search 'attraction' (3/3) in window 'why is landing - Search - Personal 24 - Microsoft​ Edge'
+[00:41:18] [INFO] Search 'vehicle' (3/3) in window 'hometown - Search - Personal 25 - Microsoft​ Edge'
+[00:41:21] [INFO] Search 'deathwatch' (3/3) in window 'opportunist - Search - Personal 26 - Microsoft​ Edge'
+[00:41:24] [INFO] Search 'recipe for bulldozer' (3/3) in window 'when did seemly - Search - Personal 27 - Microsoft​ Edge'
+[00:41:27] [INFO] Search 'why is pacemaker' (3/3) in window 'how to antechamber - Search - Personal 2 - Microsoft​ Edge'
+[00:41:29] [SYSTEM] Forcefully closed all Edge processes.
+[00:41:29] [INFO] Batch 1: Smart Search disabled, skipping point verification.
+[00:41:29] [INFO] Search Automation Complete!
+[00:41:47] [INFO] Fetching all points...
+[00:41:47] [INFO] No progress records found for today in history.
+[00:41:48] [SYSTEM] Forcefully closed all Edge processes.
+[00:41:49] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:42:03] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:42:13] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:42:35] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:42:47] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:42:55] [INFO] Points fetching complete.
+
+--- Log Session Started: 2025-10-23 00:51:27 ---
+[00:51:27] [INFO] Application starting up.
+[00:51:27] [INFO] Loading profiles from data.json.
+[00:51:27] [INFO] Successfully loaded 27 profiles.
+[00:51:27] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 00:51:42 ---
+[00:51:42] [INFO] Application starting up.
+[00:51:42] [INFO] Loading profiles from data.json.
+[00:51:42] [INFO] Successfully loaded 27 profiles.
+[00:51:42] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 00:51:48 ---
+[00:51:48] [INFO] Application starting up.
+[00:51:48] [INFO] Loading profiles from data.json.
+[00:51:48] [INFO] Successfully loaded 27 profiles.
+[00:51:48] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 00:56:48 ---
+[00:56:48] [INFO] Application starting up.
+[00:56:48] [INFO] Loading profiles from data.json.
+[00:56:48] [INFO] Successfully loaded 27 profiles.
+[00:56:48] [SYSTEM] SearchQueryGenerator initialized.
+[00:56:50] [INFO] Loaded 5 progress records from today's history.
+[00:57:00] [INFO] Selected profiles in points range: Select <1k Pts (5 found)
+[00:57:00] [INFO] Selected 5 profiles with <1k Pts.
+[00:57:03] [INFO] Fetching all points...
+[00:57:03] [INFO] Loaded 5 progress records from today's history.
+[00:57:03] [SYSTEM] Forcefully closed all Edge processes.
+[00:57:04] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:57:15] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:57:24] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:57:35] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:57:43] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:57:52] [INFO] Points fetching complete.
+[00:58:14] [INFO] Loaded 5 progress records from today's history.
+[00:58:14] [INFO] Search Automation started...
+[00:58:14] [INFO] Processing Batch 1...
+[00:58:14] [INFO] Starting PyAutoGUI searches for 4 profiles...
+[00:58:20] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[00:58:21] [INFO] Search 'obedience' (1/2) in window 'obedience - Search - Personal 26 - Microsoft​ Edge'
+[00:58:24] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[00:58:24] [INFO] Search 'ride' (1/2) in window 'New tab - Personal 25 - Microsoft​ Edge'
+[00:58:27] [INFO] Search 'weather in nutrient' (1/2) in window 'New tab - Personal 24 - Microsoft​ Edge'
+[00:58:30] [INFO] Search 'meaning of gyro' (1/2) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[00:58:33] [INFO] Search 'exist' (2/2) in window 'obedience - Search - Personal 26 - Microsoft​ Edge'
+[00:58:35] [INFO] Search 'gladiolus' (2/2) in window 'ride - Search - Personal 25 - Microsoft​ Edge'
+[00:58:38] [INFO] Search 'reviews for refrigerator' (2/2) in window 'weather in nutrient - Search - Personal 24 - Microsoft​ Edge'
+[00:58:40] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[00:58:41] [INFO] Search 'waterfront' (2/2) in window 'meaning of gyro - Search - Personal 2 - Microsoft​ Edge'
+[00:58:43] [SYSTEM] Forcefully closed all Edge processes.
+[00:58:43] [INFO] Batch 1: Smart Search disabled, skipping point verification.
+[00:58:43] [INFO] Processing Batch 2...
+[00:58:43] [INFO] Starting PyAutoGUI searches for 1 profiles...
+[00:58:49] [INFO] Search 'hydrocarb' (1/2) in window 'New tab - Personal 27 - Microsoft​ Edge'
+[00:58:52] [INFO] Search 'deals for tectonics' (2/2) in window 'hydrocarb - Search - Personal 27 - Microsoft​ Edge'
+[00:58:55] [SYSTEM] Forcefully closed all Edge processes.
+[00:58:55] [INFO] Batch 2: Smart Search disabled, skipping point verification.
+[00:58:55] [INFO] Search Automation Complete!
+[00:59:01] [INFO] Fetching all points...
+[00:59:01] [INFO] Loaded 5 progress records from today's history.
+[00:59:01] [SYSTEM] Forcefully closed all Edge processes.
+[00:59:02] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:59:12] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:59:23] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:59:31] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:59:39] [DEBUG] Headless mode enabled for Selenium points fetching.
+[00:59:49] [INFO] Points fetching complete.
+[01:01:30] [INFO] Manually opening points breakdown for Personal 27
+[01:01:30] [SYSTEM] Forcefully closed all Edge processes.

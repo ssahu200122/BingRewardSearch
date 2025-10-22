@@ -1,13 +1,13 @@
 {
   "schedule_enabled": false,
   "schedule_time": "06:21",
-  "post_search_delay_min": 0.5,
-  "post_search_delay_max": 1.1,
+  "post_search_delay_min": 1.0,
+  "post_search_delay_max": 1.3,
   "scroll_delay_min": 0.5,
-  "scroll_delay_max": 1.5,
+  "scroll_delay_max": 1.1,
   "mouse_move_duration_min": 0.1,
   "mouse_move_duration_max": 0.4,
-  "key_press_delay_min": 0.02,
-  "key_press_delay_max": 0.05,
+  "key_press_delay_min": 0.09,
+  "key_press_delay_max": 0.2,
   "smart_search_mode": false
 }
