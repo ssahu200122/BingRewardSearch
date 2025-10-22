@@ -30,6 +30,7 @@ def load_profiles(file_path: str) -> List[EdgeProfile]:
             name_part_match = re.search(r'\((.*?)\)', full_name)
             name = name_part_match.group(1) if name_part_match else "Profile"
             
+            # --- REVERTED to simple version ---
             status = details.get("status", "active")
             
             profiles.append(EdgeProfile(

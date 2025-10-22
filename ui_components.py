@@ -33,13 +33,14 @@ class LabeledSlider(customtkinter.CTkFrame):
 
 class ProfileRow(customtkinter.CTkFrame):
     """A custom widget to display a single profile's information and controls with hover effects."""
+    # --- REVERTED: Removed on_default_search_toggle callback ---
     def __init__(self, master, profile: EdgeProfile, on_select: Callable, on_label_click: Callable, on_status_toggle: Callable):
         super().__init__(master, fg_color=("gray90","gray20"), corner_radius=6)
         
         self.profile = profile
-        self.on_select = on_select             # Callback for checkbox toggle -> self.on_select(self.profile, is_selected)
-        self.on_label_click = on_label_click   # Callback for label click -> self.on_status_toggle(self.profile) 
-        self.on_status_toggle = on_status_toggle
+        self.on_select = on_select             # Callback for checkbox toggle
+        self.on_label_click = on_label_click   # Callback for label click
+        self.on_status_toggle = on_status_toggle # Callback for status button
 
         # --- Grid Configuration ---
         self.grid_columnconfigure(1, weight=1)
@@ -85,6 +86,9 @@ class ProfileRow(customtkinter.CTkFrame):
 
         self.daily_progress_label = customtkinter.CTkLabel(self.points_frame, text="",text_color="#4ad342", font=customtkinter.CTkFont(weight="bold"))
         self.daily_progress_label.pack(side="left")
+        
+        # --- REMOVED: Level Up Frame ---
+
 
     def _on_select_callback(self):
         is_selected = self.check_var.get() == "on"
@@ -111,6 +115,8 @@ class ProfileRow(customtkinter.CTkFrame):
             self.separator_label.configure(text="|")
         else:
             self.separator_label.configure(text="")
+
+    # --- REMOVED: update_level_up_display ---
 
     def _toggle_status(self):
         self.profile.status = "suspended" if self.profile.status == "active" else "active"

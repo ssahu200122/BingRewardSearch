@@ -5,3 +5,5 @@ wonderwords
 Pillow
 selenium
 schedule
+wikipedia-api
+requests

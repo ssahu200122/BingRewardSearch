@@ -1,4 +1,13 @@
 {
   "schedule_enabled": false,
-  "schedule_time": "06:21"
+  "schedule_time": "06:21",
+  "post_search_delay_min": 0.5,
+  "post_search_delay_max": 1.1,
+  "scroll_delay_min": 0.5,
+  "scroll_delay_max": 1.5,
+  "mouse_move_duration_min": 0.1,
+  "mouse_move_duration_max": 0.4,
+  "key_press_delay_min": 0.02,
+  "key_press_delay_max": 0.05,
+  "smart_search_mode": true
 }

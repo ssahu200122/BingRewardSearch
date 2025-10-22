@@ -36,3 +36,8 @@ RETRY_ACTION_DELAY = (2.0, 3.0)
 BATCH_DELAY = (1.5, 2.5)
 # Add a delay between individual key presses to simulate typing
 KEY_PRESS_DELAY = (0.05, 0.10)
+
+# --- NEW: Human-like Behavior Settings ---
+POST_SEARCH_DELAY = (3.0, 6.0)   # How long to "read" results after searching
+SCROLL_DELAY = (0.5, 1.5)      # Delay between scroll actions
+MOUSE_MOVE_DURATION = (0.1, 0.4) # Speed of random mouse movements
