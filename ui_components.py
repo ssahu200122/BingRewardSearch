@@ -49,7 +49,7 @@ class ProfileRow(customtkinter.CTkFrame):
         self.grid_columnconfigure(1, weight=1)
 
         self.index_label = customtkinter.CTkLabel(
-            self, text=str(profile.index), width=30, height=30,text_color="#000",fg_color= "#34474F",corner_radius=10,
+            self, text=str(profile.index), width=30, height=30,text_color="#ffffff",fg_color= "#34474F",corner_radius=10,
             font=customtkinter.CTkFont(weight="bold")
         )
         self.index_label.grid(row=0, column=0, padx=5, pady=(5, 0), sticky="n")

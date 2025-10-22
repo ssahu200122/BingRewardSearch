@@ -9223,3 +9223,197 @@ Stacktrace:
 [02:44:34] [INFO] Successfully loaded 27 profiles.
 [02:44:34] [SYSTEM] SearchQueryGenerator initialized.
 [02:44:36] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:45:24 ---
+[02:45:24] [INFO] Application starting up.
+[02:45:24] [INFO] Loading profiles from data.json.
+[02:45:24] [INFO] Successfully loaded 27 profiles.
+[02:45:24] [SYSTEM] SearchQueryGenerator initialized.
+[02:45:25] [INFO] Loaded 27 progress records from today's history.
+[02:45:56] [INFO] Loaded 27 progress records from today's history.
+[02:45:56] [INFO] Search Automation started...
+[02:45:56] [INFO] Processing Batch 1...
+[02:45:56] [INFO] Starting PyAutoGUI searches for 8 profiles...
+[02:46:07] [INFO] Search 'straw' (1/3) in window 'slash - Search - Personal 6 - Microsoft​ Edge'
+[02:46:15] [INFO] Search 'best way to bowl' (1/3) in window 'blowhole - Search - Personal 7 - Microsoft​ Edge'
+[02:46:20] [INFO] Search 'utilization' (1/3) in window 'utilization - Search - Personal 8 - Microsoft​ Edge'
+[02:46:22] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:46:25] [INFO] Search 'dune buggy' (1/3) in window 'dune buggy - Search - Personal 3 - Microsoft​ Edge'
+[02:46:32] [INFO] Search 'top 10 offense' (1/3) in window 'top 10 offense - Search - Personal 4 - Microsoft​ Edge'
+[02:46:39] [INFO] Search 'history of rating' (1/3) in window 'history of rating - Search - Personal 5 - Microsoft​ Edge'
+[02:46:43] [INFO] Search 'construction' (1/3) in window 'construction - Search - Personal 2 - Microsoft​ Edge'
+[02:46:45] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:46:52] [INFO] Search 'ripple' (1/3) in window 'ripple - Search - Personal - Microsoft​ Edge'
+[02:46:54] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:46:56] [INFO] Search 'tuber' (2/3) in window 'tuber - Search - Personal 6 - Microsoft​ Edge'
+[02:46:58] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:47:02] [INFO] Search 'jockey' (2/3) in window 'jockey - Search - Personal 7 - Microsoft​ Edge'
+[02:47:07] [INFO] Search 'biosphere' (2/3) in window 'biosphere - Search - Personal 8 - Microsoft​ Edge'
+[02:47:11] [INFO] Search 'eyeliner' (2/3) in window 'eyeliner - Search - Personal 3 - Microsoft​ Edge'
+[02:47:17] [INFO] Search 'where is crabby' (2/3) in window 'where is crabby - Search - Personal 4 - Microsoft​ Edge'
+[02:47:25] [INFO] Search 'meaning of prestige' (2/3) in window 'meaning of prestige - Search - Personal 5 - Microsoft​ Edge'
+[02:47:33] [INFO] Search 'deals for beancurd' (2/3) in window 'deals for beancurd - Search - Personal 2 - Microsoft​ Edge'
+[02:47:39] [INFO] Search 'top 10 lamb' (2/3) in window 'top 10 lamb - Search - Personal - Microsoft​ Edge'
+[02:47:44] [INFO] Search 'ecology' (3/3) in window 'ecology - Search - Personal 6 - Microsoft​ Edge'
+[02:47:50] [INFO] Search 'history of spouse' (3/3) in window 'history of spouse - Search - Personal 7 - Microsoft​ Edge'
+[02:47:59] [INFO] Search 'meaning of matter' (3/3) in window 'meaning of matter - Search - Personal 8 - Microsoft​ Edge'
+[02:48:06] [INFO] Search 'hellcat' (3/3) in window 'hellcat - Search - Personal 3 - Microsoft​ Edge'
+[02:48:13] [INFO] Search 'what is curtain' (3/3) in window 'what is curtain - Search - Personal 4 - Microsoft​ Edge'
+[02:48:23] [INFO] Search 'history of checkbook' (3/3) in window 'history of checkbook - Search - Personal 5 - Microsoft​ Edge'
+[02:48:30] [INFO] Search 'what is tentacle' (3/3) in window 'what is tentacle - Search - Personal 2 - Microsoft​ Edge'
+[02:48:32] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:48:36] [INFO] Search 'arithmetic' (3/3) in window 'arithmetic - Search - Personal - Microsoft​ Edge'
+[02:48:38] [SYSTEM] Forcefully closed all Edge processes.
+[02:48:38] [INFO] Batch 1: Smart Search disabled, skipping point verification.
+[02:48:38] [INFO] Processing Batch 2...
+[02:48:38] [INFO] Starting PyAutoGUI searches for 8 profiles...
+[02:48:53] [INFO] Search 'controversy' (1/3) in window 'roommate - Search - Personal 14 - Microsoft​ Edge'
+[02:49:02] [INFO] Search 'compare lethal' (1/3) in window 'kennel - Search - Personal 15 - Microsoft​ Edge'
+[02:49:10] [INFO] Search 'what is process' (1/3) in window 'what is process - Search - Personal 16 - Microsoft​ Edge'
+[02:49:16] [INFO] Search 'reviews for leading' (1/3) in window 'reviews for leading - Search - Personal 12 - Microsoft​ Edge'
+[02:49:24] [INFO] Search 'reviews for pathology' (1/3) in window 'reviews for pathology - Search - Personal 13 - Microsoft​ Edge'
+[02:49:26] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:49:28] [INFO] Search 'well' (1/3) in window 'well - Search - Personal 11 - Microsoft​ Edge'
+[02:49:34] [INFO] Search 'when did equinox' (1/3) in window 'New tab - Personal 10 - Microsoft​ Edge'
+[02:49:41] [INFO] Search 'what is polyp' (1/3) in window 'what is polyp - Search - Personal 9 - Microsoft​ Edge'
+[02:49:47] [INFO] Search 'discourse' (2/3) in window 'discourse - Search - Personal 14 - Microsoft​ Edge'
+[02:49:52] [INFO] Search 'facts about squeamish' (2/3) in window 'facts about squeamish - Search - Personal 15 - Microsoft​ Edge'
+[02:49:59] [INFO] Search 'crush' (2/3) in window 'crush - Search - Personal 16 - Microsoft​ Edge'
+[02:50:07] [INFO] Search 'parcel' (2/3) in window 'parcel - Search - Personal 12 - Microsoft​ Edge'
+[02:50:08] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:50:10] [INFO] Search 'acted' (2/3) in window 'acted - Search - Personal 13 - Microsoft​ Edge'
+[02:50:18] [INFO] Search 'victim' (2/3) in window 'victim - Search - Personal 11 - Microsoft​ Edge'
+[02:50:24] [INFO] Search 'disillusioned' (2/3) in window 'disillusioned - Search - Personal 10 - Microsoft​ Edge'
+[02:50:29] [INFO] Search 'how to listening' (2/3) in window 'how to listening - Search - Personal 9 - Microsoft​ Edge'
+[02:50:35] [INFO] Search 'facts about observant' (3/3) in window 'facts about observant - Search - Personal 14 - Microsoft​ Edge'
+[02:50:40] [INFO] Search 'marketing' (3/3) in window 'marketing - Search - Personal 15 - Microsoft​ Edge'
+[02:50:47] [INFO] Search 'where is blossom' (3/3) in window 'where is blossom - Search - Personal 16 - Microsoft​ Edge'
+[02:50:54] [INFO] Search 'hovercraft' (3/3) in window 'hovercraft - Search - Personal 12 - Microsoft​ Edge'
+[02:51:00] [INFO] Search 'where is mandarin' (3/3) in window 'where is mandarin - Search - Personal 13 - Microsoft​ Edge'
+[02:51:02] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:51:05] [INFO] Search 'equity' (3/3) in window 'equity - Search - Personal 11 - Microsoft​ Edge'
+[02:51:10] [INFO] Search 'backbone' (3/3) in window 'backbone - Search - Personal 10 - Microsoft​ Edge'
+[02:51:13] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:51:16] [INFO] Search 'sum' (3/3) in window 'sum - Search - Personal 9 - Microsoft​ Edge'
+[02:51:18] [SYSTEM] Forcefully closed all Edge processes.
+[02:51:18] [INFO] Batch 2: Smart Search disabled, skipping point verification.
+[02:51:18] [INFO] Processing Batch 3...
+[02:51:18] [INFO] Starting PyAutoGUI searches for 8 profiles...
+[02:51:26] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:51:30] [INFO] Search 'subject' (1/3) in window 'stupidity - Search - Personal 23 - Microsoft​ Edge'
+[02:51:33] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:51:37] [INFO] Search 'gather' (1/3) in window 'gather - Search - Personal 24 - Microsoft​ Edge'
+[02:51:42] [INFO] Search 'deals for picayune' (1/3) in window 'deals for picayune - Search - Personal 20 - Microsoft​ Edge'
+[02:51:51] [INFO] Search 'compare venomous' (1/3) in window 'compare venomous - Search - Personal 21 - Microsoft​ Edge'
+[02:51:53] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:51:56] [INFO] Search 'flick' (1/3) in window 'flick - Search - Personal 22 - Microsoft​ Edge'
+[02:51:58] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:52:04] [INFO] Search 'scattered' (1/3) in window 'scattered - Search - Personal 18 - Microsoft​ Edge'
+[02:52:08] [INFO] Search 'makeup' (1/3) in window 'makeup - Search - Personal 19 - Microsoft​ Edge'
+[02:52:14] [INFO] Search 'deals for spending' (1/3) in window 'deals for spending - Search - Personal 17 - Microsoft​ Edge'
+[02:52:21] [INFO] Search 'reviews for visor' (2/3) in window 'reviews for visor - Search - Personal 23 - Microsoft​ Edge'
+[02:52:27] [INFO] Search 'theory' (2/3) in window 'theory - Search - Personal 24 - Microsoft​ Edge'
+[02:52:34] [INFO] Search 'what is porch' (2/3) in window 'what is porch - Search - Personal 20 - Microsoft​ Edge'
+[02:52:41] [INFO] Search 'history of stem' (2/3) in window 'history of stem - Search - Personal 21 - Microsoft​ Edge'
+[02:52:46] [INFO] Search 'compare friendly' (2/3) in window 'compare friendly - Search - Personal 22 - Microsoft​ Edge'
+[02:52:51] [INFO] Search 'how to crowd' (2/3) in window 'how to crowd - Search - Personal 18 - Microsoft​ Edge'
+[02:52:53] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:52:56] [INFO] Search 'burden' (2/3) in window 'burden - Search - Personal 19 - Microsoft​ Edge'
+[02:53:03] [INFO] Search 'deals for gripper' (2/3) in window 'deals for gripper - Search - Personal 17 - Microsoft​ Edge'
+[02:53:10] [INFO] Search 'what is cytoplasm' (3/3) in window 'what is cytoplasm - Search - Personal 23 - Microsoft​ Edge'
+[02:53:15] [INFO] Search 'foreigner' (3/3) in window 'foreigner - Search - Personal 24 - Microsoft​ Edge'
+[02:53:21] [INFO] Search 'how to garlic' (3/3) in window 'how to garlic - Search - Personal 20 - Microsoft​ Edge'
+[02:53:23] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:53:25] [INFO] Search 'camper' (3/3) in window 'camper - Search - Personal 21 - Microsoft​ Edge'
+[02:53:32] [INFO] Search 'weather in curler' (3/3) in window 'weather in curler - Search - Personal 22 - Microsoft​ Edge'
+[02:53:36] [INFO] Search 'freeze' (3/3) in window 'freeze - Search - Personal 18 - Microsoft​ Edge'
+[02:53:43] [INFO] Search 'reviews for mantel' (3/3) in window 'reviews for mantel - Search - Personal 19 - Microsoft​ Edge'
+[02:53:50] [INFO] Search 'meaning of sentencing' (3/3) in window 'meaning of sentencing - Search - Personal 17 - Microsoft​ Edge'
+[02:53:52] [SYSTEM] Forcefully closed all Edge processes.
+[02:53:52] [INFO] Batch 3: Smart Search disabled, skipping point verification.
+[02:53:52] [INFO] Processing Batch 4...
+[02:53:52] [INFO] Starting PyAutoGUI searches for 3 profiles...
+[02:54:03] [INFO] Search 'weather in hobby' (1/3) in window 'weather in hobby - Search - Personal 27 - Microsoft​ Edge'
+[02:54:06] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:54:10] [INFO] Search 'chairperson' (1/3) in window 'chairperson - Search - Personal 26 - Microsoft​ Edge'
+[02:54:12] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:54:17] [INFO] Search 'laundry' (1/3) in window 'laundry - Search - Personal 25 - Microsoft​ Edge'
+[02:54:24] [INFO] Search 'news about escape' (2/3) in window 'news about escape - Search - Personal 27 - Microsoft​ Edge'
+[02:54:33] [INFO] Search 'middle' (2/3) in window 'middle - Search - Personal 26 - Microsoft​ Edge'
+[02:54:38] [INFO] Search 'compare dull' (2/3) in window 'compare dull - Search - Personal 25 - Microsoft​ Edge'
+[02:54:44] [INFO] Search 'orient' (3/3) in window 'orient - Search - Personal 27 - Microsoft​ Edge'
+[02:54:49] [INFO] Search 'history of danger' (3/3) in window 'history of danger - Search - Personal 26 - Microsoft​ Edge'
+[02:54:52] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[02:54:55] [INFO] Search 'destroy' (3/3) in window 'destroy - Search - Personal 25 - Microsoft​ Edge'
+[02:54:57] [SYSTEM] Forcefully closed all Edge processes.
+[02:54:57] [INFO] Batch 4: Smart Search disabled, skipping point verification.
+[02:54:57] [INFO] Search Automation Complete!
+[02:55:06] [INFO] Fetching all points...
+[02:55:06] [INFO] Loaded 27 progress records from today's history.
+[02:55:07] [SYSTEM] Forcefully closed all Edge processes.
+[02:55:08] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:55:20] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:55:32] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:55:41] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:55:52] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:04] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:13] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:22] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:34] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:50] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:56:59] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:57:10] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:57:20] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:57:32] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:57:40] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:57:55] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:58:04] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:58:16] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:58:30] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:58:39] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:58:48] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:59:00] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:59:13] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:59:24] [INFO] Skipping fetch for Personal 24: Already completed (from history).
+[02:59:24] [INFO] Skipping fetch for Personal 25: Already completed (from history).
+[02:59:24] [INFO] Skipping fetch for Personal 26: Already completed (from history).
+[02:59:24] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:59:35] [INFO] Points fetching complete.
+
+--- Log Session Started: 2025-10-23 03:00:43 ---
+[03:00:43] [INFO] Application starting up.
+[03:00:43] [INFO] Loading profiles from data.json.
+[03:00:43] [INFO] Successfully loaded 27 profiles.
+[03:00:43] [SYSTEM] SearchQueryGenerator initialized.
+[03:00:44] [INFO] Loaded 27 progress records from today's history.
+[03:00:58] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 03:01:26 ---
+[03:01:26] [INFO] Application starting up.
+[03:01:26] [INFO] Loading profiles from data.json.
+[03:01:26] [INFO] Successfully loaded 27 profiles.
+[03:01:26] [SYSTEM] SearchQueryGenerator initialized.
+[03:01:28] [INFO] Loaded 27 progress records from today's history.
+[03:02:27] [INFO] Loaded 27 progress records from today's history.
+[03:02:27] [INFO] Search Automation started...
+[03:02:27] [INFO] Processing Batch 1...
+[03:02:27] [INFO] Starting PyAutoGUI searches for 8 profiles...
+[03:02:37] [INFO] Search 'where is folk' (1/3) in window 'history of spouse - Search - Personal 7 - Microsoft​ Edge'
+[03:02:38] [WARN] Error fetching Wikipedia title: Wikipedia.page() got an unexpected keyword argument 'pageid'
+[03:02:40] [INFO] Search 'nauseating' (1/3) in window 'meaning of matter - Search - Personal 8 - Microsoft​ Edge'
+[03:02:44] [INFO] Search 'history of weight' (1/3) in window 'hellcat - Search - Personal 3 - Microsoft​ Edge'
+[03:02:47] [INFO] Search 'judo' (1/3) in window 'what is curtain - Search - Personal 4 - Microsoft​ Edge'
+[03:02:52] [INFO] Search 'compare nebulous' (1/3) in window 'compare nebulous - Search - Personal 5 - Microsoft​ Edge'
+[03:02:57] [INFO] Search 'deals for jaguar' (1/3) in window 'deals for jaguar - Search - Personal 6 - Microsoft​ Edge'
+[03:03:01] [INFO] Search 'what is irrigation' (1/3) in window 'New tab - Personal 2 - Microsoft​ Edge'
+[03:03:02] [INFO] Stop signal sent. Finishing current action...
+[03:03:06] [INFO] Search 'best way to arcade' (1/3) in window 'arithmetic - Search - Personal - Microsoft​ Edge'
+[03:03:08] [SYSTEM] Forcefully closed all Edge processes.
+[03:03:08] [INFO] Batch 1: Smart Search disabled, skipping point verification.
+[03:03:08] [INFO] Search Automation Stopped by User.
+[03:03:20] [INFO] Selected profiles in points range: Select 7k+ Pts (2 found)
+[03:03:20] [INFO] Selected 2 profiles with 7k+ Pts.
+[03:03:27] [INFO] Manually opening points breakdown for Personal 7
+[03:03:28] [SYSTEM] Forcefully closed all Edge processes.
+[03:03:33] [WARN] Could not activate Edge window for Personal 7 to navigate.
+[03:06:48] [INFO] Application has been closed.
