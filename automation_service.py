@@ -9,11 +9,13 @@ import re
 import random
 import threading
 import csv
-from datetime import date # <-- No longer need datetime
+from datetime import date
 
-# ... (other imports remain the same) ...
+# PyAutoGUI Imports
 import pyautogui
 import pygetwindow as gw
+
+# Selenium Imports
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.edge.options import Options as EdgeOptions
@@ -21,14 +23,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException
+
 from wonderwords import RandomWord
 import wikipediaapi
+
 from edge_profile import EdgeProfile
 from logger import logger
 import config
 
-
-# ... (SearchQueryGenerator class remains the same) ...
+# --- Human-like Search Query Generator (Unchanged) ---
 class SearchQueryGenerator:
     def __init__(self):
         self.random_word_gen = RandomWord()
@@ -52,12 +55,12 @@ class SearchQueryGenerator:
 
 
 class AutomationService:
-    # ... (__init__, _setup_driver remain the same) ...
     def __init__(self):
         self.query_generator = SearchQueryGenerator()
         self.active_drivers = []
         pyautogui.FAILSAFE = False
         self.screen_width, self.screen_height = pyautogui.size()
+
     def _setup_driver(self, profile: EdgeProfile, headless: bool = False) -> Optional[webdriver.Edge]:
         try:
             edge_options = EdgeOptions(); user_data_dir = os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data")
@@ -70,7 +73,6 @@ class AutomationService:
             service = EdgeService(executable_path="msedgedriver.exe"); driver = webdriver.Edge(service=service, options=edge_options); return driver
         except Exception as e: logger.log(f"Failed to set up Selenium driver for {profile.name}: {e}", "ERROR"); return None
 
-    # ... (run_search_session remains the same) ...
     def run_search_session(self, profiles: List[EdgeProfile], pc_searches: int, stop_event: threading.Event, use_retry_delay: bool = False, progress_callback: Optional[Callable[[str], None]] = None, on_search_progress: Optional[Callable[[int, int], None]] = None, post_search_delay: Tuple[float, float] = config.POST_SEARCH_DELAY, scroll_delay: Tuple[float, float] = config.SCROLL_DELAY, mouse_move_duration: Tuple[float, float] = config.MOUSE_MOVE_DURATION, key_press_delay: Tuple[float, float] = config.KEY_PRESS_DELAY):
         if pc_searches <= 0:
             if progress_callback: progress_callback("PC searches set to 0. Skipping.")
@@ -94,7 +96,6 @@ class AutomationService:
         finally:
             self._pyautogui_human_like_pause(*config.BATCH_DELAY); self.close_all_edge_windows()
 
-    # ... (fetch_points_details remains the same) ...
     def fetch_points_details(self, profile: EdgeProfile, stop_event: threading.Event, headless: bool) -> Dict[str, Optional[str]]:
         if stop_event.is_set(): return {"available_points": None, "daily_progress": None}
         driver = self._setup_driver(profile, headless=headless)
@@ -115,7 +116,6 @@ class AutomationService:
         finally:
             if driver: driver.quit()
 
-    # ... (open_single_profile_to_breakdown remains the same) ...
     def open_single_profile_to_breakdown(self, profile: EdgeProfile):
         logger.log(f"Manually opening points breakdown for {profile.name}", "INFO")
         self.close_all_edge_windows(); self._pyautogui_human_like_pause(0.5, 1)
@@ -130,7 +130,7 @@ class AutomationService:
             else: logger.log(f"Could not activate Edge window for {profile.name} to navigate.", "WARN")
         except Exception as e: logger.log(f"Failed to open/navigate browser for {profile.name}: {e}", "ERROR")
 
-    # --- History Methods ---
+    # --- History Methods (Unchanged) ---
     def save_progress_to_history(self, profile: EdgeProfile, points_data: Dict[str, str]):
         file_exists = os.path.isfile(config.HISTORY_CSV_PATH)
         try:
@@ -139,56 +139,35 @@ class AutomationService:
                 if not file_exists: writer.writerow(["Date", "ProfileName", "Email", "AvailablePoints", "DailyProgress"])
                 writer.writerow([date.today().isoformat(), profile.name, profile.email, points_data.get("available_points", "N/A"), points_data.get("daily_progress", "N/A")])
         except Exception as e: logger.log(f"Failed to write to history file: {e}", "ERROR")
-
     def open_history_file(self) -> bool:
         if os.path.exists(config.HISTORY_CSV_PATH):
             try: os.startfile(config.HISTORY_CSV_PATH); return True
             except Exception as e: logger.log(f"Failed to open history file: {e}", "ERROR"); return False
         else: logger.log(f"History file not found at {config.HISTORY_CSV_PATH}", "WARN"); return False
-
     def clear_history_file(self) -> bool:
         history_path = config.HISTORY_CSV_PATH
         if os.path.exists(history_path):
             try: os.remove(history_path); logger.log("History file cleared by user.", level="SYSTEM"); return True
             except OSError as e: logger.log(f"Failed to clear history file: {e}", level="ERROR"); return False
         else: logger.log("History file not found, nothing to clear.", level="INFO"); return True
-
-    # --- REVERTED: Load only TODAY'S progress ---
     def load_todays_progress_from_history(self) -> Dict[str, Dict[str, str]]:
-        """Loads only progress entries matching today's date from history."""
-        todays_progress = {}
-        today_str = date.today().isoformat() # Get today's date as a string
+        todays_progress = {}; today_str = date.today().isoformat()
         if not os.path.exists(config.HISTORY_CSV_PATH):
-            # logger.log("History file not found, cannot load today's progress.", "WARN") # Less noisy log
             return todays_progress
-
         try:
             with open(config.HISTORY_CSV_PATH, 'r', newline='', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    # Only process rows where the 'Date' column matches today's date string
                     if row.get("Date") == today_str:
                         email = row.get("Email")
-                        if email:
-                            # Add directly to today's progress if date matches
-                            todays_progress[email] = {
-                                "available_points": row.get("AvailablePoints", "N/A"),
-                                "daily_progress": row.get("DailyProgress", "N/A")
-                            }
-            # Log how many records were found specifically for today
-            if len(todays_progress) > 0:
-                 logger.log(f"Loaded {len(todays_progress)} progress records from today's history.", "INFO")
-            else:
-                 logger.log("No progress records found for today in history.", "INFO")
-
-        except FileNotFoundError:
-             logger.log("History file not found during load.", "WARN")
-        except Exception as e:
-            logger.log(f"Failed to read or process history file: {e}", "ERROR")
-
+                        if email: todays_progress[email] = {"available_points": row.get("AvailablePoints", "N/A"), "daily_progress": row.get("DailyProgress", "N/A")}
+            if len(todays_progress) > 0: logger.log(f"Loaded {len(todays_progress)} progress records from today's history.", "INFO")
+            else: logger.log("No progress records found for today in history.", "INFO")
+        except FileNotFoundError: logger.log("History file not found during load.", "WARN")
+        except Exception as e: logger.log(f"Failed to read or process history file: {e}", "ERROR")
         return todays_progress
 
-    # ... (PyAutoGUI Helpers remain the same) ...
+    # --- PyAutoGUI Helper Methods (Unchanged) ---
     def _pyautogui_human_like_pause(self, min_seconds, max_seconds):
         if min_seconds > max_seconds: min_seconds = max_seconds
         time.sleep(random.uniform(min_seconds, max_seconds))
@@ -230,39 +209,69 @@ class AutomationService:
         except gw.PyGetWindowException: logger.log(f"Window '{window.title}' closed during search.", "WARN"); return None
         except Exception as e: logger.log(f"Error during PyAutoGUI search: {e}", "ERROR"); return None
 
-    # ... (Shared and Utility Methods remain the same) ...
-    def close_all_edge_windows(self): subprocess.run(['taskkill', '/F', '/IM', 'msedge.exe'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); logger.log("Forcefully closed all Edge processes.", "SYSTEM")
+    # --- Shared and Utility Methods ---
+    def close_all_edge_windows(self):
+        subprocess.run(['taskkill', '/F', '/IM', 'msedge.exe'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        logger.log("Forcefully closed all Edge processes.", "SYSTEM")
+
+    # --- MODIFIED: Removed merging logic ---
     def get_and_save_edge_profiles(self) -> bool:
-        edge_user_data_dir = os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data"); local_state_path = os.path.join(edge_user_data_dir, "Local State")
+        """Detects all Edge profiles and overwrites data.json."""
+        edge_user_data_dir = os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\User Data")
+        local_state_path = os.path.join(edge_user_data_dir, "Local State")
+        
         try:
-            with open(local_state_path, "r", encoding="utf-8") as f: local_state = json.load(f)
-        except FileNotFoundError: logger.log("Edge 'Local State' file not found.", level="ERROR"); return False
-        profile_info = local_state.get("profile", {}); info_cache = profile_info.get("info_cache", {}); profiles_order = profile_info.get("profiles_order", [])
+            with open(local_state_path, "r", encoding="utf-8") as f:
+                local_state = json.load(f)
+        except FileNotFoundError:
+            logger.log("Edge 'Local State' file not found.", level="ERROR")
+            return False
+        except Exception as e:
+            logger.log(f"Error reading 'Local State' file: {e}", "ERROR")
+            return False
+
+        profile_info = local_state.get("profile", {})
+        info_cache = profile_info.get("info_cache", {})
+        profiles_order = profile_info.get("profiles_order", [])
+        
+        # This dictionary will contain ONLY the newly detected profiles
         profiles_data = {}
+        
         for profile_id in profiles_order:
-            profile_details = info_cache.get(profile_id);
+            profile_details = info_cache.get(profile_id)
             if not profile_details: continue
-            full_name = f"{profile_details.get('user_name', '')} ({profile_details.get('shortcut_name', '')})"; cmd_arg = f"--profile-directory={profile_id}"
-            profiles_data[full_name] = {"cmd": cmd_arg}
+            
+            full_name = f"{profile_details.get('user_name', '')} ({profile_details.get('shortcut_name', '')})"
+            cmd_arg = f"--profile-directory={profile_id}"
+            
+            # Add the new profile with default values.
+            # The 'available_points' will be 0 by default when loaded next.
+            profiles_data[full_name] = {
+                "cmd": cmd_arg
+                # We no longer add status or points here
+            }
+
         try:
-            existing_data = {}
-            if os.path.exists(config.PROFILES_JSON_PATH):
-                with open(config.PROFILES_JSON_PATH, 'r', encoding='utf-8') as f_exist:
-                    try: existing_data = json.load(f_exist)
-                    except json.JSONDecodeError: logger.log("Error reading existing data.json, overwriting.", "WARN")
-            for name, details in profiles_data.items():
-                if name in existing_data: existing_data[name].update(details) # Keep status if exists
-                else: existing_data[name] = details; existing_data[name]['status'] = 'active'
-            with open(config.PROFILES_JSON_PATH, 'w', encoding='utf-8') as f: json.dump(existing_data, f, indent=2)
-            logger.log(f"Successfully saved/updated {len(existing_data)} profiles to {config.PROFILES_JSON_PATH}"); return True
-        except Exception as e: logger.log(f"Error saving profiles to JSON: {e}", level="ERROR"); return False
+            # Overwrite data.json with ONLY the newly detected profiles
+            with open(config.PROFILES_JSON_PATH, 'w', encoding='utf-8') as f:
+                json.dump(profiles_data, f, indent=2)
+            
+            logger.log(f"Successfully OVERWRITTEN {config.PROFILES_JSON_PATH} with {len(profiles_data)} detected profiles.")
+            return True
+        except Exception as e:
+            logger.log(f"Error saving profiles to JSON: {e}", level="ERROR")
+            return False
+
     def restart_application(self):
+        # ... (Unchanged) ...
         batch_file = None
         if os.path.exists(config.RESTART_BATCH_FILE_ONEDRIVE): batch_file = config.RESTART_BATCH_FILE_ONEDRIVE
         elif os.path.exists(config.RESTART_BATCH_FILE_LOCAL): batch_file = config.RESTART_BATCH_FILE_LOCAL
         if batch_file: logger.log(f"Restarting application via {batch_file}..."); os.system(f'start "" "{batch_file}"')
         else: logger.log("Could not find newBing.bat on OneDrive or Local Desktop.", level="ERROR")
+
     def open_log_file(self) -> bool:
+        # ... (Unchanged) ...
         log_path = config.LOG_FILE_PATH
         if os.path.exists(log_path):
             try: os.startfile(log_path); return True

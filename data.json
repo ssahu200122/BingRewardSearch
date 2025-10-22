@@ -1,110 +1,83 @@
 {
   "sourabhsahu2001@outlook.com (Personal)": {
-    "cmd": "--profile-directory=Default",
-    "available_points": 1332
+    "cmd": "--profile-directory=Default"
   },
   "ssahu200122@gmail.com (Personal 2)": {
-    "cmd": "--profile-directory=Profile 1",
-    "available_points": 283
+    "cmd": "--profile-directory=Profile 1"
   },
   "ssahu200122@outlook.com (Personal 3)": {
-    "cmd": "--profile-directory=Profile 2",
-    "available_points": 2747
+    "cmd": "--profile-directory=Profile 2"
   },
   "sofaandchair1947@outlook.com (Personal 4)": {
-    "cmd": "--profile-directory=Profile 3",
-    "available_points": 6564
+    "cmd": "--profile-directory=Profile 3"
   },
   "sofaandchair1947@hotmail.com (Personal 5)": {
-    "cmd": "--profile-directory=Profile 4",
-    "available_points": 6585
+    "cmd": "--profile-directory=Profile 4"
   },
   "Phonecharger1947@outlook.com (Personal 6)": {
-    "cmd": "--profile-directory=Profile 5",
-    "available_points": 5342
+    "cmd": "--profile-directory=Profile 5"
   },
   "sachinaugust2007@gmail.com (Personal 7)": {
-    "cmd": "--profile-directory=Profile 6",
-    "available_points": 7408
+    "cmd": "--profile-directory=Profile 6"
   },
   "myossujourney@hotmail.com (Personal 8)": {
-    "cmd": "--profile-directory=Profile 7",
-    "available_points": 1837
+    "cmd": "--profile-directory=Profile 7"
   },
   "myossujourney@outlook.com (Personal 9)": {
-    "cmd": "--profile-directory=Profile 8",
-    "available_points": 1861
+    "cmd": "--profile-directory=Profile 8"
   },
   "shivan123123123@hotmail.com (Personal 10)": {
-    "cmd": "--profile-directory=Profile 9",
-    "available_points": 7249
+    "cmd": "--profile-directory=Profile 9"
   },
   "Mathscience1947@hotmail.com (Personal 11)": {
-    "cmd": "--profile-directory=Profile 11",
-    "available_points": 5988
+    "cmd": "--profile-directory=Profile 11"
   },
   "Mathsscience1947@outlook.com (Personal 12)": {
-    "cmd": "--profile-directory=Profile 12",
-    "available_points": 6286
+    "cmd": "--profile-directory=Profile 12"
   },
   "Phonecharger1947@hotmail.com (Personal 13)": {
-    "cmd": "--profile-directory=Profile 13",
-    "available_points": 4226
+    "cmd": "--profile-directory=Profile 13"
   },
   "guitartrimmer@hotmail.com (Personal 14)": {
-    "cmd": "--profile-directory=Profile 14",
-    "available_points": 3935
+    "cmd": "--profile-directory=Profile 14"
   },
   "GUITAR1947@hotmail.com (Personal 15)": {
-    "cmd": "--profile-directory=Profile 15",
-    "available_points": 3714
+    "cmd": "--profile-directory=Profile 15"
   },
   "jhaduPochha@outlook.com (Personal 16)": {
-    "cmd": "--profile-directory=Profile 21",
-    "available_points": 2754
+    "cmd": "--profile-directory=Profile 21"
   },
   "jhadupochha@hotmail.com (Personal 17)": {
-    "cmd": "--profile-directory=Profile 23",
-    "available_points": 3571
+    "cmd": "--profile-directory=Profile 23"
   },
   "kapilsharmasahu@outlook.com (Personal 18)": {
-    "cmd": "--profile-directory=Profile 27",
-    "available_points": 1542
+    "cmd": "--profile-directory=Profile 27"
   },
   "kapilsharmasahu@hotmail.com (Personal 19)": {
-    "cmd": "--profile-directory=Profile 28",
-    "available_points": 1348
+    "cmd": "--profile-directory=Profile 28"
   },
   "kumarsanulata@outlook.com (Personal 20)": {
-    "cmd": "--profile-directory=Profile 29",
-    "available_points": 1330
+    "cmd": "--profile-directory=Profile 29"
   },
   "isabella.smith.the.artist@gmail.com (Personal 21)": {
-    "cmd": "--profile-directory=Profile 30",
-    "available_points": 2436
+    "cmd": "--profile-directory=Profile 30"
   },
   "kumarsanulata@hotmail.com (Personal 22)": {
-    "cmd": "--profile-directory=Profile 31",
-    "available_points": 1342
+    "cmd": "--profile-directory=Profile 31"
   },
   "kallukaliyadevil@outlook.com (Personal 23)": {
-    "cmd": "--profile-directory=Profile 32",
-    "available_points": 1330
+    "cmd": "--profile-directory=Profile 32"
   },
   "heldrop@outlook.com (Personal 24)": {
-    "cmd": "--profile-directory=Profile 35",
-    "available_points": 30
+    "cmd": "--profile-directory=Profile 35"
   },
   "heldrop@hotmail.com (Personal 25)": {
-    "cmd": "--profile-directory=Profile 36",
-    "available_points": 30
+    "cmd": "--profile-directory=Profile 36"
   },
   "towel099@hotmail.com (Personal 26)": {
-    "cmd": "--profile-directory=Profile 37",
-    "available_points": 30
+    "cmd": "--profile-directory=Profile 37"
   },
   "shoe099@hotmail.com (Personal 27)": {
-    "cmd": "--profile-directory=Profile 38",
-    "available_points": 27
+    "cmd": "--profile-directory=Profile 38"
   }
 }
