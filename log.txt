@@ -8926,3 +8926,300 @@ Stacktrace:
 [01:35:20] [INFO] Successfully loaded 27 profiles.
 [01:35:20] [SYSTEM] SearchQueryGenerator initialized.
 [01:35:21] [INFO] Loaded 5 progress records from today's history.
+[02:03:21] [INFO] Fetching all points...
+[02:03:21] [INFO] Loaded 5 progress records from today's history.
+[02:03:21] [SYSTEM] Forcefully closed all Edge processes.
+[02:03:22] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:03:36] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:03:46] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:03:55] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:04] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:17] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:29] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:40] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:49] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:04:58] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:07] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:16] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:26] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:35] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:47] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:05:56] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:06:07] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:06:17] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:06:27] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:06:37] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:06:49] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:07:00] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:07:09] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:07:18] [INFO] Skipping fetch for Personal 24: Already completed (from history).
+[02:07:18] [INFO] Skipping fetch for Personal 25: Already completed (from history).
+[02:07:18] [INFO] Skipping fetch for Personal 26: Already completed (from history).
+[02:07:18] [DEBUG] Headless mode enabled for Selenium points fetching.
+[02:07:29] [INFO] Points fetching complete.
+[02:09:20] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:09:58 ---
+[02:09:58] [INFO] Application starting up.
+[02:09:58] [INFO] Loading profiles from data.json.
+[02:09:58] [INFO] Successfully loaded 27 profiles.
+[02:09:58] [SYSTEM] SearchQueryGenerator initialized.
+[02:09:59] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:10:40 ---
+[02:10:40] [INFO] Application starting up.
+[02:10:40] [INFO] Loading profiles from data.json.
+[02:10:40] [INFO] Successfully loaded 27 profiles.
+[02:10:40] [SYSTEM] SearchQueryGenerator initialized.
+[02:10:41] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:15:24 ---
+[02:15:24] [INFO] Application starting up.
+[02:15:24] [INFO] Loading profiles from data.json.
+[02:15:24] [INFO] Successfully loaded 27 profiles.
+[02:15:24] [SYSTEM] SearchQueryGenerator initialized.
+[02:15:25] [INFO] Loaded 27 progress records from today's history.
+[02:16:26] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:17:21 ---
+
+--- Log Session Started: 2025-10-23 02:17:44 ---
+[02:17:44] [INFO] Application starting up.
+[02:17:44] [INFO] Loading profiles from data.json.
+[02:17:44] [INFO] Successfully loaded 27 profiles.
+[02:17:44] [SYSTEM] SearchQueryGenerator initialized.
+[02:17:45] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:18:13 ---
+
+--- Log Session Started: 2025-10-23 02:18:22 ---
+[02:18:22] [INFO] Application starting up.
+[02:18:22] [INFO] Loading profiles from data.json.
+[02:18:22] [INFO] Successfully loaded 27 profiles.
+[02:18:22] [SYSTEM] SearchQueryGenerator initialized.
+[02:18:24] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:19:27 ---
+[02:19:27] [INFO] Application starting up.
+[02:19:27] [INFO] Loading profiles from data.json.
+[02:19:27] [INFO] Successfully loaded 27 profiles.
+[02:19:27] [SYSTEM] SearchQueryGenerator initialized.
+[02:19:28] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:19:46 ---
+[02:19:46] [INFO] Application starting up.
+[02:19:46] [INFO] Loading profiles from data.json.
+[02:19:46] [INFO] Successfully loaded 27 profiles.
+[02:19:46] [SYSTEM] SearchQueryGenerator initialized.
+[02:19:47] [INFO] Loaded 27 progress records from today's history.
+[02:20:09] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:20:34 ---
+[02:20:34] [INFO] Application starting up.
+[02:20:34] [INFO] Loading profiles from data.json.
+[02:20:34] [INFO] Successfully loaded 27 profiles.
+[02:20:34] [SYSTEM] SearchQueryGenerator initialized.
+[02:20:36] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:20:56 ---
+[02:20:56] [INFO] Application starting up.
+[02:20:56] [INFO] Loading profiles from data.json.
+[02:20:56] [INFO] Successfully loaded 27 profiles.
+[02:20:56] [SYSTEM] SearchQueryGenerator initialized.
+[02:20:57] [INFO] Loaded 27 progress records from today's history.
+[02:21:24] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:22:00 ---
+[02:22:00] [INFO] Application starting up.
+[02:22:00] [INFO] Loading profiles from data.json.
+[02:22:00] [INFO] Successfully loaded 27 profiles.
+[02:22:00] [SYSTEM] SearchQueryGenerator initialized.
+[02:22:01] [INFO] Loaded 27 progress records from today's history.
+[02:22:44] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:23:08 ---
+[02:23:08] [INFO] Application starting up.
+[02:23:08] [INFO] Loading profiles from data.json.
+[02:23:08] [INFO] Successfully loaded 27 profiles.
+[02:23:08] [SYSTEM] SearchQueryGenerator initialized.
+[02:23:09] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:24:15 ---
+[02:24:15] [INFO] Application starting up.
+[02:24:15] [INFO] Loading profiles from data.json.
+[02:24:15] [INFO] Successfully loaded 27 profiles.
+[02:24:15] [SYSTEM] SearchQueryGenerator initialized.
+[02:24:17] [INFO] Loaded 27 progress records from today's history.
+[02:24:31] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:28:22 ---
+[02:28:22] [INFO] Application starting up.
+[02:28:22] [INFO] Loading profiles from data.json.
+[02:28:22] [INFO] Successfully loaded 27 profiles.
+[02:28:22] [SYSTEM] SearchQueryGenerator initialized.
+[02:28:23] [INFO] Loaded 27 progress records from today's history.
+[02:28:46] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:29:32 ---
+[02:29:33] [INFO] Application starting up.
+[02:29:33] [INFO] Loading profiles from data.json.
+[02:29:33] [INFO] Successfully loaded 27 profiles.
+[02:29:33] [SYSTEM] SearchQueryGenerator initialized.
+[02:29:34] [INFO] Loaded 27 progress records from today's history.
+[02:29:55] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:30:22 ---
+[02:30:22] [INFO] Application starting up.
+[02:30:22] [INFO] Loading profiles from data.json.
+[02:30:22] [INFO] Successfully loaded 27 profiles.
+[02:30:22] [SYSTEM] SearchQueryGenerator initialized.
+[02:30:23] [INFO] Loaded 27 progress records from today's history.
+[02:30:36] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:31:01 ---
+[02:31:01] [INFO] Application starting up.
+[02:31:01] [INFO] Loading profiles from data.json.
+[02:31:01] [INFO] Successfully loaded 27 profiles.
+[02:31:01] [SYSTEM] SearchQueryGenerator initialized.
+[02:31:03] [INFO] Loaded 27 progress records from today's history.
+[02:31:29] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:32:11 ---
+[02:32:11] [INFO] Application starting up.
+[02:32:11] [INFO] Loading profiles from data.json.
+[02:32:11] [INFO] Successfully loaded 27 profiles.
+[02:32:11] [SYSTEM] SearchQueryGenerator initialized.
+[02:32:12] [INFO] Loaded 27 progress records from today's history.
+[02:32:18] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:32:31 ---
+[02:32:31] [INFO] Application starting up.
+[02:32:31] [INFO] Loading profiles from data.json.
+[02:32:31] [INFO] Successfully loaded 27 profiles.
+[02:32:31] [SYSTEM] SearchQueryGenerator initialized.
+[02:32:32] [INFO] Loaded 27 progress records from today's history.
+[02:32:41] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:32:52 ---
+[02:32:52] [INFO] Application starting up.
+[02:32:52] [INFO] Loading profiles from data.json.
+[02:32:52] [INFO] Successfully loaded 27 profiles.
+[02:32:52] [SYSTEM] SearchQueryGenerator initialized.
+[02:32:54] [INFO] Loaded 27 progress records from today's history.
+[02:33:06] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:33:54 ---
+[02:33:54] [INFO] Application starting up.
+[02:33:54] [INFO] Loading profiles from data.json.
+[02:33:54] [INFO] Successfully loaded 27 profiles.
+[02:33:54] [SYSTEM] SearchQueryGenerator initialized.
+[02:33:55] [INFO] Loaded 27 progress records from today's history.
+[02:34:07] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:35:04 ---
+[02:35:04] [INFO] Application starting up.
+[02:35:04] [INFO] Loading profiles from data.json.
+[02:35:04] [INFO] Successfully loaded 27 profiles.
+[02:35:04] [SYSTEM] SearchQueryGenerator initialized.
+[02:35:05] [INFO] Loaded 27 progress records from today's history.
+[02:35:13] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:35:35 ---
+[02:35:35] [INFO] Application starting up.
+[02:35:35] [INFO] Loading profiles from data.json.
+[02:35:35] [INFO] Successfully loaded 27 profiles.
+[02:35:35] [SYSTEM] SearchQueryGenerator initialized.
+[02:35:37] [INFO] Loaded 27 progress records from today's history.
+[02:35:55] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:36:27 ---
+[02:36:27] [INFO] Application starting up.
+[02:36:27] [INFO] Loading profiles from data.json.
+[02:36:27] [INFO] Successfully loaded 27 profiles.
+[02:36:27] [SYSTEM] SearchQueryGenerator initialized.
+[02:36:29] [INFO] Loaded 27 progress records from today's history.
+[02:36:52] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:37:49 ---
+[02:37:49] [INFO] Application starting up.
+[02:37:49] [INFO] Loading profiles from data.json.
+[02:37:49] [INFO] Successfully loaded 27 profiles.
+[02:37:49] [SYSTEM] SearchQueryGenerator initialized.
+[02:37:50] [INFO] Loaded 27 progress records from today's history.
+[02:38:12] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:38:14 ---
+[02:38:14] [INFO] Application starting up.
+[02:38:14] [INFO] Loading profiles from data.json.
+[02:38:14] [INFO] Successfully loaded 27 profiles.
+[02:38:14] [SYSTEM] SearchQueryGenerator initialized.
+[02:38:16] [INFO] Loaded 27 progress records from today's history.
+[02:38:21] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:39:25 ---
+[02:39:25] [INFO] Application starting up.
+[02:39:25] [INFO] Loading profiles from data.json.
+[02:39:25] [INFO] Successfully loaded 27 profiles.
+[02:39:25] [SYSTEM] SearchQueryGenerator initialized.
+[02:39:26] [INFO] Loaded 27 progress records from today's history.
+[02:39:53] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:40:10 ---
+[02:40:10] [INFO] Application starting up.
+[02:40:10] [INFO] Loading profiles from data.json.
+[02:40:10] [INFO] Successfully loaded 27 profiles.
+[02:40:10] [SYSTEM] SearchQueryGenerator initialized.
+[02:40:11] [INFO] Loaded 27 progress records from today's history.
+[02:40:19] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:40:44 ---
+[02:40:44] [INFO] Application starting up.
+[02:40:44] [INFO] Loading profiles from data.json.
+[02:40:44] [INFO] Successfully loaded 27 profiles.
+[02:40:44] [SYSTEM] SearchQueryGenerator initialized.
+[02:40:45] [INFO] Loaded 27 progress records from today's history.
+[02:40:53] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:41:36 ---
+[02:41:36] [INFO] Application starting up.
+[02:41:36] [INFO] Loading profiles from data.json.
+[02:41:36] [INFO] Successfully loaded 27 profiles.
+[02:41:36] [SYSTEM] SearchQueryGenerator initialized.
+[02:41:37] [INFO] Loaded 27 progress records from today's history.
+[02:42:06] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:42:27 ---
+[02:42:27] [INFO] Application starting up.
+[02:42:27] [INFO] Loading profiles from data.json.
+[02:42:27] [INFO] Successfully loaded 27 profiles.
+[02:42:27] [SYSTEM] SearchQueryGenerator initialized.
+[02:42:28] [INFO] Loaded 27 progress records from today's history.
+[02:42:44] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:43:10 ---
+[02:43:10] [INFO] Application starting up.
+[02:43:10] [INFO] Loading profiles from data.json.
+[02:43:10] [INFO] Successfully loaded 27 profiles.
+[02:43:10] [SYSTEM] SearchQueryGenerator initialized.
+[02:43:12] [INFO] Loaded 27 progress records from today's history.
+[02:43:25] [INFO] Application has been closed.
+
+--- Log Session Started: 2025-10-23 02:43:45 ---
+[02:43:45] [INFO] Application starting up.
+[02:43:45] [INFO] Loading profiles from data.json.
+[02:43:45] [INFO] Successfully loaded 27 profiles.
+[02:43:45] [SYSTEM] SearchQueryGenerator initialized.
+
+--- Log Session Started: 2025-10-23 02:43:56 ---
+[02:43:56] [INFO] Application starting up.
+[02:43:56] [INFO] Loading profiles from data.json.
+[02:43:56] [INFO] Successfully loaded 27 profiles.
+[02:43:56] [SYSTEM] SearchQueryGenerator initialized.
+[02:43:57] [INFO] Loaded 27 progress records from today's history.
+
+--- Log Session Started: 2025-10-23 02:44:34 ---
+[02:44:34] [INFO] Application starting up.
+[02:44:34] [INFO] Loading profiles from data.json.
+[02:44:34] [INFO] Successfully loaded 27 profiles.
+[02:44:34] [SYSTEM] SearchQueryGenerator initialized.
+[02:44:36] [INFO] Loaded 27 progress records from today's history.

@@ -8,14 +8,14 @@ from edge_profile import EdgeProfile
 # Colors chosen for better contrast
 # (Light Mode Color, Dark Mode Color)
 POINTS_COLORS = {
-    (7000, float('inf')): ("#FF4500", "#DC143C"), # OrangeRed / Crimson
-    (6000, 7000): ("#FFD700", "#B8860B"), # Gold / DarkGoldenrod
-    (5000, 6000): ("#ADFF2F", "#556B2F"), # GreenYellow / DarkOliveGreen
-    (4000, 5000): ("#40E0D0", "#20B2AA"), # Turquoise / LightSeaGreen
-    (3000, 4000): ("#1E90FF", "#0000CD"), # DodgerBlue / MediumBlue
-    (2000, 3000): ("#DA70D6", "#9932CC"), # Orchid / DarkOrchid
-    (1000, 2000): ("#F4A460", "#8B4513"), # SandyBrown / SaddleBrown
-    (0, 1000): ("#D3D3D3", "#696969")  # LightGray / DimGray
+    (7000, float('inf')): ("#FF4500", "#191970"), # OrangeRed / Crimson
+    (6000, 7000): ("#FFD700", "#006400"), # Gold / DarkGoldenrod
+    (5000, 6000): ("#ADFF2F", "#ff0000"), # GreenYellow / DarkOliveGreen
+    (4000, 5000): ("#40E0D0", "#ffd700"), # Turquoise / LightSeaGreen
+    (3000, 4000): ("#1E90FF", "#00ff00"), # DodgerBlue / MediumBlue
+    (2000, 3000): ("#DA70D6", "#00ffff"), # Orchid / DarkOrchid
+    (1000, 2000): ("#F4A460", "#ff00ff"), # SandyBrown / SaddleBrown
+    (0, 1000): ("#D3D3D3", "#ffb6c1")  # LightGray / DimGray
 }
 # Define default theme colors to match the lowest bracket
 DEFAULT_COLORS = ("#D3D3D3", "#696969") # LightGray / DimGray
@@ -49,7 +49,7 @@ class ProfileRow(customtkinter.CTkFrame):
         self.grid_columnconfigure(1, weight=1)
 
         self.index_label = customtkinter.CTkLabel(
-            self, text=str(profile.index), width=30, height=30,
+            self, text=str(profile.index), width=30, height=30,text_color="#000",fg_color= "#34474F",corner_radius=10,
             font=customtkinter.CTkFont(weight="bold")
         )
         self.index_label.grid(row=0, column=0, padx=5, pady=(5, 0), sticky="n")
@@ -59,31 +59,31 @@ class ProfileRow(customtkinter.CTkFrame):
             self, text="", variable=self.check_var, onvalue="on", offvalue="off",
             command=self._on_select_callback, width=30
         )
-        self.checkbox.grid(row=1, column=0, padx=5, pady=(0, 5), sticky="n")
+        self.checkbox.grid(row=1, column=0, padx=5, pady=5, sticky="n")
 
         self.profile_font = customtkinter.CTkFont(weight="bold", slant="italic", underline=True, size=16)
         self.profile_label = customtkinter.CTkLabel(
             self, text=profile.full_name+" ", anchor="w", cursor="hand2",
-            font=self.profile_font, text_color="#00BFFF"
+            font=self.profile_font, text_color="#34474F"
         )
         self.profile_label.grid(row=0, column=1, padx=5, pady=(5, 0), sticky="ew")
         self.profile_label.bind("<Button-1>", lambda e: self.on_label_click(self.profile))
         self.profile_label.bind("<Enter>", lambda e: self.profile_label.configure(text_color="yellow"))
-        self.profile_label.bind("<Leave>", lambda e: self.profile_label.configure(text_color="#00BFFF"))
+        self.profile_label.bind("<Leave>", lambda e: self.profile_label.configure(text_color="#34474F"))
 
-        self.points_frame = customtkinter.CTkFrame(self, fg_color="transparent")
-        self.points_frame.grid(row=1, column=1, padx=5, pady=(0, 5), sticky="w")
+        self.points_frame = customtkinter.CTkFrame(self,corner_radius=20)
+        self.points_frame.grid(row=1, column=1, padx=10, pady=5, sticky="w")
 
         self.available_points_label = customtkinter.CTkLabel(
             self.points_frame, text="", text_color="#95bdef", font=customtkinter.CTkFont(weight="bold")
         )
-        self.available_points_label.pack(side="left")
+        self.available_points_label.pack(side="left",padx=10,pady=5)
 
         self.separator_label = customtkinter.CTkLabel(self.points_frame, text="" )
         self.separator_label.pack(side="left", padx=5)
 
         self.daily_progress_label = customtkinter.CTkLabel(self.points_frame, text="",text_color="#4ad342", font=customtkinter.CTkFont(weight="bold"))
-        self.daily_progress_label.pack(side="left")
+        self.daily_progress_label.pack(side="left",padx=10,pady=5)
 
         initial_points_str = str(profile.available_points) if isinstance(profile.available_points, int) else "N/A"
         self.update_points_display({"available_points": initial_points_str})
